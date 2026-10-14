@@ -26,7 +26,12 @@ The matching BF16 weight file is 351,242,342 bytes and has SHA-256:
 
 `d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798`
 
-Weights and their optimizer state are not committed to this GitHub source repository. A public download URL and weight license are pending. The portable runner only requires weights, `config.json`, tokenizer and implementation; it does not require original workspace metadata or report directories.
+Weights and their optimizer state are not committed to this GitHub source repository. Download the selected weights from [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-JSONLite-175M); model-weight licensing is separate from this source license. The portable runner only requires weights, `config.json`, tokenizer and implementation; it does not require original workspace metadata or report directories.
+
+```bash
+python -m pip install huggingface_hub
+hf download wzebrowski/OpenSML-JSONLite-175M model.safetensors --local-dir ./weights
+```
 
 ## Run a fixture
 

@@ -5,7 +5,7 @@
 **Author/project:** William Zebrowski / OpenSML
 **Report date:** October 14, 2026 (America/New_York)
 **Artifact:** recreated SFT-093/update 160, retained at the owner's request
-**Status:** public source/documentation repository for a preserved experimental candidate; weights are not yet published and no public inference endpoint is deployed.
+The selected weights and standalone inference package are publicly available on [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-JSONLite-175M). No hosted inference endpoint is deployed.
 
 This report describes one exact model and its accompanying inference pipeline. The model is a 175,611,648-parameter decoder pretrained from random initialization, then adapted through grounded QA, requested-field extraction and focused single-field extraction. Its learned output is a labeled list. Software accepts a supported JSON Schema, turns each requested property into an extraction question, strictly parses generated field lines, assembles JSON and validates its structure.
 
@@ -215,6 +215,14 @@ The nominal 3e-4 schedule is not the effective late-run learning rate: the retai
 Validation and qualitative samples occur at 50M-token boundaries. The fixed validation panel has 32 batches/source, batch 2, five sources, context 2,048: nominally 655,360 positions/event. Aggregate loss is source-mixture weighted. Validation fingerprint: `4ddd461c131d4d27d07bb07f5aab3fcb5a00d4b1202066e3d9b6ee6b3129087b`. Selected-base validation loss is **2.5563359551876785**, perplexity **12.8885**. This measures document prediction, not extraction or chat reliability.
 
 Regular saves occur every 100M tokens, plus best-validation and clean-stop saves. Exact checkpoint metadata is authoritative. The initial October 2 technical report's early observations, 20B target and old schedule describe history; they are superseded here for this selected artifact. Contemporary qualitative logs often showed roughly 41k tokens/s, but no reproducible end-to-end cluster performance/energy benchmark is established by this report. The separate 42.7k profiling candidate is not claimed as the configuration that trained this checkpoint.
+
+### Training run
+
+The 175.6M-parameter base was trained from random initialization using next-token prediction across the educational web, Wikipedia, Cosmopedia and Python mixture. Five Apple Silicon Macs carried out distributed pretraining over Thunderbolt/RDMA. Validation was measured every 50M tokens. The curves show a steep early loss reduction followed by slower improvement; the published base was selected using held-out validation.
+
+![Stage A pretraining training loss, EMA and held-out validation loss](figures/pretraining-training-loss.png)
+
+*Training loss and held-out validation during pretraining. Left: raw training loss and exponential moving average. Right: held-out validation loss.*
 
 ## 7. Common supervised objective and precision
 
@@ -746,7 +754,7 @@ The initial base report described an Apache-2.0 code license, but a root `LICENS
 
 Completed work includes preservation of the checkpoint, verification of its lineage and hashes, recording of development, complete observed-test and playground metrics, documentation of the field/schema adapter, and verification of the local API and UI. The original and recreated model identities are recorded separately.
 
-The public GitHub source repository is now OpenSML-JSONLite-175M. Its source code uses the included Apache-2.0 license; dependency/source notices, a native inference runner, pinned public runtime dependencies, a 40-case clean-environment parity record and a repository integrity manifest are included. Remaining weight-release items are the owner-assigned weight license and public weight artifact. Broader external evaluation and full-suite parity still need separate verification. Evaluation beyond the reused SNIPS panel and 12 authored cases is still needed to establish transfer to intended production inputs. An experimental release can report these results and limitations; preserving this checkpoint does not override its failed retention flags or prove reliable general extraction.
+The public GitHub source repository is now OpenSML-JSONLite-175M. Its source code uses the included Apache-2.0 license; dependency/source notices, a native inference runner, pinned public runtime dependencies, a 40-case clean-environment parity record and a repository integrity manifest are included. The selected weight artifact is publicly available on Hugging Face. The model-weight license remains unassigned. Broader external evaluation and full-suite parity still need separate verification. Evaluation beyond the reused SNIPS panel and 12 authored cases is still needed to establish transfer to intended production inputs. An experimental release can report these results and limitations; preserving this checkpoint does not override its failed retention flags or prove reliable general extraction.
 
 ## 19. Artifact and evidence index
 

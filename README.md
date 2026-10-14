@@ -1,8 +1,8 @@
-# OpenSML-JSONLite-175M
+# OpenSML-JSONLite-175M-Instruct
 
 **A small, fast field-extraction model with a schema-guided JSON adapter.**
 
-**Author:** William Zebrowski · **Parameters:** 175,611,648 · **Selected artifact:** recreated SFT-093/update 160
+**Author:** William Zebrowski · **Parameters:** 175,611,648 · **Model:** OpenSML-JSONLite-175M-Instruct
 
 [Technical report](docs/TECHNICAL_REPORT.md) · [Model card](model-card/README.md) · [Native inference](inference_native/) · [Results](results/JSONLITE_RESULTS.json) · [Training and reproducibility](TRAINING_AND_REPRODUCIBILITY.md) · [Run guide](RUN_GUIDE.md) · [Source notices](SOURCE_NOTICE.md)
 
@@ -14,7 +14,7 @@ Text + supported schema → fieldwise model extraction → strict parser → val
 
 The model learned labeled extraction, rather than direct JSON Schema → JSON generation. **The checkpoint and adapter together are the evaluated system.** It currently supports documented field definitions and flat objects whose values are arrays of strings. Arbitrary schemas, nested records and typed scalars are outside this release's supported interface.
 
-This repository contains source, tokenizer, recipes, provenance, the detailed technical report, actual benchmark predictions and a tested native inference entry point. **Model weights are preserved locally and are not yet published in this GitHub repository.** A public weight artifact and its license are separate remaining release items. No Hugging Face repository was created for this model.
+This repository contains source, tokenizer, recipes, provenance, the detailed technical report, actual benchmark predictions and a tested native inference entry point. **Download the selected `model.safetensors` from [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-JSONLite-175M)**. The pretrained parent is [OpenSML-Base-175M](https://huggingface.co/wzebrowski/OpenSML-Base-175M). Model-weight licensing is documented separately from the source license.
 
 ## At a glance
 
@@ -33,7 +33,7 @@ This repository contains source, tokenizer, recipes, provenance, the detailed te
 ## Exact training lineage
 
 ```text
-Stage A/132005 → SFT-065/469 → SFT-068/379 → recreated SFT-093/160
+Stage A/132005 → SFT-065/469 → SFT-068/379 → SFT-093/160
 ```
 
 | Stage | Prepared data | Actually inherited |
@@ -44,6 +44,14 @@ Stage A/132005 → SFT-065/469 → SFT-068/379 → recreated SFT-093/160
 | SFT-093 | 2,560 SNIPS source queries, each with replay and focused views | Update 160: 5,120 presentations / 706,399 tokens |
 
 Only these selected stages are ancestors. The many supporting research implementations in the source archive are not additional training stages in these weights. No RL or adapter-only training is part of this chain. Counts represent processed positions/presentations, not globally unique passages. The [report](docs/TECHNICAL_REPORT.md) gives source pins, selected versus completed boundaries, masks, hyperparameters and failed retention checks.
+
+### Training run
+
+The 175.6M-parameter base was trained from random initialization using next-token prediction across the educational web, Wikipedia, Cosmopedia and Python mixture. Five Apple Silicon Macs carried out distributed pretraining over Thunderbolt/RDMA. Validation was measured every 50M tokens. The curves show a steep early loss reduction followed by slower improvement; the published base was selected using held-out validation.
+
+![Stage A pretraining training loss, EMA and held-out validation loss](docs/figures/pretraining-training-loss.png)
+
+*Training loss and held-out validation during pretraining. Left: raw training loss and exponential moving average. Right: held-out validation loss.*
 
 ## Results
 
@@ -90,7 +98,7 @@ The [40 examples](examples/cases.json) include schemas, expected answers and dis
 
 ## Native inference
 
-Use Apple Silicon and Python 3.11+. Once you have the matching local weight file:
+Use Apple Silicon and Python 3.11+. Download the matching weight file and run the native source entry point:
 
 ```bash
 git clone https://github.com/williamzebrowskI/OpenSML-JSONLite-175M.git
@@ -99,12 +107,14 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python scripts/verify_snapshot.py
-python inference.py --weights /path/to/model.safetensors --example 29
+python -m pip install huggingface_hub
+hf download wzebrowski/OpenSML-JSONLite-175M model.safetensors --local-dir ./weights
+python inference.py --weights ./weights/model.safetensors --example 29
 ```
 
 The runner verifies the weight SHA-256, architecture and frozen tokenizer. It reports extracted JSON, labeled intermediate outputs, stop reason and exact equality when using a built-in example. Custom requests use `--text-file` and `--schema-file`. Correctness references never enter generation. See [RUN_GUIDE.md](RUN_GUIDE.md) and [inference verification](inference_native/INFERENCE_VERIFICATION.json).
 
-There is no public weight download URL yet. This native bundle is not a Transformers AutoModel, mlx-lm or quantized export. Historical training used a custom MLX build; portable inference checks record their own runtime version and scope.
+The matching weight file is publicly available from the linked Hugging Face model repository. This native bundle is not a Transformers AutoModel, mlx-lm or quantized export. Historical training used a custom MLX build; portable inference checks record their own runtime version and scope.
 
 ## Repository contents
 
