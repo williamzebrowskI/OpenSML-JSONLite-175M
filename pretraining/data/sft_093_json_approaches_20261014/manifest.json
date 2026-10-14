@@ -1,0 +1,68 @@
+{
+  "approach": 93,
+  "demonstration_ids": [
+    "snips:BookRestaurant:train:1317:view0",
+    "snips:BookRestaurant:train:226:view0",
+    "snips:RateBook:train:1227:view0",
+    "snips:SearchScreeningEvent:train:856:view0",
+    "snips:AddToPlaylist:train:1205:view0",
+    "snips:SearchCreativeWork:train:1278:view1",
+    "snips:PlayMusic:train:289:view1",
+    "snips:PlayMusic:train:845:view0",
+    "snips:SearchCreativeWork:train:1694:view0",
+    "snips:AddToPlaylist:train:431:view0",
+    "snips:SearchCreativeWork:train:436:view0",
+    "snips:SearchCreativeWork:train:1639:view1",
+    "snips:AddToPlaylist:train:1447:view1",
+    "snips:AddToPlaylist:train:1030:view0",
+    "snips:RateBook:train:1714:view0",
+    "snips:SearchScreeningEvent:train:1555:view0",
+    "snips:SearchCreativeWork:train:194:view1",
+    "snips:GetWeather:train:1248:view1",
+    "snips:AddToPlaylist:train:1394:view1",
+    "snips:PlayMusic:train:1116:view0",
+    "snips:RateBook:train:852:view0",
+    "snips:SearchScreeningEvent:train:807:view0",
+    "snips:PlayMusic:train:1352:view0",
+    "snips:SearchScreeningEvent:train:15:view0",
+    "snips:RateBook:train:697:view0",
+    "snips:AddToPlaylist:train:1791:view0",
+    "snips:RateBook:train:1944:view1",
+    "snips:SearchScreeningEvent:train:724:view1"
+  ],
+  "distinct_source_queries": 2560,
+  "files": {
+    "train.jsonl": "1b690ebe7829f1eb600dae273d6964a365700216db8504b7903ccbddf4df7b99",
+    "train.mask.npy": "c60ec68c0546a9fcca91cad2f33ced20f614ecb3c31da7141113c4a6e84a2f81",
+    "train.offsets.npy": "e8b96ac33f9f91840555e099a89cde59c8cef17422fc76f31c656f8d064a1fdb",
+    "train.tokens.npy": "6e91a34fb34fe323018595ae6d6a446577c87aa113dccec226b54463e32e76c6"
+  },
+  "max_sequence": 230,
+  "name": "labeled-fieldwise-assembler",
+  "parent_sha256": "18f0f2b8f57905ac758f392d0eb83e51e508da6a955b9f7991338e690205df86",
+  "plan": {
+    "batch_size": 32,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "eval_steps": [
+      0,
+      80,
+      160
+    ],
+    "final_lr": 1e-06,
+    "grad_clip": 1.0,
+    "max_updates": 160,
+    "microbatch": 2,
+    "padding_policy": "micro_multiple128",
+    "peak_lr": 5e-06,
+    "seed": 20261014,
+    "warmup_updates": 12,
+    "weight_decay": 0.01
+  },
+  "records": 5120,
+  "target_absent_fields": 660,
+  "target_present_fields": 1900
+}

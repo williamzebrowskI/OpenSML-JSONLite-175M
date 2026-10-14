@@ -1,0 +1,28 @@
+{
+  "model_name": "OpenSML-JSONLite-175M",
+  "parameters": 175611648,
+  "model": {
+    "attention_impl": "fast",
+    "bias": false,
+    "ce_impl": "metal",
+    "d_model": 768,
+    "ffn_impl": "packed-metal",
+    "loss_dtype": "float32",
+    "max_seq_len": 2048,
+    "mlp_multiple_of": 256,
+    "mlp_ratio": 4.0,
+    "n_heads": 12,
+    "n_kv_heads": 4,
+    "n_layers": 24,
+    "qk_norm": true,
+    "rope_base": 10000.0,
+    "vocab_size": 32000
+  },
+  "weight_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
+  "serialization": "native-sft-chat-v1",
+  "output_mode": "fieldwise-assembly",
+  "context_limit": 2048,
+  "max_output_tokens_per_field": 160,
+  "weight_format": "BF16 safetensors",
+  "supported_runtime": "native MLX; not a Transformers or mlx-lm auto-loading export"
+}

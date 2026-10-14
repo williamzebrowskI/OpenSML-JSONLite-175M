@@ -1,0 +1,110 @@
+{
+  "files": {
+    "development.jsonl": "9d23d088eed248a2a618c89b04617abe14428b8a63a186a7f848c4d99f76ad8a",
+    "development.mask.npy": "e69b55471a590827c898e98dfa976403196acb976b078842dde93b7b0ae4a5e7",
+    "development.offsets.npy": "362cf0e05a19bb14b0111d537367df8e6c6976579f43e0d7bed8bb1164bfcc50",
+    "development.tokens.npy": "da0cd26b14991547b6c78d0da37de11134c84def7f2b1b60d7cd3c85e722c234",
+    "test.jsonl": "b10bc34341d070c0b44cb78558ff7a044ad8c3a98a0cf5451e6cc34712048a3b",
+    "test.mask.npy": "b0c675689b8f6573a49cc651d3ece1ca4a779c019b349c5bb6f1744af9bba233",
+    "test.offsets.npy": "161edb936c3bd4fd8e25d93730c8fc3207b2308f4a1333966bd67b3cb2c46264",
+    "test.tokens.npy": "d722162f0a76725dd8a83c92ce63a8d9c91bc800bb50d7882814f7e901f4bb76",
+    "train.jsonl": "bbc728409164a23080e27615fd492952fd220d0e805667612087accde2a7567e",
+    "train.mask.npy": "7ba2b8e24315eea3904e5967d61e588536c2ec0c632c35bdcbe9adf1e37304b5",
+    "train.offsets.npy": "814a91ecd30981b40a8ce3c262621acf5bd3ca46b642efd722a6c2621f190a02",
+    "train.tokens.npy": "bcaf54281f9b91ee9f93fb323d1c9d946cab40fbd5e7f3beb8d8fd0652a7fe50"
+  },
+  "plan": {
+    "batch_size": 32,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "epochs": 1,
+    "eps": 1e-08,
+    "eval_steps": [
+      0,
+      100,
+      200,
+      300
+    ],
+    "final_lr": 1e-06,
+    "grad_clip": 1.0,
+    "microbatch": 2,
+    "padding_policy": "micro_multiple128",
+    "peak_lr": 5e-06,
+    "seed": 20261013,
+    "warmup_updates": 20,
+    "weight_decay": 0.01
+  },
+  "scope": "SNIPS-only annotated slot extraction. Original validate files are held-out final test; compact dev is drawn from withheld full-training queries. No normalization, JSON target, synthetic facts, or unrelated QA mixing. Exact copied spans and annotation-defined absence; not a general entity-relation or natural-paragraph benchmark.",
+  "source_manifest_sha256": "e8df08618c3e80382b0dede9e92798f116743550a6fa0b20c132a0e11dd0f25e",
+  "sources": {
+    "2017-06-custom-intent-engines__AddToPlaylist__train_AddToPlaylist_full.json": "fee1b4645352e70ed8a40f1f87c3b53fc3bf75f8ebc82252a22b82c107e75b01",
+    "2017-06-custom-intent-engines__AddToPlaylist__validate_AddToPlaylist.json": "14cc9ee49ae477b1452632a6e835498cf4c32da397b16967c82abb3e50403e83",
+    "2017-06-custom-intent-engines__BookRestaurant__train_BookRestaurant_full.json": "7677e82cd6e9a8191f0a4502568c786278c984900b4796d3628e46f1abf73ef4",
+    "2017-06-custom-intent-engines__BookRestaurant__validate_BookRestaurant.json": "4f7258ccc768b777b2eb8916532db9aa50dbd058ddf1ffb0dc59218963e7442a",
+    "2017-06-custom-intent-engines__GetWeather__train_GetWeather_full.json": "86f414b2ad8a993134d85d16e25e5d337beae47cef993c0af2a5f440405c60f6",
+    "2017-06-custom-intent-engines__GetWeather__validate_GetWeather.json": "60c095e193655d6ca92be220fed3926ca25e18cd70c85664145efe25d80993af",
+    "2017-06-custom-intent-engines__PlayMusic__train_PlayMusic_full.json": "901ddbe9781d1fdb8196e789c543f80df3d29ca6e237da64947905adcc0312e4",
+    "2017-06-custom-intent-engines__PlayMusic__validate_PlayMusic.json": "922212775e26259d5bffeaf79b6048d070ca017d229df00b2cc9800f71c75d20",
+    "2017-06-custom-intent-engines__README.md": "62485a4a7bf268983cc100ce5c684d9474328dd5f468e900cfe1527844a0214c",
+    "2017-06-custom-intent-engines__RateBook__train_RateBook_full.json": "bb43e4b74134300d5766f6b420d0357a63402987a225f6dc92c806c9c040ce04",
+    "2017-06-custom-intent-engines__RateBook__validate_RateBook.json": "c1f8b4114da0bb5e8afd78a8062766e18b2eabb0e717539598db01b09d04619b",
+    "2017-06-custom-intent-engines__SearchCreativeWork__train_SearchCreativeWork_full.json": "87b3432de48c71c205aa5238b41d9e3f2d70bdfcd0bea2427544fb9e4bd5e5bb",
+    "2017-06-custom-intent-engines__SearchCreativeWork__validate_SearchCreativeWork.json": "8a5e830eddb185d3e4a9d27ded140a145d04766bdce0e58834676ede32d13e77",
+    "2017-06-custom-intent-engines__SearchScreeningEvent__train_SearchScreeningEvent_full.json": "5447e9440c02e2fb08c3ae16b9f58a4d1332b4bc77fd34691402b02aa4399765",
+    "2017-06-custom-intent-engines__SearchScreeningEvent__validate_SearchScreeningEvent.json": "81e1445713e03c7c3e615353c5f3fee05f369fe9834100b9b9735900a96b9498",
+    "LICENSE": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+  },
+  "splits": {
+    "development": {
+      "absent_fields": 191,
+      "by_intent": {
+        "AddToPlaylist": 28,
+        "BookRestaurant": 28,
+        "GetWeather": 28,
+        "PlayMusic": 28,
+        "RateBook": 28,
+        "SearchCreativeWork": 28,
+        "SearchScreeningEvent": 28
+      },
+      "records": 196,
+      "requested_fields": 468,
+      "tokens": 30308,
+      "unique_texts": 98
+    },
+    "test": {
+      "absent_fields": 1468,
+      "by_intent": {
+        "AddToPlaylist": 198,
+        "BookRestaurant": 200,
+        "GetWeather": 198,
+        "PlayMusic": 200,
+        "RateBook": 196,
+        "SearchCreativeWork": 200,
+        "SearchScreeningEvent": 196
+      },
+      "records": 1388,
+      "requested_fields": 3347,
+      "tokens": 213757,
+      "unique_texts": 694
+    },
+    "train": {
+      "absent_fields": 8422,
+      "by_intent": {
+        "AddToPlaylist": 1748,
+        "BookRestaurant": 1772,
+        "GetWeather": 1763,
+        "PlayMusic": 1756,
+        "RateBook": 1683,
+        "SearchCreativeWork": 1750,
+        "SearchScreeningEvent": 1643
+      },
+      "records": 12115,
+      "requested_fields": 28622,
+      "tokens": 1842593,
+      "unique_texts": 12115
+    }
+  },
+  "total_steps": 379
+}

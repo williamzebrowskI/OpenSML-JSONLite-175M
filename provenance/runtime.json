@@ -1,0 +1,19 @@
+{
+  "training": {
+    "jsonschema": "4.26.0",
+    "mlx": "0.32.3.dev20260920+7241f12",
+    "numpy": "2.4.2",
+    "tokenizers": "0.22.2"
+  },
+  "local_hardware": "Apple M5 Ultra; 96 GB unified memory",
+  "python": "3.11+ source baseline; source workspace uses its existing virtual environment",
+  "stock_mlx_clean_install_parity": "40/40 saved fixture values and stop reasons match; 29/40 exact against references; not a full-suite parity claim",
+  "code_license": "Apache-2.0",
+  "weight_license": "not assigned in this source repository",
+  "portable_inference": {
+    "mlx": "0.32.3",
+    "numpy": "2.4.2",
+    "tokenizers": "0.22.2",
+    "jsonschema": "4.26.0"
+  }
+}

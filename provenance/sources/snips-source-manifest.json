@@ -1,0 +1,70 @@
+{
+  "repository": "https://github.com/sonos/nlu-benchmark",
+  "revision": "b86ac7f1577868c42158d0dec77db50956046696",
+  "files": {
+    "2017-06-custom-intent-engines__AddToPlaylist__train_AddToPlaylist_full.json": {
+      "path": "2017-06-custom-intent-engines/AddToPlaylist/train_AddToPlaylist_full.json",
+      "sha256": "fee1b4645352e70ed8a40f1f87c3b53fc3bf75f8ebc82252a22b82c107e75b01"
+    },
+    "2017-06-custom-intent-engines__AddToPlaylist__validate_AddToPlaylist.json": {
+      "path": "2017-06-custom-intent-engines/AddToPlaylist/validate_AddToPlaylist.json",
+      "sha256": "14cc9ee49ae477b1452632a6e835498cf4c32da397b16967c82abb3e50403e83"
+    },
+    "2017-06-custom-intent-engines__BookRestaurant__train_BookRestaurant_full.json": {
+      "path": "2017-06-custom-intent-engines/BookRestaurant/train_BookRestaurant_full.json",
+      "sha256": "7677e82cd6e9a8191f0a4502568c786278c984900b4796d3628e46f1abf73ef4"
+    },
+    "2017-06-custom-intent-engines__BookRestaurant__validate_BookRestaurant.json": {
+      "path": "2017-06-custom-intent-engines/BookRestaurant/validate_BookRestaurant.json",
+      "sha256": "4f7258ccc768b777b2eb8916532db9aa50dbd058ddf1ffb0dc59218963e7442a"
+    },
+    "2017-06-custom-intent-engines__GetWeather__train_GetWeather_full.json": {
+      "path": "2017-06-custom-intent-engines/GetWeather/train_GetWeather_full.json",
+      "sha256": "86f414b2ad8a993134d85d16e25e5d337beae47cef993c0af2a5f440405c60f6"
+    },
+    "2017-06-custom-intent-engines__GetWeather__validate_GetWeather.json": {
+      "path": "2017-06-custom-intent-engines/GetWeather/validate_GetWeather.json",
+      "sha256": "60c095e193655d6ca92be220fed3926ca25e18cd70c85664145efe25d80993af"
+    },
+    "2017-06-custom-intent-engines__PlayMusic__train_PlayMusic_full.json": {
+      "path": "2017-06-custom-intent-engines/PlayMusic/train_PlayMusic_full.json",
+      "sha256": "901ddbe9781d1fdb8196e789c543f80df3d29ca6e237da64947905adcc0312e4"
+    },
+    "2017-06-custom-intent-engines__PlayMusic__validate_PlayMusic.json": {
+      "path": "2017-06-custom-intent-engines/PlayMusic/validate_PlayMusic.json",
+      "sha256": "922212775e26259d5bffeaf79b6048d070ca017d229df00b2cc9800f71c75d20"
+    },
+    "2017-06-custom-intent-engines__RateBook__train_RateBook_full.json": {
+      "path": "2017-06-custom-intent-engines/RateBook/train_RateBook_full.json",
+      "sha256": "bb43e4b74134300d5766f6b420d0357a63402987a225f6dc92c806c9c040ce04"
+    },
+    "2017-06-custom-intent-engines__RateBook__validate_RateBook.json": {
+      "path": "2017-06-custom-intent-engines/RateBook/validate_RateBook.json",
+      "sha256": "c1f8b4114da0bb5e8afd78a8062766e18b2eabb0e717539598db01b09d04619b"
+    },
+    "2017-06-custom-intent-engines__SearchCreativeWork__train_SearchCreativeWork_full.json": {
+      "path": "2017-06-custom-intent-engines/SearchCreativeWork/train_SearchCreativeWork_full.json",
+      "sha256": "87b3432de48c71c205aa5238b41d9e3f2d70bdfcd0bea2427544fb9e4bd5e5bb"
+    },
+    "2017-06-custom-intent-engines__SearchCreativeWork__validate_SearchCreativeWork.json": {
+      "path": "2017-06-custom-intent-engines/SearchCreativeWork/validate_SearchCreativeWork.json",
+      "sha256": "8a5e830eddb185d3e4a9d27ded140a145d04766bdce0e58834676ede32d13e77"
+    },
+    "2017-06-custom-intent-engines__SearchScreeningEvent__train_SearchScreeningEvent_full.json": {
+      "path": "2017-06-custom-intent-engines/SearchScreeningEvent/train_SearchScreeningEvent_full.json",
+      "sha256": "5447e9440c02e2fb08c3ae16b9f58a4d1332b4bc77fd34691402b02aa4399765"
+    },
+    "2017-06-custom-intent-engines__SearchScreeningEvent__validate_SearchScreeningEvent.json": {
+      "path": "2017-06-custom-intent-engines/SearchScreeningEvent/validate_SearchScreeningEvent.json",
+      "sha256": "81e1445713e03c7c3e615353c5f3fee05f369fe9834100b9b9735900a96b9498"
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    "2017-06-custom-intent-engines__README.md": {
+      "path": "2017-06-custom-intent-engines/README.md",
+      "sha256": "62485a4a7bf268983cc100ce5c684d9474328dd5f468e900cfe1527844a0214c"
+    }
+  }
+}

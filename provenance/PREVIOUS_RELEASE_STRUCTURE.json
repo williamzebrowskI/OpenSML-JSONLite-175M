@@ -1,0 +1,2560 @@
+{
+  "sha": "e67c0c99e155c84cb9d65c9bf9c907cb8a951381",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 307,
+      "sha": "50ca6e3248c3a90d5bbf67309359bee33f28d0ae"
+    },
+    {
+      "path": "BACKUP_AND_CLEANUP.md",
+      "size": 3551,
+      "sha": "4afce24c8af5c52c0288e54c52c395b9c1beec44"
+    },
+    {
+      "path": "CITATION.cff",
+      "size": 864,
+      "sha": "f79d40c937c0837da77743b1584ac4ff8c022b11"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "path": "README.md",
+      "size": 9987,
+      "sha": "f59aef70812fba95bb95f53c5eaf70e0550073b8"
+    },
+    {
+      "path": "RUN_GUIDE.md",
+      "size": 3439,
+      "sha": "c35e6f6ea08d0dd89ca71d978a81b02bf1bd0a41"
+    },
+    {
+      "path": "SOURCE_NOTICE.md",
+      "size": 1717,
+      "sha": "ab1bbf111eabd69f50019c4dbf4604717eeb2269"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 5918,
+      "sha": "cda80249ffb81e7bf0012eb7b5b20801dad94c87"
+    },
+    {
+      "path": "TRAINING_AND_REPRODUCIBILITY.md",
+      "size": 9298,
+      "sha": "b3926e426c09394f82cd9512147598679363a8a3"
+    },
+    {
+      "path": "docs/figures/pretraining-overview.svg",
+      "size": 87734,
+      "sha": "7dc45c354ffa61e506b010714e23dae41ad1b673"
+    },
+    {
+      "path": "docs/figures/pretraining-phase-b.svg",
+      "size": 66219,
+      "sha": "201bb3a32081c8b2cb051a5c8018ac1cb49ef5de"
+    },
+    {
+      "path": "docs/figures/pretraining-sources.svg",
+      "size": 104326,
+      "sha": "6a0f9bdbd67f9eb152773767a2609595c9c6ccd9"
+    },
+    {
+      "path": "inference_native/INFERENCE_VERIFICATION.json",
+      "size": 887,
+      "sha": "67d0fd7045527bcf44ba41826480eafaae0b5825"
+    },
+    {
+      "path": "inference_native/inference.py",
+      "size": 2380,
+      "sha": "33ea9c8fc05fc5d5a175c1f7eb6d8a2ae3c6e47b"
+    },
+    {
+      "path": "inference_native/native_model.py",
+      "size": 10552,
+      "sha": "e26e9cf6f21328ab2b98c15a993afbd7a95b1f49"
+    },
+    {
+      "path": "inference_native/native_tokenizer.py",
+      "size": 2802,
+      "sha": "3bedf2939ed221eafc5dc46c8c3108506d954e25"
+    },
+    {
+      "path": "inference_native/native_utils.py",
+      "size": 252,
+      "sha": "5fec53719de70082d5d7a8383a69d4a387439aac"
+    },
+    {
+      "path": "inference_native/requirements.txt",
+      "size": 49,
+      "sha": "d822648b52280d132196ba88b37b41a76ee53c5f"
+    },
+    {
+      "path": "model-card/README.md",
+      "size": 10271,
+      "sha": "fdace44e99699dc99f78052c37e982f143de6703"
+    },
+    {
+      "path": "provenance/CHECKPOINT_INVENTORY.json",
+      "size": 52418,
+      "sha": "a1ed7b59e55c75197a33f9b8cf5ee53db57adee6"
+    },
+    {
+      "path": "provenance/CLEANUP_RECEIPT.json",
+      "size": 4105,
+      "sha": "a3e1b0fb27396c0cb136935db2982920733722c2"
+    },
+    {
+      "path": "provenance/CLEAN_DOWNLOAD_VERIFICATION.json",
+      "size": 790,
+      "sha": "36a5639bc4f2f71a70cee65e37fd42f1e8310cbc"
+    },
+    {
+      "path": "provenance/HOSTED_BACKUP_VERIFICATION.json",
+      "size": 355,
+      "sha": "bf16e77cb938d6f217ee7f636a6e48361d994883"
+    },
+    {
+      "path": "provenance/SNAPSHOT_MANIFEST.json",
+      "size": 141806,
+      "sha": "7c2f4cc423bf8e8be9691a68a7ce7365966eb8c0"
+    },
+    {
+      "path": "provenance/TRAINING_RECORDS_MANIFEST.json",
+      "size": 38690,
+      "sha": "cd57af13021f11a26975e9ce85d5e8fb5e3f93d3"
+    },
+    {
+      "path": "provenance/VERIFICATION.json",
+      "size": 1133,
+      "sha": "5139908960113708b3dbb5f6e321e2ccc467837a"
+    },
+    {
+      "path": "provenance/checkpoints/repair512/manifest.json",
+      "size": 561,
+      "sha": "c3ca59bb6e1c694ca8927678f06acb24e1835c27"
+    },
+    {
+      "path": "provenance/checkpoints/repair512/model.safetensors.json",
+      "size": 561,
+      "sha": "363856a0458e2142593d9b1024e1f5f8577f5c81"
+    },
+    {
+      "path": "provenance/checkpoints/selected768/manifest.json",
+      "size": 561,
+      "sha": "f29fd91ff7d934aec75a17cfd299936075ed556c"
+    },
+    {
+      "path": "provenance/checkpoints/selected768/model.safetensors.json",
+      "size": 525,
+      "sha": "886eeb73ca20d2949a7bd96ea889f7daf6e5d947"
+    },
+    {
+      "path": "provenance/checkpoints/unified384/manifest.json",
+      "size": 561,
+      "sha": "17a17d9584d4cec9b6b5011b0f69fb0952d57d42"
+    },
+    {
+      "path": "provenance/checkpoints/unified384/model.safetensors.json",
+      "size": 574,
+      "sha": "837803a1a49df491a06afecf9347ecd675420bf2"
+    },
+    {
+      "path": "provenance/checkpoints/v2-base/manifest.json",
+      "size": 730,
+      "sha": "7f151c93e7cfff71af70af3485f59b046647dcef"
+    },
+    {
+      "path": "provenance/checkpoints/v2-base/model.safetensors.json",
+      "size": 9156,
+      "sha": "d30b37ee3de80f5ee3675336e57d1dbad49d6228"
+    },
+    {
+      "path": "provenance/runtime.json",
+      "size": 521,
+      "sha": "f9f72a1c55cd2e7ef26f5bfb20b0578046ce8c41"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 114,
+      "sha": "9b6d34f653cb2beccd17efb83f032acd324a356e"
+    },
+    {
+      "path": "results/OPENSMl_150M_RESULTS.json",
+      "size": 8323,
+      "sha": "d0196676ad2ee5e8de056bb4b9701711b708954c"
+    },
+    {
+      "path": "results/training_history/repair512/training.jsonl",
+      "size": 44724,
+      "sha": "ca639eda02a04adda048b7cb77a8f8fcb17c9b90"
+    },
+    {
+      "path": "results/training_history/selected768/training.jsonl",
+      "size": 148139,
+      "sha": "f9641c138f387b7abd0a5c92bc74e82eb57c75d1"
+    },
+    {
+      "path": "results/training_history/unified384/training.jsonl",
+      "size": 221436,
+      "sha": "18933468503cb99fd53030fda4972c805afe8b50"
+    },
+    {
+      "path": "scripts/verify_snapshot.py",
+      "size": 551,
+      "sha": "c2d4fc22c522e890760ffbab479aee9a2837b938"
+    },
+    {
+      "path": "scripts/verify_training_archive.py",
+      "size": 1417,
+      "sha": "7e49986b2ae06ab27f9bdee866ee466fe539fdff"
+    },
+    {
+      "path": "sml-mlx-v1/configs/corpus.json",
+      "size": 1263,
+      "sha": "ec475462ec7999c229d7064bc2a8700b2bb4f112"
+    },
+    {
+      "path": "sml-mlx-v1/configs/pilot.json",
+      "size": 1240,
+      "sha": "329137af6bb5722ccb4600e2b3017222801d8a92"
+    },
+    {
+      "path": "sml-mlx-v1/configs/plateau.json",
+      "size": 154,
+      "sha": "c1e5043cc137780a81e5b15bf56a1681cec64edd"
+    },
+    {
+      "path": "sml-mlx-v1/docs/ADAPTIVE_LR.md",
+      "size": 6435,
+      "sha": "084bd4812af60291b874cb643e9f9bd197b822fe"
+    },
+    {
+      "path": "sml-mlx-v1/docs/DATA_AND_TOKENIZER.md",
+      "size": 3664,
+      "sha": "a6ecdf1328bac5d4e46ecc887d477412c1cfccc8"
+    },
+    {
+      "path": "sml-mlx-v1/docs/DATA_REVIEW_CONTINUATION.md",
+      "size": 5269,
+      "sha": "52fad46eebcc335716c785e2f95a73900cddc778"
+    },
+    {
+      "path": "sml-mlx-v1/docs/EVIDENCE.md",
+      "size": 3731,
+      "sha": "62981725cb5ab119fbaadc8324764014bc433c15"
+    },
+    {
+      "path": "sml-mlx-v1/docs/FIVE_MAC_HANDOFF.md",
+      "size": 14409,
+      "sha": "d46e57b99c28ff93497ca91775fcb4527ae5538f"
+    },
+    {
+      "path": "sml-mlx-v1/docs/FIVE_MAC_PROGRESS.md",
+      "size": 3144,
+      "sha": "b2774cc25a8c149540470566e81346b95e96de0b"
+    },
+    {
+      "path": "sml-mlx-v1/docs/FIVE_MAC_TRAINING.md",
+      "size": 7152,
+      "sha": "10d359f1753df3828161091a8b0ccba3bca1001b"
+    },
+    {
+      "path": "sml-mlx-v1/docs/LR_TRIAL.md",
+      "size": 3884,
+      "sha": "a2d4ce0497746713acd702366cc6f5c2d89f1bc0"
+    },
+    {
+      "path": "sml-mlx-v1/docs/MIGRATION.md",
+      "size": 3855,
+      "sha": "3c470323e9ad8ca3e310a5c89aee2258b61d0fee"
+    },
+    {
+      "path": "sml-mlx-v1/docs/MLX_NATIVE_BUILD.md",
+      "size": 3784,
+      "sha": "d3563b672022ea657861c043ef3ed7a9a01093f4"
+    },
+    {
+      "path": "sml-mlx-v1/docs/RESULTS.md",
+      "size": 3437,
+      "sha": "d74fec63f5468b209d3ad2f44058e4eabc47e4fa"
+    },
+    {
+      "path": "sml-mlx-v1/docs/TECHNICAL_REPORT.md",
+      "size": 70584,
+      "sha": "8e0d196d91722ac97d08d8bd75270e953548f8b2"
+    },
+    {
+      "path": "sml-mlx-v1/docs/tables/validation_through_0009391.csv",
+      "size": 6341,
+      "sha": "eded52b34d4bcc4cfcadfb4d37fd626ff1461787"
+    },
+    {
+      "path": "sml-mlx-v1/docs/tables/validation_through_0009391.json",
+      "size": 1207,
+      "sha": "703a0d6d1eb040692521bbd2f30421946a3ce9fa"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/audit_teacher_data.py",
+      "size": 7275,
+      "sha": "36ac593025e596c212bd2e62a828c2516a5eebb0"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/balanced_transfer_1472_benchmark.py",
+      "size": 3658,
+      "sha": "a88470b27c15d75717c5ad1f985114776f69d7d3"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/base_curriculum_v1_benchmark.py",
+      "size": 1978,
+      "sha": "14fd9d28e68805970011f394a7b718c2a10379f7"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/benchmark_384.py",
+      "size": 2368,
+      "sha": "555725f7c8174553c5b7a8559875bbb490ea24f0"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/benchmark_corrective_896.py",
+      "size": 5022,
+      "sha": "79853872dd5692f95fa365161a1f6551e61f818a"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/benchmark_grounded_640.py",
+      "size": 5037,
+      "sha": "d495ddb8ae774b825fdafb6b5ebab61568d94e14"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/benchmark_preference_2688.py",
+      "size": 5040,
+      "sha": "f578610e927326e6ede899556f17108cac80f878"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/clean_reply_benchmark.py",
+      "size": 1976,
+      "sha": "113759279e63f168de8ebda96de4fc044bab6f27"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/constraint_completion_1920_benchmark.py",
+      "size": 3643,
+      "sha": "613d8749d372cf5679407a1011ef56a9d10e7ad2"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/constraint_completion_2048_audit.py",
+      "size": 5386,
+      "sha": "16e1686810406f3690c42e4dad0d05de3c69b445"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/content_preserving_1024_benchmark.py",
+      "size": 2754,
+      "sha": "7d3ada3a6133af8394f971c34cd2c3138fa37a2e"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/content_preserving_1280_benchmark.py",
+      "size": 2754,
+      "sha": "90cd55f4d288d1dac540dc505de577328aa83f81"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/context_reasoning_1024_benchmark.py",
+      "size": 2662,
+      "sha": "041845d0877b0feebf8bcec0bd6a3de5256d6f36"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/conversation_foundation_benchmark.py",
+      "size": 4338,
+      "sha": "09d8b33c45489b90cd07cc4d0f4989c3631ec8db"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/README.md",
+      "size": 9353,
+      "sha": "5b6c2d6f10ecb604ef062834b48658fd9d72c92f"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/core.py",
+      "size": 12137,
+      "sha": "6fab09f2d324ac2c75dcd2da59dc2ce10c067751"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/launch.py",
+      "size": 7344,
+      "sha": "8284919ff8ce9e35f47c3dfc185102cdf8a9880c"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/prepare.py",
+      "size": 4865,
+      "sha": "0d9d380b3af60af4ed5c327849be953654c0a272"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/requirements-ifeval.txt",
+      "size": 151,
+      "sha": "ada573dc379d475cb2a8824cb276b8655b3c4653"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/spec.py",
+      "size": 2556,
+      "sha": "751525fa77e7e77028cc3c2e9959a0df32db4e54"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/test_evaluation.py",
+      "size": 7226,
+      "sha": "f426def26a561f48bac0bdbd53ef6d45ec4dee33"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/HARNESS_LICENSE.md",
+      "size": 1067,
+      "sha": "12e6063183935e876e232db276568baf4954b492"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/NOTICE.md",
+      "size": 549,
+      "sha": "0774e97a7519aee904485a5d606ecfb383541848"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/__init__.py",
+      "size": 0,
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/tasks/__init__.py",
+      "size": 0,
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/__init__.py",
+      "size": 0,
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions.py",
+      "size": 57806,
+      "sha": "53dec0fb8f05be623f5a2e77c84240227d76c93a"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions_registry.py",
+      "size": 7237,
+      "sha": "00d9a1de1985beacead34215952ecf4642d1ea35"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/instructions_util.py",
+      "size": 26830,
+      "sha": "33e0a0a00c54f301334dc1bcd211dd588e6c9529"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor/lm_eval/tasks/ifeval/utils.py",
+      "size": 4510,
+      "sha": "985e8d5ae578c484267c7c2d90ee7c896028941f"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/full_benchmarks/vendor_sources.json",
+      "size": 1453,
+      "sha": "56d995d1a1c5cfa70b595131cf21e1f6df1a845b"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/intact_base_384_benchmark.py",
+      "size": 3404,
+      "sha": "13ad0c1a852ada8d8353afdd2322561741f4ae6c"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/intact_base_384_decode_audit.py",
+      "size": 3002,
+      "sha": "4e022db243a88cd0a59f670336b80ff98db9dd05"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/intact_base_384_probes.py",
+      "size": 3569,
+      "sha": "63e4890ff7e5a0d94e55f1db510990a1b0067b9d"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/intact_base_384_review.py",
+      "size": 14587,
+      "sha": "2cec5ff4052566cd68fecc327c85d0b84310dbbc"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/README.md",
+      "size": 5324,
+      "sha": "f3da94ffaf0a3cd15a51572ee0a072cbdfa403c2"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/prepare.py",
+      "size": 1931,
+      "sha": "2959e4110b8e274d68e5c77f333c3381408ba416"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/run.py",
+      "size": 17958,
+      "sha": "f7d0c305b6c2c48f561965d0bbd4e490a6dfb80a"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/run_384.py",
+      "size": 2110,
+      "sha": "269c6b4eaf14eed7d29c9be6f8de1a612f19a7d8"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/sources.json",
+      "size": 260,
+      "sha": "134d3c7934a9eb5c936e0c55a3d2c24147f1b9cf"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/test_runner.py",
+      "size": 2968,
+      "sha": "9f0cf74ef9ad6c3c6dc7ad9328062ef962d09fa3"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/upstream/question.jsonl",
+      "size": 48929,
+      "sha": "464e2c22f7a021a0f9a584d232338a9a17c40066"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/mt_bench_local/upstream/reference.jsonl",
+      "size": 51109,
+      "sha": "8b66387a3129cbb117178fe515491df553dd52df"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/repair_teacher_chat_data.py",
+      "size": 12594,
+      "sha": "c850f29d84ad6e955e38726eebab75c41c892adf"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/skill_balance_768_benchmark.py",
+      "size": 2431,
+      "sha": "7b7fd19d12bce4108e062f156c9c6f94e8badebe"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/skill_recovery_768_benchmark.py",
+      "size": 2576,
+      "sha": "46672fe57f7fb4004d7ac29d4b5492330cca171f"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/summarize_base_audit.py",
+      "size": 5244,
+      "sha": "21bb8f3bbfbd79eed82137e98c5bbbd7dfd4488e"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/teacher_chat_benchmark.py",
+      "size": 6828,
+      "sha": "5ff9e68422da703e2a353a264d40576a0f152789"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/teacher_chat_reserved.py",
+      "size": 10886,
+      "sha": "d4108a44b189ccbc1950d2cdb5ea2235fd0015c1"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/text_followup_512_benchmark.py",
+      "size": 4383,
+      "sha": "6e4b33b6cd61c67285a3cd28aebe0400c6d726a8"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/two_turn_1920_benchmark.py",
+      "size": 2366,
+      "sha": "885d600ff2a999a6440a252ad556bff1f4ce3e9a"
+    },
+    {
+      "path": "sml-mlx-v1/evaluation/two_turn_640_benchmark.py",
+      "size": 2358,
+      "sha": "b2dee664faa47f047c6988973558c37bc534c04d"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/README.txt",
+      "size": 5601,
+      "sha": "e85858dde3a1088f222364ef0b49001fc4004995"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/config.json",
+      "size": 1194,
+      "sha": "2335f286d8eb12b1ec636d73d44be54e16c1789c"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/scripts/benchmark.py",
+      "size": 2851,
+      "sha": "37132c0afe33c1012a3a3044989881e8bc0ae9e2"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/scripts/data.py",
+      "size": 13094,
+      "sha": "59ddd0bb5456406766a50e259ddf5a4ab731b217"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/scripts/launch.py",
+      "size": 15229,
+      "sha": "97f3c82358ba542c1ea99e8f2b296a36548287ad"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/scripts/test_data.py",
+      "size": 2566,
+      "sha": "0c8f4bb528e9d78cfafdcb0d17496a73969dd020"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/scripts/test_evaluation.py",
+      "size": 2523,
+      "sha": "edd531c713bede7dacb3c5900bd46b379cc8eb93"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/public_repair_384_v1/source_pins.json",
+      "size": 858,
+      "sha": "d75255d99ff492828632ce5ac16860afc8d9550d"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/README.txt",
+      "size": 12363,
+      "sha": "8846c5992b8c2780043a8725dd39c98c76d722c8"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/config.json",
+      "size": 2203,
+      "sha": "a526d0f0d6fa75a48719ab93f8f5412b7ec7ec9b"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/retained_result.json",
+      "size": 6570,
+      "sha": "f3d05aad0f601dedf2be706fab67d8d57cdcde8d"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/selection.json",
+      "size": 1832,
+      "sha": "f708b978b1458f9efc107a0df7ee037690f94645"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/candidates/028-broad-public-long-stable/source_pins.json",
+      "size": 1020,
+      "sha": "61077b3520cdce5a53a87f5588991bd91004a233"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/current_baseline.json",
+      "size": 685,
+      "sha": "7404e8c72e32901ef81d5689c9647103e9883e50"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/balanced_instructions.py",
+      "size": 7158,
+      "sha": "92ccf09e958256d4c05d8be6949224a208e55248"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/breadth_stable.py",
+      "size": 4187,
+      "sha": "235116c064217736aef57b2ddfc140120657f5dd"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/compare.py",
+      "size": 3285,
+      "sha": "4f2ed69676b8929c9c808e428b1c6e579372d242"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/data_focused.py",
+      "size": 14761,
+      "sha": "590381e93f7afb35ddddf51f5c78f38c2d8d4677"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/dataset_trials.py",
+      "size": 8974,
+      "sha": "47f54a7bfbc44f6b8948341ab9fbaf8d673cd53a"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/experiment.py",
+      "size": 39993,
+      "sha": "ab20aa85e966973f98f2275c61b5f81c9edf36bd"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/familiar_dialogue.py",
+      "size": 6207,
+      "sha": "251261036d69fc6ec5f3bc9099f0c70814df1a7a"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/format_preferences.py",
+      "size": 3479,
+      "sha": "ffff215a5975cea388263b0c8aba292531b3159f"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/human_dialogue.py",
+      "size": 7414,
+      "sha": "2be6f29e664d3f862d48f64f7404a3b3f2143ba4"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/instruction_changes.py",
+      "size": 1781,
+      "sha": "2faf85ed8ce5baf206ea0b4a967d0e1c95c21398"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/mixed_public.py",
+      "size": 6834,
+      "sha": "1aba991ac88383bd958836a7741f9a55d9481f1d"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/record_trial.py",
+      "size": 1597,
+      "sha": "1163423c31a51176be5a3b5f715e76956d780e5b"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/reserved_test.py",
+      "size": 3171,
+      "sha": "9723b235f12c704ae8b88a6ddfb9d127352efc2d"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/science_dialogue.py",
+      "size": 7054,
+      "sha": "6c49426cbedd0ee5a3185f6c488263a5a1007673"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/repair512_search_v1/scripts/short_constraints.py",
+      "size": 6855,
+      "sha": "5e84094da17f7f11e23d1bbf5796c3795a59b82e"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/README.md",
+      "size": 6066,
+      "sha": "59f03dfe83d031c86b1371167d83fa2fdad7fbf8"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/config.json",
+      "size": 914,
+      "sha": "a9e28c501b05609b717c232465eaca324af174bb"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/scripts/benchmark.py",
+      "size": 2936,
+      "sha": "f294c696e468443d305f63588dc6e71454e7975b"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/scripts/compare.py",
+      "size": 2146,
+      "sha": "236691b9ca292bb9c6f548e6c777defdcde9aa4b"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/scripts/data.py",
+      "size": 14094,
+      "sha": "f0b096024a88f900e21c4c00b2bef098a7e19ce4"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/scripts/evaluate.py",
+      "size": 2918,
+      "sha": "72c5f55233e75d1dca6bcba9ae073ccc33b9bcb0"
+    },
+    {
+      "path": "sml-mlx-v1/experiments/unified_text_v1_sft_v1/scripts/launch.py",
+      "size": 18032,
+      "sha": "399211df5d5696e6181985002ddac1ad06267677"
+    },
+    {
+      "path": "sml-mlx-v1/provenance.json",
+      "size": 1662,
+      "sha": "6b847d0f0271dcd37ef942efd02ce3ae37c95b31"
+    },
+    {
+      "path": "sml-mlx-v1/pyproject.toml",
+      "size": 628,
+      "sha": "a8505b025b0529c9ccc5a05ee5a7fcab0ef6744c"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/benchmark_jaccl_ring.py",
+      "size": 10912,
+      "sha": "171fb87c0d47292df44393b212781d39543e29ba"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/check_five_mac.py",
+      "size": 2077,
+      "sha": "ccc2dd67156a3ffe38fbd5f1093083ac87b38452"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/check_jaccl.py",
+      "size": 6678,
+      "sha": "200e1f7f300a0ffd6b37bbd134c570052a7576d1"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/check_ring_thunderbolt.py",
+      "size": 9379,
+      "sha": "230b8e957475e62f609bb8016a8393fa6c33744e"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/completion_playground.py",
+      "size": 35991,
+      "sha": "a63328c6eebade5a5380ddc86a7aa46c68300867"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/configure_five_mac_network.py",
+      "size": 10124,
+      "sha": "8e7c7ff76e1175551b11874956d83aa28fc97d96"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/configure_rdma_mesh.py",
+      "size": 24762,
+      "sha": "a7e781ad1c6bcd9f1b43dbf0acb89a972cd10515"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/configure_thunderbolt_control.py",
+      "size": 18573,
+      "sha": "b6c2daeb1dba7695c2e301465b18902b9de6a628"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/export_report_evidence.py",
+      "size": 4499,
+      "sha": "14a8e3fae9b47ca66ebee286b5e1d21694c6181d"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/five_mac_cluster.py",
+      "size": 8803,
+      "sha": "97ed70ca9fbd6619f79b6aab09b65a321269933e"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/five_mac_network.py",
+      "size": 7067,
+      "sha": "4bc12f1a72afda89d1a74b59d54105f2e06492d5"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/five_mac_topology.py",
+      "size": 5602,
+      "sha": "bc5e38cdb492a2aa8db75173eaf5edaa5598d1e6"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/five_mac_transport.py",
+      "size": 2253,
+      "sha": "02501ffa21db14ccb602350736a606f43fd75774"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/inspect_five_mac_ssh.py",
+      "size": 4537,
+      "sha": "654d0d6579dd3188564a31a364d0547328a2801d"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/inspect_mac_network.py",
+      "size": 4801,
+      "sha": "eac9df71ba5f67923e8a2689d7ee250488f8fa5f"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/jaccl_benchmark.py",
+      "size": 1055,
+      "sha": "c07ed8fb0eab2ae612122c9b71849588dc74cea4"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/launch_adaptive.py",
+      "size": 1338,
+      "sha": "e196618d5dc441abc191b34d8a0c8a9ad2e0f6b1"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/launch_five_mac.py",
+      "size": 10030,
+      "sha": "df56782e5c4db02a41cef5ca9727a99198c55c2d"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/launch_full.py",
+      "size": 1531,
+      "sha": "763ecc1055c6389b156c111f74a5c73e77524760"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/launch_pretrain.py",
+      "size": 1147,
+      "sha": "b47395eb9ddd8e3c1a2422b7255f422757029871"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/plot_validation_loss.py",
+      "size": 9744,
+      "sha": "955e8fd089b32101cb66beb1d0ba5629b9334fbc"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/prepare_data.py",
+      "size": 195,
+      "sha": "80f9e5a2fe8edcd4898c2a964b0f3978a9b97cec"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/probe_five_mac.py",
+      "size": 5823,
+      "sha": "90b50f09af4189bd75d5303129d4b0008c5b23c9"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/rename_five_macs.py",
+      "size": 5753,
+      "sha": "8effe419c24c7fb67527217bf4913995a3b6bfd9"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/repair_ring_network.py",
+      "size": 9897,
+      "sha": "c74264e35e4eadebddfb81603ee1c4692c03653b"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/setup_five_mac_ssh.py",
+      "size": 4891,
+      "sha": "b96176064c7ab4e83bfbbcab4df7e3caaab5947a"
+    },
+    {
+      "path": "sml-mlx-v1/scripts/train_tokenizer.py",
+      "size": 200,
+      "sha": "95a6857c2ee23af9d00fd0fcb83ed243b4dd369e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/README.md",
+      "size": 6042,
+      "sha": "b01f2efdd237d8e01b95e92c358306f3e4b0c385"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/candidate.py",
+      "size": 4699,
+      "sha": "8fba4fd282403b223ddb674b5d8a2d6aa20f01b7"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/check.py",
+      "size": 5558,
+      "sha": "357a1dedc877d31e005a3350f105abecbd3d14ca"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/config.json",
+      "size": 4951,
+      "sha": "00b97a7ab6923a29c9e996ea5fc80dd186b04e82"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/data.py",
+      "size": 9812,
+      "sha": "ef0dddbf1755de51c72ef357e942d54b9a994e71"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/engine.py",
+      "size": 450,
+      "sha": "160f797f731b5d813d6a7699310eeac518d3bd56"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/evaluate.py",
+      "size": 2962,
+      "sha": "b2a2ba362924d8feb75798d6523c4f8b88fd5d78"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/launch.py",
+      "size": 7817,
+      "sha": "7a74a68d4a9a9dfe54d64a96be82a4a41a82d7c9"
+    },
+    {
+      "path": "sml-mlx-v1/sft/answer_completion/protocol.py",
+      "size": 3223,
+      "sha": "79ebc07e9d125d2d829b1889792686d2bc6d1e65"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/README.md",
+      "size": 3083,
+      "sha": "fa6dffe29fcfbe508ab06a166fa40b9f69343520"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/__init__.py",
+      "size": 77,
+      "sha": "704a26dcea40b84a59631e49156d6d7d03ce6325"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/config.json",
+      "size": 1163,
+      "sha": "11af3e8538cd5a7cbc3290be6647a9fb79f27c6f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/data.py",
+      "size": 6414,
+      "sha": "6411500725da6934354e47c0c241e8139aced61b"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/engine.py",
+      "size": 3325,
+      "sha": "be54816e19c55ca789adfd72b0ceb1cc83954a42"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/evaluate.py",
+      "size": 2096,
+      "sha": "e7b71fb2983d7b343ceea0ae36e03253e57232e4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/launch.py",
+      "size": 11951,
+      "sha": "d336ce3713fc0251d9991c988c4d68e892da95fb"
+    },
+    {
+      "path": "sml-mlx-v1/sft/balanced_transfer_1472/protocol.py",
+      "size": 4540,
+      "sha": "65efdcefa8deda03817a5897fd7655a85c36fe52"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/README.md",
+      "size": 7020,
+      "sha": "673bf8a9b3d5e229bbfe977d545df2ca9665d27f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/check.py",
+      "size": 4987,
+      "sha": "ffabb043f8f61e1352fafe9100ff063501d4a8d0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/config.json",
+      "size": 3563,
+      "sha": "00e29b40b8b83035b786507d19350590b62bacc3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/data.py",
+      "size": 13905,
+      "sha": "92b8895b637aaab79fd5e43af46f230f721972b3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/engine.py",
+      "size": 450,
+      "sha": "160f797f731b5d813d6a7699310eeac518d3bd56"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/evaluate.py",
+      "size": 2962,
+      "sha": "b2a2ba362924d8feb75798d6523c4f8b88fd5d78"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/launch.py",
+      "size": 7652,
+      "sha": "863710473f033a20ea333961e6c1102f665ced46"
+    },
+    {
+      "path": "sml-mlx-v1/sft/base_curriculum_v1/protocol.py",
+      "size": 2804,
+      "sha": "fabec384612ac4e852da880a9308dc7afb075aee"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/README.md",
+      "size": 5185,
+      "sha": "5b9cf83321644564be945fd0f1318fc30d800c5d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/check.py",
+      "size": 4738,
+      "sha": "3518267b3bd18a771f5c084733dfbf13188caf8d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/config.json",
+      "size": 850,
+      "sha": "ff1f66268522143ed7a30e327a69bebb0e3d33b4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/data.py",
+      "size": 4890,
+      "sha": "744bde478b74efff2ad750fd9ad65d763a877a70"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/engine.py",
+      "size": 206,
+      "sha": "0d0016196a3d17023804233d73f7f5aafc07e606"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/evaluate.py",
+      "size": 1647,
+      "sha": "ef8f3d933c7298b604414a9100cac0088dd299bb"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/launch.py",
+      "size": 9161,
+      "sha": "24d424520ca2da3c78fbd562f27b83783261e70d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/clean_reply_ab/protocol.py",
+      "size": 3175,
+      "sha": "2e471abc95f5145960acb6c3cda7747886ff5c39"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/README.md",
+      "size": 4598,
+      "sha": "52ae7d5ecdcb6c550d706a34506da78dc058f9d8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/benchmark.py",
+      "size": 2783,
+      "sha": "11aac71956d2b277eafc452782f048e89ddac29e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/check.py",
+      "size": 4353,
+      "sha": "f787434a63f695336391b67d8fcc6801a26005a6"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/config.json",
+      "size": 1174,
+      "sha": "7bac74b1028179af99848b9147fcec31981b8187"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/data.py",
+      "size": 9493,
+      "sha": "f468cf51bf78492d58e65a4362f6eba394feedec"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/engine.py",
+      "size": 280,
+      "sha": "7036523957aeb5e61464aa91c155a373901dd875"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/evaluate.py",
+      "size": 2851,
+      "sha": "6c8e5f13ba0e5a046bec5a3ad2cebec5f8c3f404"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/finalize.py",
+      "size": 2083,
+      "sha": "186bf6f3273ed85b37a277b38826aa117dd83117"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/launch.py",
+      "size": 3509,
+      "sha": "bac30d63b7e442256c71c3f8c35cc9e1ef3c3398"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/protocol.py",
+      "size": 1545,
+      "sha": "602be4afcdfc63cd97673a166077762691de92fa"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/runner.py",
+      "size": 6253,
+      "sha": "818ada8044f115768f57a040a7edf0ffa58175e2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/complete_transfer_1024/test_completion.py",
+      "size": 1303,
+      "sha": "961a5410bf35c428519a6f0d77a32973b0f827f1"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/README.md",
+      "size": 6035,
+      "sha": "9d54bc014799225c42600238a8ae27688e8ef0f7"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/benchmark.py",
+      "size": 3097,
+      "sha": "8139a4f8d4b69395ade5e919306c9666e7d1a00c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/check.py",
+      "size": 6050,
+      "sha": "79da72112ef6a3e48611d61e231763f0bd35d196"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/config.json",
+      "size": 1004,
+      "sha": "0925461dc42f48c8145898ab7db17ec86d86d217"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/constraints.py",
+      "size": 7221,
+      "sha": "9fa50daafbc4151be4aa178be395c20ddb20bb3e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/data.py",
+      "size": 9567,
+      "sha": "54dac82f1a21be73f5dac0084581c646236cb72c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/engine.py",
+      "size": 2487,
+      "sha": "89d9bb548123289cab9adb589c05e0ec9b0e4c6d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/evaluate.py",
+      "size": 4003,
+      "sha": "915978c7af7c6c17b8229ea084d2c7e2e8d01a1b"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/finalize.py",
+      "size": 3339,
+      "sha": "2bb84c401078e9870c943a0f427bd0ab6383f42a"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/launch.py",
+      "size": 9523,
+      "sha": "25e1e20eef8892803a82c72b410549fe6a965597"
+    },
+    {
+      "path": "sml-mlx-v1/sft/constraint_completion_1920/protocol.py",
+      "size": 4673,
+      "sha": "473e96b911b4076d0ac986beadfed3ef0239c9f8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/README.md",
+      "size": 5048,
+      "sha": "b5e4fe010377aea67bad504640f4412749e706d4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/check.py",
+      "size": 4727,
+      "sha": "deae562ea1d737a6bc1eefe69a6c168b4f8561c5"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/config.json",
+      "size": 1295,
+      "sha": "3b8e42e85e9241a3ab7dc6757ef7531deef59392"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/data.py",
+      "size": 18153,
+      "sha": "72a5b354c24a46a04e7f6f1cf8e5258fecbe39c6"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/engine.py",
+      "size": 6402,
+      "sha": "870af79e6010b669b48af774c4603f5766cf1247"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/evaluate.py",
+      "size": 7143,
+      "sha": "cc821bf76817d9a8e6e97914c7c4ddacfaa8f12e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/finalize.py",
+      "size": 2797,
+      "sha": "d1a119f3ee69cbabd45b99744b0d88cc27f2912a"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/launch.py",
+      "size": 4524,
+      "sha": "74b6e309c58289f7f94e9fc9606d3ee6432bdc73"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/protocol.py",
+      "size": 4253,
+      "sha": "e51ad2e531f65fa4c258eb454e27e6fed79f5cf3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/runner.py",
+      "size": 7370,
+      "sha": "33277c998a8caf240b6f362e143d91d702289f75"
+    },
+    {
+      "path": "sml-mlx-v1/sft/context_reasoning_1024/test_context.py",
+      "size": 12133,
+      "sha": "e68accaa57bb10189a4abdf40d3b602fd35d5579"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/README.md",
+      "size": 4753,
+      "sha": "5ec5cbda4340979eef0042cd9729f108976ec175"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/check.py",
+      "size": 5301,
+      "sha": "da26e3403afdc38af8c2bd0a2afbe87055783892"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/config.json",
+      "size": 560,
+      "sha": "f325248d47f6b06cf7572aecf624b647a8f9ded2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/data.py",
+      "size": 7526,
+      "sha": "f79ef8b8a0288b8262724e38f0ea5c3181e678d2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/engine.py",
+      "size": 1571,
+      "sha": "98f46df411e6173da8af5bd48ed43f89922629c0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/evaluate.py",
+      "size": 2528,
+      "sha": "670f34059e3161dfd73bac793e6318f13b48ee0f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/launch.py",
+      "size": 7445,
+      "sha": "5aa3f7ef576312d971bf77bc84d6b2346ac48a9a"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_ab/protocol.py",
+      "size": 3078,
+      "sha": "e96f8171b60f042abc55c9ae5686126ad7a34106"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/README.md",
+      "size": 3866,
+      "sha": "aceccbfbcece61f6641bf6602cd89c3e0fcdbaa6"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/check.py",
+      "size": 5461,
+      "sha": "2c42421e913b88c246582edba810352d85fa47cc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/config.json",
+      "size": 781,
+      "sha": "a9f3cd8c4300b88aaaca7d00d06f1c1d1404bf50"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/engine.py",
+      "size": 3908,
+      "sha": "e70cc3b8ac567d867064dc9da6ca3ef92cf14d07"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/launch.py",
+      "size": 7553,
+      "sha": "90eb8954ab7e5fbb0f87710a5ef503423b7be456"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/protocol.py",
+      "size": 1648,
+      "sha": "9e773be16fffcd9f8418fe8d1d66cae60eb67754"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_b/test_unlikelihood.py",
+      "size": 4053,
+      "sha": "cf326d0d89b45897c9760081a110551f27f3c247"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/README.md",
+      "size": 5928,
+      "sha": "6aee47b32ad36749faf4c1ccc50377af3a032aef"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/__init__.py",
+      "size": 62,
+      "sha": "9b9c44c3dc6699267375f652af7688a3484bf438"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/benchmark.py",
+      "size": 3680,
+      "sha": "6c3cfe3c28269331cdfe9128d316e740a2665fba"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/config.json",
+      "size": 1303,
+      "sha": "796c487bb89105c9119600a79940ff84b3b3b57d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/data.py",
+      "size": 7519,
+      "sha": "fca8746d55b804b66aaa370e637f7c18afa85145"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/dialogues.py",
+      "size": 8827,
+      "sha": "3b3711f5c95b672e5923e5440c3d61cf6ef33854"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/evaluate.py",
+      "size": 4877,
+      "sha": "06f05f3c2260eb39eafda0c0799dc2046ace7b35"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/finalize.py",
+      "size": 2339,
+      "sha": "40fedf9cb68e0a96317f034019a8c64a059255c6"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_completion_2048/launch.py",
+      "size": 19907,
+      "sha": "7b3a34db09418407a5d800b6207355a4aba520b4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/README.md",
+      "size": 5884,
+      "sha": "27778cde0cb6437c05af97a8064dd955bbf5b4ce"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/__init__.py",
+      "size": 74,
+      "sha": "93a032ab8db13b06281e6212c20d94e291949dcd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/benchmark.py",
+      "size": 1947,
+      "sha": "8e08458387037bf659dc344013f7b14f10f7cbba"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/config.json",
+      "size": 978,
+      "sha": "2f47abea8b6f44d04305285228e1db09cfd15c5f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/data.py",
+      "size": 11367,
+      "sha": "68f96b04b5103a230403c06e104246acbc94b119"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/engine.py",
+      "size": 5334,
+      "sha": "f25281e425ef6e27e2d7388603962c3f4e41e4de"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/launch.py",
+      "size": 16430,
+      "sha": "19e195aff408decd7084fc38ab1cee35438cab9d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_original/test_data.py",
+      "size": 2769,
+      "sha": "ffce620da7bb9cb8ab653b5236f87b81180e1389"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/README.md",
+      "size": 7329,
+      "sha": "5f468bd02c214575ea5a64129b5b823528474c6c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/__init__.py",
+      "size": 64,
+      "sha": "6bbc4847762cf06287414dded5edeb33b750a9d4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/baselines.py",
+      "size": 1924,
+      "sha": "72eb3e806e5bc237182ed60be8cc3a4b289eb785"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/behavior.py",
+      "size": 8752,
+      "sha": "0328f21be026ee78a65c761a5167daf106ea9bf3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/benchmark.py",
+      "size": 1944,
+      "sha": "a2bd5b03eb0d9746bae9f69920a635bfb436abda"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/config.json",
+      "size": 1121,
+      "sha": "b40505c50d7132676c9e98c11eb5c54bce0b11a4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/data.py",
+      "size": 17650,
+      "sha": "3a6a759c7ba4404b38abb1a0f4f36a5db82d84fb"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/engine.py",
+      "size": 2052,
+      "sha": "7d8ab30a31d34b2a755fbea4a10eed6770702bfd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/full_benchmarks.py",
+      "size": 4329,
+      "sha": "5656f1fc0817fe10957fcca510b7ff46fc061974"
+    },
+    {
+      "path": "sml-mlx-v1/sft/conversation_foundation_v1/launch.py",
+      "size": 18963,
+      "sha": "58bfb1c254e1d9ca71edb5351818e1f5ccbd4f3e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/README.md",
+      "size": 4302,
+      "sha": "1d606e90c90c015f8a352daee933cabba298a045"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/__init__.py",
+      "size": 80,
+      "sha": "fd9d11cf6989e5a592d7f8c878597bc52cbb0e9e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/config.json",
+      "size": 1145,
+      "sha": "99ab8719856f5704ecdf4882925410a8e53ab26d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/data.py",
+      "size": 22885,
+      "sha": "a30738e98c2b51fdeca6d8968d7fc7a3e2c69e59"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/engine.py",
+      "size": 6137,
+      "sha": "c7b0399c3b93c41ad19c9a065d12929cf77b0791"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/evaluate.py",
+      "size": 7135,
+      "sha": "3bec724debe95b5976f0a90f50b75ec675728f5c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/launch.py",
+      "size": 17232,
+      "sha": "8ba2d69f4b794c5860bccc977f7b6ed358774ab1"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/protocol.py",
+      "size": 4975,
+      "sha": "ac3ade0c24a3f135d3f5b67616b99fd8ce939af2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/corrective_640/test_data.py",
+      "size": 4275,
+      "sha": "d26c6451435907e2813cbae37433f05c990823a0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/README.md",
+      "size": 5699,
+      "sha": "be3b8c2a9c44f8a802eac5676f687fd5c2545134"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/__init__.py",
+      "size": 0,
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/config.json",
+      "size": 1251,
+      "sha": "09815ed7f78c53333737e7cad5786efe60d6c1f9"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/data.py",
+      "size": 9563,
+      "sha": "6da45d2a7869004b2fe67dad067262cc705b98cd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/engine.py",
+      "size": 5344,
+      "sha": "0512281d9f4112a2c6d9b1c673a9e1f489b9ae35"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/launch.py",
+      "size": 19430,
+      "sha": "d6941d024d9771621fcb1279d60ca6afd363f66c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/dpo_chat_768_v1/prepare_models.py",
+      "size": 1670,
+      "sha": "5fcdcb1d8efce2e0a5a2eec2bf95e14c99328576"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/ESNLI_LICENSE.txt",
+      "size": 1061,
+      "sha": "6fe326112d36469de21792e5b32845478bb5a568"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/README.md",
+      "size": 7357,
+      "sha": "be9cab1943b24354e16035718da5f3b2e8ca16e0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/benchmark.py",
+      "size": 2761,
+      "sha": "667cf88b39abd91ea59b7d790252b24f7ce5f44a"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/check.py",
+      "size": 6027,
+      "sha": "9f17939568bb04ae259a31110b56a658ad64d002"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/config.json",
+      "size": 1120,
+      "sha": "3a7cde185b41c2c6285e8773d3e59f27cee66e1c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/data.py",
+      "size": 12578,
+      "sha": "f83789a901d4dc16ed6cf487831dead22e4f7fec"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/evaluate.py",
+      "size": 3649,
+      "sha": "78a6dae11424a3348888aee89bfd024e18760419"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/finalize.py",
+      "size": 2764,
+      "sha": "ee8eba68abe548b629bd2225745fc42c5ef3adbf"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/launch.py",
+      "size": 10172,
+      "sha": "93943a7add01e1a3021e464ee8d902f41f80f837"
+    },
+    {
+      "path": "sml-mlx-v1/sft/explanation_transfer_1024/protocol.py",
+      "size": 4020,
+      "sha": "ff6754898fa1c33298dcae9e99abeb2223617067"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/README.md",
+      "size": 4626,
+      "sha": "04c374605d9c6ca535f256524581df3815019243"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/__init__.py",
+      "size": 80,
+      "sha": "fd9d11cf6989e5a592d7f8c878597bc52cbb0e9e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/config.json",
+      "size": 1087,
+      "sha": "a3986554442eec6e738ebbdf5ee9e56d7ca4ec3d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/data.py",
+      "size": 26050,
+      "sha": "4c565b35a99605b079d650ad43b85fefc354ded9"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/engine.py",
+      "size": 4947,
+      "sha": "2640a3085ecd50b69c01bfb879ba4404737ef3a2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/evaluate.py",
+      "size": 5669,
+      "sha": "3546304709c7019baa07617cdf0e6361d8d312ed"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/launch.py",
+      "size": 16367,
+      "sha": "c44b7079ac208d4e3ef848b0556fc4db89f8e42a"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/protocol.py",
+      "size": 4780,
+      "sha": "85cb19296743d5b85453b88734203bfed3aeca5b"
+    },
+    {
+      "path": "sml-mlx-v1/sft/grounded_rank_384/test_data.py",
+      "size": 3299,
+      "sha": "2ae051f133e7adee892b54b1e0419d99f17b13d0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/README.md",
+      "size": 4428,
+      "sha": "081a1f39391dc10b6fede49f94c039b7c904849e"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/__init__.py",
+      "size": 1,
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/benchmark.py",
+      "size": 3753,
+      "sha": "e2b0b805e266b7a8bb655baef22664b73f3162e3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/config.json",
+      "size": 1459,
+      "sha": "fc7152321c750179a4affd37d76fe7849a39e14c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/data.py",
+      "size": 11743,
+      "sha": "d0fdec350e1dcc47e8fd8b71cfb62c42cb527711"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/data_review.md",
+      "size": 791,
+      "sha": "bf1f3bcd2ec1a953e9f25e93555e19a3eb4cec36"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/engine.py",
+      "size": 3693,
+      "sha": "113a9e6209262865119f105e788c70516e2c9e3a"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/evaluate.py",
+      "size": 5796,
+      "sha": "be4f00f765830aa53d79fc831504caf836eeebc6"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/finalize.py",
+      "size": 2788,
+      "sha": "bd4f76943270e6b5180b5d8492d95c98e73d4466"
+    },
+    {
+      "path": "sml-mlx-v1/sft/intact_smoltalk_base_pilot/launch.py",
+      "size": 21601,
+      "sha": "effa2663d78c08641daf9aae433faf8bee544ea8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/PREPARATION.md",
+      "size": 3574,
+      "sha": "b183daf68cce1057c638211f5011cda33b6ca276"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/README.md",
+      "size": 9354,
+      "sha": "252e4fa17cdb1a0218c98c85a9467409770a77e7"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/check.py",
+      "size": 5867,
+      "sha": "0b08148bbcf5d191ce60cfca99613a1ad38521c8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/config.json",
+      "size": 805,
+      "sha": "cb98cb2af91dd5a83a08431b6138eef22f433840"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/data.py",
+      "size": 14870,
+      "sha": "079d816cd9f001f1cecd2057444fd4b38ba08261"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/engine.py",
+      "size": 3935,
+      "sha": "d92dacda3d3a8c5e27d6b0ca6cbfce2dbc4ad2e0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/evaluate.py",
+      "size": 3716,
+      "sha": "d408da6407530d0ae4ae91feaa709c36d0d53dcc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/finalize.py",
+      "size": 3763,
+      "sha": "ccde2b7fd28209c77593839f453e92d3ba43b627"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/launch.py",
+      "size": 11134,
+      "sha": "0674c87c0bb5619f033ede6ea2d313d3aafc488d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/protocol.py",
+      "size": 3501,
+      "sha": "baf2878b36504a9350185a448dd09b7967717582"
+    },
+    {
+      "path": "sml-mlx-v1/sft/natural_control/test_protocol.py",
+      "size": 10530,
+      "sha": "5834168d40a6c2f749573af92f4b947dcc42a87f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/README.md",
+      "size": 7145,
+      "sha": "4f44aadadf95909c2df8595498f9ab0d7506df20"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/__init__.py",
+      "size": 73,
+      "sha": "a96975b393c36563b926b04ad69b2af59e4be1b8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/check.py",
+      "size": 6945,
+      "sha": "0a371babd9deae5fa54c47de6bff97202ae9b49f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/config.json",
+      "size": 1430,
+      "sha": "542f18d6f9cd14a3bf7cf2388bf630bb49a642c1"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/data.py",
+      "size": 7287,
+      "sha": "08d1906df11f25c0a3e5fc9fe80cf448406da317"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/diagnostics.py",
+      "size": 6827,
+      "sha": "69b116b204787bad6bc5090e6b9bbcfab844ff8c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/engine.py",
+      "size": 5501,
+      "sha": "e0099a17e836fcf532a753916846d620218cf227"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/evaluate.py",
+      "size": 3459,
+      "sha": "a3a7fdd3a540c92776833f998cca2fc5935dd556"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/launch.py",
+      "size": 8392,
+      "sha": "51b6f10d29c545d874393efd24534297e86a669c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/protocol.py",
+      "size": 3868,
+      "sha": "2915e74f3cce3001e2b658dc494eab9675eb9c70"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/test_data.py",
+      "size": 3147,
+      "sha": "90d56e14305aa3fce2497de47cf85b710e8db1b4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/preference_long_640/verified.py",
+      "size": 10487,
+      "sha": "d30ed73ba8b1205178a841a8be8263244feebc5f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/README.md",
+      "size": 5382,
+      "sha": "81dacf6bdbe730cc20356ea48591fcb55f0e149f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/benchmark.py",
+      "size": 2890,
+      "sha": "8a1e1766a07f024bc7faefc6f24c9799b554dbc5"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/check.py",
+      "size": 4948,
+      "sha": "94229a3a74f70d4d797ebbf06cb1f04f61ed84d8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/config.json",
+      "size": 1285,
+      "sha": "c5448fe705dcfb6a0cfdee682e39d6bf56994aea"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/data.py",
+      "size": 4253,
+      "sha": "f6a06c61a5a7d15429e38a7d3105e55892281352"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/engine.py",
+      "size": 7006,
+      "sha": "66f5bf189066f055df7093188021c896b586d6cf"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/evaluate.py",
+      "size": 180,
+      "sha": "a1011dc77ec91d2092816253128cbb9a34ca3223"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/finalize.py",
+      "size": 2891,
+      "sha": "ddf855825b47d4d18b035155a28141ef2d0c4993"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/launch.py",
+      "size": 4642,
+      "sha": "8bc00913dd7b0f4864fe0876d76e8cc538f47172"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/protocol.py",
+      "size": 4677,
+      "sha": "6b107dc6c366ced12afdc3900a23b719bf0d080c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/runner.py",
+      "size": 6745,
+      "sha": "0057a0cad6b6917fbe6508d33fcc0e7491f8b294"
+    },
+    {
+      "path": "sml-mlx-v1/sft/protected_update_1024/test_projection.py",
+      "size": 12359,
+      "sha": "7f2e064a3288d131fdf7a2764f2e0e7dedfc6374"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/DATA_LICENSE.md",
+      "size": 1646,
+      "sha": "7bdc16bb5b448c36fb62a636c655759cbc02b2f1"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/README.md",
+      "size": 6595,
+      "sha": "43c203d625a3659b0d0e5e7b3602bbe3cdd607fd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/__init__.py",
+      "size": 60,
+      "sha": "a42118ee4426f06d5ebb9cb9db6a1b55b065552b"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/cards.py",
+      "size": 14329,
+      "sha": "c13234bea46aecd036666b6ca69648990c2133c4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/config.json",
+      "size": 1095,
+      "sha": "d19ca93d4e327c0c150e042f131f3af4b715589c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/evaluate.py",
+      "size": 4832,
+      "sha": "19caa12dd1f76f5350c7196d68779e35007d6313"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/generation.py",
+      "size": 2440,
+      "sha": "5fab542fabb912d1662cedd3a11ec98ece3e02dc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/launch.py",
+      "size": 18300,
+      "sha": "c3af08820f95d64c3ade1797aef3f34f828bdaf3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/source.py",
+      "size": 11251,
+      "sha": "e7d99d176fd4cd33c599456c99e9f0d00ecdc456"
+    },
+    {
+      "path": "sml-mlx-v1/sft/reading_repair/test_reading.py",
+      "size": 12485,
+      "sha": "6359d650c11235d4caf4c18ca05a1f7ccd9f0750"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/README.md",
+      "size": 5274,
+      "sha": "5ba89955505c69ac032bdca498058fa6d7de78ed"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/__init__.py",
+      "size": 72,
+      "sha": "4c4f75f0770700f8b6ceb2eef3258507d0134965"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/cards.py",
+      "size": 10150,
+      "sha": "318815d151aef32c65babd78f4bc237f2939a599"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/config.json",
+      "size": 719,
+      "sha": "fe4d0f23abbdbbf1617e02e68d5765651b995d6f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/data.py",
+      "size": 17872,
+      "sha": "6078fee7cf525381e51868b0a3ea02be75d1fd99"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/launch.py",
+      "size": 17946,
+      "sha": "37186d4b590adaa841cc01f2366176daddcb13b1"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/rubrics.py",
+      "size": 2707,
+      "sha": "821388ab462ec1855b14dd2e30710b31b892f246"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_expansion/test_expansion.py",
+      "size": 8391,
+      "sha": "5b69c26b50756e60ad030aa8a75ef62c24f63566"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/README.md",
+      "size": 6704,
+      "sha": "801f2ace127d1ff9222b757f2cf0a03185c0e7bd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/__init__.py",
+      "size": 83,
+      "sha": "391e5c6ffa0c8f1cf7d10357a846d8bbc53e7c40"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/cards.py",
+      "size": 18304,
+      "sha": "2d1a17e7612046c41e29a0a8cc82ce6a62936965"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/config.json",
+      "size": 743,
+      "sha": "ddcd9a3172307889b5aa8d9d86879c51c5909bda"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/data.py",
+      "size": 16174,
+      "sha": "2ad0d4bb7909789637a4ca317d4b205cd2bb08bf"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/launch.py",
+      "size": 19148,
+      "sha": "e6a7e19dc9327ac29c5e73d214ca261ad4a8a261"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/rubrics.py",
+      "size": 4539,
+      "sha": "fe47986e1b2db20ca5cdea3eec1aa5ae409a1d3f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/response_repair/test_repair.py",
+      "size": 10141,
+      "sha": "dfed3f81e4ed164a988e36835b84066335be4961"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/README.md",
+      "size": 7352,
+      "sha": "23ff404271d0cd3af604e6c97615f5662a7ccfb0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/__init__.py",
+      "size": 78,
+      "sha": "8909f3a43f3cd9d81aa13ffe3ceb0cc057fb7289"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/benchmark.py",
+      "size": 1968,
+      "sha": "1636ff51229e8f27ff1d47df38ef15910aa042d0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/check.py",
+      "size": 4097,
+      "sha": "1e8dcd50add5d769f9c1a48630c0041f94ff6a73"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/config.json",
+      "size": 1009,
+      "sha": "5d9977e6edf8cc9ac6471a00d05bd1612c299468"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/data.py",
+      "size": 17601,
+      "sha": "28e1d1d47a4c9f3747273212c912ac333b909cdc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/engine.py",
+      "size": 6090,
+      "sha": "8281b16d9134fd150fba9a2eead65746a9dc25b5"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/evaluate.py",
+      "size": 4950,
+      "sha": "6e82e224ff10d3601bec2c84c2e4f9b13b59fd61"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/finalize.py",
+      "size": 2722,
+      "sha": "692eb57db5c187e7c83807644508805759131db2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/launch.py",
+      "size": 10726,
+      "sha": "235f94ea9c4079df09e9c5a0f79ba74feb235bbf"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/protocol.py",
+      "size": 4403,
+      "sha": "dbde16f047a7311c975508ece0ad11368a3b84f5"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance/test_skill_balance.py",
+      "size": 7452,
+      "sha": "cefc90c2f3aef8a20388054ad50559153c6bdfb3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/README.md",
+      "size": 3194,
+      "sha": "ee8ee637120256ba04d25517e149e1d1e51e6ed8"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/check.py",
+      "size": 4979,
+      "sha": "1e4e6da883c2a12e9044807b65fb25eefc5e7580"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/config.json",
+      "size": 1158,
+      "sha": "4bfbc89734fdda6d2fba13c82c4408d62936da58"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/data.py",
+      "size": 6857,
+      "sha": "8170ff796cec6f5f35d49b1e923553abf1e6314c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/engine.py",
+      "size": 6090,
+      "sha": "6bee8c8ee32089a3aa3cdfc148791f533b178015"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/evaluate.py",
+      "size": 6087,
+      "sha": "109ad8398397c8e140affe8626fb444f75f1a0bb"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/finalize.py",
+      "size": 2738,
+      "sha": "1a6abf0512d0818374b2fb58c77607bbbebfcb7c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/launch.py",
+      "size": 10989,
+      "sha": "f3ee61c7a9462624f2f9904e63db27cf6af2b4f5"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/protocol.py",
+      "size": 3928,
+      "sha": "69c010d4bdeb86c6ac926eaf6966c1b89c98eac4"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_balance_768/test_skill_balance.py",
+      "size": 7911,
+      "sha": "b8ef8773355c33caaf0f6ffa2e39d23d4e9afc8f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/README.md",
+      "size": 3409,
+      "sha": "aafdd53e8ea8462cebe24dd13579a5f1669aa550"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/check.py",
+      "size": 5053,
+      "sha": "badc069a0042bd5f4946d3ad198c897b533cd11f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/config.json",
+      "size": 1155,
+      "sha": "1b8b7e08f2ff719e9fb173afd25bc3de8585fafe"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/data.py",
+      "size": 5645,
+      "sha": "81e2fbfe5d6bc7c6a5dec383fb47d212bcf60d5d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/engine.py",
+      "size": 6401,
+      "sha": "10d1d3104e7159a1df509d5d3eb5aaad07a71ddf"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/evaluate.py",
+      "size": 6970,
+      "sha": "d10608d2ab4d012bbccd35308f4e0bb1a92303fd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/finalize.py",
+      "size": 2742,
+      "sha": "1e0c6cdb37dc360b655d9f840c00351f593c0d1c"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/launch.py",
+      "size": 10981,
+      "sha": "c0da6f54e40dac3dbd0bbbf6ec5c8e1a61a03d5d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/protocol.py",
+      "size": 4111,
+      "sha": "ab9f81612aaaae23cebf81e14dc8fcc76f90c450"
+    },
+    {
+      "path": "sml-mlx-v1/sft/skill_recovery_768/test_skill_balance.py",
+      "size": 9796,
+      "sha": "00fe4634130cb553c5a7fc3b0858e450f37bb6b9"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/README.md",
+      "size": 6958,
+      "sha": "cad3295ae2c621355dc453e1fcdfcd147e41bdb2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/__init__.py",
+      "size": 0,
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/check.py",
+      "size": 4341,
+      "sha": "15c4a256b40c335d83f5bc35c3a0ed78a0c58901"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/config.json",
+      "size": 1243,
+      "sha": "ed2198670f4cad76e48b3efa0de1910e2deb62e2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/data.py",
+      "size": 8126,
+      "sha": "d4be68a9a0a8dce72c81d1cbb0e0d3f4c0fab1f2"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/engine.py",
+      "size": 4581,
+      "sha": "2d2d12f9ec52d4f32a2a62cd7268e1dc880dbe21"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/launch.py",
+      "size": 13250,
+      "sha": "d6a2aa567086f5423c8dcd3689d15aac235d0e30"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/teacher.py",
+      "size": 17683,
+      "sha": "40a791817b1338c28bfe9b8f72ae3eaac6704b20"
+    },
+    {
+      "path": "sml-mlx-v1/sft/teacher_chat_768_v1/test_pipeline.py",
+      "size": 3362,
+      "sha": "f073910d7c8bf6da8705d990357cc2a77db50a8d"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/README.md",
+      "size": 4011,
+      "sha": "5170126e161a848ade8c8e4a54f7bd0f5732daec"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/__init__.py",
+      "size": 0,
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/config.json",
+      "size": 872,
+      "sha": "4027cdac1cf06b828e19dde537ca820b08abb77f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/data.py",
+      "size": 13849,
+      "sha": "64e3aa3098971d9112897afdaaf804acfb8f7754"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/engine.py",
+      "size": 1848,
+      "sha": "ef5f2a5a281bce8c2bd721f4d09048bdbb7669c5"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/launch.py",
+      "size": 17038,
+      "sha": "ae12f149453f117350568047e987214253f684e3"
+    },
+    {
+      "path": "sml-mlx-v1/sft/text_followup_512_v1/test_data.py",
+      "size": 2122,
+      "sha": "aa228c274605f1b483f3827275ce4053088251f9"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/README.md",
+      "size": 7606,
+      "sha": "aa7a1337f2fa4009b66b50809ab73db82233bdfc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/__init__.py",
+      "size": 79,
+      "sha": "6aa3fdde30278d709718da268a6753baf1d27235"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/config.json",
+      "size": 373,
+      "sha": "5998a6bbc198eb6ba9db90ce6c632867e3522dfc"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/data.py",
+      "size": 11113,
+      "sha": "335794c85f082b5585b9fb8998fde2bff276debf"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/engine.py",
+      "size": 7135,
+      "sha": "be3714cf55295e7a67f6951c9050ad84cf516e1f"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/launch.py",
+      "size": 15568,
+      "sha": "ebd58201706fe5d6039223a54f34fd47dbcfa1fd"
+    },
+    {
+      "path": "sml-mlx-v1/sft/transfer_control/test_transfer_control.py",
+      "size": 7659,
+      "sha": "d00bff6e904a017997017a6bdd1b071950a1e5da"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/README.md",
+      "size": 4965,
+      "sha": "c1c36b48e63486033c8e18f0551cd7cbb40a4de0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/check.py",
+      "size": 3730,
+      "sha": "3a70bcbe5cc72876c895516f3902f03a1c63b4c0"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/config.json",
+      "size": 542,
+      "sha": "6394c00106319f87d1cd5eb4f55e529e98b7b1fa"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/data.py",
+      "size": 11306,
+      "sha": "e7fc485498335176019d42d5ed3d47f3c5cf3e56"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/engine.py",
+      "size": 260,
+      "sha": "dfa57b9246710ef5e8a057ee66c01cdb59ea8e09"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/evaluate.py",
+      "size": 2626,
+      "sha": "87648c948a0db8f2eabb9d558b943d4f22965a6b"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/launch.py",
+      "size": 6743,
+      "sha": "e18dda3ca8eec851c604e9da1c1918517b9367fa"
+    },
+    {
+      "path": "sml-mlx-v1/sft/two_turn_640/protocol.py",
+      "size": 2627,
+      "sha": "9e895f2d8d1d99716415a2ae655a1fbdf3310650"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/__init__.py",
+      "size": 68,
+      "sha": "c1907235aa381eaa08264251cdc0417258a54e26"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/checkpoint_bundle.py",
+      "size": 5469,
+      "sha": "ade751bec120cfcff5ca57ff0da846e8dfbd5deb"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/checkpoint_metadata.py",
+      "size": 2004,
+      "sha": "f5ffbb9b7bade14e02ab3eccc1940aa62619add6"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/cluster/__init__.py",
+      "size": 58,
+      "sha": "d0d94b98b0a213774d1c689ce459ef9a04959e9f"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/cluster/jaccl_common.py",
+      "size": 4397,
+      "sha": "05eb0fc57c2a26685c3f508378f6fd705a1562f0"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/cluster/jaccl_ring_transport.py",
+      "size": 3691,
+      "sha": "f5f59380316db3ee368dfb0d653bbbd3971dfb8e"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/common.py",
+      "size": 2553,
+      "sha": "8c36ba38922575af91d1d997b36408d42f4a380a"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/continuation.py",
+      "size": 7780,
+      "sha": "e6ef5412ef114c18e843b33036e15606def7e440"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/corpus.py",
+      "size": 3025,
+      "sha": "3c7c66761703df30349f21e2e125636839364207"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/data.py",
+      "size": 3415,
+      "sha": "8be9035088063034478c9d0e297f387953f004d9"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/data_review.py",
+      "size": 6060,
+      "sha": "d4d3a28b15c76495e90f8af664e0c1072590c197"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/fast_loss.py",
+      "size": 3705,
+      "sha": "2e80e0e79674c8572c10187b88fbfb404ec6df95"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/fast_swiglu.py",
+      "size": 2328,
+      "sha": "b6231406aa53a8277923d591ed4ce9b85918ddc7"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/inference.py",
+      "size": 1494,
+      "sha": "92f7f83af136b0091f5ab81d326ad8eb17d567ed"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/jaccl_control.py",
+      "size": 11399,
+      "sha": "f555b82e7a2964e8a1aa91a25533cdf2407605ab"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/launch.py",
+      "size": 16152,
+      "sha": "276dba504ff3ce046dea5517f7eb1dfd7b4ea1f4"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/lr_scheduler.py",
+      "size": 12645,
+      "sha": "cd309068ca707f990eb674d51164b8e32eaf8376"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/lr_trial.py",
+      "size": 5269,
+      "sha": "078684e12bd90b8297ec786321e0c9f8d8bf5124"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/model.py",
+      "size": 10552,
+      "sha": "e26e9cf6f21328ab2b98c15a993afbd7a95b1f49"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/precision.py",
+      "size": 1292,
+      "sha": "5a887d3c69837f9eba4d7774c4d5d831e839a2ab"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/prepare_data.py",
+      "size": 6637,
+      "sha": "5a5e9c0ed5dfc7cb5ce1e5d255fee475bcfa7452"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/pretrain.py",
+      "size": 27098,
+      "sha": "930e6686f26eb426d2f1cc005667dc73b0b6257b"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/recipe.py",
+      "size": 6285,
+      "sha": "bd5c88b1b86494ec813c6a6660501a5ba3d173e3"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/stage_b.py",
+      "size": 7312,
+      "sha": "99c3590f52454cd363726cc95f32855f5c0c8d70"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/stage_b_data.py",
+      "size": 9445,
+      "sha": "a52e8af5483db01b75159f0bd1243195c3f83fc7"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/stage_b_eval.py",
+      "size": 2333,
+      "sha": "0bf82091312f5e5abb2262ac5230e6a674c1f5d7"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/stream.py",
+      "size": 14992,
+      "sha": "ee2cf5c3f98b9df640fc40fcbbfcf6328de8a756"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/tokenization.py",
+      "size": 2797,
+      "sha": "afb1590b9cc399fc7791289a7fe95f96bc3be348"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/topology_transition.py",
+      "size": 3259,
+      "sha": "f0c36c3aeb268f46bdb70a2f1a765acf2fa15298"
+    },
+    {
+      "path": "sml-mlx-v1/sml_v1/train_tokenizer.py",
+      "size": 8982,
+      "sha": "9ff2cead041368fb9dd211f46c7ff2e248843f7a"
+    },
+    {
+      "path": "sml-mlx-v1/stage_b/README.md",
+      "size": 5940,
+      "sha": "b32c3cf1d523474c0e2fcfb3a97af06e35bc7bc1"
+    },
+    {
+      "path": "sml-mlx-v1/stage_b/audit_data.py",
+      "size": 3123,
+      "sha": "c2017b341464e864a564b123ebade3e192239add"
+    },
+    {
+      "path": "sml-mlx-v1/stage_b/corpus.json",
+      "size": 3305,
+      "sha": "20a2bf3ca46d6804863bdfc650ce1a384d3c2e04"
+    },
+    {
+      "path": "sml-mlx-v1/stage_b/data_audit.json",
+      "size": 2723,
+      "sha": "c84fde9d318fdc2f29bb8399ff561de6c143c81b"
+    },
+    {
+      "path": "sml-mlx-v1/stage_b/launch.py",
+      "size": 6155,
+      "sha": "15823ce85ccbdbdda492d9021b26f0642f72b68b"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_adaptive_launcher.py",
+      "size": 2802,
+      "sha": "36f6d90cd47962bade64a9ecd32efc44969af67e"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_continuation.py",
+      "size": 7939,
+      "sha": "163df40dc159df45839c729ca810f9cf55317ecc"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_data_review.py",
+      "size": 14190,
+      "sha": "1580b46a7df565302abb0866ea8cbd38ad400cff"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_five_mac_names.py",
+      "size": 1322,
+      "sha": "82356c4f8254d45fbac22094b9be4b69094536d6"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_five_mac_network.py",
+      "size": 8026,
+      "sha": "6ec7d767929c37addf9f9f2122ed68a092e26d1c"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_five_mac_ssh.py",
+      "size": 3340,
+      "sha": "2ef20043ebbed538bca047dc8698333a04418faf"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_five_mac_topology.py",
+      "size": 4205,
+      "sha": "c2ec8da859bb7b3ccbf045c4769c1f4727b830e1"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_five_mac_training.py",
+      "size": 5715,
+      "sha": "7a6312e17906aedacba0979cb7988bbfc56fa87a"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_five_mac_transport.py",
+      "size": 1131,
+      "sha": "0fffc407c8f94e33dc7a2f06f7ddeeaf23fcd75f"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_full_launcher.py",
+      "size": 3260,
+      "sha": "b63e871d92a992208bca66ed71dfffdb2d43c687"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_launch_cli.py",
+      "size": 2354,
+      "sha": "d56f7be74aa4cad8ac61cd6303ed02985767bcc1"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_lr_floor_transition.py",
+      "size": 8572,
+      "sha": "64ff7eaa2432a88a5ce0643d5f2f5c892e65e5c6"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_lr_scheduler.py",
+      "size": 9224,
+      "sha": "a48d638d19e1a0dcbb37b79796f494d194a572fc"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_lr_trial.py",
+      "size": 10345,
+      "sha": "a2dc0aaaf5b7a20094711394e75a27712c6c20ac"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_pipeline.py",
+      "size": 27922,
+      "sha": "e3dbe19ddbf4abce8889e59fa2f36d953ba8990a"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_ring_control.py",
+      "size": 5401,
+      "sha": "429c6326880bad65af8bf8d0075397450373f190"
+    },
+    {
+      "path": "sml-mlx-v1/tests/test_stage_b.py",
+      "size": 16531,
+      "sha": "5dbd3207955e0c75abc35d3613bf9110afb01271"
+    },
+    {
+      "path": "sml-mlx-v1/tokenizer/bytebpe32k_v1/corpus.json",
+      "size": 1549,
+      "sha": "8c2347aeb1fa689ddcaad292626f99028e41c7b1"
+    },
+    {
+      "path": "sml-mlx-v1/tokenizer/bytebpe32k_v1/manifest.json",
+      "size": 988,
+      "sha": "f1fcc0055a734a1ef15a3ed3855243e5e1567044"
+    },
+    {
+      "path": "sml-mlx-v1/tokenizer/bytebpe32k_v1/report.json",
+      "size": 889,
+      "sha": "4cb9365021ec962de22eb686dbe0df05de37eb2f"
+    },
+    {
+      "path": "sml-mlx-v1/tokenizer/bytebpe32k_v1/tokenizer.json",
+      "size": 2288703,
+      "sha": "ff522517f6119e05504e77d1d5273d205def9579"
+    },
+    {
+      "path": "sml-mlx-v1/tokenizer/bytebpe32k_v1/tokenizer_config.json",
+      "size": 200,
+      "sha": "62bd24d72ef409ac5d6edc3b4a0a8534ec581b5c"
+    }
+  ]
+}

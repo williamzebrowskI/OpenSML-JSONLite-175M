@@ -1,0 +1,1725 @@
+{
+  "format": "opensml-fieldwise-extraction-examples-v1",
+  "scope": "28 observed SNIPS development views plus12 independently authored diagnostic requests. Known field definitions, arrays of exact strings, [] for absent values; model extraction plus external JSON assembly.",
+  "cases": [
+    {
+      "id": "FIELD-01",
+      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "playlist_owner": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "person owning the playlist"
+          },
+          "playlist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "playlist name"
+          },
+          "entity_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "named item to add to a playlist"
+          }
+        },
+        "required": [
+          "playlist_owner",
+          "playlist",
+          "entity_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "playlist_owner": [
+          "my"
+        ],
+        "playlist": [
+          "Rock Gaming"
+        ],
+        "entity_name": [
+          "Mariem Hassan con Leyoad"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-02",
+      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "music_item": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "word specifying the requested music category, such as artist, track, song, or album"
+          }
+        },
+        "required": [
+          "artist",
+          "music_item"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "artist": [],
+        "music_item": []
+      }
+    },
+    {
+      "id": "FIELD-03",
+      "title": "AddToPlaylist · Add track to my Digster Future Hits",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Add track to my Digster Future Hits",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "playlist_owner": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "person owning the playlist"
+          }
+        },
+        "required": [
+          "playlist_owner"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "playlist_owner": [
+          "my"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-04",
+      "title": "AddToPlaylist · Add track to my Digster Future Hits",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Add track to my Digster Future Hits",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "entity_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "named item to add to a playlist"
+          },
+          "playlist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "playlist name"
+          }
+        },
+        "required": [
+          "artist",
+          "entity_name",
+          "playlist"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "artist": [],
+        "entity_name": [],
+        "playlist": [
+          "Digster Future Hits"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-05",
+      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "I would like to book a brasserie for nine in AR",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "restaurant_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "kind of restaurant"
+          },
+          "party_size_number": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "explicit party size"
+          },
+          "state": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "state or region"
+          }
+        },
+        "required": [
+          "restaurant_type",
+          "party_size_number",
+          "state"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "restaurant_type": [
+          "brasserie"
+        ],
+        "party_size_number": [
+          "nine"
+        ],
+        "state": [
+          "AR"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-06",
+      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "I would like to book a brasserie for nine in AR",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "party_size_number": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "explicit party size"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "sort": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "requested ranking, ordering, or preference"
+          }
+        },
+        "required": [
+          "party_size_number",
+          "timeRange",
+          "sort"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "party_size_number": [
+          "nine"
+        ],
+        "timeRange": [],
+        "sort": []
+      }
+    },
+    {
+      "id": "FIELD-07",
+      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Book a best restaurant in Wrigley.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "sort": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "requested ranking, ordering, or preference"
+          },
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          }
+        },
+        "required": [
+          "sort",
+          "city"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "sort": [
+          "best"
+        ],
+        "city": [
+          "Wrigley"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-08",
+      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Book a best restaurant in Wrigley.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "poi": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "named nearby point of interest"
+          }
+        },
+        "required": [
+          "timeRange",
+          "poi"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "timeRange": [],
+        "poi": []
+      }
+    },
+    {
+      "id": "FIELD-09",
+      "title": "GetWeather · Is it going to be colder in Louisiana",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Is it going to be colder in Louisiana",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "condition_temperature": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "temperature description"
+          },
+          "state": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "state or region"
+          }
+        },
+        "required": [
+          "condition_temperature",
+          "state"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "state": [
+          "Louisiana"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-10",
+      "title": "GetWeather · Is it going to be colder in Louisiana",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Is it going to be colder in Louisiana",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "current_location": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "expression referring to current location"
+          },
+          "geographic_poi": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "geographic point of interest"
+          },
+          "condition_temperature": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "temperature description"
+          }
+        },
+        "required": [
+          "current_location",
+          "geographic_poi",
+          "condition_temperature"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "current_location": [],
+        "geographic_poi": [],
+        "condition_temperature": [
+          "colder"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-11",
+      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "geographic_poi": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "geographic point of interest"
+          },
+          "condition_temperature": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "temperature description"
+          }
+        },
+        "required": [
+          "timeRange",
+          "geographic_poi",
+          "condition_temperature"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "timeRange": [
+          "last August"
+        ],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "condition_temperature": [
+          "colder"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-12",
+      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "current_location": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "expression referring to current location"
+          },
+          "geographic_poi": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "geographic point of interest"
+          },
+          "state": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "state or region"
+          }
+        },
+        "required": [
+          "current_location",
+          "geographic_poi",
+          "state"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "current_location": [],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "state": []
+      }
+    },
+    {
+      "id": "FIELD-13",
+      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "music_item": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "word specifying the requested music category, such as artist, track, song, or album"
+          },
+          "sort": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "requested ranking, ordering, or preference"
+          }
+        },
+        "required": [
+          "artist",
+          "music_item",
+          "sort"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "artist": [
+          "Behzad Mirkhani"
+        ],
+        "music_item": [
+          "theme"
+        ],
+        "sort": [
+          "last"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-14",
+      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "service": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "music service"
+          },
+          "music_item": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "word specifying the requested music category, such as artist, track, song, or album"
+          },
+          "playlist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "playlist name"
+          }
+        },
+        "required": [
+          "service",
+          "music_item",
+          "playlist"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "service": [],
+        "music_item": [
+          "theme"
+        ],
+        "playlist": []
+      }
+    },
+    {
+      "id": "FIELD-15",
+      "title": "PlayMusic · Play a track by Yui on Vimeo",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Play a track by Yui on Vimeo",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "music_item": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "word specifying the requested music category, such as artist, track, song, or album"
+          },
+          "service": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "music service"
+          }
+        },
+        "required": [
+          "artist",
+          "music_item",
+          "service"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "artist": [
+          "Yui"
+        ],
+        "music_item": [
+          "track"
+        ],
+        "service": [
+          "Vimeo"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-16",
+      "title": "PlayMusic · Play a track by Yui on Vimeo",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Play a track by Yui on Vimeo",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "playlist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "playlist name"
+          },
+          "sort": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "requested ranking, ordering, or preference"
+          }
+        },
+        "required": [
+          "playlist",
+          "sort"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "playlist": [],
+        "sort": []
+      }
+    },
+    {
+      "id": "FIELD-17",
+      "title": "RateBook · I would give Things Fall Apart 3 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "I would give Things Fall Apart 3 stars",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "rating_value": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "given rating"
+          },
+          "rating_unit": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "rating unit"
+          },
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "rating_value",
+          "rating_unit",
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "rating_value": [
+          "3"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "object_name": [
+          "Things Fall Apart"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-18",
+      "title": "RateBook · I would give Things Fall Apart 3 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "I would give Things Fall Apart 3 stars",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          },
+          "object_select": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "selection expression referring to the work"
+          },
+          "object_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "kind of work or object"
+          }
+        },
+        "required": [
+          "object_name",
+          "object_select",
+          "object_type"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "object_select": [],
+        "object_type": []
+      }
+    },
+    {
+      "id": "FIELD-19",
+      "title": "RateBook · I'd rate this book 1 of 6 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "I'd rate this book 1 of 6 stars",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "rating_value": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "given rating"
+          },
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "rating_value",
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "rating_value": [
+          "1"
+        ],
+        "object_name": []
+      }
+    },
+    {
+      "id": "FIELD-20",
+      "title": "RateBook · I'd rate this book 1 of 6 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "I'd rate this book 1 of 6 stars",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_part_of_series_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "type of book series"
+          },
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "object_part_of_series_type",
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_part_of_series_type": [],
+        "object_name": []
+      }
+    },
+    {
+      "id": "FIELD-21",
+      "title": "SearchCreativeWork · Show me Happiness Was Free.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Show me Happiness Was Free.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-22",
+      "title": "SearchCreativeWork · Show me Happiness Was Free.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Show me Happiness Was Free.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "kind of work or object"
+          },
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "object_type",
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_type": [],
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-23",
+      "title": "SearchCreativeWork · Find me the Martin Morning saga",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Find me the Martin Morning saga",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          },
+          "object_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "kind of work or object"
+          }
+        },
+        "required": [
+          "object_name",
+          "object_type"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_name": [
+          "Martin Morning"
+        ],
+        "object_type": [
+          "saga"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-24",
+      "title": "SearchCreativeWork · Find me the Martin Morning saga",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "Find me the Martin Morning saga",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_name": [
+          "Martin Morning"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-25",
+      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "find animated movies in the neighborhood",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "movie_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "kind of movie"
+          },
+          "spatial_relation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "spatial or proximity expression"
+          }
+        },
+        "required": [
+          "movie_type",
+          "spatial_relation"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "spatial_relation": [
+          "in the neighborhood"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-26",
+      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "find animated movies in the neighborhood",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "movie_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "kind of movie"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "movie_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "movie name"
+          }
+        },
+        "required": [
+          "movie_type",
+          "timeRange",
+          "movie_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "timeRange": [],
+        "movie_name": []
+      }
+    },
+    {
+      "id": "FIELD-27",
+      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "where can I watch Mabel’s Dramatic Career at twenty two o'clock",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "movie_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "movie name"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          }
+        },
+        "required": [
+          "movie_name",
+          "timeRange"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "movie_name": [
+          "Mabel’s Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-28",
+      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "document": "where can I watch Mabel’s Dramatic Career at twenty two o'clock",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "spatial_relation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "spatial or proximity expression"
+          },
+          "object_location_type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "type of screening venue"
+          }
+        },
+        "required": [
+          "timeRange",
+          "spatial_relation",
+          "object_location_type"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "timeRange": [
+          "twenty two o'clock"
+        ],
+        "spatial_relation": [],
+        "object_location_type": []
+      }
+    },
+    {
+      "id": "FIELD-29",
+      "title": "Named track and performer",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Play the track Blue Lantern by Mira Sol.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "track": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "track name"
+          },
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "album": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "album name"
+          }
+        },
+        "required": [
+          "track",
+          "artist",
+          "album"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "track": [
+          "Blue Lantern"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "album": []
+      }
+    },
+    {
+      "id": "FIELD-30",
+      "title": "Restaurant, city, party and time",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Book River Moon in Denver for four people tomorrow.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "restaurant_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "restaurant name"
+          },
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "party_size_number": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "explicit party size"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          }
+        },
+        "required": [
+          "restaurant_name",
+          "city",
+          "party_size_number",
+          "timeRange"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "restaurant_name": [
+          "River Moon"
+        ],
+        "city": [
+          "Denver"
+        ],
+        "party_size_number": [
+          "four"
+        ],
+        "timeRange": [
+          "tomorrow"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-31",
+      "title": "Weather with country missing",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "What is the weather in Oslo on Friday?",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "country": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "country"
+          }
+        },
+        "required": [
+          "city",
+          "timeRange",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "city": [
+          "Oslo"
+        ],
+        "timeRange": [
+          "Friday"
+        ],
+        "country": []
+      }
+    },
+    {
+      "id": "FIELD-32",
+      "title": "Rating and scale",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Give the book Glass Harbor four out of five stars.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          },
+          "rating_value": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "given rating"
+          },
+          "best_rating": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "maximum rating scale"
+          },
+          "rating_unit": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "rating unit"
+          }
+        },
+        "required": [
+          "object_name",
+          "rating_value",
+          "best_rating",
+          "rating_unit"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_name": [
+          "Glass Harbor"
+        ],
+        "rating_value": [
+          "four"
+        ],
+        "best_rating": [
+          "five"
+        ],
+        "rating_unit": [
+          "stars"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-33",
+      "title": "Movie and screening location",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Find showtimes for Silver Orchard at Maple Cinema.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "movie_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "movie name"
+          },
+          "location_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "screening location name"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          }
+        },
+        "required": [
+          "movie_name",
+          "location_name",
+          "timeRange"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "movie_name": [
+          "Silver Orchard"
+        ],
+        "location_name": [
+          "Maple Cinema"
+        ],
+        "timeRange": []
+      }
+    },
+    {
+      "id": "FIELD-34",
+      "title": "Track added to a playlist",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Add Night Steps to my playlist Evening Walks.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "entity_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "named item to add to a playlist"
+          },
+          "playlist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "playlist name"
+          }
+        },
+        "required": [
+          "entity_name",
+          "playlist"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "entity_name": [
+          "Night Steps"
+        ],
+        "playlist": [
+          "Evening Walks"
+        ]
+      }
+    },
+    {
+      "id": "FIELD-35",
+      "title": "Two performers",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Play songs by Mira Sol and Theo Lane.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "album": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "album name"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane"
+        ],
+        "album": []
+      }
+    },
+    {
+      "id": "FIELD-36",
+      "title": "Two cities mentioned",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Give me the weather in Bergen and Oslo.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "country": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "country"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo"
+        ],
+        "country": []
+      }
+    },
+    {
+      "id": "FIELD-37",
+      "title": "Cuisine and city",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Find a Thai restaurant in Boston.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "cuisine": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "cuisine style"
+          },
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "restaurant_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "restaurant name"
+          }
+        },
+        "required": [
+          "cuisine",
+          "city",
+          "restaurant_name"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "cuisine": [
+          "Thai"
+        ],
+        "city": [
+          "Boston"
+        ],
+        "restaurant_name": []
+      }
+    },
+    {
+      "id": "FIELD-38",
+      "title": "Album and performer",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Play the album Quiet Signals by Mira Sol.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "album": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "album name"
+          },
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "track": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "track name"
+          }
+        },
+        "required": [
+          "album",
+          "artist",
+          "track"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "album": [
+          "Quiet Signals"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": []
+      }
+    },
+    {
+      "id": "FIELD-39",
+      "title": "Title with rating absent",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "I am looking for the book Paper Bridge.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "name of the work being rated or searched for"
+          },
+          "rating_value": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "given rating"
+          }
+        },
+        "required": [
+          "object_name",
+          "rating_value"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "object_name": [
+          "Paper Bridge"
+        ],
+        "rating_value": []
+      }
+    },
+    {
+      "id": "FIELD-40",
+      "title": "Missing country and time",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "document": "Please play some music.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "country"
+          },
+          "timeRange": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "date, time, or time-range expression"
+          },
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          }
+        },
+        "required": [
+          "country",
+          "timeRange",
+          "artist"
+        ],
+        "additionalProperties": false
+      },
+      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "expected": {
+        "country": [],
+        "timeRange": [],
+        "artist": []
+      }
+    }
+  ]
+}

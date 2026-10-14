@@ -1,0 +1,208 @@
+{
+  "metrics": {
+    "all": {
+      "absent": {
+        "correct": 18,
+        "total": 48
+      },
+      "count": 272,
+      "counts": {
+        "abstained": 26,
+        "all_requested_values_present": 66,
+        "exact": 89,
+        "false_abstention": 8,
+        "missed_abstention": 30,
+        "natural_stop": 272,
+        "nonrepetitive_nonempty": 272,
+        "token_f1": 150.32659343103225,
+        "token_limited": 0,
+        "wrong_value_mentioned": 26
+      },
+      "exact": 0.3272058823529412,
+      "output_nll": 0.5526066449751584,
+      "present": {
+        "correct": 71,
+        "total": 224
+      },
+      "token_f1": 0.552671299378795
+    },
+    "balanced_squad_exact": 0.3125,
+    "calibration": {
+      "absent": {
+        "correct": 12,
+        "total": 16
+      },
+      "count": 32,
+      "counts": {
+        "abstained": 12,
+        "all_requested_values_present": 14,
+        "exact": 26,
+        "false_abstention": 0,
+        "missed_abstention": 4,
+        "natural_stop": 32,
+        "nonrepetitive_nonempty": 32,
+        "token_f1": 26.857142857142858,
+        "token_limited": 0,
+        "wrong_value_mentioned": 4
+      },
+      "exact": 0.8125,
+      "output_nll": 0.09080915807862766,
+      "present": {
+        "correct": 14,
+        "total": 16
+      },
+      "token_f1": 0.8392857142857143
+    },
+    "corrections": {
+      "absent": {
+        "correct": 0,
+        "total": 0
+      },
+      "count": 32,
+      "counts": {
+        "abstained": 0,
+        "all_requested_values_present": 20,
+        "exact": 0,
+        "false_abstention": 0,
+        "missed_abstention": 0,
+        "natural_stop": 32,
+        "nonrepetitive_nonempty": 32,
+        "token_f1": 14.385420461891046,
+        "token_limited": 0,
+        "wrong_value_mentioned": 22
+      },
+      "exact": 0.0,
+      "output_nll": 0.5304694673977792,
+      "present": {
+        "correct": 0,
+        "total": 32
+      },
+      "token_f1": 0.4495443894340952
+    },
+    "dolly_closed_qa": {
+      "absent": {
+        "correct": 0,
+        "total": 0
+      },
+      "count": 16,
+      "counts": {
+        "abstained": 2,
+        "all_requested_values_present": 0,
+        "exact": 0,
+        "false_abstention": 2,
+        "missed_abstention": 0,
+        "natural_stop": 16,
+        "nonrepetitive_nonempty": 16,
+        "token_f1": 3.6950068619404997,
+        "token_limited": 0,
+        "wrong_value_mentioned": 0
+      },
+      "exact": 0.0,
+      "output_nll": 1.1342515852302313,
+      "present": {
+        "correct": 0,
+        "total": 16
+      },
+      "token_f1": 0.23093792887128123
+    },
+    "legacy_summary": {
+      "count": 176,
+      "exact": 0.3522727272727273,
+      "false_abstention": 8
+    },
+    "multipart": {
+      "absent": {
+        "correct": 0,
+        "total": 0
+      },
+      "count": 32,
+      "counts": {
+        "abstained": 0,
+        "all_requested_values_present": 32,
+        "exact": 1,
+        "false_abstention": 0,
+        "missed_abstention": 0,
+        "natural_stop": 32,
+        "nonrepetitive_nonempty": 32,
+        "token_f1": 26.36405932509381,
+        "token_limited": 0,
+        "wrong_value_mentioned": 0
+      },
+      "exact": 0.03125,
+      "output_nll": 0.19916571583598852,
+      "present": {
+        "correct": 1,
+        "total": 32
+      },
+      "token_f1": 0.8238768539091815
+    },
+    "pairs_by_source": {
+      "calibration": {
+        "both_exact": 10,
+        "count": 16,
+        "same_answer": 0
+      },
+      "corrections": {
+        "both_exact": 0,
+        "count": 16,
+        "same_answer": 4
+      },
+      "squad2": {
+        "both_exact": 13,
+        "count": 64,
+        "same_answer": 5
+      }
+    },
+    "question_pairs": {
+      "both_exact": 23,
+      "count": 96,
+      "same_answer": 9
+    },
+    "retention_vs_sft064_selected469": {
+      "absent_correct_delta": -16,
+      "answerable_correct_delta": 4,
+      "false_abstention_delta": -37,
+      "legacy_exact_delta": -0.06818181818181818,
+      "paired_correct_delta": 2,
+      "passed": false
+    },
+    "selection_score": 0.296875,
+    "squad2": {
+      "absent": {
+        "correct": 6,
+        "total": 32
+      },
+      "count": 160,
+      "counts": {
+        "abstained": 12,
+        "all_requested_values_present": 0,
+        "exact": 62,
+        "false_abstention": 6,
+        "missed_abstention": 26,
+        "natural_stop": 160,
+        "nonrepetitive_nonempty": 160,
+        "token_f1": 79.02496392496391,
+        "token_limited": 0,
+        "wrong_value_mentioned": 0
+      },
+      "exact": 0.3875,
+      "output_nll": 0.6619172696722672,
+      "present": {
+        "correct": 56,
+        "total": 128
+      },
+      "token_f1": 0.49390602453102445
+    }
+  },
+  "output_nll": 0.5526066449751584,
+  "protocol": {
+    "max_tokens": 160,
+    "prompt_truncation": false,
+    "repetition_penalty": 1,
+    "serialization": "native-sft-chat-v1",
+    "temperature": 0
+  },
+  "scope": "Original-target agreement, not certified semantic truth. Dolly EM/F1 are lexical diagnostics and do not judge paraphrase quality. Requested-value coverage is lexical and does not prove correct relationships. Controlled synthetic panel reported separately from legacy QA. Manually review generated answers before promotion. Former experiments may have observed source articles.",
+  "split": "test",
+  "step": 469
+}

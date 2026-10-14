@@ -1,0 +1,13 @@
+{
+  "bitwise_recreated": false,
+  "checkpoint": "[workspace]/pretraining/runs/sft_093_json_approaches_20261014/step_0000160_82ffab052730",
+  "development_requests": 196,
+  "model_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
+  "original_json_correct": 167,
+  "original_weight_sha256": "a001a44290989d65430496617f66abc7f5f3886f26230d7928496f43802ce3a1",
+  "qualified": false,
+  "recreated_json_correct": 168,
+  "release_ready": false,
+  "retained_at_user_request": true,
+  "step": 160
+}

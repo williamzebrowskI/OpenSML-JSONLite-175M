@@ -1,0 +1,2321 @@
+{
+  "model_id": "sft-093",
+  "step": 160,
+  "count": 40,
+  "correct": 29,
+  "observed_28_correct": 23,
+  "authored_12_correct": 6,
+  "outputs": [
+    {
+      "id": "FIELD-01",
+      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": false,
+      "expected": {
+        "playlist_owner": [
+          "my"
+        ],
+        "playlist": [
+          "Rock Gaming"
+        ],
+        "entity_name": [
+          "Mariem Hassan con Leyoad"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"playlist_owner\": [\"my\"], \"playlist\": [\"Rock Gaming\"], \"entity_name\": []}",
+        "value": {
+          "playlist_owner": [
+            "my"
+          ],
+          "playlist": [
+            "Rock Gaming"
+          ],
+          "entity_name": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 22,
+        "generated_tokens": 22,
+        "seconds": 0.09131933306343853,
+        "tokens_per_second": 240.91284136642614,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "playlist_owner",
+            "text": "playlist_owner: my",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "playlist",
+            "text": "playlist: Rock Gaming",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "entity_name",
+            "text": "entity_name: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-02",
+      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": false,
+      "expected": {
+        "artist": [],
+        "music_item": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"artist\": [\"Mariem Hassan\"], \"music_item\": []}",
+        "value": {
+          "artist": [
+            "Mariem Hassan"
+          ],
+          "music_item": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 18,
+        "generated_tokens": 18,
+        "seconds": 0.07230291608721018,
+        "tokens_per_second": 248.95261455691218,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "artist",
+            "text": "artist: Mariem Hassan",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "music_item",
+            "text": "music_item: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-03",
+      "title": "AddToPlaylist · Add track to my Digster Future Hits",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "playlist_owner": [
+          "my"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"playlist_owner\": [\"my\"]}",
+        "value": {
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 6,
+        "generated_tokens": 6,
+        "seconds": 0.03351012500934303,
+        "tokens_per_second": 179.05036159450697,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 1,
+        "extractions": [
+          {
+            "field": "playlist_owner",
+            "text": "playlist_owner: my",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-04",
+      "title": "AddToPlaylist · Add track to my Digster Future Hits",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "artist": [],
+        "entity_name": [],
+        "playlist": [
+          "Digster Future Hits"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"artist\": [], \"entity_name\": [], \"playlist\": [\"Digster Future Hits\"]}",
+        "value": {
+          "artist": [],
+          "entity_name": [],
+          "playlist": [
+            "Digster Future Hits"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 26,
+        "generated_tokens": 26,
+        "seconds": 0.08795370790176094,
+        "tokens_per_second": 295.6100501077278,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "artist",
+            "text": "artist: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "entity_name",
+            "text": "entity_name: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "playlist",
+            "text": "playlist: Digster Future Hits",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-05",
+      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "restaurant_type": [
+          "brasserie"
+        ],
+        "party_size_number": [
+          "nine"
+        ],
+        "state": [
+          "AR"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"restaurant_type\": [\"brasserie\"], \"party_size_number\": [\"nine\"], \"state\": [\"AR\"]}",
+        "value": {
+          "restaurant_type": [
+            "brasserie"
+          ],
+          "party_size_number": [
+            "nine"
+          ],
+          "state": [
+            "AR"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 18,
+        "generated_tokens": 18,
+        "seconds": 0.0673648330848664,
+        "tokens_per_second": 267.20173086933283,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "restaurant_type",
+            "text": "restaurant_type: brasserie",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "party_size_number",
+            "text": "party_size_number: nine",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "state",
+            "text": "state: AR",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-06",
+      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": false,
+      "expected": {
+        "party_size_number": [
+          "nine"
+        ],
+        "timeRange": [],
+        "sort": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"party_size_number\": [\"nine\"], \"timeRange\": [\"nine\"], \"sort\": []}",
+        "value": {
+          "party_size_number": [
+            "nine"
+          ],
+          "timeRange": [
+            "nine"
+          ],
+          "sort": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 20,
+        "generated_tokens": 20,
+        "seconds": 0.07287050015293062,
+        "tokens_per_second": 274.45948577307337,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "party_size_number",
+            "text": "party_size_number: nine",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: nine",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "sort",
+            "text": "sort: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-07",
+      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "sort": [
+          "best"
+        ],
+        "city": [
+          "Wrigley"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"sort\": [\"best\"], \"city\": [\"Wrigley\"]}",
+        "value": {
+          "sort": [
+            "best"
+          ],
+          "city": [
+            "Wrigley"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 9,
+        "generated_tokens": 9,
+        "seconds": 0.04501316696405411,
+        "tokens_per_second": 199.94149727760936,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "sort",
+            "text": "sort: best",
+            "tokens": 4,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "city",
+            "text": "city: Wrigley",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-08",
+      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "timeRange": [],
+        "poi": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"timeRange\": [], \"poi\": []}",
+        "value": {
+          "timeRange": [],
+          "poi": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 17,
+        "generated_tokens": 17,
+        "seconds": 0.09393487498164177,
+        "tokens_per_second": 180.97644781368376,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "timeRange",
+            "text": "timeRange: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "poi",
+            "text": "poi: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-09",
+      "title": "GetWeather · Is it going to be colder in Louisiana",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "state": [
+          "Louisiana"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"condition_temperature\": [\"colder\"], \"state\": [\"Louisiana\"]}",
+        "value": {
+          "condition_temperature": [
+            "colder"
+          ],
+          "state": [
+            "Louisiana"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 8,
+        "generated_tokens": 8,
+        "seconds": 0.059495040914043784,
+        "tokens_per_second": 134.46498862918847,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "condition_temperature",
+            "text": "condition_temperature: colder",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "state",
+            "text": "state: Louisiana",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-10",
+      "title": "GetWeather · Is it going to be colder in Louisiana",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "current_location": [],
+        "geographic_poi": [],
+        "condition_temperature": [
+          "colder"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"current_location\": [], \"geographic_poi\": [], \"condition_temperature\": [\"colder\"]}",
+        "value": {
+          "current_location": [],
+          "geographic_poi": [],
+          "condition_temperature": [
+            "colder"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 26,
+        "generated_tokens": 26,
+        "seconds": 0.13040095893666148,
+        "tokens_per_second": 199.3850368280555,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "current_location",
+            "text": "current_location: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "geographic_poi",
+            "text": "geographic_poi: NOT_STATED",
+            "tokens": 11,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "condition_temperature",
+            "text": "condition_temperature: colder",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42025773599743843
+      }
+    },
+    {
+      "id": "FIELD-11",
+      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": false,
+      "expected": {
+        "timeRange": [
+          "last August"
+        ],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "condition_temperature": [
+          "colder"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"timeRange\": [\"August\"], \"geographic_poi\": [\"Stunt Ranch Santa Monica Mountains Reserve\"], \"condition_temperature\": [\"colder\"]}",
+        "value": {
+          "timeRange": [
+            "August"
+          ],
+          "geographic_poi": [
+            "Stunt Ranch Santa Monica Mountains Reserve"
+          ],
+          "condition_temperature": [
+            "colder"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 24,
+        "generated_tokens": 24,
+        "seconds": 0.09250729205086827,
+        "tokens_per_second": 259.43900710878864,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "timeRange",
+            "text": "timeRange: August",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "geographic_poi",
+            "text": "geographic_poi: Stunt Ranch Santa Monica Mountains Reserve",
+            "tokens": 14,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "condition_temperature",
+            "text": "condition_temperature: colder",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42105119675397873
+      }
+    },
+    {
+      "id": "FIELD-12",
+      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "current_location": [],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "state": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"current_location\": [], \"geographic_poi\": [\"Stunt Ranch Santa Monica Mountains Reserve\"], \"state\": []}",
+        "value": {
+          "current_location": [],
+          "geographic_poi": [
+            "Stunt Ranch Santa Monica Mountains Reserve"
+          ],
+          "state": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 31,
+        "generated_tokens": 31,
+        "seconds": 0.11929304199293256,
+        "tokens_per_second": 259.86427608943507,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "current_location",
+            "text": "current_location: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "geographic_poi",
+            "text": "geographic_poi: Stunt Ranch Santa Monica Mountains Reserve",
+            "tokens": 14,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "state",
+            "text": "state: NOT_STATED",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42105119675397873
+      }
+    },
+    {
+      "id": "FIELD-13",
+      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "artist": [
+          "Behzad Mirkhani"
+        ],
+        "music_item": [
+          "theme"
+        ],
+        "sort": [
+          "last"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"artist\": [\"Behzad Mirkhani\"], \"music_item\": [\"theme\"], \"sort\": [\"last\"]}",
+        "value": {
+          "artist": [
+            "Behzad Mirkhani"
+          ],
+          "music_item": [
+            "theme"
+          ],
+          "sort": [
+            "last"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 20,
+        "generated_tokens": 20,
+        "seconds": 0.11113141593523324,
+        "tokens_per_second": 179.96711219495202,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "artist",
+            "text": "artist: Behzad Mirkhani",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "music_item",
+            "text": "music_item: theme",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "sort",
+            "text": "sort: last",
+            "tokens": 4,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.42105119675397873
+      }
+    },
+    {
+      "id": "FIELD-14",
+      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "service": [],
+        "music_item": [
+          "theme"
+        ],
+        "playlist": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"service\": [], \"music_item\": [\"theme\"], \"playlist\": []}",
+        "value": {
+          "service": [],
+          "music_item": [
+            "theme"
+          ],
+          "playlist": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 21,
+        "generated_tokens": 21,
+        "seconds": 0.11332662519998848,
+        "tokens_per_second": 185.30508574609996,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "service",
+            "text": "service: NOT_STATED",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "music_item",
+            "text": "music_item: theme",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "playlist",
+            "text": "playlist: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-15",
+      "title": "PlayMusic · Play a track by Yui on Vimeo",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "artist": [
+          "Yui"
+        ],
+        "music_item": [
+          "track"
+        ],
+        "service": [
+          "Vimeo"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"artist\": [\"Yui\"], \"music_item\": [\"track\"], \"service\": [\"Vimeo\"]}",
+        "value": {
+          "artist": [
+            "Yui"
+          ],
+          "music_item": [
+            "track"
+          ],
+          "service": [
+            "Vimeo"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 16,
+        "generated_tokens": 16,
+        "seconds": 0.07863229094073176,
+        "tokens_per_second": 203.47874656303512,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "artist",
+            "text": "artist: Yui",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "music_item",
+            "text": "music_item: track",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "service",
+            "text": "service: Vimeo",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-16",
+      "title": "PlayMusic · Play a track by Yui on Vimeo",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "playlist": [],
+        "sort": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"playlist\": [], \"sort\": []}",
+        "value": {
+          "playlist": [],
+          "sort": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 16,
+        "generated_tokens": 16,
+        "seconds": 0.07126999995671213,
+        "tokens_per_second": 224.49838655420314,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "playlist",
+            "text": "playlist: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "sort",
+            "text": "sort: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-17",
+      "title": "RateBook · I would give Things Fall Apart 3 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "rating_value": [
+          "3"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "object_name": [
+          "Things Fall Apart"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"rating_value\": [\"3\"], \"rating_unit\": [\"stars\"], \"object_name\": [\"Things Fall Apart\"]}",
+        "value": {
+          "rating_value": [
+            "3"
+          ],
+          "rating_unit": [
+            "stars"
+          ],
+          "object_name": [
+            "Things Fall Apart"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 17,
+        "generated_tokens": 17,
+        "seconds": 0.09772283397614956,
+        "tokens_per_second": 173.96138965995456,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "rating_value",
+            "text": "rating_value: 3",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "rating_unit",
+            "text": "rating_unit: stars",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_name",
+            "text": "object_name: Things Fall Apart",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-18",
+      "title": "RateBook · I would give Things Fall Apart 3 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "object_select": [],
+        "object_type": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_name\": [\"Things Fall Apart\"], \"object_select\": [], \"object_type\": []}",
+        "value": {
+          "object_name": [
+            "Things Fall Apart"
+          ],
+          "object_select": [],
+          "object_type": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 26,
+        "generated_tokens": 26,
+        "seconds": 0.1273387921974063,
+        "tokens_per_second": 204.1797283556266,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "object_name",
+            "text": "object_name: Things Fall Apart",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_select",
+            "text": "object_select: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_type",
+            "text": "object_type: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-19",
+      "title": "RateBook · I'd rate this book 1 of 6 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "rating_value": [
+          "1"
+        ],
+        "object_name": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"rating_value\": [\"1\"], \"object_name\": []}",
+        "value": {
+          "rating_value": [
+            "1"
+          ],
+          "object_name": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 14,
+        "generated_tokens": 14,
+        "seconds": 0.07423674990423024,
+        "tokens_per_second": 188.58584216120482,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "rating_value",
+            "text": "rating_value: 1",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_name",
+            "text": "object_name: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-20",
+      "title": "RateBook · I'd rate this book 1 of 6 stars",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "object_part_of_series_type": [],
+        "object_name": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_part_of_series_type\": [], \"object_name\": []}",
+        "value": {
+          "object_part_of_series_type": [],
+          "object_name": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 25,
+        "generated_tokens": 25,
+        "seconds": 0.08746187505312264,
+        "tokens_per_second": 285.83882960221797,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "object_part_of_series_type",
+            "text": "object_part_of_series_type: NOT_STATED",
+            "tokens": 16,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_name",
+            "text": "object_name: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-21",
+      "title": "SearchCreativeWork · Show me Happiness Was Free.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_name\": [\"Happiness Was Free\"]}",
+        "value": {
+          "object_name": [
+            "Happiness Was Free"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 8,
+        "generated_tokens": 8,
+        "seconds": 0.03888466698117554,
+        "tokens_per_second": 205.73662116928713,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 1,
+        "extractions": [
+          {
+            "field": "object_name",
+            "text": "object_name: Happiness Was Free",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-22",
+      "title": "SearchCreativeWork · Show me Happiness Was Free.",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "object_type": [],
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_type\": [], \"object_name\": [\"Happiness Was Free\"]}",
+        "value": {
+          "object_type": [],
+          "object_name": [
+            "Happiness Was Free"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 17,
+        "generated_tokens": 17,
+        "seconds": 0.0584819579962641,
+        "tokens_per_second": 290.6879417595078,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "object_type",
+            "text": "object_type: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_name",
+            "text": "object_name: Happiness Was Free",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-23",
+      "title": "SearchCreativeWork · Find me the Martin Morning saga",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "object_name": [
+          "Martin Morning"
+        ],
+        "object_type": [
+          "saga"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_name\": [\"Martin Morning\"], \"object_type\": [\"saga\"]}",
+        "value": {
+          "object_name": [
+            "Martin Morning"
+          ],
+          "object_type": [
+            "saga"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 12,
+        "generated_tokens": 12,
+        "seconds": 0.054072916973382235,
+        "tokens_per_second": 221.92255701513352,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "object_name",
+            "text": "object_name: Martin Morning",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_type",
+            "text": "object_type: saga",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-24",
+      "title": "SearchCreativeWork · Find me the Martin Morning saga",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "object_name": [
+          "Martin Morning"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_name\": [\"Martin Morning\"]}",
+        "value": {
+          "object_name": [
+            "Martin Morning"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 6,
+        "generated_tokens": 6,
+        "seconds": 0.03386962483637035,
+        "tokens_per_second": 177.14988072607753,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 1,
+        "extractions": [
+          {
+            "field": "object_name",
+            "text": "object_name: Martin Morning",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-25",
+      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "spatial_relation": [
+          "in the neighborhood"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"movie_type\": [\"animated movies\"], \"spatial_relation\": [\"in the neighborhood\"]}",
+        "value": {
+          "movie_type": [
+            "animated movies"
+          ],
+          "spatial_relation": [
+            "in the neighborhood"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 16,
+        "generated_tokens": 16,
+        "seconds": 0.05664683389477432,
+        "tokens_per_second": 282.4517965067771,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "movie_type",
+            "text": "movie_type: animated movies",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "spatial_relation",
+            "text": "spatial_relation: in the neighborhood",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-26",
+      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "timeRange": [],
+        "movie_name": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"movie_type\": [\"animated movies\"], \"timeRange\": [], \"movie_name\": []}",
+        "value": {
+          "movie_type": [
+            "animated movies"
+          ],
+          "timeRange": [],
+          "movie_name": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 28,
+        "generated_tokens": 28,
+        "seconds": 0.09414666704833508,
+        "tokens_per_second": 297.40829790208875,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "movie_type",
+            "text": "movie_type: animated movies",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "movie_name",
+            "text": "movie_name: NOT_STATED",
+            "tokens": 11,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-27",
+      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": false,
+      "expected": {
+        "movie_name": [
+          "Mabel’s Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"movie_name\": [\"Mabel's Dramatic Career\"], \"timeRange\": [\"twenty two o'clock\"]}",
+        "value": {
+          "movie_name": [
+            "Mabel's Dramatic Career"
+          ],
+          "timeRange": [
+            "twenty two o'clock"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 22,
+        "generated_tokens": 22,
+        "seconds": 0.1022722499910742,
+        "tokens_per_second": 215.11211498642152,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "movie_name",
+            "text": "movie_name: Mabel's Dramatic Career",
+            "tokens": 13,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: twenty two o'clock",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-28",
+      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
+      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "correct": true,
+      "expected": {
+        "timeRange": [
+          "twenty two o'clock"
+        ],
+        "spatial_relation": [],
+        "object_location_type": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"timeRange\": [\"twenty two o'clock\"], \"spatial_relation\": [], \"object_location_type\": []}",
+        "value": {
+          "timeRange": [
+            "twenty two o'clock"
+          ],
+          "spatial_relation": [],
+          "object_location_type": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 31,
+        "generated_tokens": 31,
+        "seconds": 0.14748362498357892,
+        "tokens_per_second": 210.19282651515783,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "timeRange",
+            "text": "timeRange: twenty two o'clock",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "spatial_relation",
+            "text": "spatial_relation: NOT_STATED",
+            "tokens": 10,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "object_location_type",
+            "text": "object_location_type: NOT_STATED",
+            "tokens": 12,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-29",
+      "title": "Named track and performer",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": true,
+      "expected": {
+        "track": [
+          "Blue Lantern"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "album": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"track\": [\"Blue Lantern\"], \"artist\": [\"Mira Sol\"], \"album\": []}",
+        "value": {
+          "track": [
+            "Blue Lantern"
+          ],
+          "artist": [
+            "Mira Sol"
+          ],
+          "album": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 18,
+        "generated_tokens": 18,
+        "seconds": 0.10122775007039309,
+        "tokens_per_second": 177.81685345651684,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "track",
+            "text": "track: Blue Lantern",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "artist",
+            "text": "artist: Mira Sol",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "album",
+            "text": "album: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-30",
+      "title": "Restaurant, city, party and time",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": true,
+      "expected": {
+        "restaurant_name": [
+          "River Moon"
+        ],
+        "city": [
+          "Denver"
+        ],
+        "party_size_number": [
+          "four"
+        ],
+        "timeRange": [
+          "tomorrow"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"restaurant_name\": [\"River Moon\"], \"city\": [\"Denver\"], \"party_size_number\": [\"four\"], \"timeRange\": [\"tomorrow\"]}",
+        "value": {
+          "restaurant_name": [
+            "River Moon"
+          ],
+          "city": [
+            "Denver"
+          ],
+          "party_size_number": [
+            "four"
+          ],
+          "timeRange": [
+            "tomorrow"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 23,
+        "generated_tokens": 23,
+        "seconds": 0.13215499999932945,
+        "tokens_per_second": 174.0380613682169,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 4,
+        "extractions": [
+          {
+            "field": "restaurant_name",
+            "text": "restaurant_name: River Moon",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "city",
+            "text": "city: Denver",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "party_size_number",
+            "text": "party_size_number: four",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: tomorrow",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-31",
+      "title": "Weather with country missing",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": false,
+      "expected": {
+        "city": [
+          "Oslo"
+        ],
+        "timeRange": [
+          "Friday"
+        ],
+        "country": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"city\": [\"Oslo\"], \"timeRange\": [\"Friday\"], \"country\": [\"Norway\"]}",
+        "value": {
+          "city": [
+            "Oslo"
+          ],
+          "timeRange": [
+            "Friday"
+          ],
+          "country": [
+            "Norway"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 11,
+        "generated_tokens": 11,
+        "seconds": 0.07690312503837049,
+        "tokens_per_second": 143.03710017650903,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "city",
+            "text": "city: Oslo",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: Friday",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "country",
+            "text": "country: Norway",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-32",
+      "title": "Rating and scale",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": false,
+      "expected": {
+        "object_name": [
+          "Glass Harbor"
+        ],
+        "rating_value": [
+          "four"
+        ],
+        "best_rating": [
+          "five"
+        ],
+        "rating_unit": [
+          "stars"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_name\": [\"Glass Harbor\"], \"rating_value\": [\"four\"], \"best_rating\": [], \"rating_unit\": [\"stars\"]}",
+        "value": {
+          "object_name": [
+            "Glass Harbor"
+          ],
+          "rating_value": [
+            "four"
+          ],
+          "best_rating": [],
+          "rating_unit": [
+            "stars"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 25,
+        "generated_tokens": 25,
+        "seconds": 0.11085562501102686,
+        "tokens_per_second": 225.51855169742842,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 4,
+        "extractions": [
+          {
+            "field": "object_name",
+            "text": "object_name: Glass Harbor",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "rating_value",
+            "text": "rating_value: four",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "best_rating",
+            "text": "best_rating: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "rating_unit",
+            "text": "rating_unit: stars",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-33",
+      "title": "Movie and screening location",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": true,
+      "expected": {
+        "movie_name": [
+          "Silver Orchard"
+        ],
+        "location_name": [
+          "Maple Cinema"
+        ],
+        "timeRange": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"movie_name\": [\"Silver Orchard\"], \"location_name\": [\"Maple Cinema\"], \"timeRange\": []}",
+        "value": {
+          "movie_name": [
+            "Silver Orchard"
+          ],
+          "location_name": [
+            "Maple Cinema"
+          ],
+          "timeRange": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 26,
+        "generated_tokens": 26,
+        "seconds": 0.09965979098342359,
+        "tokens_per_second": 260.887563012495,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "movie_name",
+            "text": "movie_name: Silver Orchard",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "location_name",
+            "text": "location_name: Maple Cinema",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-34",
+      "title": "Track added to a playlist",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": true,
+      "expected": {
+        "entity_name": [
+          "Night Steps"
+        ],
+        "playlist": [
+          "Evening Walks"
+        ]
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"entity_name\": [\"Night Steps\"], \"playlist\": [\"Evening Walks\"]}",
+        "value": {
+          "entity_name": [
+            "Night Steps"
+          ],
+          "playlist": [
+            "Evening Walks"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 14,
+        "generated_tokens": 14,
+        "seconds": 0.05292966589331627,
+        "tokens_per_second": 264.50195299207166,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "entity_name",
+            "text": "entity_name: Night Steps",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "playlist",
+            "text": "playlist: Evening Walks",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-35",
+      "title": "Two performers",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": false,
+      "expected": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane"
+        ],
+        "album": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"artist\": [\"Mira Sol\"], \"album\": []}",
+        "value": {
+          "artist": [
+            "Mira Sol"
+          ],
+          "album": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 13,
+        "generated_tokens": 13,
+        "seconds": 0.05152204097248614,
+        "tokens_per_second": 252.31919688395644,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "artist",
+            "text": "artist: Mira Sol",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "album",
+            "text": "album: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-36",
+      "title": "Two cities mentioned",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": false,
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo"
+        ],
+        "country": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"city\": [\"Bergen\"], \"country\": [\"Norway\"]}",
+        "value": {
+          "city": [
+            "Bergen"
+          ],
+          "country": [
+            "Norway"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 7,
+        "generated_tokens": 7,
+        "seconds": 0.04436787497252226,
+        "tokens_per_second": 157.7718113462773,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "city",
+            "text": "city: Bergen",
+            "tokens": 4,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "country",
+            "text": "country: Norway",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-37",
+      "title": "Cuisine and city",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": false,
+      "expected": {
+        "cuisine": [
+          "Thai"
+        ],
+        "city": [
+          "Boston"
+        ],
+        "restaurant_name": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"cuisine\": [], \"city\": [\"Boston\"], \"restaurant_name\": []}",
+        "value": {
+          "cuisine": [],
+          "city": [
+            "Boston"
+          ],
+          "restaurant_name": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 22,
+        "generated_tokens": 22,
+        "seconds": 0.09401199989952147,
+        "tokens_per_second": 234.01267948254744,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "cuisine",
+            "text": "cuisine: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "city",
+            "text": "city: Boston",
+            "tokens": 3,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "restaurant_name",
+            "text": "restaurant_name: NOT_STATED",
+            "tokens": 11,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-38",
+      "title": "Album and performer",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": false,
+      "expected": {
+        "album": [
+          "Quiet Signals"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"album\": [\"Quiet Signals\"], \"artist\": [\"Mira Sol\"], \"track\": [\"Quiet Signals\"]}",
+        "value": {
+          "album": [
+            "Quiet Signals"
+          ],
+          "artist": [
+            "Mira Sol"
+          ],
+          "track": [
+            "Quiet Signals"
+          ]
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 18,
+        "generated_tokens": 18,
+        "seconds": 0.07681954209692776,
+        "tokens_per_second": 234.31537742425402,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "album",
+            "text": "album: Quiet Signals",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "artist",
+            "text": "artist: Mira Sol",
+            "tokens": 5,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "track",
+            "text": "track: Quiet Signals",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-39",
+      "title": "Title with rating absent",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": true,
+      "expected": {
+        "object_name": [
+          "Paper Bridge"
+        ],
+        "rating_value": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"object_name\": [\"Paper Bridge\"], \"rating_value\": []}",
+        "value": {
+          "object_name": [
+            "Paper Bridge"
+          ],
+          "rating_value": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 15,
+        "generated_tokens": 15,
+        "seconds": 0.07386670913547277,
+        "tokens_per_second": 203.06847530583434,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 2,
+        "extractions": [
+          {
+            "field": "object_name",
+            "text": "object_name: Paper Bridge",
+            "tokens": 6,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "rating_value",
+            "text": "rating_value: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    },
+    {
+      "id": "FIELD-40",
+      "title": "Missing country and time",
+      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "correct": true,
+      "expected": {
+        "country": [],
+        "timeRange": [],
+        "artist": []
+      },
+      "result": {
+        "type": "done",
+        "text": "{\"country\": [], \"timeRange\": [], \"artist\": []}",
+        "value": {
+          "country": [],
+          "timeRange": [],
+          "artist": []
+        },
+        "schema_valid": true,
+        "success": true,
+        "stop_reason": "turn_end",
+        "output_tokens": 24,
+        "generated_tokens": 24,
+        "seconds": 0.12419404089450836,
+        "tokens_per_second": 193.24598690194674,
+        "constrained": false,
+        "output_mode": "fieldwise-assembly",
+        "model_calls": 3,
+        "extractions": [
+          {
+            "field": "country",
+            "text": "country: NOT_STATED",
+            "tokens": 7,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "timeRange",
+            "text": "timeRange: NOT_STATED",
+            "tokens": 9,
+            "stop_reason": "turn_end"
+          },
+          {
+            "field": "artist",
+            "text": "artist: NOT_STATED",
+            "tokens": 8,
+            "stop_reason": "turn_end"
+          }
+        ],
+        "temperature": 0.0,
+        "repetition_penalty": 1.0,
+        "top_k": 40,
+        "seed": 2026,
+        "peak_gib": 0.4269716329872608
+      }
+    }
+  ],
+  "scope": "Local playground diagnostic, not a fresh full benchmark; gold references were never posted to the model."
+}

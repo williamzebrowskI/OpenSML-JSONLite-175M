@@ -1,0 +1,106 @@
+{
+  "files": {
+    "development.jsonl": "3020b7706803601d16d6a95513643b2e1080c439662e56478efc5dba1347abee",
+    "development.mask.npy": "274b38480e33244b83d166d6a2f7ec46958841c31d0a8dbf6eead37a460f040a",
+    "development.offsets.npy": "32369a64fee87b1e948fe794d86c2890063c8119e34136334c8547739b21ae7f",
+    "development.tokens.npy": "3cce065d8fa36bf5b4f6a2d455c4c1950118b4dd32662a570e81ad425bde7bf2",
+    "test.jsonl": "5ea481ca5ace9c9453a0df9131118c21276ccd1b2f0db85707cf7ea4e3d12f4e",
+    "test.mask.npy": "519d31a38f01e3717d401ea4e17d8766d3747d952e2bd90405af9942c014084a",
+    "test.offsets.npy": "c445649bef868d8ead49bf01f210d16c3dd17d97c63d1f701b28cc6690571e14",
+    "test.tokens.npy": "7175195c929731e1a9006422fc7ec78c049daa6177841c9e1d52c4205e15b2b7",
+    "train.jsonl": "4410144ea6e34fa2d8fbc3d24d3a38d85f20418ca0a1e38ffd8488faba436851",
+    "train.mask.npy": "ec37869a01203cf6876867a83b5005a1816be8b4e54e50a25007a096fa1c89fb",
+    "train.offsets.npy": "2be2aac718d6890d199dea30e6149c5699cf768e644b30166b2cef927e96fe10",
+    "train.tokens.npy": "e8be664baf16319f486bb1d56a752547e961bdf8c47c6496936fbce7b1c69332"
+  },
+  "limitations": "17000 original published QA rows plus8000 deterministic fictional examples across8 domains. Synthetic frames are controlled examples, not independently authored natural documents. Frame IDs held out across splits; structural tasks/domains reused. Legacy evaluation observed previously. Source article exposure in earlier experiments/pretraining unknown. Symbolic checks do not guarantee natural-language generalization. Original SQuAD CC-BY-SA4.0 and Dolly CC-BY-SA3.0 provenance retained.",
+  "parent": "[workspace]/pretraining/runs/research_30b_176m_stage_a_continue_20261009/step_0132005_63f79113c3d2",
+  "parent_sha256": "5151567e266244c9e32fd6e01775192633abe227320269ecdefe28ce43e9ccc3",
+  "plan": {
+    "batch_size": 32,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "epochs": 1,
+    "eps": 1e-08,
+    "eval_steps": [
+      156,
+      313,
+      469,
+      625,
+      782
+    ],
+    "final_lr": 2e-06,
+    "grad_clip": 1.0,
+    "microbatch": 2,
+    "padding_policy": "micro_multiple128",
+    "peak_lr": 1e-05,
+    "seed": 20261013,
+    "warmup_updates": 20,
+    "weight_decay": 0.01
+  },
+  "sources": {
+    "pretraining/data/sft_064_grounded_qa_20261013/development.jsonl": "3f6c3e1382046af820422292b42d239a0253340752362b0ed95176bfe541a58c",
+    "pretraining/data/sft_064_grounded_qa_20261013/manifest.json": "26dabb0debc5783b009d862731d73049f80bf08c2a3a739793474aa5f3de0385",
+    "pretraining/data/sft_064_grounded_qa_20261013/test.jsonl": "d00509a2ce2e5bf299ca34b0a5862385b74944e0939079de69b4c3845c46739c",
+    "pretraining/data/sft_064_grounded_qa_20261013/train.jsonl": "28840532dd4a60e9736bd4855b7e17ceb6c90c6aa8f1688e83f9481c54204526"
+  },
+  "splits": {
+    "development": {
+      "absent": 24,
+      "buckets": {
+        "calibration": 16,
+        "corrections": 16,
+        "legacy": 88,
+        "multipart": 16
+      },
+      "records": 136,
+      "sources": {
+        "calibration": 16,
+        "corrections": 16,
+        "dolly_closed_qa": 8,
+        "multipart": 16,
+        "squad2": 80
+      },
+      "tokens": 26962
+    },
+    "test": {
+      "absent": 48,
+      "buckets": {
+        "calibration": 32,
+        "corrections": 32,
+        "legacy": 176,
+        "multipart": 32
+      },
+      "records": 272,
+      "sources": {
+        "calibration": 32,
+        "corrections": 32,
+        "dolly_closed_qa": 16,
+        "multipart": 32,
+        "squad2": 160
+      },
+      "tokens": 58982
+    },
+    "train": {
+      "absent": 2250,
+      "buckets": {
+        "calibration": 3000,
+        "contrast": 5000,
+        "corrections": 2000,
+        "multipart": 3000,
+        "natural": 12000
+      },
+      "records": 25000,
+      "sources": {
+        "calibration": 3000,
+        "corrections": 2000,
+        "dolly_closed_qa": 376,
+        "multipart": 3000,
+        "squad2": 16624
+      },
+      "tokens": 5161605
+    }
+  }
+}

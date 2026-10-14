@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.safetensors
+*.npy
+*.npz
+*.parquet
+.DS_Store
+pretraining/runs/
+pretraining/data/
+# Prepared manifests and metrics are explicitly tracked during publication.

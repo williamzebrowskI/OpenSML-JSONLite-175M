@@ -1,0 +1,571 @@
+{
+  "complete": true,
+  "requests": 40,
+  "exact_correct": 29,
+  "all_values_and_stops_match_recorded_playground": true,
+  "weight_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
+  "versions": {
+    "mlx": "0.32.3",
+    "numpy": "2.4.2",
+    "tokenizers": "0.22.2",
+    "jsonschema": "4.26.0"
+  },
+  "environment": "clean temporary venv with published PyPI dependencies, independent of workspace PYTHONPATH",
+  "elapsed_seconds": 3.6218272920232266,
+  "outputs": [
+    {
+      "id": "FIELD-01",
+      "value": {
+        "playlist_owner": [
+          "my"
+        ],
+        "playlist": [
+          "Rock Gaming"
+        ],
+        "entity_name": []
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-02",
+      "value": {
+        "artist": [
+          "Mariem Hassan"
+        ],
+        "music_item": []
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-03",
+      "value": {
+        "playlist_owner": [
+          "my"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 1
+    },
+    {
+      "id": "FIELD-04",
+      "value": {
+        "artist": [],
+        "entity_name": [],
+        "playlist": [
+          "Digster Future Hits"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-05",
+      "value": {
+        "restaurant_type": [
+          "brasserie"
+        ],
+        "party_size_number": [
+          "nine"
+        ],
+        "state": [
+          "AR"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-06",
+      "value": {
+        "party_size_number": [
+          "nine"
+        ],
+        "timeRange": [
+          "nine"
+        ],
+        "sort": []
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-07",
+      "value": {
+        "sort": [
+          "best"
+        ],
+        "city": [
+          "Wrigley"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-08",
+      "value": {
+        "timeRange": [],
+        "poi": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-09",
+      "value": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "state": [
+          "Louisiana"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-10",
+      "value": {
+        "current_location": [],
+        "geographic_poi": [],
+        "condition_temperature": [
+          "colder"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-11",
+      "value": {
+        "timeRange": [
+          "August"
+        ],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "condition_temperature": [
+          "colder"
+        ]
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-12",
+      "value": {
+        "current_location": [],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "state": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-13",
+      "value": {
+        "artist": [
+          "Behzad Mirkhani"
+        ],
+        "music_item": [
+          "theme"
+        ],
+        "sort": [
+          "last"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-14",
+      "value": {
+        "service": [],
+        "music_item": [
+          "theme"
+        ],
+        "playlist": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-15",
+      "value": {
+        "artist": [
+          "Yui"
+        ],
+        "music_item": [
+          "track"
+        ],
+        "service": [
+          "Vimeo"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-16",
+      "value": {
+        "playlist": [],
+        "sort": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-17",
+      "value": {
+        "rating_value": [
+          "3"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "object_name": [
+          "Things Fall Apart"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-18",
+      "value": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "object_select": [],
+        "object_type": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-19",
+      "value": {
+        "rating_value": [
+          "1"
+        ],
+        "object_name": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-20",
+      "value": {
+        "object_part_of_series_type": [],
+        "object_name": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-21",
+      "value": {
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 1
+    },
+    {
+      "id": "FIELD-22",
+      "value": {
+        "object_type": [],
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-23",
+      "value": {
+        "object_name": [
+          "Martin Morning"
+        ],
+        "object_type": [
+          "saga"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-24",
+      "value": {
+        "object_name": [
+          "Martin Morning"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 1
+    },
+    {
+      "id": "FIELD-25",
+      "value": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "spatial_relation": [
+          "in the neighborhood"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-26",
+      "value": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "timeRange": [],
+        "movie_name": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-27",
+      "value": {
+        "movie_name": [
+          "Mabel's Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-28",
+      "value": {
+        "timeRange": [
+          "twenty two o'clock"
+        ],
+        "spatial_relation": [],
+        "object_location_type": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-29",
+      "value": {
+        "track": [
+          "Blue Lantern"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "album": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-30",
+      "value": {
+        "restaurant_name": [
+          "River Moon"
+        ],
+        "city": [
+          "Denver"
+        ],
+        "party_size_number": [
+          "four"
+        ],
+        "timeRange": [
+          "tomorrow"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 4
+    },
+    {
+      "id": "FIELD-31",
+      "value": {
+        "city": [
+          "Oslo"
+        ],
+        "timeRange": [
+          "Friday"
+        ],
+        "country": [
+          "Norway"
+        ]
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-32",
+      "value": {
+        "object_name": [
+          "Glass Harbor"
+        ],
+        "rating_value": [
+          "four"
+        ],
+        "best_rating": [],
+        "rating_unit": [
+          "stars"
+        ]
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 4
+    },
+    {
+      "id": "FIELD-33",
+      "value": {
+        "movie_name": [
+          "Silver Orchard"
+        ],
+        "location_name": [
+          "Maple Cinema"
+        ],
+        "timeRange": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-34",
+      "value": {
+        "entity_name": [
+          "Night Steps"
+        ],
+        "playlist": [
+          "Evening Walks"
+        ]
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-35",
+      "value": {
+        "artist": [
+          "Mira Sol"
+        ],
+        "album": []
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-36",
+      "value": {
+        "city": [
+          "Bergen"
+        ],
+        "country": [
+          "Norway"
+        ]
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-37",
+      "value": {
+        "cuisine": [],
+        "city": [
+          "Boston"
+        ],
+        "restaurant_name": []
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-38",
+      "value": {
+        "album": [
+          "Quiet Signals"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": [
+          "Quiet Signals"
+        ]
+      },
+      "exact": false,
+      "service_parity": true,
+      "model_calls": 3
+    },
+    {
+      "id": "FIELD-39",
+      "value": {
+        "object_name": [
+          "Paper Bridge"
+        ],
+        "rating_value": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 2
+    },
+    {
+      "id": "FIELD-40",
+      "value": {
+        "country": [],
+        "timeRange": [],
+        "artist": []
+      },
+      "exact": true,
+      "service_parity": true,
+      "model_calls": 3
+    }
+  ],
+  "scope": "40 observed fixtures, same greedy native MLX path; no fresh blind benchmark or full-suite stock-runtime parity claim"
+}
