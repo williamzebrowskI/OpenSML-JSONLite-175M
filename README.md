@@ -46,11 +46,242 @@ Supply source text containing the facts and a closed flat object schema with 1â€
 
 The run is trained primarily on seven SNIPS domains and 39 field definitions. New names/descriptions are passed to the model directly, but reliable unfamiliar-domain extraction has not been established. Nested schemas, numeric/boolean outputs, enums, references and advanced constraints are outside the verified runner contract.
 
-Example source: `Play the track Blue Lantern by Mira Sol.` With a schema requesting track, artist and album as string arrays, actual native output is:
+## Verified interaction examples
+
+These four examples passed the playground reference check with the selected native JSON weights. Their raw outputs also matched the standalone MLX runner. They demonstrate observed successes, not a guarantee on other inputs. Decode greedily: temperature 0, repetition penalty 1, at most 256 output tokens.
+
+### Instruction and input format
+
+Use this exact instruction for every example (the provided runner inserts it automatically):
+
+```text
+Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.
+```
+
+The user message is that instruction, a blank line, then the compact JSON object `{"source_text": <query>, "schema": <schema>}`. Both inputs are provided to one model generation; no expected answer is included. The runner applies the native SFT role tokens and validates the result afterward.
+
+### Example 1: Track and artist
+
+**Query / source text**
+
+```text
+Play the track Blue Lantern by Mira Sol.
+```
+
+**JSON Schema**
 
 ```json
-{"track":["Blue Lantern"],"artist":["Mira Sol"],"album":[]}
+{
+  "type": "object",
+  "properties": {
+    "track": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "track name"
+    },
+    "artist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "performer or musical artist"
+    },
+    "album": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "album name"
+    }
+  },
+  "required": [
+    "track",
+    "artist",
+    "album"
+  ],
+  "additionalProperties": false
+}
 ```
+
+**Actual model output**
+
+```json
+{"album":[],"artist":["Mira Sol"],"track":["Blue Lantern"]}
+```
+
+Run the packaged example: `python inference.py --example 29`.
+
+### Example 2: Restaurant booking
+
+**Query / source text**
+
+```text
+Book River Moon in Denver for four people tomorrow.
+```
+
+**JSON Schema**
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "restaurant_name": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "restaurant name"
+    },
+    "city": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "city or town"
+    },
+    "party_size_number": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "explicit party size"
+    },
+    "timeRange": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "date, time, or time-range expression"
+    }
+  },
+  "required": [
+    "restaurant_name",
+    "city",
+    "party_size_number",
+    "timeRange"
+  ],
+  "additionalProperties": false
+}
+```
+
+**Actual model output**
+
+```json
+{"restaurant_name":["River Moon"],"city":["Denver"],"party_size_number":["four"],"timeRange":["tomorrow"]}
+```
+
+Run the packaged example: `python inference.py --example 30`.
+
+### Example 3: Missing fields as empty arrays
+
+**Query / source text**
+
+```text
+Please play some music.
+```
+
+**JSON Schema**
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "country": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "country"
+    },
+    "timeRange": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "date, time, or time-range expression"
+    },
+    "artist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "performer or musical artist"
+    }
+  },
+  "required": [
+    "country",
+    "timeRange",
+    "artist"
+  ],
+  "additionalProperties": false
+}
+```
+
+**Actual model output**
+
+```json
+{"country":[],"timeRange":[],"artist":[]}
+```
+
+Run the packaged example: `python inference.py --example 40`.
+
+### Example 4: Nullable strings and requested scope
+
+**Query / source text**
+
+```text
+Play the last theme by Behzad Mirkhani.
+```
+
+**JSON Schema**
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "service": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "music service"
+    },
+    "music_item": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "word specifying the requested music category, such as artist, track, song, or album"
+    },
+    "playlist": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "playlist name"
+    }
+  },
+  "required": [
+    "service",
+    "music_item",
+    "playlist"
+  ],
+  "additionalProperties": false
+}
+```
+
+**Actual model output**
+
+```json
+{"playlist":null,"music_item":"theme","service":null}
+```
+
+Run the packaged example: `python inference.py --example 48`.
+
+The performer is present in the source but is not requested by this schema. The output includes only the requested music category and missing service/playlist values.
 
 ## Training
 
