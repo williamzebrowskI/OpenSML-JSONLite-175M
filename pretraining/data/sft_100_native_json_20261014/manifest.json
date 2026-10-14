@@ -1,0 +1,133 @@
+{
+  "files": {
+    "development.jsonl": "ee362002764008749a2273cfd87bc2eca9aec966c14d2ca0fec35f8261d33460",
+    "development.mask.npy": "bbce602e0f0b8d399d56947b43f5f239bf5144dbaa205bdfdfb73431d273e73f",
+    "development.offsets.npy": "eb406de51551eb93b86310215d11716a49533dafb52733ced1dea9917bab58e8",
+    "development.tokens.npy": "187b5cdb8e7cbab2ec2789513c41c49987de81975ee21dc66c2b7428f821c73c",
+    "test.jsonl": "96860322b45901cb7aec3cf8971da083fd607043a2bd936fb44b0f6d06dab164",
+    "test.mask.npy": "97a9add524f65e38ec1ac79b51656f5b7d6431e8f8222d498d586a5f13d77b14",
+    "test.offsets.npy": "ac0d9cab146d5f924437139fd75dff37641b3c61d7d726527aadf47a9c75c9e3",
+    "test.tokens.npy": "cf3cb423c501b6c3b1adfe70a1e1b41036f9d20f0586bc36a81eadc7a309bf83",
+    "train.jsonl": "8a63ff26d9fc6c08bc47c0385e4f18e156d7bd8ba41e036d2e197ccc60dde411",
+    "train.mask.npy": "67c7cc4bca07a405bdc76cb81016efb790d613f73a10a863d9da302b53182879",
+    "train.offsets.npy": "b852ee81cb6e87c567f115176b6fde72863072f9f64e93a43eb5c19d789a9fd3",
+    "train.tokens.npy": "7139baa3c14fae0f739d92c00345c1085a14569d4b9d7f8c5818191e25eebbf3"
+  },
+  "format": "native-json100-source-schema-json-v1",
+  "input_hashes": {
+    "pretraining/data/sft_068_snips_extraction_20261013/development.jsonl": "9d23d088eed248a2a618c89b04617abe14428b8a63a186a7f848c4d99f76ad8a",
+    "pretraining/data/sft_068_snips_extraction_20261013/test.jsonl": "b10bc34341d070c0b44cb78558ff7a044ad8c3a98a0cf5451e6cc34712048a3b",
+    "pretraining/data/sft_068_snips_extraction_20261013/train.jsonl": "bbc728409164a23080e27615fd492952fd220d0e805667612087accde2a7567e",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__AddToPlaylist__train_AddToPlaylist_full.json": "fee1b4645352e70ed8a40f1f87c3b53fc3bf75f8ebc82252a22b82c107e75b01",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__AddToPlaylist__validate_AddToPlaylist.json": "14cc9ee49ae477b1452632a6e835498cf4c32da397b16967c82abb3e50403e83",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__BookRestaurant__train_BookRestaurant_full.json": "7677e82cd6e9a8191f0a4502568c786278c984900b4796d3628e46f1abf73ef4",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__BookRestaurant__validate_BookRestaurant.json": "4f7258ccc768b777b2eb8916532db9aa50dbd058ddf1ffb0dc59218963e7442a",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__GetWeather__train_GetWeather_full.json": "86f414b2ad8a993134d85d16e25e5d337beae47cef993c0af2a5f440405c60f6",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__GetWeather__validate_GetWeather.json": "60c095e193655d6ca92be220fed3926ca25e18cd70c85664145efe25d80993af",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__PlayMusic__train_PlayMusic_full.json": "901ddbe9781d1fdb8196e789c543f80df3d29ca6e237da64947905adcc0312e4",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__PlayMusic__validate_PlayMusic.json": "922212775e26259d5bffeaf79b6048d070ca017d229df00b2cc9800f71c75d20",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__README.md": "62485a4a7bf268983cc100ce5c684d9474328dd5f468e900cfe1527844a0214c",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__RateBook__train_RateBook_full.json": "bb43e4b74134300d5766f6b420d0357a63402987a225f6dc92c806c9c040ce04",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__RateBook__validate_RateBook.json": "c1f8b4114da0bb5e8afd78a8062766e18b2eabb0e717539598db01b09d04619b",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__SearchCreativeWork__train_SearchCreativeWork_full.json": "87b3432de48c71c205aa5238b41d9e3f2d70bdfcd0bea2427544fb9e4bd5e5bb",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__SearchCreativeWork__validate_SearchCreativeWork.json": "8a5e830eddb185d3e4a9d27ded140a145d04766bdce0e58834676ede32d13e77",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__SearchScreeningEvent__train_SearchScreeningEvent_full.json": "5447e9440c02e2fb08c3ae16b9f58a4d1332b4bc77fd34691402b02aa4399765",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__SearchScreeningEvent__validate_SearchScreeningEvent.json": "81e1445713e03c7c3e615353c5f3fee05f369fe9834100b9b9735900a96b9498",
+    "pretraining/data/snips_sources_20261013/LICENSE": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+    "pretraining/data/snips_sources_20261013/source-manifest.json": "e8df08618c3e80382b0dede9e92798f116743550a6fa0b20c132a0e11dd0f25e"
+  },
+  "limitations": "Original SNIPS annotation agreement, not independently perfect semantic truth. Flat objects with arrays of strings and nullable strings; seven SNIPS domains and 39 known field definitions. Extra views reuse TRAIN texts, not extra distinct requests. DEV/test were observed in previous research; no fresh blind benchmark or general web-extraction claim.",
+  "parent": "[workspace]/pretraining/runs/sft_093_json_approaches_20261014/step_0000160_82ffab052730",
+  "parent_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
+  "plan": {
+    "batch_size": 32,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "epochs": 1,
+    "eps": 1e-08,
+    "eval_steps": [
+      0,
+      100,
+      200,
+      300,
+      469
+    ],
+    "final_lr": 1e-06,
+    "grad_clip": 1.0,
+    "max_tokens": 256,
+    "microbatch": 2,
+    "padding_policy": "micro_multiple128",
+    "peak_lr": 5e-06,
+    "seed": 20261014,
+    "warmup_updates": 20,
+    "weight_decay": 0.01
+  },
+  "splits": {
+    "development": {
+      "by_domain": {
+        "AddToPlaylist": 36,
+        "BookRestaurant": 36,
+        "GetWeather": 36,
+        "PlayMusic": 36,
+        "RateBook": 36,
+        "SearchCreativeWork": 36,
+        "SearchScreeningEvent": 36
+      },
+      "by_variant": {
+        "alias": 28,
+        "canonical": 196,
+        "nullable": 28
+      },
+      "max_prompt_tokens": 387,
+      "max_target_tokens": 58,
+      "records": 252,
+      "serialized_tokens": 78611,
+      "unique_source_texts": 98
+    },
+    "test": {
+      "by_domain": {
+        "AddToPlaylist": 206,
+        "BookRestaurant": 208,
+        "GetWeather": 206,
+        "PlayMusic": 208,
+        "RateBook": 204,
+        "SearchCreativeWork": 208,
+        "SearchScreeningEvent": 204
+      },
+      "by_variant": {
+        "alias": 28,
+        "canonical": 1388,
+        "nullable": 28
+      },
+      "max_prompt_tokens": 419,
+      "max_target_tokens": 69,
+      "records": 1444,
+      "serialized_tokens": 448537,
+      "unique_source_texts": 694
+    },
+    "train": {
+      "by_domain": {
+        "AddToPlaylist": 2132,
+        "BookRestaurant": 2231,
+        "GetWeather": 2164,
+        "PlayMusic": 2199,
+        "RateBook": 2102,
+        "SearchCreativeWork": 2130,
+        "SearchScreeningEvent": 2042
+      },
+      "by_variant": {
+        "alias": 1443,
+        "canonical": 12115,
+        "nullable": 1442
+      },
+      "max_prompt_tokens": 425,
+      "max_target_tokens": 75,
+      "records": 15000,
+      "serialized_tokens": 4634126,
+      "unique_source_texts": 12115
+    }
+  },
+  "total_steps": 469
+}
