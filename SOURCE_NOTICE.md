@@ -1,15 +1,24 @@
 # Source and data notice
 
-OpenSML-JSONLite-175M is extracted from William Zebrowski's OpenSML research workspace. Its inherited weights follow Stage A/132005 → SFT-065/469 → SFT-068/379 → recreated SFT-093/160. Supporting code dependencies and unused representations are not additional weight ancestors.
+Current inherited weights: Stage A/132005 → SFT-065/469 → SFT-068/379 →
+SFT-093/160 → SFT-100/469. The final stage directly supervises native JSON.
+Other research trials and unused helper code are not weight ancestors.
+Author-controlled source uses Apache-2.0. Upstream datasets/dependencies retain
+their notices; no trained-weight license is assigned by this source update.
+GitHub excludes weight and optimizer binaries; the HF companion has the weights.
 
-Author-controlled source contributions use the root Apache-2.0 license. Upstream dependencies, datasets and their underlying content retain their own notices. No model-weight license is assigned here; no weights are committed to this repository.
+Pretraining uses the pinned educational web/wiki/Cosmopedia/Python mixture.
+Grounded QA uses selected SQuAD2/Dolly and checked authored fictional facts.
+SNIPS original CC0 chunk annotations supply exact extraction and native JSON
+labels. The 15,000 curated JSON records are source/schema/target views of12,115
+TRAIN requests, not15,000distinct documents. Development/test are source-disjoint
+from TRAIN within this curated dataset, but have previous research exposure.
+Pretraining decontamination and perfectly correct semantic golds are not claimed.
 
-Pretraining uses pinned FineWeb-Edu, DCLM-Edu, English FineWiki, Cosmopedia v2 and the Python-Edu text mirror. Grounded QA uses original selected SQuAD 2.0/Dolly answers plus programmatically checked fictional examples. Extraction uses original SNIPS chunk labels. See the technical report for exact revisions, sampling, exclusions and selected exposure.
-
-Raw training pools, packed arrays, optimizer states, credentials, SSH keys, private launch/network receipts and unrelated model benchmark scores are excluded. Public checkpoint JSON replaces private workspace paths with `[workspace]`; provenance records both the original and published hashes. Source and tokenizer identifiers remain unchanged for compatibility.
-
-Actual SNIPS predictions and the documented 40 fixtures are included as evaluation evidence under their source notices. The recorded corpus declarations do not establish blanket rights to redistribute every underlying pretraining document or public weight licensing clearance.
-
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [technical report](docs/TECHNICAL_REPORT.md), [training records](TRAINING_AND_REPRODUCIBILITY.md) and [CITATION.cff](CITATION.cff).
-
-The adapted 1,388-request SNIPS held-out evaluation panel is included under its CC0 notice in `evaluation/snips-heldout.jsonl`. It remains outside training; requested-field transformations and prior evaluation exposure are disclosed.
+Raw pretraining pools, packed arrays, optimizer state, credentials, SSH keys and
+private host/network receipts are excluded. Published metadata replaces private
+workspace paths with [workspace]; original and published hashes are separated.
+54actual local fixtures, raw predictions and held-out evidence are retained.
+The canonical held-out1,388and schema-stress56requests are included as JSONL in
+evaluation/native-json-heldout.jsonl and the prepared native data directory.
+See THIRD_PARTY_NOTICES.md, docs/TECHNICAL_REPORT.md and provenance/LINEAGE.json.

@@ -1,0 +1,24 @@
+{
+  "comparison": "[workspace]/pretraining/runs/sft_100_native_json_20261014/comparison.json",
+  "final_test": "[workspace]/pretraining/runs/sft_100_native_json_20261014/final-test.json",
+  "records": 15000,
+  "release_ready": false,
+  "selected": {
+    "bundle": "step_0000469_25528943984d",
+    "selection": [
+      0.7936507936507936,
+      0.7936507936507936,
+      0.9039735099337748,
+      0.899854862119013,
+      0.996031746031746,
+      0.7040816326530612,
+      -4,
+      -0.03873514435736791
+    ],
+    "step": 469
+  },
+  "status": "complete",
+  "step": 469,
+  "tokens": 4634126,
+  "total_steps": 469
+}

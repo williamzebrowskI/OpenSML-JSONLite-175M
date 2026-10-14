@@ -18,11 +18,17 @@
     "rope_base": 10000.0,
     "vocab_size": 32000
   },
-  "weight_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
+  "weight_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4",
   "serialization": "native-sft-chat-v1",
-  "output_mode": "fieldwise-assembly",
+  "output_mode": "native-json",
   "context_limit": 2048,
-  "max_output_tokens_per_field": 160,
   "weight_format": "BF16 safetensors",
-  "supported_runtime": "native MLX; not a Transformers or mlx-lm auto-loading export"
+  "supported_runtime": "native MLX; not a Transformers or mlx-lm auto-loading export",
+  "max_output_tokens": 256,
+  "model_calls_per_request": 1,
+  "json_assembly": false,
+  "output_repair": false,
+  "constrained_decoding": false,
+  "selected_stage": "sft-100",
+  "selected_update": 469
 }

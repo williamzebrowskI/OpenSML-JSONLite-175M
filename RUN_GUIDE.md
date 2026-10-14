@@ -1,64 +1,69 @@
-# Run guide
+# Run OpenSML-JSONLite-175M-Instruct: native JSON
 
-## Verify the source snapshot
-
-```bash
-python scripts/verify_snapshot.py
-```
-
-This checks the published source/documentation/tokenizer file manifest. It does not download weights or train a model.
-
-## Install the native runtime
-
-Use Python 3.11+ on Apple Silicon:
+The current weights generate the entire JSON object from source text and the
+supplied schema. No fieldwise assembler, constrained decoder or repair is used.
+The runnable package includes model.safetensors, tokenizer/config, native MLX
+model source, a source archive, 54 examples, results and verification records.
+Verified platform: Apple Silicon macOS, Python 3.11, stock MLX 0.32.3.
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-The initial repository's clean inference check used stock MLX and records the exact resolved versions in `inference_native/INFERENCE_VERIFICATION.json`. Training used a different custom development build. Results on other hardware, runtime releases or quantized exports are not established.
-
-## Supply the preserved weights
-
-The matching BF16 weight file is 351,242,342 bytes and has SHA-256:
-
-`d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798`
-
-Weights and their optimizer state are not committed to this GitHub source repository. Download the selected weights from [Hugging Face](https://huggingface.co/wzebrowski/OpenSML-JSONLite-175M); model-weight licensing is separate from this source license. The portable runner only requires weights, `config.json`, tokenizer and implementation; it does not require original workspace metadata or report directories.
-
-```bash
 python -m pip install huggingface_hub
-hf download wzebrowski/OpenSML-JSONLite-175M model.safetensors --local-dir ./weights
+# Authenticate if access requires it: hf auth login
+hf download wzebrowski/OpenSML-JSONLite-175M --local-dir OpenSML-JSONLite-175M
+cd OpenSML-JSONLite-175M
+python -m pip install -r requirements.txt
+python inference.py --example 29
+python inference.py --example 29 --json
+python inference.py --text-file request.txt --schema-file schema.json
 ```
 
-## Run a fixture
+Default stdout is the unmodified generated text. `--json` prints a result record
+with raw `text`, parsed `value`, structural success, stop reason, token count and
+example exact correctness when a reference exists. The reference is compared
+only after generation and never enters the model input. Schema validity does
+not certify extracted values. Some included examples intentionally expose
+remaining errors. The current local diagnostic is 42/54, not 100% correctness.
+
+Example source: `Play the track Blue Lantern by Mira Sol.`
+
+```json
+{"type":"object","properties":{"track":{"type":"array","items":{"type":"string"},"description":"track name"},"artist":{"type":"array","items":{"type":"string"},"description":"performer or musical artist"},"album":{"type":"array","items":{"type":"string"},"description":"album name"}},"required":["track","artist","album"],"additionalProperties":false}
+```
+
+Actual native output:
+
+```json
+{"track":["Blue Lantern"],"artist":["Mira Sol"],"album":[]}
+```
+
+Schemas must be flat closed objects with 1–8 required properties: strings,
+nullable strings or arrays of strings. The training scope is primarily SNIPS
+fields; unfamiliar field descriptions are accepted but are not reliable by
+construction. Missing arrays use []; missing nullable strings use null. Clear
+descriptions are important. Default decoding is greedy, repetition penalty 1,
+max 256 output tokens. `--max-tokens` supports 1..256. Source + full schema +
+fixed instruction + output budget must fit 2,048 tokens; overflow rejects.
+
+The runner supplies the exact fixed instruction and native SFT serialization.
+It checks model and source-archive SHA-256 before loading. Root tokenizer files
+mirror the tokenizer inside the archive, including its integrity companions.
+After downloading and installing dependencies, generation runs offline.
+This custom architecture is not a Transformers or MLX-LM auto-loader export.
 
 ```bash
-python inference.py --weights /path/to/model.safetensors --example 29
+shasum -a 256 -c SHA256SUMS
+python -m zipfile -e native_bundle.zip native_bundle
+python native_bundle/scripts/verify_snapshot.py
+python native_bundle/inference.py --weights "$PWD/model.safetensors" --example 29 --json
 ```
 
-There are 40 fixtures. The example reference is used only after generation to score complete parsed JSON equality. `success: true` means natural completion and structural validity; `exact: true` is available only when a reference is present. Neither indicates correctness of unrelated custom input.
+Selected weights:
+`656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4`.
+The current source module is inference_native/native_json.py. The old labeled
+adapter, if present in the historical source archive, is not used by this
+entry point. Optimizer state and the original training workspace are not needed
+for inference. See the technical report for lineage, metrics and limitations.
 
-## Run custom text and schema
-
-```bash
-python inference.py --weights /path/to/model.safetensors \
-  --text-file request.txt --schema-file schema.json --max-tokens 160
-```
-
-Schemas must follow the supported contract documented in the report's Section 11 and glossary. No silent truncation, schema simplification, new field mapping or fuzzy output repair is performed. Greedy defaults are fixed to the evaluated protocol. Errors reject unsupported requests. One call per field means a multi-field request may generate more than 160 total tokens.
-
-## Training source
-
-`pretraining/qa_065`, `pretraining/extract_068`, `pretraining/json_approaches_090` and supporting modules preserve the original recipe implementations. Prepared manifests and sanitized checkpoint contracts record original file hashes and stage boundaries. Training requires the external source datasets, parent weights, packed arrays, exact runtime and historical readiness/control receipts. Archived helpers can refer to former workspace paths; this archive is not a verified clean-machine training launch. Do not launch a full recipe expecting it to recreate the published selected checkpoint without those assets. See `TRAINING_AND_REPRODUCIBILITY.md`.
-
-## Re-run the observed extraction benchmark
-
-```bash
-python scripts/evaluate_snips.py --weights /path/to/model.safetensors \
-  --output ./new-evaluation.json
-```
-
-The included 1,388 requests preserve the original source text and gold field lists from the adapted SNIPS held-out panel. This is evaluation material under the included SNIPS CC0 notice, not a training corpus. The runner prints progress, produces full predictions and metrics, refuses to overwrite results, and never feeds gold values into model generation. The existing scores were measured in the historical workspace runtime; the new portable runner has separate 40-case parity verification, not a claimed full-suite stock-runtime rerun.
+GitHub checkout: supply downloaded weights explicitly with `--weights /path/to/model.safetensors`.

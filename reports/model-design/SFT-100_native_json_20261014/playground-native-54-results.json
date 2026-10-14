@@ -1,0 +1,5066 @@
+{
+  "checkpoint": "[workspace]/pretraining/runs/sft_100_native_json_20261014/step_0000469_25528943984d",
+  "complete": true,
+  "evaluated": 54,
+  "examples_sha256": "af980e2a391932e5c68294ac3ceef5785e0ba8962123f1a887b825c35d74f508",
+  "expected": 54,
+  "metrics": {
+    "alias": {
+      "absent_accuracy": 0.875,
+      "count": 7,
+      "counts": {
+        "absent_correct": 7,
+        "absent_total": 8,
+        "exact": 6,
+        "false_abstention": 0,
+        "field_correct": 16,
+        "fields": 17,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 7,
+        "missed_abstention": 1,
+        "natural_stop": 7,
+        "nonrepetitive_nonempty": 7,
+        "predicted_values": 10,
+        "present_correct": 9,
+        "present_total": 9,
+        "schema_ok": 7,
+        "token_limited": 0,
+        "tp": 9,
+        "unsupported_values": 0
+      },
+      "exact": 0.8571428571428571,
+      "f1": 0.9473684210526316,
+      "field_accuracy": 0.9411764705882353,
+      "json_parse": 1.0,
+      "natural_stop_rate": 1.0,
+      "precision": 0.9,
+      "present_accuracy": 1.0,
+      "recall": 1.0,
+      "schema_valid": 1.0,
+      "unsupported_value_rate": 0.0
+    },
+    "all": {
+      "absent_accuracy": 0.9056603773584906,
+      "count": 54,
+      "counts": {
+        "absent_correct": 48,
+        "absent_total": 53,
+        "exact": 42,
+        "false_abstention": 3,
+        "field_correct": 118,
+        "fields": 135,
+        "fn": 13,
+        "fp": 7,
+        "json_parse_ok": 52,
+        "missed_abstention": 5,
+        "natural_stop": 54,
+        "nonrepetitive_nonempty": 54,
+        "predicted_values": 78,
+        "present_correct": 70,
+        "present_total": 82,
+        "schema_ok": 52,
+        "token_limited": 0,
+        "tp": 71,
+        "unsupported_values": 2
+      },
+      "exact": 0.7777777777777778,
+      "f1": 0.8765432098765431,
+      "field_accuracy": 0.8740740740740741,
+      "json_parse": 0.9629629629629629,
+      "natural_stop_rate": 1.0,
+      "precision": 0.9102564102564102,
+      "present_accuracy": 0.8536585365853658,
+      "recall": 0.8452380952380952,
+      "schema_valid": 0.9629629629629629,
+      "unsupported_value_rate": 0.02564102564102564
+    },
+    "authored_diagnostics": {
+      "absent_accuracy": 1.0,
+      "count": 12,
+      "counts": {
+        "absent_correct": 11,
+        "absent_total": 11,
+        "exact": 7,
+        "false_abstention": 2,
+        "field_correct": 29,
+        "fields": 34,
+        "fn": 6,
+        "fp": 2,
+        "json_parse_ok": 12,
+        "missed_abstention": 0,
+        "natural_stop": 12,
+        "nonrepetitive_nonempty": 12,
+        "predicted_values": 21,
+        "present_correct": 18,
+        "present_total": 23,
+        "schema_ok": 12,
+        "token_limited": 0,
+        "tp": 19,
+        "unsupported_values": 1
+      },
+      "exact": 0.5833333333333334,
+      "f1": 0.8260869565217391,
+      "field_accuracy": 0.8529411764705882,
+      "json_parse": 1.0,
+      "natural_stop_rate": 1.0,
+      "precision": 0.9047619047619048,
+      "present_accuracy": 0.782608695652174,
+      "recall": 0.76,
+      "schema_valid": 1.0,
+      "unsupported_value_rate": 0.047619047619047616
+    },
+    "nullable": {
+      "absent_accuracy": 0.625,
+      "count": 7,
+      "counts": {
+        "absent_correct": 5,
+        "absent_total": 8,
+        "exact": 4,
+        "false_abstention": 0,
+        "field_correct": 12,
+        "fields": 17,
+        "fn": 2,
+        "fp": 2,
+        "json_parse_ok": 6,
+        "missed_abstention": 3,
+        "natural_stop": 7,
+        "nonrepetitive_nonempty": 7,
+        "predicted_values": 9,
+        "present_correct": 7,
+        "present_total": 9,
+        "schema_ok": 6,
+        "token_limited": 0,
+        "tp": 7,
+        "unsupported_values": 1
+      },
+      "exact": 0.5714285714285714,
+      "f1": 0.7777777777777778,
+      "field_accuracy": 0.7058823529411765,
+      "json_parse": 0.8571428571428571,
+      "natural_stop_rate": 1.0,
+      "precision": 0.7777777777777778,
+      "present_accuracy": 0.7777777777777778,
+      "recall": 0.7777777777777778,
+      "schema_valid": 0.8571428571428571,
+      "unsupported_value_rate": 0.1111111111111111
+    },
+    "observed_originals": {
+      "absent_accuracy": 0.9615384615384616,
+      "count": 28,
+      "counts": {
+        "absent_correct": 25,
+        "absent_total": 26,
+        "exact": 25,
+        "false_abstention": 1,
+        "field_correct": 61,
+        "fields": 67,
+        "fn": 5,
+        "fp": 2,
+        "json_parse_ok": 27,
+        "missed_abstention": 1,
+        "natural_stop": 28,
+        "nonrepetitive_nonempty": 28,
+        "predicted_values": 38,
+        "present_correct": 36,
+        "present_total": 41,
+        "schema_ok": 27,
+        "token_limited": 0,
+        "tp": 36,
+        "unsupported_values": 0
+      },
+      "exact": 0.8928571428571429,
+      "f1": 0.9113924050632912,
+      "field_accuracy": 0.9104477611940298,
+      "json_parse": 0.9642857142857143,
+      "natural_stop_rate": 1.0,
+      "precision": 0.9473684210526315,
+      "present_accuracy": 0.8780487804878049,
+      "recall": 0.8780487804878049,
+      "schema_valid": 0.9642857142857143,
+      "unsupported_value_rate": 0.0
+    },
+    "schema_stress": {
+      "absent_accuracy": 0.75,
+      "count": 14,
+      "counts": {
+        "absent_correct": 12,
+        "absent_total": 16,
+        "exact": 10,
+        "false_abstention": 0,
+        "field_correct": 28,
+        "fields": 34,
+        "fn": 2,
+        "fp": 3,
+        "json_parse_ok": 13,
+        "missed_abstention": 4,
+        "natural_stop": 14,
+        "nonrepetitive_nonempty": 14,
+        "predicted_values": 19,
+        "present_correct": 16,
+        "present_total": 18,
+        "schema_ok": 13,
+        "token_limited": 0,
+        "tp": 16,
+        "unsupported_values": 1
+      },
+      "exact": 0.7142857142857143,
+      "f1": 0.8648648648648649,
+      "field_accuracy": 0.8235294117647058,
+      "json_parse": 0.9285714285714286,
+      "natural_stop_rate": 1.0,
+      "precision": 0.8421052631578947,
+      "present_accuracy": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "schema_valid": 0.9285714285714286,
+      "unsupported_value_rate": 0.05263157894736842
+    }
+  },
+  "model": "sft-100",
+  "model_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4",
+  "outputs": [
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 1,
+        "fields": 3,
+        "fn": 2,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "expected": {
+        "entity_name": [
+          "Mariem Hassan con Leyoad"
+        ],
+        "playlist": [
+          "Rock Gaming"
+        ],
+        "playlist_owner": [
+          "my"
+        ]
+      },
+      "generated_tokens": 37,
+      "group": "observed_originals",
+      "id": "FIELD-01",
+      "index": 1,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 37,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "entity_name": {
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "playlist_owner": {
+            "description": "person owning the playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "playlist_owner",
+          "playlist",
+          "entity_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.1457561671268195,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"playlist_owner\":[],\"playlist\":[\"Rock Gaming\"],\"entity_name\":[\"Mariem Hassan\"]}",
+      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "tokens_per_second": 253.8486070905463,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "entity_name": [
+          "Mariem Hassan"
+        ],
+        "playlist": [
+          "Rock Gaming"
+        ],
+        "playlist_owner": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "expected": {
+        "artist": [],
+        "music_item": []
+      },
+      "generated_tokens": 23,
+      "group": "observed_originals",
+      "id": "FIELD-02",
+      "index": 2,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 23,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "music_item": {
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "music_item"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.0663353749550879,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"music_item\":[],\"artist\":[\"Mariem Hassan\"]}",
+      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+      "tokens_per_second": 346.72299682593274,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "artist": [
+          "Mariem Hassan"
+        ],
+        "music_item": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 1,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Add track to my Digster Future Hits",
+      "expected": {
+        "playlist_owner": [
+          "my"
+        ]
+      },
+      "generated_tokens": 13,
+      "group": "observed_originals",
+      "id": "FIELD-03",
+      "index": 3,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 13,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "playlist_owner": {
+            "description": "person owning the playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "playlist_owner"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.046899375040084124,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"playlist_owner\":[\"my\"]}",
+      "title": "AddToPlaylist · Add track to my Digster Future Hits",
+      "tokens_per_second": 277.18919471504927,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "playlist_owner": [
+          "my"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Add track to my Digster Future Hits",
+      "expected": {
+        "artist": [],
+        "entity_name": [],
+        "playlist": [
+          "Digster Future Hits"
+        ]
+      },
+      "generated_tokens": 29,
+      "group": "observed_originals",
+      "id": "FIELD-04",
+      "index": 4,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 29,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "entity_name": {
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "entity_name",
+          "playlist"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08448220789432526,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"artist\":[],\"entity_name\":[],\"playlist\":[\"Digster Future Hits\"]}",
+      "title": "AddToPlaylist · Add track to my Digster Future Hits",
+      "tokens_per_second": 343.26754381555355,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "artist": [],
+        "entity_name": [],
+        "playlist": [
+          "Digster Future Hits"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 0,
+        "fields": 3,
+        "fn": 3,
+        "fp": 0,
+        "json_parse_ok": 0,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 3,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I would like to book a brasserie for nine in AR",
+      "expected": {
+        "party_size_number": [
+          "nine"
+        ],
+        "restaurant_type": [
+          "brasserie"
+        ],
+        "state": [
+          "AR"
+        ]
+      },
+      "generated_tokens": 30,
+      "group": "observed_originals",
+      "id": "FIELD-05",
+      "index": 5,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 30,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "party_size_number": {
+            "description": "explicit party size",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "restaurant_type": {
+            "description": "kind of restaurant",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "state": {
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "restaurant_type",
+          "party_size_number",
+          "state"
+        ],
+        "type": "object"
+      },
+      "schema_valid": false,
+      "seconds": 0.10110012488439679,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": false,
+      "temperature": 0.0,
+      "text": "{\"state\":[\"AR\"],\"party_size_number\":[\"nine\"],\"state\":[\"AR\"]}",
+      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
+      "tokens_per_second": 296.73553850011143,
+      "top_k": 40,
+      "type": "done",
+      "value": null
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I would like to book a brasserie for nine in AR",
+      "expected": {
+        "party_size_number": [
+          "nine"
+        ],
+        "sort": [],
+        "timeRange": []
+      },
+      "generated_tokens": 27,
+      "group": "observed_originals",
+      "id": "FIELD-06",
+      "index": 6,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 27,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "party_size_number": {
+            "description": "explicit party size",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sort": {
+            "description": "requested ranking, ordering, or preference",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "party_size_number",
+          "timeRange",
+          "sort"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08188729104585946,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"party_size_number\":[\"nine\"],\"timeRange\":[],\"sort\":[]}",
+      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
+      "tokens_per_second": 329.72149469298176,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "party_size_number": [
+          "nine"
+        ],
+        "sort": [],
+        "timeRange": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Book a best restaurant in Wrigley.",
+      "expected": {
+        "city": [
+          "Wrigley"
+        ],
+        "sort": [
+          "best"
+        ]
+      },
+      "generated_tokens": 21,
+      "group": "observed_originals",
+      "id": "FIELD-07",
+      "index": 7,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 21,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sort": {
+            "description": "requested ranking, ordering, or preference",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "sort",
+          "city"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09319616691209376,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"sort\":[\"best\"],\"city\":[\"Wrigley\"]}",
+      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
+      "tokens_per_second": 225.33115573098638,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "city": [
+          "Wrigley"
+        ],
+        "sort": [
+          "best"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Book a best restaurant in Wrigley.",
+      "expected": {
+        "poi": [],
+        "timeRange": []
+      },
+      "generated_tokens": 15,
+      "group": "observed_originals",
+      "id": "FIELD-08",
+      "index": 8,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 15,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "poi": {
+            "description": "named nearby point of interest",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "timeRange",
+          "poi"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.06917487503960729,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"timeRange\":[],\"poi\":[]}",
+      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
+      "tokens_per_second": 216.84173612762564,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "poi": [],
+        "timeRange": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Is it going to be colder in Louisiana",
+      "expected": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "state": [
+          "Louisiana"
+        ]
+      },
+      "generated_tokens": 23,
+      "group": "observed_originals",
+      "id": "FIELD-09",
+      "index": 9,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 23,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "condition_temperature": {
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "state": {
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "condition_temperature",
+          "state"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09769133408553898,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"condition_temperature\":[\"colder\"],\"state\":[\"Louisiana\"]}",
+      "title": "GetWeather · Is it going to be colder in Louisiana",
+      "tokens_per_second": 235.43541722811457,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "state": [
+          "Louisiana"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Is it going to be colder in Louisiana",
+      "expected": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "current_location": [],
+        "geographic_poi": []
+      },
+      "generated_tokens": 31,
+      "group": "observed_originals",
+      "id": "FIELD-10",
+      "index": 10,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 31,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "condition_temperature": {
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "current_location": {
+            "description": "expression referring to current location",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "geographic_poi": {
+            "description": "geographic point of interest",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "current_location",
+          "geographic_poi",
+          "condition_temperature"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.12166062509641051,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"current_location\":[],\"geographic_poi\":[],\"condition_temperature\":[\"colder\"]}",
+      "title": "GetWeather · Is it going to be colder in Louisiana",
+      "tokens_per_second": 254.8071734419736,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "current_location": [],
+        "geographic_poi": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 3,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 3,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
+      "expected": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "timeRange": [
+          "last August"
+        ]
+      },
+      "generated_tokens": 44,
+      "group": "observed_originals",
+      "id": "FIELD-11",
+      "index": 11,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 44,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "condition_temperature": {
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "geographic_poi": {
+            "description": "geographic point of interest",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "timeRange",
+          "geographic_poi",
+          "condition_temperature"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.14371125004254282,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"timeRange\":[\"last August\"],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"condition_temperature\":[\"colder\"]}",
+      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
+      "tokens_per_second": 306.1694890760096,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "timeRange": [
+          "last August"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
+      "expected": {
+        "current_location": [],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "state": []
+      },
+      "generated_tokens": 34,
+      "group": "observed_originals",
+      "id": "FIELD-12",
+      "index": 12,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 34,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "current_location": {
+            "description": "expression referring to current location",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "geographic_poi": {
+            "description": "geographic point of interest",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "state": {
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "current_location",
+          "geographic_poi",
+          "state"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09269079193472862,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"current_location\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"state\":[]}",
+      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
+      "tokens_per_second": 366.81097755581004,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "current_location": [],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "state": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 3,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 3,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "expected": {
+        "artist": [
+          "Behzad Mirkhani"
+        ],
+        "music_item": [
+          "theme"
+        ],
+        "sort": [
+          "last"
+        ]
+      },
+      "generated_tokens": 38,
+      "group": "observed_originals",
+      "id": "FIELD-13",
+      "index": 13,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 38,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "music_item": {
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sort": {
+            "description": "requested ranking, ordering, or preference",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "music_item",
+          "sort"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.10354633303359151,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"artist\":[\"Behzad Mirkhani\"],\"music_item\":[\"theme\"],\"sort\":[\"last\"]}",
+      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
+      "tokens_per_second": 366.9854729444876,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "artist": [
+          "Behzad Mirkhani"
+        ],
+        "music_item": [
+          "theme"
+        ],
+        "sort": [
+          "last"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "expected": {
+        "music_item": [
+          "theme"
+        ],
+        "playlist": [],
+        "service": []
+      },
+      "generated_tokens": 25,
+      "group": "observed_originals",
+      "id": "FIELD-14",
+      "index": 14,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 25,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "music_item": {
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "service": {
+            "description": "music service",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "service",
+          "music_item",
+          "playlist"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08011845895089209,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"playlist\":[],\"music_item\":[\"theme\"],\"service\":[]}",
+      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
+      "tokens_per_second": 312.0379538917933,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "music_item": [
+          "theme"
+        ],
+        "playlist": [],
+        "service": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 3,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 3,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play a track by Yui on Vimeo",
+      "expected": {
+        "artist": [
+          "Yui"
+        ],
+        "music_item": [
+          "track"
+        ],
+        "service": [
+          "Vimeo"
+        ]
+      },
+      "generated_tokens": 33,
+      "group": "observed_originals",
+      "id": "FIELD-15",
+      "index": 15,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 33,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "music_item": {
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "service": {
+            "description": "music service",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "music_item",
+          "service"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.0910082918126136,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"artist\":[\"Yui\"],\"music_item\":[\"track\"],\"service\":[\"Vimeo\"]}",
+      "title": "PlayMusic · Play a track by Yui on Vimeo",
+      "tokens_per_second": 362.60432255938963,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "artist": [
+          "Yui"
+        ],
+        "music_item": [
+          "track"
+        ],
+        "service": [
+          "Vimeo"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play a track by Yui on Vimeo",
+      "expected": {
+        "playlist": [],
+        "sort": []
+      },
+      "generated_tokens": 14,
+      "group": "observed_originals",
+      "id": "FIELD-16",
+      "index": 16,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 14,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sort": {
+            "description": "requested ranking, ordering, or preference",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "playlist",
+          "sort"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.05159220891073346,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"sort\":[],\"playlist\":[]}",
+      "title": "PlayMusic · Play a track by Yui on Vimeo",
+      "tokens_per_second": 271.358801950567,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "playlist": [],
+        "sort": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 3,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 3,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I would give Things Fall Apart 3 stars",
+      "expected": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "rating_value": [
+          "3"
+        ]
+      },
+      "generated_tokens": 35,
+      "group": "observed_originals",
+      "id": "FIELD-17",
+      "index": 17,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 35,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rating_unit": {
+            "description": "rating unit",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rating_value": {
+            "description": "given rating",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "rating_value",
+          "rating_unit",
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.12207887507975101,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"rating_value\":[\"3\"],\"rating_unit\":[\"stars\"],\"object_name\":[\"Things Fall Apart\"]}",
+      "title": "RateBook · I would give Things Fall Apart 3 stars",
+      "tokens_per_second": 286.69988953564155,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "rating_value": [
+          "3"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I would give Things Fall Apart 3 stars",
+      "expected": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "object_select": [],
+        "object_type": []
+      },
+      "generated_tokens": 29,
+      "group": "observed_originals",
+      "id": "FIELD-18",
+      "index": 18,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 29,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "object_select": {
+            "description": "selection expression referring to the work",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "object_type": {
+            "description": "kind of work or object",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_name",
+          "object_select",
+          "object_type"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09019608283415437,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":[\"Things Fall Apart\"],\"object_select\":[],\"object_type\":[]}",
+      "title": "RateBook · I would give Things Fall Apart 3 stars",
+      "tokens_per_second": 321.52172343585,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "object_select": [],
+        "object_type": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I'd rate this book 1 of 6 stars",
+      "expected": {
+        "object_name": [],
+        "rating_value": [
+          "1"
+        ]
+      },
+      "generated_tokens": 19,
+      "group": "observed_originals",
+      "id": "FIELD-19",
+      "index": 19,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 19,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rating_value": {
+            "description": "given rating",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "rating_value",
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.05779595789499581,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"rating_value\":[\"1\"],\"object_name\":[]}",
+      "title": "RateBook · I'd rate this book 1 of 6 stars",
+      "tokens_per_second": 328.74271302016245,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [],
+        "rating_value": [
+          "1"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I'd rate this book 1 of 6 stars",
+      "expected": {
+        "object_name": [],
+        "object_part_of_series_type": []
+      },
+      "generated_tokens": 23,
+      "group": "observed_originals",
+      "id": "FIELD-20",
+      "index": 20,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 23,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "object_part_of_series_type": {
+            "description": "type of book series",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_part_of_series_type",
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.07645924994722009,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_part_of_series_type\":[],\"object_name\":[]}",
+      "title": "RateBook · I'd rate this book 1 of 6 stars",
+      "tokens_per_second": 300.81383241238865,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [],
+        "object_part_of_series_type": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 1,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Show me Happiness Was Free.",
+      "expected": {
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "generated_tokens": 16,
+      "group": "observed_originals",
+      "id": "FIELD-21",
+      "index": 21,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 16,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.05061316699720919,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":[\"Happiness Was Free\"]}",
+      "title": "SearchCreativeWork · Show me Happiness Was Free.",
+      "tokens_per_second": 316.1232728408843,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Show me Happiness Was Free.",
+      "expected": {
+        "object_name": [
+          "Happiness Was Free"
+        ],
+        "object_type": []
+      },
+      "generated_tokens": 23,
+      "group": "observed_originals",
+      "id": "FIELD-22",
+      "index": 22,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 23,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "object_type": {
+            "description": "kind of work or object",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_type",
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.0870708751026541,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_type\":[],\"object_name\":[\"Happiness Was Free\"]}",
+      "title": "SearchCreativeWork · Show me Happiness Was Free.",
+      "tokens_per_second": 264.1526224800618,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Happiness Was Free"
+        ],
+        "object_type": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Find me the Martin Morning saga",
+      "expected": {
+        "object_name": [
+          "Martin Morning"
+        ],
+        "object_type": [
+          "saga"
+        ]
+      },
+      "generated_tokens": 24,
+      "group": "observed_originals",
+      "id": "FIELD-23",
+      "index": 23,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 24,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "object_type": {
+            "description": "kind of work or object",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_name",
+          "object_type"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09806233388371766,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":[\"Martin Morning\"],\"object_type\":[\"saga\"]}",
+      "title": "SearchCreativeWork · Find me the Martin Morning saga",
+      "tokens_per_second": 244.74228839443293,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Martin Morning"
+        ],
+        "object_type": [
+          "saga"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 1,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Find me the Martin Morning saga",
+      "expected": {
+        "object_name": [
+          "Martin Morning"
+        ]
+      },
+      "generated_tokens": 13,
+      "group": "observed_originals",
+      "id": "FIELD-24",
+      "index": 24,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 13,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.06084504211321473,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":[\"Martin Morning\"]}",
+      "title": "SearchCreativeWork · Find me the Martin Morning saga",
+      "tokens_per_second": 213.6575068156058,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Martin Morning"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "find animated movies in the neighborhood",
+      "expected": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "spatial_relation": [
+          "in the neighborhood"
+        ]
+      },
+      "generated_tokens": 29,
+      "group": "observed_originals",
+      "id": "FIELD-25",
+      "index": 25,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 29,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "movie_type": {
+            "description": "kind of movie",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "spatial_relation": {
+            "description": "spatial or proximity expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "movie_type",
+          "spatial_relation"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.1176978750154376,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"movie_type\":[\"animated movies\"],\"spatial_relation\":[\"in the neighborhood\"]}",
+      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
+      "tokens_per_second": 246.39357334358223,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "spatial_relation": [
+          "in the neighborhood"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "find animated movies in the neighborhood",
+      "expected": {
+        "movie_name": [],
+        "movie_type": [
+          "animated movies"
+        ],
+        "timeRange": []
+      },
+      "generated_tokens": 32,
+      "group": "observed_originals",
+      "id": "FIELD-26",
+      "index": 26,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 32,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "movie_name": {
+            "description": "movie name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "movie_type": {
+            "description": "kind of movie",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "movie_type",
+          "timeRange",
+          "movie_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.13150208396837115,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"movie_name\":[],\"timeRange\":[],\"movie_type\":[\"animated movies\"]}",
+      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
+      "tokens_per_second": 243.34215119888617,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "movie_name": [],
+        "movie_type": [
+          "animated movies"
+        ],
+        "timeRange": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "where can I watch Mabel’s Dramatic Career at twenty two o'clock",
+      "expected": {
+        "movie_name": [
+          "Mabel’s Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      },
+      "generated_tokens": 36,
+      "group": "observed_originals",
+      "id": "FIELD-27",
+      "index": 27,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 36,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "movie_name": {
+            "description": "movie name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "movie_name",
+          "timeRange"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.15075866598635912,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"timeRange\":[\"twenty two o'clock\"],\"movie_name\":[\"Mabel’s Dramatic Career\"]}",
+      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
+      "tokens_per_second": 238.79224298294957,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "movie_name": [
+          "Mabel’s Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "where can I watch Mabel’s Dramatic Career at twenty two o'clock",
+      "expected": {
+        "object_location_type": [],
+        "spatial_relation": [],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      },
+      "generated_tokens": 35,
+      "group": "observed_originals",
+      "id": "FIELD-28",
+      "index": 28,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 35,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_location_type": {
+            "description": "type of screening venue",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "spatial_relation": {
+            "description": "spatial or proximity expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "timeRange",
+          "spatial_relation",
+          "object_location_type"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.1009074579924345,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"timeRange\":[\"twenty two o'clock\"],\"spatial_relation\":[],\"object_location_type\":[]}",
+      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
+      "tokens_per_second": 346.85245963310376,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_location_type": [],
+        "spatial_relation": [],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play the track Blue Lantern by Mira Sol.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": [
+          "Blue Lantern"
+        ]
+      },
+      "generated_tokens": 29,
+      "group": "authored_diagnostics",
+      "id": "FIELD-29",
+      "index": 29,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 29,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "track": {
+            "description": "track name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "track",
+          "artist",
+          "album"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.0990420829039067,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"album\":[],\"artist\":[\"Mira Sol\"],\"track\":[\"Blue Lantern\"]}",
+      "title": "Named track and performer",
+      "tokens_per_second": 292.8048275008168,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "album": [],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": [
+          "Blue Lantern"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 4,
+        "fields": 4,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 4,
+        "present_correct": 4,
+        "present_total": 4,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 4,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Book River Moon in Denver for four people tomorrow.",
+      "expected": {
+        "city": [
+          "Denver"
+        ],
+        "party_size_number": [
+          "four"
+        ],
+        "restaurant_name": [
+          "River Moon"
+        ],
+        "timeRange": [
+          "tomorrow"
+        ]
+      },
+      "generated_tokens": 49,
+      "group": "authored_diagnostics",
+      "id": "FIELD-30",
+      "index": 30,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 49,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "party_size_number": {
+            "description": "explicit party size",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "restaurant_name": {
+            "description": "restaurant name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "restaurant_name",
+          "city",
+          "party_size_number",
+          "timeRange"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.19936020788736641,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Denver\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}",
+      "title": "Restaurant, city, party and time",
+      "tokens_per_second": 245.7862605544823,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "city": [
+          "Denver"
+        ],
+        "party_size_number": [
+          "four"
+        ],
+        "restaurant_name": [
+          "River Moon"
+        ],
+        "timeRange": [
+          "tomorrow"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 1
+      },
+      "constrained": false,
+      "document": "What is the weather in Oslo on Friday?",
+      "expected": {
+        "city": [
+          "Oslo"
+        ],
+        "country": [],
+        "timeRange": [
+          "Friday"
+        ]
+      },
+      "generated_tokens": 27,
+      "group": "authored_diagnostics",
+      "id": "FIELD-31",
+      "index": 31,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 27,
+      "peak_gib": 0.5633858889341354,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "city",
+          "timeRange",
+          "country"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09160687495023012,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"country\":[],\"timeRange\":[\"Friday\"],\"city\":[\"Odense\"]}",
+      "title": "Weather with country missing",
+      "tokens_per_second": 294.7377040715455,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "city": [
+          "Odense"
+        ],
+        "country": [],
+        "timeRange": [
+          "Friday"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 3,
+        "fields": 4,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 3,
+        "present_total": 4,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 3,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Give the book Glass Harbor four out of five stars.",
+      "expected": {
+        "best_rating": [
+          "five"
+        ],
+        "object_name": [
+          "Glass Harbor"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "rating_value": [
+          "four"
+        ]
+      },
+      "generated_tokens": 42,
+      "group": "authored_diagnostics",
+      "id": "FIELD-32",
+      "index": 32,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 42,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "best_rating": {
+            "description": "maximum rating scale",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rating_unit": {
+            "description": "rating unit",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rating_value": {
+            "description": "given rating",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_name",
+          "rating_value",
+          "best_rating",
+          "rating_unit"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.12286079209297895,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[],\"rating_unit\":[\"stars\"]}",
+      "title": "Rating and scale",
+      "tokens_per_second": 341.85031110832426,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "best_rating": [],
+        "object_name": [
+          "Glass Harbor"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "rating_value": [
+          "four"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Find showtimes for Silver Orchard at Maple Cinema.",
+      "expected": {
+        "location_name": [
+          "Maple Cinema"
+        ],
+        "movie_name": [
+          "Silver Orchard"
+        ],
+        "timeRange": []
+      },
+      "generated_tokens": 37,
+      "group": "authored_diagnostics",
+      "id": "FIELD-33",
+      "index": 33,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 37,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "location_name": {
+            "description": "screening location name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "movie_name": {
+            "description": "movie name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "movie_name",
+          "location_name",
+          "timeRange"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.10476450016722083,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"timeRange\":[],\"location_name\":[\"Maple Cinema\"],\"movie_name\":[\"Silver Orchard\"]}",
+      "title": "Movie and screening location",
+      "tokens_per_second": 353.1730685579763,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "location_name": [
+          "Maple Cinema"
+        ],
+        "movie_name": [
+          "Silver Orchard"
+        ],
+        "timeRange": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Add Night Steps to my playlist Evening Walks.",
+      "expected": {
+        "entity_name": [
+          "Night Steps"
+        ],
+        "playlist": [
+          "Evening Walks"
+        ]
+      },
+      "generated_tokens": 27,
+      "group": "authored_diagnostics",
+      "id": "FIELD-34",
+      "index": 34,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 27,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "entity_name": {
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "entity_name",
+          "playlist"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08536404208280146,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"entity_name\":[\"Night Steps\"],\"playlist\":[\"Evening Walks\"]}",
+      "title": "Track added to a playlist",
+      "tokens_per_second": 316.2924264271662,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "entity_name": [
+          "Night Steps"
+        ],
+        "playlist": [
+          "Evening Walks"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 2,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play songs by Mira Sol and Theo Lane.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "Mira Sol",
+          "Theo Lane"
+        ]
+      },
+      "generated_tokens": 23,
+      "group": "authored_diagnostics",
+      "id": "FIELD-35",
+      "index": 35,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 23,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09108008304610848,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"artist\":[\"Mira Sol and Theo Lane\"],\"album\":[]}",
+      "title": "Two performers",
+      "tokens_per_second": 252.5250222746992,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "album": [],
+        "artist": [
+          "Mira Sol and Theo Lane"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Give me the weather in Bergen and Oslo.",
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo"
+        ],
+        "country": []
+      },
+      "generated_tokens": 16,
+      "group": "authored_diagnostics",
+      "id": "FIELD-36",
+      "index": 36,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 16,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.06278899987228215,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"city\":[\"Bergen\"],\"country\":[]}",
+      "title": "Two cities mentioned",
+      "tokens_per_second": 254.8217049570033,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "city": [
+          "Bergen"
+        ],
+        "country": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Find a Thai restaurant in Boston.",
+      "expected": {
+        "city": [
+          "Boston"
+        ],
+        "cuisine": [
+          "Thai"
+        ],
+        "restaurant_name": []
+      },
+      "generated_tokens": 26,
+      "group": "authored_diagnostics",
+      "id": "FIELD-37",
+      "index": 37,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 26,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "cuisine": {
+            "description": "cuisine style",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "restaurant_name": {
+            "description": "restaurant name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "cuisine",
+          "city",
+          "restaurant_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.07971645798534155,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"cuisine\":[],\"city\":[\"Boston\"],\"restaurant_name\":[]}",
+      "title": "Cuisine and city",
+      "tokens_per_second": 326.1559865690588,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "city": [
+          "Boston"
+        ],
+        "cuisine": [],
+        "restaurant_name": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play the album Quiet Signals by Mira Sol.",
+      "expected": {
+        "album": [
+          "Quiet Signals"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": []
+      },
+      "generated_tokens": 30,
+      "group": "authored_diagnostics",
+      "id": "FIELD-38",
+      "index": 38,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 30,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "track": {
+            "description": "track name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist",
+          "track"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08965445891954005,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"album\":[\"Quiet Signals\"],\"artist\":[\"Mira Sol\"],\"track\":[]}",
+      "title": "Album and performer",
+      "tokens_per_second": 334.6180475744475,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "album": [
+          "Quiet Signals"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "I am looking for the book Paper Bridge.",
+      "expected": {
+        "object_name": [
+          "Paper Bridge"
+        ],
+        "rating_value": []
+      },
+      "generated_tokens": 20,
+      "group": "authored_diagnostics",
+      "id": "FIELD-39",
+      "index": 39,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 20,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "rating_value": {
+            "description": "given rating",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "object_name",
+          "rating_value"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.061765999998897314,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":[\"Paper Bridge\"],\"rating_value\":[]}",
+      "title": "Title with rating absent",
+      "tokens_per_second": 323.8027393769558,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": [
+          "Paper Bridge"
+        ],
+        "rating_value": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 3,
+        "absent_total": 3,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Please play some music.",
+      "expected": {
+        "artist": [],
+        "country": [],
+        "timeRange": []
+      },
+      "generated_tokens": 20,
+      "group": "authored_diagnostics",
+      "id": "FIELD-40",
+      "index": 40,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 20,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "country",
+          "timeRange",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.06683587515726686,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"country\":[],\"timeRange\":[],\"artist\":[]}",
+      "title": "Missing country and time",
+      "tokens_per_second": 299.2404895266111,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "artist": [],
+        "country": [],
+        "timeRange": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "add gn to night vibes",
+      "expected": {
+        "selected_artist": [],
+        "selected_playlist": [
+          "night vibes"
+        ],
+        "selected_playlist_owner": []
+      },
+      "generated_tokens": 36,
+      "group": "schema_stress",
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
+      "index": 41,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 36,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_playlist_owner": {
+            "description": "person owning the playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_playlist",
+          "selected_artist",
+          "selected_playlist_owner"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.11555062513798475,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[],\"selected_playlist_owner\":[]}",
+      "title": "AddToPlaylist · alias schema",
+      "tokens_per_second": 311.55175454058,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_artist": [],
+        "selected_playlist": [
+          "night vibes"
+        ],
+        "selected_playlist_owner": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 0,
+        "fields": 3,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 0,
+        "missed_abstention": 2,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "add gn to night vibes",
+      "expected": {
+        "artist": null,
+        "playlist": "night vibes",
+        "playlist_owner": null
+      },
+      "generated_tokens": 25,
+      "group": "schema_stress",
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
+      "index": 42,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 25,
+      "peak_gib": 0.564606599509716,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "playlist": {
+            "description": "playlist name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "playlist_owner": {
+            "description": "person owning the playlist",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "playlist",
+          "artist",
+          "playlist_owner"
+        ],
+        "type": "object"
+      },
+      "schema_valid": false,
+      "seconds": 0.1063513329718262,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": false,
+      "temperature": 0.0,
+      "text": "{\"playlist_owner\":null,\"artist\":\"gn\",\"playlist\":night vibes\"}",
+      "title": "AddToPlaylist · nullable schema",
+      "tokens_per_second": 235.06992626620686,
+      "top_k": 40,
+      "type": "done",
+      "value": null
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
+      "expected": {
+        "selected_restaurant_name": [],
+        "selected_sort": [],
+        "selected_timeRange": [
+          "Nov. the 1st"
+        ]
+      },
+      "generated_tokens": 47,
+      "group": "schema_stress",
+      "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
+      "index": 43,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 47,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_restaurant_name": {
+            "description": "restaurant name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_sort": {
+            "description": "requested ranking, ordering, or preference",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_timeRange": {
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_restaurant_name",
+          "selected_timeRange",
+          "selected_sort"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.18140412494540215,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_restaurant_name\":[\"mughlai restaurant\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}",
+      "title": "BookRestaurant · alias schema",
+      "tokens_per_second": 259.09002903955883,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_restaurant_name": [
+          "mughlai restaurant"
+        ],
+        "selected_sort": [],
+        "selected_timeRange": [
+          "Nov. the 1st"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 1
+      },
+      "constrained": false,
+      "document": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
+      "expected": {
+        "restaurant_name": null,
+        "sort": null,
+        "timeRange": "Nov. the 1st"
+      },
+      "generated_tokens": 36,
+      "group": "schema_stress",
+      "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
+      "index": 44,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 36,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "restaurant_name": {
+            "description": "restaurant name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sort": {
+            "description": "requested ranking, ordering, or preference",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "timeRange": {
+            "description": "date, time, or time-range expression",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "restaurant_name",
+          "timeRange",
+          "sort"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.10145270801149309,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"restaurant_name\":\"Mughlai Restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}",
+      "title": "BookRestaurant · nullable schema",
+      "tokens_per_second": 354.8451362769117,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "restaurant_name": "Mughlai Restaurant",
+        "sort": null,
+        "timeRange": "Nov. the 1st"
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Is it going to be colder in Louisiana",
+      "expected": {
+        "selected_condition_temperature": [
+          "colder"
+        ],
+        "selected_state": [
+          "Louisiana"
+        ]
+      },
+      "generated_tokens": 29,
+      "group": "schema_stress",
+      "id": "native:snips:GetWeather:train:109:view0:native:alias",
+      "index": 45,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 29,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_condition_temperature": {
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_state": {
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_condition_temperature",
+          "selected_state"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.12120979186147451,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_condition_temperature\":[\"colder\"],\"selected_state\":[\"Louisiana\"]}",
+      "title": "GetWeather · alias schema",
+      "tokens_per_second": 239.25459778977972,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_condition_temperature": [
+          "colder"
+        ],
+        "selected_state": [
+          "Louisiana"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Is it going to be colder in Louisiana",
+      "expected": {
+        "condition_temperature": "colder",
+        "state": "Louisiana"
+      },
+      "generated_tokens": 19,
+      "group": "schema_stress",
+      "id": "native:snips:GetWeather:train:109:view0:native:nullable",
+      "index": 46,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 19,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "condition_temperature": {
+            "description": "temperature description",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state": {
+            "description": "state or region",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "condition_temperature",
+          "state"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08600058406591415,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"state\":\"Louisiana\",\"condition_temperature\":\"colder\"}",
+      "title": "GetWeather · nullable schema",
+      "tokens_per_second": 220.92873212858262,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "condition_temperature": "colder",
+        "state": "Louisiana"
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "expected": {
+        "selected_music_item": [
+          "theme"
+        ],
+        "selected_playlist": [],
+        "selected_service": []
+      },
+      "generated_tokens": 34,
+      "group": "schema_stress",
+      "id": "native:snips:PlayMusic:train:801:view1:native:alias",
+      "index": 47,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 34,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_music_item": {
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_service": {
+            "description": "music service",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_service",
+          "selected_music_item",
+          "selected_playlist"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.1417912079486996,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_playlist\":[],\"selected_music_item\":[\"theme\"],\"selected_service\":[]}",
+      "title": "PlayMusic · alias schema",
+      "tokens_per_second": 239.7891977357389,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_music_item": [
+          "theme"
+        ],
+        "selected_playlist": [],
+        "selected_service": []
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "expected": {
+        "music_item": "theme",
+        "playlist": null,
+        "service": null
+      },
+      "generated_tokens": 23,
+      "group": "schema_stress",
+      "id": "native:snips:PlayMusic:train:801:view1:native:nullable",
+      "index": 48,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 23,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "music_item": {
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "playlist": {
+            "description": "playlist name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "service": {
+            "description": "music service",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "service",
+          "music_item",
+          "playlist"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.09912145789712667,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"playlist\":null,\"music_item\":\"theme\",\"service\":null}",
+      "title": "PlayMusic · nullable schema",
+      "tokens_per_second": 232.03855641298756,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "music_item": "theme",
+        "playlist": null,
+        "service": null
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "rate the current essay 2 stars",
+      "expected": {
+        "selected_object_select": [
+          "current"
+        ],
+        "selected_rating_value": [
+          "2"
+        ]
+      },
+      "generated_tokens": 29,
+      "group": "schema_stress",
+      "id": "native:snips:RateBook:train:293:view0:native:alias",
+      "index": 49,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 29,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_object_select": {
+            "description": "selection expression referring to the work",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_rating_value": {
+            "description": "given rating",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_rating_value",
+          "selected_object_select"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.10923391696996987,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_rating_value\":[\"2\"],\"selected_object_select\":[\"current\"]}",
+      "title": "RateBook · alias schema",
+      "tokens_per_second": 265.4853071685835,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_object_select": [
+          "current"
+        ],
+        "selected_rating_value": [
+          "2"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "rate the current essay 2 stars",
+      "expected": {
+        "object_select": "current",
+        "rating_value": "2"
+      },
+      "generated_tokens": 19,
+      "group": "schema_stress",
+      "id": "native:snips:RateBook:train:293:view0:native:nullable",
+      "index": 50,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 19,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "object_select": {
+            "description": "selection expression referring to the work",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rating_value": {
+            "description": "given rating",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "rating_value",
+          "object_select"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.08272404200397432,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_select\":\"current\",\"rating_value\":\"2\"}",
+      "title": "RateBook · nullable schema",
+      "tokens_per_second": 229.67929926691906,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_select": "current",
+        "rating_value": "2"
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 1,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Show me the book Playlist: The Very Best of Dolly Parton",
+      "expected": {
+        "selected_object_name": [
+          "Playlist: The Very Best of Dolly Parton"
+        ]
+      },
+      "generated_tokens": 25,
+      "group": "schema_stress",
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:alias",
+      "index": 51,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 25,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_object_name": {
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.10591104091145098,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_object_name\":[\"Playlist: The Very Best of Dolly Parton\"]}",
+      "title": "SearchCreativeWork · alias schema",
+      "tokens_per_second": 236.04715603637342,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_object_name": [
+          "Playlist: The Very Best of Dolly Parton"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 1,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "Show me the book Playlist: The Very Best of Dolly Parton",
+      "expected": {
+        "object_name": "Playlist: The Very Best of Dolly Parton"
+      },
+      "generated_tokens": 20,
+      "group": "schema_stress",
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:nullable",
+      "index": 52,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 20,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "object_name": {
+            "description": "name of the work being rated or searched for",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.0870983749628067,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"object_name\":\"Playlist: The Very Best of Dolly Parton\"}",
+      "title": "SearchCreativeWork · nullable schema",
+      "tokens_per_second": 229.6254092977111,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "object_name": "Playlist: The Very Best of Dolly Parton"
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "find animated movies movie schedule in the neighborhood",
+      "expected": {
+        "selected_location_name": [],
+        "selected_movie_name": [],
+        "selected_movie_type": [
+          "animated movies"
+        ]
+      },
+      "generated_tokens": 42,
+      "group": "schema_stress",
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:alias",
+      "index": 53,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 42,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "selected_location_name": {
+            "description": "screening location name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_movie_name": {
+            "description": "movie name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "selected_movie_type": {
+            "description": "kind of movie",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "selected_movie_type",
+          "selected_movie_name",
+          "selected_location_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.17069020797498524,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"selected_movie_type\":[\"animated movies\"],\"selected_movie_name\":[],\"selected_location_name\":[]}",
+      "title": "SearchScreeningEvent · alias schema",
+      "tokens_per_second": 246.05980916113904,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "selected_location_name": [],
+        "selected_movie_name": [],
+        "selected_movie_type": [
+          "animated movies"
+        ]
+      }
+    },
+    {
+      "checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "constrained": false,
+      "document": "find animated movies movie schedule in the neighborhood",
+      "expected": {
+        "location_name": null,
+        "movie_name": null,
+        "movie_type": "animated movies"
+      },
+      "generated_tokens": 31,
+      "group": "schema_stress",
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:nullable",
+      "index": 54,
+      "json_assembly": false,
+      "model_calls": 1,
+      "output_mode": "native-json",
+      "output_repair": false,
+      "output_tokens": 31,
+      "peak_gib": 0.5893869996070862,
+      "repetition_penalty": 1.0,
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "location_name": {
+            "description": "screening location name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "movie_name": {
+            "description": "movie name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "movie_type": {
+            "description": "kind of movie",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "movie_type",
+          "movie_name",
+          "location_name"
+        ],
+        "type": "object"
+      },
+      "schema_valid": true,
+      "seconds": 0.12891970900818706,
+      "seed": 2026,
+      "stop_reason": "turn_end",
+      "success": true,
+      "temperature": 0.0,
+      "text": "{\"movie_name\":null,\"movie_type\":\"movies\",\"location_name\":null}",
+      "title": "SearchScreeningEvent · nullable schema",
+      "tokens_per_second": 240.4597422573405,
+      "top_k": 40,
+      "type": "done",
+      "value": {
+        "location_name": null,
+        "movie_name": null,
+        "movie_type": "movies"
+      }
+    }
+  ],
+  "protocol": {
+    "constrained": false,
+    "json_assembly": false,
+    "max_tokens": 256,
+    "model_calls_per_request": 1,
+    "output_repair": false,
+    "raw_text_preserved": true,
+    "repetition_penalty": 1,
+    "route": "/api/json/generate",
+    "seed": 2026,
+    "temperature": 0,
+    "top_k": 40
+  },
+  "scope": "All actual playground source/schema fixtures, with their displayed schema property ordering and instructions unchanged. Observed original DEV cases, previously authored diagnostics, and observed schema-stress views; local diagnostic, not a fresh blind benchmark. NLL not measured through generation API.",
+  "step": 469
+}

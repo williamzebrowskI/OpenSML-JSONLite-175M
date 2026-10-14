@@ -36,10 +36,23 @@
       "weight_bytes": 351242342,
       "original_metadata_sha256": "32a380899c455449db066ef317de9dd8e80f6977bfb42a6fe03b67c5f23963f8",
       "published_metadata_sha256": "32a380899c455449db066ef317de9dd8e80f6977bfb42a6fe03b67c5f23963f8"
+    },
+    {
+      "stage": "sft-100",
+      "step": 469,
+      "tokens": 4634126,
+      "records": 15000,
+      "weight_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "3864a0eaa43015d286e4da9327b0d3cea4fa4f5b80f336baabe2a549379e2e36",
+      "published_metadata_sha256": "5ecf9a8850aef6cc75add6bacda880648e72de1b38089d585e237bbce828c2c3"
     }
   ],
   "weights_in_git": false,
   "public_weight_location": null,
   "model_weight_license": "not yet assigned",
-  "scope": "Only these selected checkpoints are inherited. Sanitized metadata has separate hashes. Local paths become [workspace]."
+  "scope": "Stage A/132005 -> SFT-065/469 -> SFT-068/379 -> SFT-093/160 -> SFT-100/469. Only those stages are inherited. Final native JSON targets are directly supervised.",
+  "selected_stage": "sft-100",
+  "selected_update": 469,
+  "weight_location": "https://huggingface.co/wzebrowski/OpenSML-JSONLite-175M"
 }

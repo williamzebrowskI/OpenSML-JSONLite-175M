@@ -1,571 +1,454 @@
 {
-  "complete": true,
-  "requests": 40,
-  "exact_correct": 29,
-  "all_values_and_stops_match_recorded_playground": true,
-  "weight_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
-  "versions": {
-    "mlx": "0.32.3",
-    "numpy": "2.4.2",
-    "tokenizers": "0.22.2",
-    "jsonschema": "4.26.0"
-  },
-  "environment": "clean temporary venv with published PyPI dependencies, independent of workspace PYTHONPATH",
-  "elapsed_seconds": 3.6218272920232266,
+  "constrained_decoding": false,
+  "correct_against_reference": 42,
+  "json_assembly": false,
+  "model": "OpenSML-JSONLite-175M-Instruct",
+  "model_calls_per_request": 1,
+  "output_mode": "native-json",
+  "output_repair": false,
   "outputs": [
     {
+      "correct": false,
       "id": "FIELD-01",
-      "value": {
-        "playlist_owner": [
-          "my"
-        ],
-        "playlist": [
-          "Rock Gaming"
-        ],
-        "entity_name": []
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 1,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"playlist_owner\":[],\"playlist\":[\"Rock Gaming\"],\"entity_name\":[\"Mariem Hassan\"]}"
     },
     {
+      "correct": false,
       "id": "FIELD-02",
-      "value": {
-        "artist": [
-          "Mariem Hassan"
-        ],
-        "music_item": []
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 2,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"music_item\":[],\"artist\":[\"Mariem Hassan\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-03",
-      "value": {
-        "playlist_owner": [
-          "my"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 1
+      "index": 3,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"playlist_owner\":[\"my\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-04",
-      "value": {
-        "artist": [],
-        "entity_name": [],
-        "playlist": [
-          "Digster Future Hits"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 4,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"artist\":[],\"entity_name\":[],\"playlist\":[\"Digster Future Hits\"]}"
     },
     {
+      "correct": false,
       "id": "FIELD-05",
-      "value": {
-        "restaurant_type": [
-          "brasserie"
-        ],
-        "party_size_number": [
-          "nine"
-        ],
-        "state": [
-          "AR"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 5,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"state\":[\"AR\"],\"party_size_number\":[\"nine\"],\"state\":[\"AR\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-06",
-      "value": {
-        "party_size_number": [
-          "nine"
-        ],
-        "timeRange": [
-          "nine"
-        ],
-        "sort": []
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 6,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"party_size_number\":[\"nine\"],\"timeRange\":[],\"sort\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-07",
-      "value": {
-        "sort": [
-          "best"
-        ],
-        "city": [
-          "Wrigley"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 7,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"sort\":[\"best\"],\"city\":[\"Wrigley\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-08",
-      "value": {
-        "timeRange": [],
-        "poi": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 8,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"timeRange\":[],\"poi\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-09",
-      "value": {
-        "condition_temperature": [
-          "colder"
-        ],
-        "state": [
-          "Louisiana"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 9,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"condition_temperature\":[\"colder\"],\"state\":[\"Louisiana\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-10",
-      "value": {
-        "current_location": [],
-        "geographic_poi": [],
-        "condition_temperature": [
-          "colder"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 10,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"current_location\":[],\"geographic_poi\":[],\"condition_temperature\":[\"colder\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-11",
-      "value": {
-        "timeRange": [
-          "August"
-        ],
-        "geographic_poi": [
-          "Stunt Ranch Santa Monica Mountains Reserve"
-        ],
-        "condition_temperature": [
-          "colder"
-        ]
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 11,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"timeRange\":[\"last August\"],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"condition_temperature\":[\"colder\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-12",
-      "value": {
-        "current_location": [],
-        "geographic_poi": [
-          "Stunt Ranch Santa Monica Mountains Reserve"
-        ],
-        "state": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 12,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"current_location\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"state\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-13",
-      "value": {
-        "artist": [
-          "Behzad Mirkhani"
-        ],
-        "music_item": [
-          "theme"
-        ],
-        "sort": [
-          "last"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 13,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"artist\":[\"Behzad Mirkhani\"],\"music_item\":[\"theme\"],\"sort\":[\"last\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-14",
-      "value": {
-        "service": [],
-        "music_item": [
-          "theme"
-        ],
-        "playlist": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 14,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"playlist\":[],\"music_item\":[\"theme\"],\"service\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-15",
-      "value": {
-        "artist": [
-          "Yui"
-        ],
-        "music_item": [
-          "track"
-        ],
-        "service": [
-          "Vimeo"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 15,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"artist\":[\"Yui\"],\"music_item\":[\"track\"],\"service\":[\"Vimeo\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-16",
-      "value": {
-        "playlist": [],
-        "sort": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 16,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"sort\":[],\"playlist\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-17",
-      "value": {
-        "rating_value": [
-          "3"
-        ],
-        "rating_unit": [
-          "stars"
-        ],
-        "object_name": [
-          "Things Fall Apart"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 17,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"rating_value\":[\"3\"],\"rating_unit\":[\"stars\"],\"object_name\":[\"Things Fall Apart\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-18",
-      "value": {
-        "object_name": [
-          "Things Fall Apart"
-        ],
-        "object_select": [],
-        "object_type": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 18,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":[\"Things Fall Apart\"],\"object_select\":[],\"object_type\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-19",
-      "value": {
-        "rating_value": [
-          "1"
-        ],
-        "object_name": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 19,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"rating_value\":[\"1\"],\"object_name\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-20",
-      "value": {
-        "object_part_of_series_type": [],
-        "object_name": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 20,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_part_of_series_type\":[],\"object_name\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-21",
-      "value": {
-        "object_name": [
-          "Happiness Was Free"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 1
+      "index": 21,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":[\"Happiness Was Free\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-22",
-      "value": {
-        "object_type": [],
-        "object_name": [
-          "Happiness Was Free"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 22,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_type\":[],\"object_name\":[\"Happiness Was Free\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-23",
-      "value": {
-        "object_name": [
-          "Martin Morning"
-        ],
-        "object_type": [
-          "saga"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 23,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":[\"Martin Morning\"],\"object_type\":[\"saga\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-24",
-      "value": {
-        "object_name": [
-          "Martin Morning"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 1
+      "index": 24,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":[\"Martin Morning\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-25",
-      "value": {
-        "movie_type": [
-          "animated movies"
-        ],
-        "spatial_relation": [
-          "in the neighborhood"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 25,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"movie_type\":[\"animated movies\"],\"spatial_relation\":[\"in the neighborhood\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-26",
-      "value": {
-        "movie_type": [
-          "animated movies"
-        ],
-        "timeRange": [],
-        "movie_name": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 26,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"movie_name\":[],\"timeRange\":[],\"movie_type\":[\"animated movies\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-27",
-      "value": {
-        "movie_name": [
-          "Mabel's Dramatic Career"
-        ],
-        "timeRange": [
-          "twenty two o'clock"
-        ]
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 27,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"timeRange\":[\"twenty two o'clock\"],\"movie_name\":[\"Mabel’s Dramatic Career\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-28",
-      "value": {
-        "timeRange": [
-          "twenty two o'clock"
-        ],
-        "spatial_relation": [],
-        "object_location_type": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 28,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"timeRange\":[\"twenty two o'clock\"],\"spatial_relation\":[],\"object_location_type\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-29",
-      "value": {
-        "track": [
-          "Blue Lantern"
-        ],
-        "artist": [
-          "Mira Sol"
-        ],
-        "album": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 29,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"album\":[],\"artist\":[\"Mira Sol\"],\"track\":[\"Blue Lantern\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-30",
-      "value": {
-        "restaurant_name": [
-          "River Moon"
-        ],
-        "city": [
-          "Denver"
-        ],
-        "party_size_number": [
-          "four"
-        ],
-        "timeRange": [
-          "tomorrow"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 4
+      "index": 30,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Denver\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}"
     },
     {
+      "correct": false,
       "id": "FIELD-31",
-      "value": {
-        "city": [
-          "Oslo"
-        ],
-        "timeRange": [
-          "Friday"
-        ],
-        "country": [
-          "Norway"
-        ]
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 31,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"country\":[],\"timeRange\":[\"Friday\"],\"city\":[\"Odense\"]}"
     },
     {
+      "correct": false,
       "id": "FIELD-32",
-      "value": {
-        "object_name": [
-          "Glass Harbor"
-        ],
-        "rating_value": [
-          "four"
-        ],
-        "best_rating": [],
-        "rating_unit": [
-          "stars"
-        ]
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 4
+      "index": 32,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[],\"rating_unit\":[\"stars\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-33",
-      "value": {
-        "movie_name": [
-          "Silver Orchard"
-        ],
-        "location_name": [
-          "Maple Cinema"
-        ],
-        "timeRange": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 33,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"timeRange\":[],\"location_name\":[\"Maple Cinema\"],\"movie_name\":[\"Silver Orchard\"]}"
     },
     {
+      "correct": true,
       "id": "FIELD-34",
-      "value": {
-        "entity_name": [
-          "Night Steps"
-        ],
-        "playlist": [
-          "Evening Walks"
-        ]
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 34,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"entity_name\":[\"Night Steps\"],\"playlist\":[\"Evening Walks\"]}"
     },
     {
+      "correct": false,
       "id": "FIELD-35",
-      "value": {
-        "artist": [
-          "Mira Sol"
-        ],
-        "album": []
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 35,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"artist\":[\"Mira Sol and Theo Lane\"],\"album\":[]}"
     },
     {
+      "correct": false,
       "id": "FIELD-36",
-      "value": {
-        "city": [
-          "Bergen"
-        ],
-        "country": [
-          "Norway"
-        ]
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 36,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"city\":[\"Bergen\"],\"country\":[]}"
     },
     {
+      "correct": false,
       "id": "FIELD-37",
-      "value": {
-        "cuisine": [],
-        "city": [
-          "Boston"
-        ],
-        "restaurant_name": []
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 37,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"cuisine\":[],\"city\":[\"Boston\"],\"restaurant_name\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-38",
-      "value": {
-        "album": [
-          "Quiet Signals"
-        ],
-        "artist": [
-          "Mira Sol"
-        ],
-        "track": [
-          "Quiet Signals"
-        ]
-      },
-      "exact": false,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 38,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"album\":[\"Quiet Signals\"],\"artist\":[\"Mira Sol\"],\"track\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-39",
-      "value": {
-        "object_name": [
-          "Paper Bridge"
-        ],
-        "rating_value": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 2
+      "index": 39,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":[\"Paper Bridge\"],\"rating_value\":[]}"
     },
     {
+      "correct": true,
       "id": "FIELD-40",
-      "value": {
-        "country": [],
-        "timeRange": [],
-        "artist": []
-      },
-      "exact": true,
-      "service_parity": true,
-      "model_calls": 3
+      "index": 40,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"country\":[],\"timeRange\":[],\"artist\":[]}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
+      "index": 41,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[],\"selected_playlist_owner\":[]}"
+    },
+    {
+      "correct": false,
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
+      "index": 42,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"playlist_owner\":null,\"artist\":\"gn\",\"playlist\":night vibes\"}"
+    },
+    {
+      "correct": false,
+      "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
+      "index": 43,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_restaurant_name\":[\"mughlai restaurant\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}"
+    },
+    {
+      "correct": false,
+      "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
+      "index": 44,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"restaurant_name\":\"Mughlai Restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:GetWeather:train:109:view0:native:alias",
+      "index": 45,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_condition_temperature\":[\"colder\"],\"selected_state\":[\"Louisiana\"]}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:GetWeather:train:109:view0:native:nullable",
+      "index": 46,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"state\":\"Louisiana\",\"condition_temperature\":\"colder\"}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:PlayMusic:train:801:view1:native:alias",
+      "index": 47,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_playlist\":[],\"selected_music_item\":[\"theme\"],\"selected_service\":[]}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:PlayMusic:train:801:view1:native:nullable",
+      "index": 48,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"playlist\":null,\"music_item\":\"theme\",\"service\":null}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:RateBook:train:293:view0:native:alias",
+      "index": 49,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_rating_value\":[\"2\"],\"selected_object_select\":[\"current\"]}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:RateBook:train:293:view0:native:nullable",
+      "index": 50,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_select\":\"current\",\"rating_value\":\"2\"}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:alias",
+      "index": 51,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_object_name\":[\"Playlist: The Very Best of Dolly Parton\"]}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:nullable",
+      "index": 52,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"object_name\":\"Playlist: The Very Best of Dolly Parton\"}"
+    },
+    {
+      "correct": true,
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:alias",
+      "index": 53,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"selected_movie_type\":[\"animated movies\"],\"selected_movie_name\":[],\"selected_location_name\":[]}"
+    },
+    {
+      "correct": false,
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:nullable",
+      "index": 54,
+      "raw_parity": true,
+      "stop_reason": "turn_end",
+      "text": "{\"movie_name\":null,\"movie_type\":\"movies\",\"location_name\":null}"
     }
   ],
-  "scope": "40 observed fixtures, same greedy native MLX path; no fresh blind benchmark or full-suite stock-runtime parity claim"
+  "raw_text_and_stop_matches": 54,
+  "requests": 54,
+  "scope": "Clean stock-MLX packaging parity on observed playground fixtures; not full-heldout runtime parity or fresh blind accuracy.",
+  "step": 469,
+  "versions": {
+    "jsonschema": "4.26.0",
+    "mlx": "0.32.3",
+    "numpy": "2.4.2",
+    "tokenizers": "0.22.2"
+  },
+  "weight_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4"
 }

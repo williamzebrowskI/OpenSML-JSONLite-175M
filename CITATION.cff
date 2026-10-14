@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite this source repository and the selected checkpoint/adapter identity when reporting OpenSML-JSONLite-175M."
-title: "OpenSML-JSONLite-175M: Field Extraction with Schema-Guided JSON Assembly"
+message: "Please cite this source repository and the selected checkpoint and native inference identity when reporting OpenSML-JSONLite-175M."
+title: "OpenSML-JSONLite-175M: Native JSON Generation from Source Text and Schema"
 authors:
   - family-names: Zebrowski
     given-names: William
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-10-14
 url: "https://github.com/williamzebrowskI/OpenSML-JSONLite-175M"
 repository-code: "https://github.com/williamzebrowskI/OpenSML-JSONLite-175M"
 license: Apache-2.0
-abstract: "Source, tokenizer, training provenance and observed evaluation records for a 175.6M-parameter field extractor with JSON assembly. Source license only; weights are not included."
+abstract: "Source, tokenizer, training provenance and observed evaluation records for a 175.6M-parameter native text-to-JSON model. Source license only; weights are not included."

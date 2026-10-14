@@ -1,13 +1,17 @@
-# Native MLX inference
+# Native JSON generation
 
-The root `inference.py` loads only the preserved recreated SFT-093/160 hash. It
-uses the shipped model, tokenizer, prompt renderer, strict parser and adapter.
-The supported schema is a closed object with 1–8 required properties containing
-arrays of strings and known field definitions. Missing values become `[]`.
-Decoding is fixed to temperature 0, repetition penalty 1 and at most 160 tokens
-per field. No reference answer is passed to model generation. One neural call
-is made for each requested field. See the technical report for the glossary.
+`NativeJSON` receives source text and the full schema together, using the frozen
+native SFT prompt. The model generates the entire JSON object in one request.
+The runner preserves its raw output and only parses it afterward for validation.
+No fieldwise extraction, canonical-field mapping, answer assembly, repair,
+constrained decoder or reference answer enters generation.
 
-Weights are not in this Git source repository. Supply a matching local weight
-file via `--weights`; a public weight download has not yet been published.
-Recorded MLX runtime and portable-runner checks are in `../provenance/`.
+Use flat closed schemas with 1–8 required properties: strings, nullable strings
+and arrays of strings. The neural weights were trained primarily on 39 SNIPS
+field definitions; accepting an unfamiliar description does not establish
+reliable extraction. Default decoding: greedy BF16 MLX, repetition penalty 1,
+max 256 output tokens, 2,048-token shared context. Overflow rejects without
+truncation. See the technical report and inference verification for results.
+
+`adapter.py` is retained as historical SFT-093 source only; the current entry
+point imports `native_json.py` and does not use that adapter.

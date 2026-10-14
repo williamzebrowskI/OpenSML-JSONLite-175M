@@ -1,0 +1,107 @@
+{
+  "metrics": {
+    "all": {
+      "candidate_exact": 0.824792243767313,
+      "candidate_field_accuracy": 0.9130683442951101,
+      "exact_delta": 0.824792243767313,
+      "false_abstention_delta": 111,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 30
+    },
+    "domain/AddToPlaylist": {
+      "candidate_exact": 0.8155339805825242,
+      "candidate_field_accuracy": 0.903041825095057,
+      "exact_delta": 0.8155339805825242,
+      "false_abstention_delta": 13,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 13
+    },
+    "domain/BookRestaurant": {
+      "candidate_exact": 0.75,
+      "candidate_field_accuracy": 0.8892794376098418,
+      "exact_delta": 0.75,
+      "false_abstention_delta": 21,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 4
+    },
+    "domain/GetWeather": {
+      "candidate_exact": 0.8155339805825242,
+      "candidate_field_accuracy": 0.9123809523809524,
+      "exact_delta": 0.8155339805825242,
+      "false_abstention_delta": 15,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 2
+    },
+    "domain/PlayMusic": {
+      "candidate_exact": 0.7163461538461539,
+      "candidate_field_accuracy": 0.8623326959847036,
+      "exact_delta": 0.7163461538461539,
+      "false_abstention_delta": 44,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 2
+    },
+    "domain/RateBook": {
+      "candidate_exact": 0.9215686274509803,
+      "candidate_field_accuracy": 0.9664902998236331,
+      "exact_delta": 0.9215686274509803,
+      "false_abstention_delta": 2,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 2
+    },
+    "domain/SearchCreativeWork": {
+      "candidate_exact": 0.9471153846153846,
+      "candidate_field_accuracy": 0.9615384615384616,
+      "exact_delta": 0.9471153846153846,
+      "false_abstention_delta": 2,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 0
+    },
+    "domain/SearchScreeningEvent": {
+      "candidate_exact": 0.8088235294117647,
+      "candidate_field_accuracy": 0.9161676646706587,
+      "exact_delta": 0.8088235294117647,
+      "false_abstention_delta": 14,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 7
+    },
+    "variant/alias": {
+      "candidate_exact": 0.6785714285714286,
+      "candidate_field_accuracy": 0.8266666666666667,
+      "exact_delta": 0.6785714285714286,
+      "false_abstention_delta": 2,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 2
+    },
+    "variant/canonical": {
+      "candidate_exact": 0.8328530259365994,
+      "candidate_field_accuracy": 0.9184344188825814,
+      "exact_delta": 0.8328530259365994,
+      "false_abstention_delta": 103,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 24
+    },
+    "variant/nullable": {
+      "candidate_exact": 0.5714285714285714,
+      "candidate_field_accuracy": 0.76,
+      "exact_delta": 0.5714285714285714,
+      "false_abstention_delta": 6,
+      "parent_exact": 0.0,
+      "parent_field_accuracy": 0.0,
+      "unsupported_values_delta": 4
+    }
+  },
+  "protocol": "raw model JSON; one call; no repair, no assembler",
+  "reason": "Research experiment; independent production-scope evaluation required.",
+  "release_ready": false,
+  "selected_step": 469
+}

@@ -1113,5 +1113,53 @@
     "published_sha256": "2e81dcd2edec71d83f32942c4f54b9820bff1bfc59e6337ebdf7965b99f5236e",
     "sanitized": true,
     "outputs_omitted": true
+  },
+  {
+    "source": "pretraining/native_json_100/__init__.py",
+    "published": "pretraining/native_json_100/__init__.py",
+    "original_sha256": "8d4b1be2f7d75122c982cd881c19a41b1d39594c5e30fbbe2bc87fcccf9c0242",
+    "published_sha256": "8d4b1be2f7d75122c982cd881c19a41b1d39594c5e30fbbe2bc87fcccf9c0242",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_100/runtime.py",
+    "published": "pretraining/native_json_100/runtime.py",
+    "original_sha256": "9b04f8b33fceb717fa6e9290a75bcc7c8365ad6162d3f59de19e08b913a034c4",
+    "published_sha256": "9b04f8b33fceb717fa6e9290a75bcc7c8365ad6162d3f59de19e08b913a034c4",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_100/train.py",
+    "published": "pretraining/native_json_100/train.py",
+    "original_sha256": "63823c5bc7a4b44cb57d7cd4bead7e97ecf309b09816e4d81327a9b7d795ea72",
+    "published_sha256": "63823c5bc7a4b44cb57d7cd4bead7e97ecf309b09816e4d81327a9b7d795ea72",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_100/evaluate.py",
+    "published": "pretraining/native_json_100/evaluate.py",
+    "original_sha256": "3c03d63aeb85ee85d857f219ee3aa4c190f34532ab6643cb487ca8e41d9779c3",
+    "published_sha256": "3c03d63aeb85ee85d857f219ee3aa4c190f34532ab6643cb487ca8e41d9779c3",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_100/verify.py",
+    "published": "pretraining/native_json_100/verify.py",
+    "original_sha256": "aa1452e3994eb534f30185c69ba1fcac5dc47081a51e547c31db132e8c369118",
+    "published_sha256": "aa1452e3994eb534f30185c69ba1fcac5dc47081a51e547c31db132e8c369118",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_100/data.py",
+    "published": "pretraining/native_json_100/data.py",
+    "original_sha256": "594a83b846c97836be009e61d9fcf9a1b4ceb0d0f9bb491bbb5b56f02a433edf",
+    "published_sha256": "594a83b846c97836be009e61d9fcf9a1b4ceb0d0f9bb491bbb5b56f02a433edf",
+    "sanitized": false,
+    "outputs_omitted": false
   }
 ]

@@ -1,6 +1,5 @@
 {
-  "format": "opensml-fieldwise-extraction-examples-v1",
-  "scope": "28 observed SNIPS development views plus12 independently authored diagnostic requests. Known field definitions, arrays of exact strings, [] for absent values; model extraction plus external JSON assembly.",
+  "format": "native-json-playground-examples-v1",
   "cases": [
     {
       "id": "FIELD-01",
@@ -39,7 +38,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "playlist_owner": [
           "my"
@@ -81,7 +80,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [],
         "music_item": []
@@ -108,7 +107,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "playlist_owner": [
           "my"
@@ -152,7 +151,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [],
         "entity_name": [],
@@ -198,7 +197,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "restaurant_type": [
           "brasserie"
@@ -248,7 +247,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "party_size_number": [
           "nine"
@@ -286,7 +285,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "sort": [
           "best"
@@ -325,7 +324,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "timeRange": [],
         "poi": []
@@ -360,7 +359,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "condition_temperature": [
           "colder"
@@ -407,7 +406,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "current_location": [],
         "geographic_poi": [],
@@ -453,7 +452,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "timeRange": [
           "last August"
@@ -503,7 +502,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "current_location": [],
         "geographic_poi": [
@@ -549,7 +548,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [
           "Behzad Mirkhani"
@@ -599,7 +598,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "service": [],
         "music_item": [
@@ -645,7 +644,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [
           "Yui"
@@ -687,7 +686,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "playlist": [],
         "sort": []
@@ -730,7 +729,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "rating_value": [
           "3"
@@ -780,7 +779,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Things Fall Apart"
@@ -818,7 +817,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "rating_value": [
           "1"
@@ -855,7 +854,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_part_of_series_type": [],
         "object_name": []
@@ -882,7 +881,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Happiness Was Free"
@@ -918,7 +917,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_type": [],
         "object_name": [
@@ -955,7 +954,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Martin Morning"
@@ -986,7 +985,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Martin Morning"
@@ -1022,7 +1021,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_type": [
           "animated movies"
@@ -1069,7 +1068,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_type": [
           "animated movies"
@@ -1107,7 +1106,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_name": [
           "Mabel’s Dramatic Career"
@@ -1154,7 +1153,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "timeRange": [
           "twenty two o'clock"
@@ -1200,7 +1199,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "track": [
           "Blue Lantern"
@@ -1256,7 +1255,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "restaurant_name": [
           "River Moon"
@@ -1309,7 +1308,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "city": [
           "Oslo"
@@ -1365,7 +1364,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Glass Harbor"
@@ -1418,7 +1417,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_name": [
           "Silver Orchard"
@@ -1458,7 +1457,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "entity_name": [
           "Night Steps"
@@ -1497,7 +1496,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [
           "Mira Sol",
@@ -1535,7 +1534,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "city": [
           "Bergen",
@@ -1581,7 +1580,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "cuisine": [
           "Thai"
@@ -1629,7 +1628,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "album": [
           "Quiet Signals"
@@ -1669,7 +1668,7 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Paper Bridge"
@@ -1714,12 +1713,589 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Copy exact values for each requested field, preserving case and source order. Use [] when a field is not stated.",
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "country": [],
         "timeRange": [],
         "artist": []
       }
+    },
+    {
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
+      "title": "AddToPlaylist · alias schema",
+      "document": "add gn to night vibes",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_playlist": {
+            "type": "array",
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_artist": {
+            "type": "array",
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_playlist_owner": {
+            "type": "array",
+            "description": "person owning the playlist",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_playlist",
+          "selected_artist",
+          "selected_playlist_owner"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_playlist_owner": [],
+        "selected_artist": [],
+        "selected_playlist": [
+          "night vibes"
+        ]
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
+      "title": "AddToPlaylist · nullable schema",
+      "document": "add gn to night vibes",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "playlist": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "playlist name"
+          },
+          "artist": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "performer or musical artist"
+          },
+          "playlist_owner": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "person owning the playlist"
+          }
+        },
+        "required": [
+          "playlist",
+          "artist",
+          "playlist_owner"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "playlist_owner": null,
+        "artist": null,
+        "playlist": "night vibes"
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
+      "title": "BookRestaurant · alias schema",
+      "document": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_restaurant_name": {
+            "type": "array",
+            "description": "restaurant name",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_timeRange": {
+            "type": "array",
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_sort": {
+            "type": "array",
+            "description": "requested ranking, ordering, or preference",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_restaurant_name",
+          "selected_timeRange",
+          "selected_sort"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_restaurant_name": [],
+        "selected_timeRange": [
+          "Nov. the 1st"
+        ],
+        "selected_sort": []
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
+      "title": "BookRestaurant · nullable schema",
+      "document": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "restaurant_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "restaurant name"
+          },
+          "timeRange": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "date, time, or time-range expression"
+          },
+          "sort": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "requested ranking, ordering, or preference"
+          }
+        },
+        "required": [
+          "restaurant_name",
+          "timeRange",
+          "sort"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "restaurant_name": null,
+        "timeRange": "Nov. the 1st",
+        "sort": null
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:GetWeather:train:109:view0:native:alias",
+      "title": "GetWeather · alias schema",
+      "document": "Is it going to be colder in Louisiana",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_condition_temperature": {
+            "type": "array",
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_state": {
+            "type": "array",
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_condition_temperature",
+          "selected_state"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_condition_temperature": [
+          "colder"
+        ],
+        "selected_state": [
+          "Louisiana"
+        ]
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:GetWeather:train:109:view0:native:nullable",
+      "title": "GetWeather · nullable schema",
+      "document": "Is it going to be colder in Louisiana",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "condition_temperature": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "temperature description"
+          },
+          "state": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "state or region"
+          }
+        },
+        "required": [
+          "condition_temperature",
+          "state"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "condition_temperature": "colder",
+        "state": "Louisiana"
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:PlayMusic:train:801:view1:native:alias",
+      "title": "PlayMusic · alias schema",
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_service": {
+            "type": "array",
+            "description": "music service",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_music_item": {
+            "type": "array",
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_playlist": {
+            "type": "array",
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_service",
+          "selected_music_item",
+          "selected_playlist"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_service": [],
+        "selected_music_item": [
+          "theme"
+        ],
+        "selected_playlist": []
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:PlayMusic:train:801:view1:native:nullable",
+      "title": "PlayMusic · nullable schema",
+      "document": "Play the last theme by Behzad Mirkhani.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "service": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "music service"
+          },
+          "music_item": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "word specifying the requested music category, such as artist, track, song, or album"
+          },
+          "playlist": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "playlist name"
+          }
+        },
+        "required": [
+          "service",
+          "music_item",
+          "playlist"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "service": null,
+        "music_item": "theme",
+        "playlist": null
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:RateBook:train:293:view0:native:alias",
+      "title": "RateBook · alias schema",
+      "document": "rate the current essay 2 stars",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_rating_value": {
+            "type": "array",
+            "description": "given rating",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_object_select": {
+            "type": "array",
+            "description": "selection expression referring to the work",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_rating_value",
+          "selected_object_select"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_object_select": [
+          "current"
+        ],
+        "selected_rating_value": [
+          "2"
+        ]
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:RateBook:train:293:view0:native:nullable",
+      "title": "RateBook · nullable schema",
+      "document": "rate the current essay 2 stars",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "rating_value": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "given rating"
+          },
+          "object_select": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "selection expression referring to the work"
+          }
+        },
+        "required": [
+          "rating_value",
+          "object_select"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "object_select": "current",
+        "rating_value": "2"
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:alias",
+      "title": "SearchCreativeWork · alias schema",
+      "document": "Show me the book Playlist: The Very Best of Dolly Parton",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_object_name": {
+            "type": "array",
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_object_name"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_object_name": [
+          "Playlist: The Very Best of Dolly Parton"
+        ]
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:nullable",
+      "title": "SearchCreativeWork · nullable schema",
+      "document": "Show me the book Playlist: The Very Best of Dolly Parton",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "name of the work being rated or searched for"
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "object_name": "Playlist: The Very Best of Dolly Parton"
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:alias",
+      "title": "SearchScreeningEvent · alias schema",
+      "document": "find animated movies movie schedule in the neighborhood",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "selected_movie_type": {
+            "type": "array",
+            "description": "kind of movie",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_movie_name": {
+            "type": "array",
+            "description": "movie name",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected_location_name": {
+            "type": "array",
+            "description": "screening location name",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "selected_movie_type",
+          "selected_movie_name",
+          "selected_location_name"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "selected_location_name": [],
+        "selected_movie_name": [],
+        "selected_movie_type": [
+          "animated movies"
+        ]
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
+    },
+    {
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:nullable",
+      "title": "SearchScreeningEvent · nullable schema",
+      "document": "find animated movies movie schedule in the neighborhood",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "movie_type": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "kind of movie"
+          },
+          "movie_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "movie name"
+          },
+          "location_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "screening location name"
+          }
+        },
+        "required": [
+          "movie_type",
+          "movie_name",
+          "location_name"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "location_name": null,
+        "movie_name": null,
+        "movie_type": "animated movies"
+      },
+      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
+      "scope": "Observed development request; native schema stress view."
     }
-  ]
+  ],
+  "scope": "40 prior playground diagnostics plus 14 observed development schema-stress examples; reference answers never enter generation."
 }
