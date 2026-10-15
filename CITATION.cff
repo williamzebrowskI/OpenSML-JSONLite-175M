@@ -4,7 +4,7 @@ title: "OpenSML-JSONLite-175M: Native JSON Generation from Source Text and Schem
 authors:
   - family-names: Zebrowski
     given-names: William
-version: 0.2.0
+version: 0.3.0
 date-released: 2026-10-14
 url: "https://github.com/williamzebrowskI/OpenSML-JSONLite-175M"
 repository-code: "https://github.com/williamzebrowskI/OpenSML-JSONLite-175M"

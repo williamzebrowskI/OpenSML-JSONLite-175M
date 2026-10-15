@@ -1,23 +1,21 @@
 # Training lineage and reproducibility
 
-Stage A/132005 → SFT-065/469 → SFT-068/379 → SFT-093/160 → SFT-100/469.
-The current final stage directly supervises source + schema → JSON output.
-Its 15,000 presentations comprise 12,115 canonical, 1,443 alias and 1,442 nullable
-views of 12,115 TRAIN sources. Full-weight Mac1 training: batch32/micro2, one pass,
-469 updates, 5e-6 → 1e-6 LR, warmup20, cosine decay, output-only loss, fresh AdamW.
-See docs/TECHNICAL_REPORT.md for the complete pretrained and supervised pipeline.
+The main model inherits pretrained Stage A, grounded QA, requested-field extraction,
+focused extraction, native JSON foundation, and the additional cardinality/replay
+SFT continuation. Exact internal stage/update identities remain in provenance/LINEAGE.json.
+The selected final prefix contains2,048presentations and600,558serialized positions;
+the complete experiment ran96 updates over3,072presentations, but later weights are
+not inherited. No unrelated trial is an ancestor.
 
-pretraining/native_json_100 contains frozen preparation, masking, evaluator,
-training and verification source. Curated train/development/test JSONL and a
-manifest are included. Original annotation inputs/revisions are pinned there;
-packed NumPy arrays and optimizer binaries are not Git artifacts. Reproducing
-training requires the corresponding preserved SFT-093 parent and original
-workspace source inputs/path layout, then a newly generated preflight receipt.
-Published sanitized receipts are audit evidence, not ready-to-resume state.
+The add-on trains full weights with fresh AdamW, batch32/micro2,75% original TRAIN
+replay and25% controlled cardinality views per batch. Frozen-foundation output KL
+regularizes replay; new views use CE only. No teacher is used at inference.
+Source, JSONL examples, original manifests and receipts are supplied for audit.
+Packed arrays and optimizer binaries are omitted. Reproduction needs the specified
+parent, original dependencies/layout, array preparation and a new local preflight;
+published sanitized receipts are not ready-to-resume training state.
 
-Development selected update469 before final testing. Research coverage:252 DEV,
-1,444 TEST,54 local diagnostics. Expected answers do not enter generation. Raw
-native generation is scored without assembler, repair or constrained decoding.
-No discarded research run is an extra ancestor. Historical SFT-093 documents
-remain explicitly historical. Do not attribute their software-assisted scores
-to the current neural JSON model.
+The main checkpoint is owner-selected after observing development/playground and
+original1,444TEST tradeoffs; strict automatic retention gates did not pass. These
+are previously observed panels, not blind benchmarks. Expected values do not
+enter generation. See docs/TECHNICAL_REPORT.md and results/JSONLITE_RESULTS.json.

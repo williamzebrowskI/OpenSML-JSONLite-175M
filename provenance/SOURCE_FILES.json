@@ -1161,5 +1161,53 @@
     "published_sha256": "594a83b846c97836be009e61d9fcf9a1b4ceb0d0f9bb491bbb5b56f02a433edf",
     "sanitized": false,
     "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_105/__init__.py",
+    "published": "pretraining/native_json_105/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_105/data.py",
+    "published": "pretraining/native_json_105/data.py",
+    "original_sha256": "b4934d571851f934164a2f0dce310486dc70e45c8222f8ae5c91a9fd987be303",
+    "published_sha256": "b4934d571851f934164a2f0dce310486dc70e45c8222f8ae5c91a9fd987be303",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_105/evaluate.py",
+    "published": "pretraining/native_json_105/evaluate.py",
+    "original_sha256": "bf439186ebf0819f54e2e1dafb120e3abc0e05b53e2367f3adb6abc09f66817b",
+    "published_sha256": "bf439186ebf0819f54e2e1dafb120e3abc0e05b53e2367f3adb6abc09f66817b",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_105/runtime.py",
+    "published": "pretraining/native_json_105/runtime.py",
+    "original_sha256": "cd00debd869794c50af2856e51437199bbe2221bfb1b7192e36332167ef1ee24",
+    "published_sha256": "cd00debd869794c50af2856e51437199bbe2221bfb1b7192e36332167ef1ee24",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_105/train.py",
+    "published": "pretraining/native_json_105/train.py",
+    "original_sha256": "fec330fbcf8d6f3b76cc4c86a30bcf00f7215cbc57b1af31ebcc05c69f5c3d4d",
+    "published_sha256": "fec330fbcf8d6f3b76cc4c86a30bcf00f7215cbc57b1af31ebcc05c69f5c3d4d",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_105/verify.py",
+    "published": "pretraining/native_json_105/verify.py",
+    "original_sha256": "e21a616dba7b402aeaea40c204678fdbfc16dda97606d74179c7a213cfb57d78",
+    "published_sha256": "e21a616dba7b402aeaea40c204678fdbfc16dda97606d74179c7a213cfb57d78",
+    "sanitized": false,
+    "outputs_omitted": false
   }
 ]

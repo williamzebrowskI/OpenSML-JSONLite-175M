@@ -1,0 +1,13 @@
+{
+  "checkpoint_records": 32,
+  "checkpoint_resume_passed": true,
+  "copied_parent_baseline": true,
+  "elapsed_seconds": 6.682197749847546,
+  "held_out_predictions_generated": 0,
+  "main_run_initialized": false,
+  "optimizer_updates_on_ephemeral_TRAIN": 1,
+  "parent_unchanged": true,
+  "status": "passed",
+  "temporary_checkpoints_deleted": true,
+  "trained_weights_changed": true
+}

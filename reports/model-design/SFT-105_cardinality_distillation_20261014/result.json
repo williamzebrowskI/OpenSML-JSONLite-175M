@@ -1,0 +1,22 @@
+{
+  "final_comparison": "not_run_no_qualified_trained_checkpoint",
+  "records": 3072,
+  "release_ready": false,
+  "selected": {
+    "bundle": "step_0000000_257b0a14f12f",
+    "selection": [
+      0.0,
+      0.3125,
+      0.59375,
+      0.5839416058394161,
+      0.8333333333333334,
+      -4,
+      -0.26432656326990883
+    ],
+    "step": 0
+  },
+  "status": "complete",
+  "step": 96,
+  "tokens": 900453,
+  "total_steps": 96
+}

@@ -1,0 +1,1310 @@
+{
+  "automatic_selection": 0,
+  "checkpoints": {
+    "0": {
+      "bundle": "[workspace]/pretraining/runs/sft_105_cardinality_distillation_20261014/step_0000000_257b0a14f12f",
+      "gate": true,
+      "new_correct": 15,
+      "new_multiple_correct": 0,
+      "original": {
+        "absent_accuracy": 0.9294117647058824,
+        "exact": 0.7936507936507936,
+        "f1": 0.899854862119013,
+        "field_accuracy": 0.9039735099337748,
+        "precision": 0.9144542772861357,
+        "recall": 0.8857142857142857,
+        "schema_valid_rate": 0.996031746031746
+      },
+      "original_correct": 200,
+      "playground": {
+        "absent_accuracy": 0.9056603773584906,
+        "exact": 0.7777777777777778,
+        "f1": 0.8765432098765431,
+        "field_accuracy": 0.8740740740740741,
+        "precision": 0.9102564102564102,
+        "recall": 0.8452380952380952,
+        "schema_valid_rate": 0.9629629629629629
+      },
+      "playground_counts": {
+        "absent_correct": 48,
+        "absent_total": 53,
+        "exact": 42,
+        "false_abstention": 3,
+        "field_correct": 118,
+        "fields": 135,
+        "fn": 13,
+        "fp": 7,
+        "json_parse_ok": 52,
+        "missed_abstention": 5,
+        "natural_stop": 54,
+        "nonrepetitive_nonempty": 54,
+        "predicted_values": 78,
+        "present_correct": 70,
+        "present_total": 82,
+        "schema_ok": 52,
+        "token_limited": 0,
+        "tp": 71,
+        "unsupported_values": 2
+      }
+    },
+    "32": {
+      "bundle": "[workspace]/pretraining/runs/sft_105_cardinality_distillation_20261014/step_0000032_1981f3af45cc",
+      "gate": false,
+      "new_correct": 28,
+      "new_multiple_correct": 11,
+      "original": {
+        "absent_accuracy": 0.9372549019607843,
+        "exact": 0.7936507936507936,
+        "f1": 0.9002932551319647,
+        "field_accuracy": 0.902317880794702,
+        "precision": 0.9246987951807228,
+        "recall": 0.8771428571428571,
+        "schema_valid_rate": 0.9841269841269841
+      },
+      "original_correct": 200,
+      "playground": {
+        "absent_accuracy": 0.8867924528301887,
+        "exact": 0.7592592592592593,
+        "f1": 0.8834355828220858,
+        "field_accuracy": 0.8666666666666667,
+        "precision": 0.9113924050632911,
+        "recall": 0.8571428571428571,
+        "schema_valid_rate": 0.9259259259259259
+      },
+      "playground_counts": {
+        "absent_correct": 47,
+        "absent_total": 53,
+        "exact": 41,
+        "false_abstention": 4,
+        "field_correct": 117,
+        "fields": 135,
+        "fn": 12,
+        "fp": 7,
+        "json_parse_ok": 52,
+        "missed_abstention": 6,
+        "natural_stop": 54,
+        "nonrepetitive_nonempty": 54,
+        "predicted_values": 79,
+        "present_correct": 70,
+        "present_total": 82,
+        "schema_ok": 50,
+        "token_limited": 0,
+        "tp": 72,
+        "unsupported_values": 3
+      }
+    },
+    "64": {
+      "bundle": "[workspace]/pretraining/runs/sft_105_cardinality_distillation_20261014/step_0000064_cdd8be1e8d5a",
+      "gate": false,
+      "new_correct": 32,
+      "new_multiple_correct": 14,
+      "original": {
+        "absent_accuracy": 0.9490196078431372,
+        "exact": 0.8174603174603174,
+        "f1": 0.9069767441860466,
+        "field_accuracy": 0.9155629139072847,
+        "precision": 0.9230769230769231,
+        "recall": 0.8914285714285715,
+        "schema_valid_rate": 1.0
+      },
+      "original_correct": 206,
+      "playground": {
+        "absent_accuracy": 0.9245283018867925,
+        "exact": 0.8148148148148148,
+        "f1": 0.9058823529411765,
+        "field_accuracy": 0.9185185185185185,
+        "precision": 0.8953488372093024,
+        "recall": 0.9166666666666666,
+        "schema_valid_rate": 1.0
+      },
+      "playground_counts": {
+        "absent_correct": 49,
+        "absent_total": 53,
+        "exact": 44,
+        "false_abstention": 3,
+        "field_correct": 124,
+        "fields": 135,
+        "fn": 7,
+        "fp": 9,
+        "json_parse_ok": 54,
+        "missed_abstention": 4,
+        "natural_stop": 54,
+        "nonrepetitive_nonempty": 54,
+        "predicted_values": 86,
+        "present_correct": 75,
+        "present_total": 82,
+        "schema_ok": 54,
+        "token_limited": 0,
+        "tp": 77,
+        "unsupported_values": 3
+      }
+    },
+    "96": {
+      "bundle": "[workspace]/pretraining/runs/sft_105_cardinality_distillation_20261014/step_0000096_25d3b5aefe0c",
+      "gate": false,
+      "new_correct": 32,
+      "new_multiple_correct": 13,
+      "original": {
+        "absent_accuracy": 0.9372549019607843,
+        "exact": 0.8174603174603174,
+        "f1": 0.9077809798270894,
+        "field_accuracy": 0.9155629139072847,
+        "precision": 0.9156976744186046,
+        "recall": 0.9,
+        "schema_valid_rate": 1.0
+      },
+      "original_correct": 206,
+      "playground": {
+        "absent_accuracy": 0.9056603773584906,
+        "exact": 0.7962962962962963,
+        "f1": 0.8862275449101796,
+        "field_accuracy": 0.8888888888888888,
+        "precision": 0.891566265060241,
+        "recall": 0.8809523809523809,
+        "schema_valid_rate": 0.9814814814814815
+      },
+      "playground_counts": {
+        "absent_correct": 48,
+        "absent_total": 53,
+        "exact": 43,
+        "false_abstention": 4,
+        "field_correct": 120,
+        "fields": 135,
+        "fn": 10,
+        "fp": 9,
+        "json_parse_ok": 53,
+        "missed_abstention": 5,
+        "natural_stop": 54,
+        "nonrepetitive_nonempty": 54,
+        "predicted_values": 83,
+        "present_correct": 72,
+        "present_total": 82,
+        "schema_ok": 53,
+        "token_limited": 0,
+        "tp": 74,
+        "unsupported_values": 3
+      }
+    }
+  },
+  "coverage": {
+    "checkpoints": 4,
+    "development": 404,
+    "playground": 54
+  },
+  "manual_research_candidate": 64,
+  "original_test_1444_run": false,
+  "recommendation": "Preserve64 as a promising research candidate and469 as release parent. Before promotion or another continuation compare64 with the cached469 original1444TEST under the identical protocol.",
+  "release_parent_unchanged": true,
+  "scope": "Existing observed development/playground panels; no full held-out test or new blind benchmark was run.",
+  "status": "sft_complete_all_scheduled_evaluations_verified",
+  "step64_gate_failures": {
+    "domain/probe/single_request": {
+      "exact_delta": 0.875,
+      "false_abstention_delta": 0,
+      "field_accuracy_delta": 0.5625,
+      "missing_accuracy_delta": 0.25,
+      "schema_valid_delta": 0.0,
+      "unsupported_values_delta": 1
+    },
+    "domain/retention/AddToPlaylist": {
+      "exact_delta": 0.02777777777777779,
+      "false_abstention_delta": -1,
+      "field_accuracy_delta": 0.02197802197802201,
+      "missing_accuracy_delta": 0.024390243902439046,
+      "schema_valid_delta": 0.02777777777777779,
+      "unsupported_values_delta": 1
+    },
+    "retention/variant/canonical": {
+      "exact_delta": 0.025510204081632737,
+      "false_abstention_delta": -2,
+      "field_accuracy_delta": 0.008547008547008517,
+      "missing_accuracy_delta": 0.015706806282722474,
+      "schema_valid_delta": 0.0,
+      "unsupported_values_delta": 1
+    },
+    "retention/variant/nullable": {
+      "exact_delta": 0.0357142857142857,
+      "false_abstention_delta": 1,
+      "field_accuracy_delta": 0.044117647058823595,
+      "missing_accuracy_delta": 0.0625,
+      "schema_valid_delta": 0.0357142857142857,
+      "unsupported_values_delta": -1
+    }
+  },
+  "step64_regression_cases": [
+    {
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 1
+      },
+      "candidate_text": "{\"playlist\":[\"independence evening acoustic\"],\"entity_name\":[\"heresy and the hotel choir\"]}",
+      "document": "add heresy and the hotel choir to the evening acoustic playlist",
+      "expected": {
+        "entity_name": [
+          "heresy and the hotel choir"
+        ],
+        "playlist": [
+          "evening acoustic"
+        ]
+      },
+      "id": "snips:AddToPlaylist:train:954:view0:native:canonical",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 2,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"playlist\":[\"evening acoustic\"],\"entity_name\":[\"heresy and the hotel choir\"]}",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "entity_name": {
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "playlist": {
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "playlist",
+          "entity_name"
+        ],
+        "type": "object"
+      },
+      "source": "retention/AddToPlaylist"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "candidate_text": "{\"artist\":null,\"sort\":null,\"genre\":null}",
+      "document": "Play Kk on Zvooq.",
+      "expected": {
+        "artist": "Kk",
+        "genre": null,
+        "sort": null
+      },
+      "id": "snips:PlayMusic:train:1340:view1:native:nullable",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 3,
+        "fields": 3,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"genre\":null,\"sort\":null,\"artist\":\"Kk\"}",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "artist": {
+            "description": "performer or musical artist",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "genre": {
+            "description": "music genre",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sort": {
+            "description": "requested ranking, ordering, or preference",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "genre",
+          "sort",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "source": "retention/PlayMusic"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 1
+      },
+      "candidate_text": "{\"city\":[\"Quito\",\"Frans\",\"Perth\"],\"country\":[]}",
+      "document": "Give me weather reports for both Quito and Perth.",
+      "expected": {
+        "city": [
+          "Quito",
+          "Perth"
+        ],
+        "country": []
+      },
+      "id": "probe102:development:city:3",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"city\":[\"Quito\"],\"country\":[]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "source": "probe/single_request"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 2,
+        "fp": 3,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 4,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 3
+      },
+      "candidate_text": "{\"artist\":[\"lil armstrong\",\"eccentric\",\"bibb\",\"van Tieghem\"],\"album\":[]}",
+      "document": "Please feature these performers in the music selection: lil armstrong, Eric Bibb, David Van Tieghem.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "lil armstrong",
+          "Eric Bibb",
+          "David Van Tieghem"
+        ]
+      },
+      "id": "authored104:development:9:canonical",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 2,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"album\":[],\"artist\":[\"lil armstrong\"]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "source": "single_lists"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 3,
+        "fn": 2,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 0,
+        "present_total": 2,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 1
+      },
+      "candidate_text": "{\"artist\":[\"lil armstrong\",\"tiger\",\"pittsburgh slim\"],\"track\":null,\"album\":null}",
+      "document": "The selections are \"teri meri\" performed by lil armstrong and \"Tenerife Sea\" performed by pittsburgh slim.",
+      "expected": {
+        "album": null,
+        "artist": [
+          "lil armstrong",
+          "pittsburgh slim"
+        ],
+        "track": [
+          "teri meri",
+          "Tenerife Sea"
+        ]
+      },
+      "id": "authored104:development:26:nullable",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 3,
+        "fn": 2,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 0,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"artist\":[\"lil armstrong\"],\"track\":[\"teri meri\"],\"album\":null}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "track": {
+            "description": "track name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "track",
+          "album"
+        ],
+        "type": "object"
+      },
+      "source": "single_lists"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "candidate_text": "{\"artist\":[\"Mohammad Reza Shadjarian\"],\"requested_album\":[]}",
+      "document": "For my music selection, include performances by Mohammad Reza Shadjarian.",
+      "expected": {
+        "requested_album": [],
+        "requested_artist": [
+          "Mohammad Reza Shadjarian"
+        ]
+      },
+      "id": "cardinality105:development:1:alias",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"requested_album\":[],\"requested_artist\":[\"Mohammad Reza Shadjarian\"]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "requested_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "requested_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requested_album",
+          "requested_artist"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 1
+      },
+      "candidate_text": "{\"artist\":[\"Mohammad Reza Shadjarian\",\"manos hatzidakis\",\"damien Rice\"],\"album\":[]}",
+      "document": "For my music selection, include performances by Mohammad Reza Shadjarian, manos hatzidakis, and Damien Rice.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "Mohammad Reza Shadjarian",
+          "manos hatzidakis",
+          "Damien Rice"
+        ]
+      },
+      "id": "cardinality105:development:3:canonical",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 2,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"album\":[],\"artist\":[\"Mohammad Reza Shadjarian\"]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "candidate_text": "{\"artist\":[],\"requested_album\":[\"Axum\"]}",
+      "document": "The album I would like played is \"Axum\".",
+      "expected": {
+        "requested_album": [
+          "Axum"
+        ],
+        "requested_artist": []
+      },
+      "id": "cardinality105:development:4:alias",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"requested_album\":[\"Axum\"],\"requested_artist\":[]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "requested_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "requested_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requested_artist",
+          "requested_album"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 2,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 4,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 2
+      },
+      "candidate_text": "{\"artist\":[\"Shada Hassoun\",\"Mohammed Reza Shadjarian\",\"Mohammed Reza Shadjarian\",\"Damien Rice\"],\"album\":null}",
+      "document": "For my music selection, include performances by Shada Hassoun, Mohammad Reza Shadjarian, and Damien Rice.",
+      "expected": {
+        "album": null,
+        "artist": [
+          "Shada Hassoun",
+          "Mohammad Reza Shadjarian",
+          "Damien Rice"
+        ]
+      },
+      "id": "cardinality105:development:11:nullable",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 2,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"album\":null,\"artist\":\"Shada Hassoun\"}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "candidate_text": "{\"artist\":[\"Mel Draisey\"],\"requested_album\":[]}",
+      "document": "Could you put together songs from Mel Draisey?",
+      "expected": {
+        "requested_album": [],
+        "requested_artist": [
+          "Mel Draisey"
+        ]
+      },
+      "id": "cardinality105:development:13:alias",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"requested_album\":[],\"requested_artist\":[\"Mel Draisey\"]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "requested_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "requested_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requested_album",
+          "requested_artist"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 0,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      },
+      "candidate_text": "{\"city\":[\"Papeton\"],\"requested_country\":[]}",
+      "document": "I would like weather information for the cities Papeton.",
+      "expected": {
+        "requested_city": [
+          "Papeton"
+        ],
+        "requested_country": []
+      },
+      "id": "cardinality105:development:37:alias",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 1,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 2,
+        "fn": 0,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"requested_country\":[],\"requested_city\":[\"Papeton\"]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "requested_city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "requested_country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requested_country",
+          "requested_city"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 2,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 4,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 1
+      },
+      "candidate_text": "{\"city\":[\"Papeton\",\"Pollock\",\"Granston\",\" Griffin\"],\"country\":[]}",
+      "document": "I would like weather information for the cities Papeton, Pollock, and Griffin.",
+      "expected": {
+        "city": [
+          "Papeton",
+          "Pollock",
+          "Griffin"
+        ],
+        "country": []
+      },
+      "id": "cardinality105:development:39:canonical",
+      "panel": "development",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 2,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"country\":[],\"city\":[\"Papeton\"]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "country",
+          "city"
+        ],
+        "type": "object"
+      },
+      "source": "cardinality"
+    },
+    {
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 2,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 2
+      },
+      "candidate_text": "{\"city\":[\"Bergen\",\"Orange\",\"Lake\"],\"country\":[]}",
+      "document": "Give me the weather in Bergen and Oslo.",
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo"
+        ],
+        "country": []
+      },
+      "id": "FIELD-36",
+      "panel": "playground",
+      "parent_checks": {
+        "absent_correct": 1,
+        "absent_total": 1,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      },
+      "parent_text": "{\"city\":[\"Bergen\"],\"country\":[]}",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "source": "playground"
+    }
+  ]
+}

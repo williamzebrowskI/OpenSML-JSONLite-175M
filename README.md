@@ -2,73 +2,61 @@
 
 **Author:** William Zebrowski · **175,611,648 parameters**
 
-[Run locally](RUN_GUIDE.md) · [Technical report](docs/TECHNICAL_REPORT.md) · [Results](results/JSONLITE_RESULTS.json) · [Provenance](provenance/LINEAGE.json) · [Inference verification](inference_native/INFERENCE_VERIFICATION.json)
+[Run locally](RUN_GUIDE.md) · [Technical report](docs/TECHNICAL_REPORT.md) · [Results](results/JSONLITE_RESULTS.json) · [Provenance](provenance/LINEAGE.json)
 
-**A small language model that generates JSON directly from source text and a supplied JSON Schema.** It produces the entire object in one native autoregressive request. There is no fieldwise JSON assembler, output repair or constrained decoder in this release. Schema validation happens after generation and cannot establish that extracted values are correct.
+**Main checkpoint: a small language model that generates complete JSON directly from source text and a supplied JSON Schema.** It makes one autoregressive call; parsing/schema validation follows generation. No JSON assembly, output repair, constrained decoder or secondary model is used.
 
-This update replaces the earlier extraction-plus-assembly weights and runner with a native source/schema → JSON fine-tune. The pretrained ancestor is [OpenSML-Base-175M](https://huggingface.co/wzebrowski/OpenSML-Base-175M); the model adds evidence QA, exact field extraction, focused extraction and a final directly supervised JSON stage. Full lineage and exact artifact hashes are in the report.
+This release retains the grounded-QA, exact/focused extraction and native JSON foundation, then adds a focused extraction continuation with original TRAIN replay, matched zero/one/two/three-value examples and frozen-parent distillation. The display name and standard `model.safetensors` filename stay unchanged. The pretrained ancestor is [OpenSML-Base-175M](https://huggingface.co/wzebrowski/OpenSML-Base-175M).
 
 ## Run locally
-
-The Hugging Face companion contains BF16 `model.safetensors` and a runnable source archive; this GitHub repository contains source, tokenizer, examples, training/evaluation records and provenance. Weights are not stored in GitHub. This is a custom architecture; use the supplied runner rather than Transformers AutoModel or mlx-lm auto-loading. Verified platform: Apple Silicon macOS, Python 3.11 and stock MLX 0.32.3.
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install huggingface_hub
-# Authenticate if access requires it: hf auth login
 hf download wzebrowski/OpenSML-JSONLite-175M --local-dir OpenSML-JSONLite-175M
 cd OpenSML-JSONLite-175M
 python -m pip install -r requirements.txt
-python inference.py --example 29
+python inference.py --example 35
 python inference.py --text-file request.txt --schema-file schema.json
-# Optional: raw text plus validation/stop metadata and example correctness
-python inference.py --example 29 --json
+python inference.py --example 35 --json
 ```
 
-Default stdout is the model's unmodified generated text. The fixed extraction instruction and native prompt template are supplied by the runner. Example answers are checked afterward and never passed to generation. After downloading and installing dependencies, inference runs offline. The root runner verifies the source archive and selected weight SHA-256. Tokenizer companions are in the bundle; optimizer state is not needed for inference.
+The runner inserts the fixed instruction/native role serialization. Default stdout is the unmodified generated text; `--json` adds validation/stop metadata. Example golds are checked afterward and never passed to generation. Inference is offline after download/dependency installation. This custom architecture uses the supplied native MLX runner; Transformers AutoModel and mlx-lm auto-loading are not supported exports. Verified platform: Apple Silicon macOS, Python 3.11, stock MLX 0.32.3.
 
-## Model and inputs
+## Inputs and supported schema
 
-| Setting | Value |
-| --- | --- |
-| Parameters | 175,611,648 |
-| Layers / hidden / FFN width | 24 / 768 / 2,048 |
-| Attention | GQA, 12 query heads / 4 KV heads |
-| Normalization / MLP / positions | RMSNorm + Q/K norm / SwiGLU / RoPE 10,000 |
-| Vocabulary / context | Frozen 32,000-token byte-BPE / 2,048 shared tokens |
-| Embeddings / biases | Tied input-output / no linear biases |
-| Weights | BF16, unquantized safetensors |
-| Output | One native JSON object per request |
-| Default decoding | Temperature 0, repetition penalty 1, max 256 output tokens |
+Supply source text and a flat object JSON Schema with 1–8 required properties and `additionalProperties:false`. Supported properties are strings, nullable strings and arrays of strings. Use clear field descriptions. Copy exact spelling/case and complete spans; preserve source order in arrays. Missing arrays target []; missing nullable strings target null. There is no date/number normalization. Nested objects, numeric/boolean outputs, enums/references/advanced constraints are outside the verified runner contract. Overlong prompts reject without truncation.
 
-Supply source text containing the facts and a closed flat object schema with 1–8 required properties and `additionalProperties: false`. Supported property types are strings, nullable strings (`["string","null"]`) and arrays of strings. Clear field descriptions help specify semantics. Missing arrays target `[]`; missing nullable strings target `null`. Strings preserve source case/spelling and arrays preserve source order; number/date normalization is not trained. Overlong inputs reject without truncation.
+|Model setting|Value|
+|---|---|
+|Parameters|175,611,648|
+|Layers / hidden / FFN|24 /768 /2,048|
+|Attention|GQA: 12  query / 4 KV heads|
+|Normalization / MLP / positions|RMSNorm+Q/K norm /SwiGLU /RoPE10,000|
+|Vocabulary / shared context|Frozen 32,000-byte-BPE /2,048 tokens|
+|Weights|BF16 unquantized safetensors; tied embeddings|
+|Default generation|Temperature 0, repetition penalty 1, max 256 tokens|
 
-The run is trained primarily on seven SNIPS domains and 39 field definitions. New names/descriptions are passed to the model directly, but reliable unfamiliar-domain extraction has not been established. Nested schemas, numeric/boolean outputs, enums, references and advanced constraints are outside the verified runner contract.
+## Verified source/schema/output examples
 
-## Verified interaction examples
-
-These four examples passed the playground reference check with the selected native JSON weights. Their raw outputs also matched the standalone MLX runner. They demonstrate observed successes, not a guarantee on other inputs. Decode greedily: temperature 0, repetition penalty 1, at most 256 output tokens.
-
-### Instruction and input format
-
-Use this exact instruction for every example (the provided runner inserts it automatically):
+These four observed examples are checked against the selected model and standalone runner. They demonstrate successes within a limited research scope; other requests can fail. The runner supplies this exact instruction:
 
 ```text
 Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.
 ```
 
-The user message is that instruction, a blank line, then the compact JSON object `{"source_text": <query>, "schema": <schema>}`. Both inputs are provided to one model generation; no expected answer is included. The runner applies the native SFT role tokens and validates the result afterward.
+The user message is the instruction, a blank line, then compact `{"source_text":<query>,"schema":<schema>}`. No expected answer is included.
 
-### Example 1: Track and artist
+### Track and artist
 
-**Query / source text**
+Source text:
 
 ```text
 Play the track Blue Lantern by Mira Sol.
 ```
 
-**JSON Schema**
+JSON Schema:
 
 ```json
 {
@@ -105,23 +93,23 @@ Play the track Blue Lantern by Mira Sol.
 }
 ```
 
-**Actual model output**
+Actual model output:
 
 ```json
-{"album":[],"artist":["Mira Sol"],"track":["Blue Lantern"]}
+{"track":["Blue Lantern"],"artist":["Mira Sol"],"album":[]}
 ```
 
-Run the packaged example: `python inference.py --example 29`.
+Run: `python inference.py --example 29`.
 
-### Example 2: Restaurant booking
+### Restaurant request
 
-**Query / source text**
+Source text:
 
 ```text
 Book River Moon in Denver for four people tomorrow.
 ```
 
-**JSON Schema**
+JSON Schema:
 
 ```json
 {
@@ -166,76 +154,68 @@ Book River Moon in Denver for four people tomorrow.
 }
 ```
 
-**Actual model output**
+Actual model output:
 
 ```json
 {"restaurant_name":["River Moon"],"city":["Denver"],"party_size_number":["four"],"timeRange":["tomorrow"]}
 ```
 
-Run the packaged example: `python inference.py --example 30`.
+Run: `python inference.py --example 30`.
 
-### Example 3: Missing fields as empty arrays
+### Multiple artists
 
-**Query / source text**
+Source text:
 
 ```text
-Please play some music.
+Play songs by Mira Sol and Theo Lane.
 ```
 
-**JSON Schema**
+JSON Schema:
 
 ```json
 {
   "type": "object",
   "properties": {
-    "country": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "country"
-    },
-    "timeRange": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "date, time, or time-range expression"
-    },
     "artist": {
       "type": "array",
       "items": {
         "type": "string"
       },
       "description": "performer or musical artist"
+    },
+    "album": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "album name"
     }
   },
   "required": [
-    "country",
-    "timeRange",
-    "artist"
+    "artist",
+    "album"
   ],
   "additionalProperties": false
 }
 ```
 
-**Actual model output**
+Actual model output:
 
 ```json
-{"country":[],"timeRange":[],"artist":[]}
+{"artist":["Mira Sol","Theo Lane"],"album":[]}
 ```
 
-Run the packaged example: `python inference.py --example 40`.
+Run: `python inference.py --example 35`.
 
-### Example 4: Nullable strings and requested scope
+### Nullable fields
 
-**Query / source text**
+Source text:
 
 ```text
 Play the last theme by Behzad Mirkhani.
 ```
 
-**JSON Schema**
+JSON Schema:
 
 ```json
 {
@@ -273,79 +253,60 @@ Play the last theme by Behzad Mirkhani.
 }
 ```
 
-**Actual model output**
+Actual model output:
 
 ```json
 {"playlist":null,"music_item":"theme","service":null}
 ```
 
-Run the packaged example: `python inference.py --example 48`.
-
-The performer is present in the source but is not requested by this schema. The output includes only the requested music category and missing service/playlist values.
+Run: `python inference.py --example 48`.
 
 ## Training
 
-The 175.6M-parameter base was pretrained from random initialization on **17,300,111,360 lifetime token positions**, using a five-Mac Apple Silicon cluster with Thunderbolt/RDMA.
-
-| Pretraining source | Intended sampling share |
-| --- | ---: |
-| FineWeb-Edu | 50% |
-| DCLM-Edu | 18% |
-| English FineWiki | 13% |
-| Cosmopedia v2 | 9% |
-| Educational Python | 10% |
-
-These are configured token-sampling weights, not unique-document counts. Selected-base validation loss was 2.5563359552. Pretraining architecture, tokenizer, source revisions, filtering, scheduler and precision are documented in the report.
-
-### Training run
+The base was pretrained from scratch on 17,300,111,360 token positions using five Apple Silicon Macs with Thunderbolt/RDMA distributed training. Intended mixture: 50% FineWeb-Edu, 18% DCLM-Edu, 13% English FineWiki, 9% Cosmopedia v2,10% educational Python. These are configured sampling shares, not unique-document counts. Base held-out validation loss: 2.5563359552.
 
 ![Training loss and held-out validation](docs/figures/pretraining-training-loss.png)
 
-*Training loss and held-out validation during pretraining. Left: raw training loss and exponential moving average. Right: held-out validation loss.*
+*Training loss and held-out validation during pretraining.*
 
-### Supervised adaptation
+|Adaptation stage|What is inherited|
+|---|---|
+|Grounded evidence QA|15,008 presentations through the selected ancestor|
+|Requested-field extraction|12,115 SNIPS requests|
+|Focused extraction plus replay|5,120 presentations|
+|Native JSON foundation|15,000 source/schema/JSON presentations|
+|Additional extraction SFT|2,048 inherited presentations: 1,536 TRAIN replay + 512 controlled cardinality views|
 
-| Stage | What it teaches | Inherited training |
-| --- | --- | --- |
-| Grounded QA | Answers from evidence, absence, contrasting questions, multipart/corrections | 15,008 presentations through selected update 469 |
-| Requested-field extraction | Exact SNIPS annotated spans, field definitions, missing values | 12,115 requests / 379 updates |
-| Focused extraction | Single-field supervision plus labeled replay | 5,120 presentations / 160 updates |
-| **Native JSON SFT** | **Source text + full schema → JSON assistant targets** | **15,000 presentations / 469 updates** |
-
-The final JSON stage has **12,115 distinct source requests**: 12,115 canonical-schema examples, 1,443 renamed-key views and 1,442 nullable-string views. Additional views reuse TRAIN-only sources. Original SNIPS chunk annotations are reconstructed, checked against source offsets and schema-validated; upstream annotation fidelity is not a guarantee of perfect semantic golds.
-
-The final stage runs one full-weight pass on Mac1 with batch 32, microbatch 2, fresh AdamW, peak LR 5e-6/final 1e-6, 20-update warmup then cosine decay, betas (0.9,0.95), epsilon 1e-8, weight decay 0.01 and clipping 1. Only assistant JSON and stop tokens contribute to the loss. It processes 4,634,126 serialized positions; there is no RL or adapter-only training in this chain.
-
-DEV selection happens at updates 0/100/200/300/469 on 252 fixed requests. The final artifact is selected before the 1,444-request test. TRAIN/DEV/TEST source groups are separate, but these held-out panels have prior research exposure and are not a new blind benchmark.
+The additional stage completed a 3,072-presentation experiment; the main checkpoint inherits only its selected 2,048-presentation prefix and 600,558 serialized positions. All stages update full model weights. The add-on uses batch 32/micro 2, fresh AdamW, 6-update warmup, peak 2e-6 and a 96-update cosine schedule toward 2e-7. On replay assistant tokens it adds KL from the frozen native JSON foundation; new rows use gold JSON CE alone. No teacher, RL, LoRA or adapter is needed at inference. Exact settings, data separation and stage hashes are in the report/provenance. Newly researched SGD/MIT datasets are not in these weights.
 
 ## Native JSON evaluation
 
-| Metric | Adapted SNIPS held-out, 1,444 requests |
-| --- | ---: |
-| Entire request correct | **1,191/1,444 — 82.48%** |
-| Field accuracy | **91.31%** |
-| Extracted-value precision / recall / F1 | **90.55% / 90.41% / 90.48%** |
-| Missing-field accuracy | **92.46%** |
-| Schema-valid JSON | **99.79%** |
-| False abstentions / unsupported values | 111 / 30 |
-| Token-limited outputs | 0 |
+Same original 1,444 SNIPS-derived source/schema requests and raw greedy protocol as the preceding release:
 
-Canonical string-array schemas alone score **1,156/1,388 (83.29%)**, with 100% schema validity. Extra renamed-key and nullable-string views score **19/28** and **16/28**. The full 54-case local playground scores **42/54 (77.78%)**, including **7/12** previously authored natural examples. These are different panels; do not pool or present them as an external leaderboard.
+|Metric|Main checkpoint|Previous native JSON release|
+|---|---:|---:|
+|Entire request correct|**83.03%**|82.48%|
+|Field accuracy|**91.36%**|91.31%|
+|Extracted-value F1|**90.40%**|90.48%|
+|Extracted-value precision|**90.53%**|90.55%|
+|Extracted-value recall|**90.26%**|90.41%|
+|Missing-field accuracy|**92.79%**|92.46%|
+|Schema-valid JSON|**99.79%**|99.79%|
 
-All outputs are raw, greedy native model generations: one whole-object request, no constrained decoder, assembly, repair, prompt truncation or reference answer in inputs. Complete correctness requires natural completion, strict JSON/schema validity and exact values. Structural validity is not factual correctness. [Results](results/JSONLITE_RESULTS.json) and the report contain counts, per-domain performance, protocols and failures.
+Complete correctness is 1,199/1,444 versus 1,191/1,444: 27 improved requests and 19 regressions. Unsupported values decrease 30→27. Canonical string-array views score 1,163/1,388 (83.79%) with 100% schema validity; renamed-key 21/28, nullable 15/28. The separate 54-example playground scores 44/54 (81.48%), versus 42/54; all 54 are schema-valid. The controlled new two/three-value development panel scores 14/24, versus 0/24. These are observed research panels, not fresh blind benchmarks or a public leaderboard.
 
-![Native JSON correctness on separate research panels](docs/figures/complete-request-exact.svg)
+The main checkpoint was owner-selected despite strict automatic retention checks not passing. Playlist/weather exactness declines on the larger panel; aggregate precision/recall/F1 decline slightly while exact/field/missing correctness improve. The new 48-pattern panel has only 75% schema validity. Full tradeoffs and failures are documented.
+
+![Complete-request correctness on separate observed panels](docs/figures/complete-request-exact.svg)
 
 ## Limitations
 
-The model remains a focused extraction research candidate. Failures include inventing a city, omitting second values, merging two names, missing rating/cuisine information, confusing entity types, incomplete spans, duplicate keys and malformed nullable strings. Broader natural language, corrections, associations, unfamiliar definitions, long documents and complex schemas need further validation. General dialogue, coding, multilingual quality, confidence calibration and prompt-injection robustness are not established. `success` means natural completion and structure validity, not verified factuality or release readiness.
+The model remains a focused SNIPS-domain extraction research model. Valid JSON does not prove correct values. It can invent, shorten, omit or misassign names, confuse venue/movie or state/country, and mishandle multiple values or nullable fields. For example, Bergen and Oslo can generate Bergen, Orange and Lake. Broader domains, long documents, corrections, arbitrary schemas, multilingual/chat/coding quality, calibration and prompt-injection robustness are unverified. `success` only means structure-valid natural completion. No blanket reliability/nonregression claim is made.
 
-## Identity and packaging
+## Main checkpoint identity and package
 
-Selected weight SHA-256:
+Selected BF16 weight SHA-256:
 
-`656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4`
+`655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1`
 
-Weights have 351,242,342 bytes. The frozen tokenizer is unchanged. Clean stock-MLX packaging verification checks raw output text and stop reasons against all 54 actual playground predictions; its 42/54 correctness is the same observed result, not an independent blind test or full-heldout runtime-parity claim. CUDA, CPU-only, quantized and converted exports remain unverified.
-
-Source code uses Apache-2.0; upstream data/dependencies retain their terms. The source license does not automatically assign a model-weight license. See the included notices and provenance.
+The package includes standard model.safetensors(351,242,342 bytes), config, unchanged tokenizer, source archive, examples, evaluation records and provenance. Source/archive/weight checksums are verified by the runner. The standalone verification receipt records raw-output and stop parity across 54 local fixtures; it is not an independent blind accuracy result. Historical revisions are retained for reproducibility. Source uses Apache-2.0; upstream terms apply separately; no trained-weight license is assigned by this update.

@@ -1,0 +1,1349 @@
+{
+  "status": "review_complete",
+  "regressed_requests": 19,
+  "unique_source_requests": 18,
+  "primary_categories": {
+    "copy_substitution": 4,
+    "span_truncation": 3,
+    "field_assignment": 8,
+    "omission": 2,
+    "ambiguous_input_or_definition": 2
+  },
+  "all19_schema_valid_and_naturally_stopped": true,
+  "original_annotation_targets_unchanged": true,
+  "cases": [
+    {
+      "id": "snips:AddToPlaylist:test:52:view0:native:canonical",
+      "primary_category": "copy_substitution",
+      "review_note": "Invented Peanut instead of copying Pete Murray.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "AddToPlaylist",
+      "variant": "canonical",
+      "document": "add the artist Pete Murray to my relaxing playlist",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "playlist_owner": {
+            "type": "array",
+            "description": "person owning the playlist",
+            "items": {
+              "type": "string"
+            }
+          },
+          "music_item": {
+            "type": "array",
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            }
+          },
+          "artist": {
+            "type": "array",
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "playlist_owner",
+          "music_item",
+          "artist"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "playlist_owner": [
+          "my"
+        ],
+        "music_item": [
+          "artist"
+        ],
+        "artist": [
+          "Pete Murray"
+        ]
+      },
+      "parent_text": "{\"playlist_owner\":[\"my\"],\"music_item\":[\"artist\"],\"artist\":[\"Pete Murray\"]}",
+      "candidate_text": "{\"playlist_owner\":[\"my\"],\"music_item\":[\"artist\"],\"artist\":[\"Peanut\"]}",
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 2,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 1
+      }
+    },
+    {
+      "id": "snips:GetWeather:test:82:view1:native:canonical",
+      "primary_category": "copy_substitution",
+      "review_note": "Replaced Turtle Islands National Park with Tortugas National Park.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "GetWeather",
+      "variant": "canonical",
+      "document": "what is the forecast for Turtle Islands National Park",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "spatial_relation": {
+            "type": "array",
+            "description": "spatial or proximity expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "condition_description": {
+            "type": "array",
+            "description": "weather condition",
+            "items": {
+              "type": "string"
+            }
+          },
+          "geographic_poi": {
+            "type": "array",
+            "description": "geographic point of interest",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "spatial_relation",
+          "condition_description",
+          "geographic_poi"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "spatial_relation": [],
+        "condition_description": [],
+        "geographic_poi": [
+          "Turtle Islands National Park"
+        ]
+      },
+      "parent_text": "{\"spatial_relation\":[],\"condition_description\":[],\"geographic_poi\":[\"Turtle Islands National Park\"]}",
+      "candidate_text": "{\"spatial_relation\":[],\"condition_description\":[],\"geographic_poi\":[\"Tortugas National Park\"]}",
+      "candidate_checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 1
+      }
+    },
+    {
+      "id": "snips:SearchCreativeWork:test:52:view1:native:canonical",
+      "primary_category": "span_truncation",
+      "review_note": "Dropped the title suffix at the Hollywood Bowl.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "SearchCreativeWork",
+      "variant": "canonical",
+      "document": "Please look up and find me Monty Python Live at the Hollywood Bowl.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "object_name": {
+            "type": "array",
+            "description": "name of the work being rated or searched for",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "object_name"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "object_name": [
+          "Monty Python Live at the Hollywood Bowl"
+        ]
+      },
+      "parent_text": "{\"object_name\":[\"Monty Python Live at the Hollywood Bowl\"]}",
+      "candidate_text": "{\"object_name\":[\"Monty Python Live\"]}",
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 0,
+        "fields": 1,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:AddToPlaylist:test:8:view0:native:canonical",
+      "primary_category": "copy_substitution",
+      "review_note": "Changed Pete to Pean.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "AddToPlaylist",
+      "variant": "canonical",
+      "document": "Please add some Pete Townshend to my playlist Fiesta Hits con Lali",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "playlist_owner": {
+            "type": "array",
+            "description": "person owning the playlist",
+            "items": {
+              "type": "string"
+            }
+          },
+          "playlist": {
+            "type": "array",
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            }
+          },
+          "artist": {
+            "type": "array",
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "playlist_owner",
+          "playlist",
+          "artist"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "playlist_owner": [
+          "my"
+        ],
+        "playlist": [
+          "Fiesta Hits con Lali"
+        ],
+        "artist": [
+          "Pete Townshend"
+        ]
+      },
+      "parent_text": "{\"playlist_owner\":[\"my\"],\"playlist\":[\"Fiesta Hits con Lali\"],\"artist\":[\"Pete Townshend\"]}",
+      "candidate_text": "{\"playlist_owner\":[\"my\"],\"playlist\":[\"Fiesta Hits con Lali\"],\"artist\":[\"Pean Townshend\"]}",
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 3,
+        "present_correct": 2,
+        "present_total": 3,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 2,
+        "unsupported_values": 1
+      }
+    },
+    {
+      "id": "snips:AddToPlaylist:test:8:view1:native:canonical",
+      "primary_category": "copy_substitution",
+      "review_note": "Changed Pete to PETER; same source as the previous schema view.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "AddToPlaylist",
+      "variant": "canonical",
+      "document": "Please add some Pete Townshend to my playlist Fiesta Hits con Lali",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            }
+          },
+          "music_item": {
+            "type": "array",
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            }
+          },
+          "entity_name": {
+            "type": "array",
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "artist",
+          "music_item",
+          "entity_name"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "artist": [
+          "Pete Townshend"
+        ],
+        "music_item": [],
+        "entity_name": []
+      },
+      "parent_text": "{\"artist\":[\"Pete Townshend\"],\"music_item\":[],\"entity_name\":[]}",
+      "candidate_text": "{\"artist\":[\"PETER Townshend\"],\"music_item\":[],\"entity_name\":[]}",
+      "candidate_checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 1
+      }
+    },
+    {
+      "id": "snips:PlayMusic:test:81:view1:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "Explicit genre Rock Symphonique assigned to playlist.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "PlayMusic",
+      "variant": "canonical",
+      "document": "I want to hear anything from the Rock Symphonique genre please.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "array",
+            "description": "year expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "playlist": {
+            "type": "array",
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            }
+          },
+          "genre": {
+            "type": "array",
+            "description": "music genre",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "year",
+          "playlist",
+          "genre"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "year": [],
+        "playlist": [],
+        "genre": [
+          "Rock Symphonique"
+        ]
+      },
+      "parent_text": "{\"year\":[],\"playlist\":[],\"genre\":[\"Rock Symphonique\"]}",
+      "candidate_text": "{\"year\":[],\"playlist\":[\"Rock Symphonique\"],\"genre\":[]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 1,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:21:view1:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "Work title The Oblong Box inserted into screening location.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "SearchScreeningEvent",
+      "variant": "canonical",
+      "document": "show me the schedule for The Oblong Box",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "object_location_type": {
+            "type": "array",
+            "description": "type of screening venue",
+            "items": {
+              "type": "string"
+            }
+          },
+          "object_type": {
+            "type": "array",
+            "description": "kind of work or object",
+            "items": {
+              "type": "string"
+            }
+          },
+          "location_name": {
+            "type": "array",
+            "description": "screening location name",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "object_location_type",
+          "object_type",
+          "location_name"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "object_location_type": [],
+        "object_type": [
+          "schedule"
+        ],
+        "location_name": []
+      },
+      "parent_text": "{\"object_location_type\":[],\"object_type\":[\"schedule\"],\"location_name\":[]}",
+      "candidate_text": "{\"object_location_type\":[],\"object_type\":[\"schedule\"],\"location_name\":[\"The Oblong Box\"]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:GetWeather:test:41:view1:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "City/state expression Suwanee AK inserted into country.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "GetWeather",
+      "variant": "canonical",
+      "document": "Will it be colder four months from now in Suwanee AK",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "timeRange": {
+            "type": "array",
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "geographic_poi": {
+            "type": "array",
+            "description": "geographic point of interest",
+            "items": {
+              "type": "string"
+            }
+          },
+          "country": {
+            "type": "array",
+            "description": "country",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "timeRange",
+          "geographic_poi",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "timeRange": [
+          "four months from now"
+        ],
+        "geographic_poi": [],
+        "country": []
+      },
+      "parent_text": "{\"timeRange\":[\"four months from now\"],\"geographic_poi\":[],\"country\":[]}",
+      "candidate_text": "{\"timeRange\":[\"four months from now\"],\"geographic_poi\":[],\"country\":[\"Suwanee AK\"]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:GetWeather:test:86:view0:native:canonical",
+      "primary_category": "span_truncation",
+      "review_note": "Time expression two Am shortened to two.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "GetWeather",
+      "variant": "canonical",
+      "document": "how's the weather here at two Am",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "timeRange": {
+            "type": "array",
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "current_location": {
+            "type": "array",
+            "description": "expression referring to current location",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "timeRange",
+          "current_location"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "timeRange": [
+          "two Am"
+        ],
+        "current_location": [
+          "here"
+        ]
+      },
+      "parent_text": "{\"timeRange\":[\"two Am\"],\"current_location\":[\"here\"]}",
+      "candidate_text": "{\"timeRange\":[\"two\"],\"current_location\":[\"here\"]}",
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:AddToPlaylist:test:73:view1:native:canonical",
+      "primary_category": "span_truncation",
+      "review_note": "Playlist Calm before the storm shortened to Calm.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "AddToPlaylist",
+      "variant": "canonical",
+      "document": "can you add the current tune to my Calm before the storm playlist",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "entity_name": {
+            "type": "array",
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            }
+          },
+          "artist": {
+            "type": "array",
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            }
+          },
+          "playlist": {
+            "type": "array",
+            "description": "playlist name",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "entity_name",
+          "artist",
+          "playlist"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "entity_name": [],
+        "artist": [],
+        "playlist": [
+          "Calm before the storm"
+        ]
+      },
+      "parent_text": "{\"entity_name\":[],\"artist\":[],\"playlist\":[\"Calm before the storm\"]}",
+      "candidate_text": "{\"entity_name\":[],\"artist\":[],\"playlist\":[\"Calm\"]}",
+      "candidate_checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:GetWeather:test:94:view1:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "Country Afghanistan assigned to state.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "GetWeather",
+      "variant": "canonical",
+      "document": "Will it be chilly midday in Cresbard Afghanistan?",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "geographic_poi": {
+            "type": "array",
+            "description": "geographic point of interest",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "type": "array",
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            }
+          },
+          "country": {
+            "type": "array",
+            "description": "country",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "geographic_poi",
+          "state",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "geographic_poi": [],
+        "state": [],
+        "country": [
+          "Afghanistan"
+        ]
+      },
+      "parent_text": "{\"geographic_poi\":[],\"state\":[],\"country\":[\"Afghanistan\"]}",
+      "candidate_text": "{\"geographic_poi\":[],\"state\":[\"Afghanistan\"],\"country\":[]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 1,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:GetWeather:test:57:view1:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "Park from a geographic point of interest inserted into state.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "GetWeather",
+      "variant": "canonical",
+      "document": "What's the weather forecast for Bothe-Napa Valley State Park close by february 20?",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "array",
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timeRange": {
+            "type": "array",
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "condition_temperature": {
+            "type": "array",
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "state",
+          "timeRange",
+          "condition_temperature"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "state": [],
+        "timeRange": [
+          "february 20"
+        ],
+        "condition_temperature": []
+      },
+      "parent_text": "{\"state\":[],\"timeRange\":[\"february 20\"],\"condition_temperature\":[]}",
+      "candidate_text": "{\"state\":[\"Park\"],\"timeRange\":[\"february 20\"],\"condition_temperature\":[]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:40:view0:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "Work title American Primitive returned instead of venue Santikos Theatres.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "SearchScreeningEvent",
+      "variant": "canonical",
+      "document": "Is American Primitive showing in Santikos Theatres",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "location_name": {
+            "type": "array",
+            "description": "screening location name",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "location_name"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "location_name": [
+          "Santikos Theatres"
+        ]
+      },
+      "parent_text": "{\"location_name\":[\"Santikos Theatres\"]}",
+      "candidate_text": "{\"location_name\":[\"American Primitive\"]}",
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 0,
+        "fields": 1,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:42:view1:native:canonical",
+      "primary_category": "omission",
+      "review_note": "Omitted the annotated schedule value for object_type. Definition kind of work or object is broad; this remains an annotation-agreement regression.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "SearchScreeningEvent",
+      "variant": "canonical",
+      "document": "Check the schedule for Bow Tie Cinemas.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "movie_type": {
+            "type": "array",
+            "description": "kind of movie",
+            "items": {
+              "type": "string"
+            }
+          },
+          "object_type": {
+            "type": "array",
+            "description": "kind of work or object",
+            "items": {
+              "type": "string"
+            }
+          },
+          "spatial_relation": {
+            "type": "array",
+            "description": "spatial or proximity expression",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "movie_type",
+          "object_type",
+          "spatial_relation"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "movie_type": [],
+        "object_type": [
+          "schedule"
+        ],
+        "spatial_relation": []
+      },
+      "parent_text": "{\"movie_type\":[],\"object_type\":[\"schedule\"],\"spatial_relation\":[]}",
+      "candidate_text": "{\"movie_type\":[],\"object_type\":[],\"spatial_relation\":[]}",
+      "candidate_checks": {
+        "absent_correct": 2,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 0,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:GetWeather:test:9:view1:native:canonical",
+      "primary_category": "field_assignment",
+      "review_note": "Humidity returned as a temperature description.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "GetWeather",
+      "variant": "canonical",
+      "document": "humidity in Olvey New Hampshire",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "condition_temperature": {
+            "type": "array",
+            "description": "temperature description",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timeRange": {
+            "type": "array",
+            "description": "date, time, or time-range expression",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "type": "array",
+            "description": "state or region",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "condition_temperature",
+          "timeRange",
+          "state"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "condition_temperature": [],
+        "timeRange": [],
+        "state": [
+          "New Hampshire"
+        ]
+      },
+      "parent_text": "{\"condition_temperature\":[],\"timeRange\":[],\"state\":[\"New Hampshire\"]}",
+      "candidate_text": "{\"condition_temperature\":[\"humidity\"],\"timeRange\":[],\"state\":[\"New Hampshire\"]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 2,
+        "fields": 3,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 2,
+        "present_correct": 1,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:PlayMusic:test:31:view1:native:canonical",
+      "primary_category": "ambiguous_input_or_definition",
+      "review_note": "Play Femme Fatale by Bonobo does not explicitly establish track versus album from the supplied source. Wrong against SNIPS annotation; not enough evidence to declare the alternative role impossible.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "PlayMusic",
+      "variant": "canonical",
+      "document": "play Femme Fatale by Bonobo",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "genre": {
+            "type": "array",
+            "description": "music genre",
+            "items": {
+              "type": "string"
+            }
+          },
+          "album": {
+            "type": "array",
+            "description": "album name",
+            "items": {
+              "type": "string"
+            }
+          },
+          "track": {
+            "type": "array",
+            "description": "track name",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "genre",
+          "album",
+          "track"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "genre": [],
+        "album": [],
+        "track": [
+          "Femme Fatale"
+        ]
+      },
+      "parent_text": "{\"genre\":[],\"album\":[],\"track\":[\"Femme Fatale\"]}",
+      "candidate_text": "{\"genre\":[],\"album\":[\"Femme Fatale\"],\"track\":[]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 1,
+        "fields": 3,
+        "fn": 1,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 1,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:AddToPlaylist:test:92:view1:native:canonical",
+      "primary_category": "ambiguous_input_or_definition",
+      "review_note": "entity_name is defined as named item to add to a playlist, which can reasonably include the named artist emilie autumn. Original annotation reserves that artist for a different label even when artist is not requested.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "AddToPlaylist",
+      "variant": "canonical",
+      "document": "Add emilie autumn to my Nação Reggae playlist.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "music_item": {
+            "type": "array",
+            "description": "word specifying the requested music category, such as artist, track, song, or album",
+            "items": {
+              "type": "string"
+            }
+          },
+          "entity_name": {
+            "type": "array",
+            "description": "named item to add to a playlist",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "music_item",
+          "entity_name"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "music_item": [],
+        "entity_name": []
+      },
+      "parent_text": "{\"music_item\":[],\"entity_name\":[]}",
+      "candidate_text": "{\"music_item\":[],\"entity_name\":[\"emilie autumn\"]}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:BookRestaurant:test:18:view0:native:nullable",
+      "primary_category": "omission",
+      "review_note": "Returned null for explicitly supplied city North City.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "BookRestaurant",
+      "variant": "nullable",
+      "document": "I want to book Oregon Electric Station in North City.",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "city or town"
+          },
+          "restaurant_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "restaurant name"
+          }
+        },
+        "required": [
+          "city",
+          "restaurant_name"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "city": "North City",
+        "restaurant_name": "Oregon Electric Station"
+      },
+      "parent_text": "{\"restaurant_name\":\"Oregon Electric Station\",\"city\":\"North City\"}",
+      "candidate_text": "{\"restaurant_name\":\"Oregon Electric Station\",\"city\":null}",
+      "candidate_checks": {
+        "absent_correct": 0,
+        "absent_total": 0,
+        "exact": 0,
+        "false_abstention": 1,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 1,
+        "fp": 0,
+        "json_parse_ok": 1,
+        "missed_abstention": 0,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 1,
+        "present_total": 2,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 1,
+        "unsupported_values": 0
+      }
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:44:view1:native:nullable",
+      "primary_category": "field_assignment",
+      "review_note": "Venue Caribbean Cinemas inserted into movie_name.",
+      "benchmark_gold_verified_against_original_SNIPS": true,
+      "source": "SearchScreeningEvent",
+      "variant": "nullable",
+      "document": "What are the movie times at Caribbean Cinemas",
+      "schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "movie_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "movie name"
+          },
+          "spatial_relation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "spatial or proximity expression"
+          }
+        },
+        "required": [
+          "movie_name",
+          "spatial_relation"
+        ],
+        "additionalProperties": false
+      },
+      "original_expected": {
+        "movie_name": null,
+        "spatial_relation": null
+      },
+      "parent_text": "{\"spatial_relation\":null,\"movie_name\":null}",
+      "candidate_text": "{\"spatial_relation\":null,\"movie_name\":\"Caribbean Cinemas\"}",
+      "candidate_checks": {
+        "absent_correct": 1,
+        "absent_total": 2,
+        "exact": 0,
+        "false_abstention": 0,
+        "field_correct": 1,
+        "fields": 2,
+        "fn": 0,
+        "fp": 1,
+        "json_parse_ok": 1,
+        "missed_abstention": 1,
+        "natural_stop": 1,
+        "nonrepetitive_nonempty": 1,
+        "predicted_values": 1,
+        "present_correct": 0,
+        "present_total": 0,
+        "schema_ok": 1,
+        "token_limited": 0,
+        "tp": 0,
+        "unsupported_values": 0
+      }
+    }
+  ],
+  "training_coverage": {
+    "new_fields": [
+      "album",
+      "artist",
+      "city",
+      "country"
+    ],
+    "length_coverage": {
+      "new105": {
+        "records": 768,
+        "positive_values": 1344,
+        "values_at_least_five_words": 0
+      },
+      "replay105": {
+        "records": 2304,
+        "positive_values": 3785,
+        "values_at_least_five_words": 185
+      }
+    }
+  },
+  "candidate_total_errors": 245,
+  "shared_errors": 226,
+  "interpretation": "17 requests have fairly direct copying/boundary/field-selection/omission failures;2 are particularly ambiguous under source/schema alone. These are primary manual categories, not experimentally proven training causes.19 schema views represent18 source texts. Do not train these reviewed TEST requests or edit their benchmark golds.",
+  "recommendation": {
+    "another_run_justified": true,
+    "parent_for_next_research": "SFT-105/update64",
+    "release_parent": "SFT-100/update469",
+    "approach": "Short targeted continuation with original TRAIN replay, evidence-checked full-span copying, contrasting semantic roles and exclusion of unrelated source entities; preserve successful multi-value training, include array/nullable shape contrasts. Audit/clarify or exclude ambiguous TRAIN cases before preparation. Use source-disjoint new development controls plus unchanged original benchmark. Never add these19 TEST cases, their gold outputs or fixed-name paraphrases to training.",
+    "training_started": false,
+    "checkpoints_deleted": false,
+    "release_changed": false
+  },
+  "scope": "Manual review of observed original1444 TEST outputs and original TRAIN coverage. No new generations, optimization, evaluator changes or publication."
+}

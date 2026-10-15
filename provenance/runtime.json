@@ -11,10 +11,10 @@
   "code_license": "Apache-2.0",
   "weight_license": "not assigned in this source repository",
   "portable_inference": {
-    "jsonschema": "4.26.0",
     "mlx": "0.32.3",
     "numpy": "2.4.2",
-    "tokenizers": "0.22.2"
+    "tokenizers": "0.22.2",
+    "jsonschema": "4.26.0"
   },
-  "native_json_parity": "54/54 raw strings and stop reasons match the local playground;42/54 reference correct;not full-heldout parity"
+  "native_json_parity": "54/54 raw strings and stop reasons match the local playground; 44/54 reference correct; not full-heldout runtime parity."
 }

@@ -1,0 +1,58 @@
+{
+  "model": "OpenSML-JSONLite-175M",
+  "stages": [
+    {
+      "stage": "stage-a",
+      "step": 132005,
+      "tokens": 17300111360,
+      "weight_sha256": "5151567e266244c9e32fd6e01775192633abe227320269ecdefe28ce43e9ccc3",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "15a0e3b511b97503a611c0da838a7fde1c06ebed34c7103f7cda1782cc6378a4",
+      "published_metadata_sha256": "15a0e3b511b97503a611c0da838a7fde1c06ebed34c7103f7cda1782cc6378a4"
+    },
+    {
+      "stage": "sft-065",
+      "step": 469,
+      "tokens": 3097331,
+      "weight_sha256": "0991b805a878c15733c909ef7f4127baa2b8866f8ca7d7db232ad39434f80bc4",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "f245e46ecfbbc499d7727c556ea889a7ac77f619d8d815f65267100ddb38e991",
+      "published_metadata_sha256": "1172eb192546ae0d4d395943be0628c8de0fa2d9a4de1243eec8e73fef2d5f44"
+    },
+    {
+      "stage": "sft-068",
+      "step": 379,
+      "tokens": 1842593,
+      "weight_sha256": "18f0f2b8f57905ac758f392d0eb83e51e508da6a955b9f7991338e690205df86",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "49acc0640e80749fb143e9a4d5024d2ffba7e79385314a792a46cc23f02283ac",
+      "published_metadata_sha256": "192399fe9cbb09ff0a2db1b21d87193968cc766f177dc9ad3975f289e8121989"
+    },
+    {
+      "stage": "sft-093",
+      "step": 160,
+      "tokens": 706399,
+      "weight_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "32a380899c455449db066ef317de9dd8e80f6977bfb42a6fe03b67c5f23963f8",
+      "published_metadata_sha256": "32a380899c455449db066ef317de9dd8e80f6977bfb42a6fe03b67c5f23963f8"
+    },
+    {
+      "stage": "sft-100",
+      "step": 469,
+      "tokens": 4634126,
+      "records": 15000,
+      "weight_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "3864a0eaa43015d286e4da9327b0d3cea4fa4f5b80f336baabe2a549379e2e36",
+      "published_metadata_sha256": "5ecf9a8850aef6cc75add6bacda880648e72de1b38089d585e237bbce828c2c3"
+    }
+  ],
+  "weights_in_git": false,
+  "public_weight_location": null,
+  "model_weight_license": "not yet assigned",
+  "scope": "Stage A/132005 -> SFT-065/469 -> SFT-068/379 -> SFT-093/160 -> SFT-100/469. Only those stages are inherited. Final native JSON targets are directly supervised.",
+  "selected_stage": "sft-100",
+  "selected_update": 469,
+  "weight_location": "https://huggingface.co/wzebrowski/OpenSML-JSONLite-175M"
+}

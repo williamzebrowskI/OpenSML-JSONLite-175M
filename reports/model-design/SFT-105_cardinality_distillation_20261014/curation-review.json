@@ -1,0 +1,1133 @@
+{
+  "review_scope": "24 role/cardinality/schema combinations checked against literal source evidence and definitions; all256 authored sources reconstructed and all3072 presentations deep-validated. Programmatic supervision, not independent human annotation.",
+  "reviewed_combinations": 24,
+  "samples": [
+    {
+      "document": "Queue the record \"A Love Hate Masquerade\".",
+      "expected": {
+        "album": [
+          "A Love Hate Masquerade"
+        ],
+        "artist": []
+      },
+      "id": "cardinality105:train:56:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 40,
+          "field": "album",
+          "start": 18,
+          "value": "A Love Hate Masquerade"
+        }
+      ]
+    },
+    {
+      "document": "Queue the record \"Inside The Eye\".",
+      "expected": {
+        "out_album": [
+          "Inside The Eye"
+        ],
+        "out_artist": []
+      },
+      "id": "cardinality105:train:120:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_artist",
+          "out_album"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 32,
+          "field": "album",
+          "start": 18,
+          "value": "Inside The Eye"
+        }
+      ]
+    },
+    {
+      "document": "I want to listen to the album \"Slut\".",
+      "expected": {
+        "album": "Slut",
+        "artist": null
+      },
+      "id": "cardinality105:train:60:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 35,
+          "field": "album",
+          "start": 31,
+          "value": "Slut"
+        }
+      ]
+    },
+    {
+      "document": "The performers I want are Ian Haugland.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "Ian Haugland"
+        ]
+      },
+      "id": "cardinality105:train:85:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 38,
+          "field": "artist",
+          "start": 26,
+          "value": "Ian Haugland"
+        }
+      ]
+    },
+    {
+      "document": "Please choose songs sung by Mark King.",
+      "expected": {
+        "out_album": [],
+        "out_artist": [
+          "Mark King"
+        ]
+      },
+      "id": "cardinality105:train:121:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_album",
+          "out_artist"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 37,
+          "field": "artist",
+          "start": 28,
+          "value": "Mark King"
+        }
+      ]
+    },
+    {
+      "document": "Please choose songs sung by Mark King.",
+      "expected": {
+        "album": null,
+        "artist": "Mark King"
+      },
+      "id": "cardinality105:train:121:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 37,
+          "field": "artist",
+          "start": 28,
+          "value": "Mark King"
+        }
+      ]
+    },
+    {
+      "document": "Include recordings by gary clark and julian taylor in my playlist.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "gary clark",
+          "julian taylor"
+        ]
+      },
+      "id": "cardinality105:train:14:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 32,
+          "field": "artist",
+          "start": 22,
+          "value": "gary clark"
+        },
+        {
+          "end": 50,
+          "field": "artist",
+          "start": 37,
+          "value": "julian taylor"
+        }
+      ]
+    },
+    {
+      "document": "Play songs by Ray Williams and gary clark.",
+      "expected": {
+        "out_album": [],
+        "out_artist": [
+          "Ray Williams",
+          "gary clark"
+        ]
+      },
+      "id": "cardinality105:train:2:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_artist",
+          "out_album"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 26,
+          "field": "artist",
+          "start": 14,
+          "value": "Ray Williams"
+        },
+        {
+          "end": 41,
+          "field": "artist",
+          "start": 31,
+          "value": "gary clark"
+        }
+      ]
+    },
+    {
+      "document": "Play songs by Paul Hardcastle and Tripp Eisen.",
+      "expected": {
+        "album": null,
+        "artist": [
+          "Paul Hardcastle",
+          "Tripp Eisen"
+        ]
+      },
+      "id": "cardinality105:train:98:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 29,
+          "field": "artist",
+          "start": 14,
+          "value": "Paul Hardcastle"
+        },
+        {
+          "end": 45,
+          "field": "artist",
+          "start": 34,
+          "value": "Tripp Eisen"
+        }
+      ]
+    },
+    {
+      "document": "Please choose songs sung by Mark King, Benjamin Darvill, and Amii Stewart.",
+      "expected": {
+        "album": [],
+        "artist": [
+          "Mark King",
+          "Benjamin Darvill",
+          "Amii Stewart"
+        ]
+      },
+      "id": "cardinality105:train:123:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 37,
+          "field": "artist",
+          "start": 28,
+          "value": "Mark King"
+        },
+        {
+          "end": 55,
+          "field": "artist",
+          "start": 39,
+          "value": "Benjamin Darvill"
+        },
+        {
+          "end": 73,
+          "field": "artist",
+          "start": 61,
+          "value": "Amii Stewart"
+        }
+      ]
+    },
+    {
+      "document": "Please choose songs sung by Benjamin Darvill, gary clark, and dr know.",
+      "expected": {
+        "out_album": [],
+        "out_artist": [
+          "Benjamin Darvill",
+          "gary clark",
+          "dr know"
+        ]
+      },
+      "id": "cardinality105:train:91:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_album": {
+            "description": "album name",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_album",
+          "out_artist"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 44,
+          "field": "artist",
+          "start": 28,
+          "value": "Benjamin Darvill"
+        },
+        {
+          "end": 56,
+          "field": "artist",
+          "start": 46,
+          "value": "gary clark"
+        },
+        {
+          "end": 69,
+          "field": "artist",
+          "start": 62,
+          "value": "dr know"
+        }
+      ]
+    },
+    {
+      "document": "Start a listening session featuring Lenny Leblanc, Linda Strawberry, and Valery Alexandrovich Kipelov.",
+      "expected": {
+        "album": null,
+        "artist": [
+          "Lenny Leblanc",
+          "Linda Strawberry",
+          "Valery Alexandrovich Kipelov"
+        ]
+      },
+      "id": "cardinality105:train:63:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "album": {
+            "description": "album name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artist": {
+            "description": "performer or musical artist",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "album",
+          "artist"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 49,
+          "field": "artist",
+          "start": 36,
+          "value": "Lenny Leblanc"
+        },
+        {
+          "end": 67,
+          "field": "artist",
+          "start": 51,
+          "value": "Linda Strawberry"
+        },
+        {
+          "end": 101,
+          "field": "artist",
+          "start": 73,
+          "value": "Valery Alexandrovich Kipelov"
+        }
+      ]
+    },
+    {
+      "document": "Get the weather in the country Gabon.",
+      "expected": {
+        "city": [],
+        "country": [
+          "Gabon"
+        ]
+      },
+      "id": "cardinality105:train:160:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 36,
+          "field": "country",
+          "start": 31,
+          "value": "Gabon"
+        }
+      ]
+    },
+    {
+      "document": "Get the weather in the country Bosnia and Herzegovina.",
+      "expected": {
+        "out_city": [],
+        "out_country": [
+          "Bosnia and Herzegovina"
+        ]
+      },
+      "id": "cardinality105:train:224:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_city",
+          "out_country"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 53,
+          "field": "country",
+          "start": 31,
+          "value": "Bosnia and Herzegovina"
+        }
+      ]
+    },
+    {
+      "document": "Get the weather in the country Grenada.",
+      "expected": {
+        "city": null,
+        "country": "Grenada"
+      },
+      "id": "cardinality105:train:176:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "description": "country",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 38,
+          "field": "country",
+          "start": 31,
+          "value": "Grenada"
+        }
+      ]
+    },
+    {
+      "document": "Look up temperatures in East Falmouth.",
+      "expected": {
+        "city": [
+          "East Falmouth"
+        ],
+        "country": []
+      },
+      "id": "cardinality105:train:185:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "country",
+          "city"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 37,
+          "field": "city",
+          "start": 24,
+          "value": "East Falmouth"
+        }
+      ]
+    },
+    {
+      "document": "The weather locations are Flying Hills.",
+      "expected": {
+        "out_city": [
+          "Flying Hills"
+        ],
+        "out_country": []
+      },
+      "id": "cardinality105:train:245:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_country",
+          "out_city"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 38,
+          "field": "city",
+          "start": 26,
+          "value": "Flying Hills"
+        }
+      ]
+    },
+    {
+      "document": "I need weather reports for Richardson.",
+      "expected": {
+        "city": "Richardson",
+        "country": null
+      },
+      "id": "cardinality105:train:169:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "description": "country",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "country",
+          "city"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 37,
+          "field": "city",
+          "start": 27,
+          "value": "Richardson"
+        }
+      ]
+    },
+    {
+      "document": "I need weather reports for Eastport and Eastville.",
+      "expected": {
+        "city": [
+          "Eastport",
+          "Eastville"
+        ],
+        "country": []
+      },
+      "id": "cardinality105:train:202:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 35,
+          "field": "city",
+          "start": 27,
+          "value": "Eastport"
+        },
+        {
+          "end": 49,
+          "field": "city",
+          "start": 40,
+          "value": "Eastville"
+        }
+      ]
+    },
+    {
+      "document": "Please check the weather for North Brunswick Township and Cholame.",
+      "expected": {
+        "out_city": [
+          "North Brunswick Township",
+          "Cholame"
+        ],
+        "out_country": []
+      },
+      "id": "cardinality105:train:254:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_city",
+          "out_country"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 53,
+          "field": "city",
+          "start": 29,
+          "value": "North Brunswick Township"
+        },
+        {
+          "end": 65,
+          "field": "city",
+          "start": 58,
+          "value": "Cholame"
+        }
+      ]
+    },
+    {
+      "document": "Give me the forecast for Tennessee Colony and Belhaven.",
+      "expected": {
+        "city": [
+          "Tennessee Colony",
+          "Belhaven"
+        ],
+        "country": null
+      },
+      "id": "cardinality105:train:146:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 41,
+          "field": "city",
+          "start": 25,
+          "value": "Tennessee Colony"
+        },
+        {
+          "end": 54,
+          "field": "city",
+          "start": 46,
+          "value": "Belhaven"
+        }
+      ]
+    },
+    {
+      "document": "The weather locations are Flying Hills, Irvington, and East Cleveland.",
+      "expected": {
+        "city": [
+          "Flying Hills",
+          "Irvington",
+          "East Cleveland"
+        ],
+        "country": []
+      },
+      "id": "cardinality105:train:247:canonical",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "country",
+          "city"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 38,
+          "field": "city",
+          "start": 26,
+          "value": "Flying Hills"
+        },
+        {
+          "end": 49,
+          "field": "city",
+          "start": 40,
+          "value": "Irvington"
+        },
+        {
+          "end": 69,
+          "field": "city",
+          "start": 55,
+          "value": "East Cleveland"
+        }
+      ]
+    },
+    {
+      "document": "The weather locations are Inlet, Parthenon, and Moosic.",
+      "expected": {
+        "out_city": [
+          "Inlet",
+          "Parthenon",
+          "Moosic"
+        ],
+        "out_country": []
+      },
+      "id": "cardinality105:train:151:alias",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "out_city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "out_country": {
+            "description": "country",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "out_country",
+          "out_city"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 31,
+          "field": "city",
+          "start": 26,
+          "value": "Inlet"
+        },
+        {
+          "end": 42,
+          "field": "city",
+          "start": 33,
+          "value": "Parthenon"
+        },
+        {
+          "end": 54,
+          "field": "city",
+          "start": 48,
+          "value": "Moosic"
+        }
+      ]
+    },
+    {
+      "document": "Show the weather in Belhaven, Corcovado, and Eagle Pass.",
+      "expected": {
+        "city": [
+          "Belhaven",
+          "Corcovado",
+          "Eagle Pass"
+        ],
+        "country": null
+      },
+      "id": "cardinality105:train:227:nullable",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "city": {
+            "description": "city or town",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "country": {
+            "description": "country",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "country",
+          "city"
+        ],
+        "type": "object"
+      },
+      "spans": [
+        {
+          "end": 28,
+          "field": "city",
+          "start": 20,
+          "value": "Belhaven"
+        },
+        {
+          "end": 39,
+          "field": "city",
+          "start": 30,
+          "value": "Corcovado"
+        },
+        {
+          "end": 55,
+          "field": "city",
+          "start": 45,
+          "value": "Eagle Pass"
+        }
+      ]
+    }
+  ],
+  "status": "passed"
+}

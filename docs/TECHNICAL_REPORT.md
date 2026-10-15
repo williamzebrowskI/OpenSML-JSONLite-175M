@@ -4,17 +4,17 @@
 
 ## 1. Current artifact and behavior
 
-The current weights directly generate JSON from source text and a supplied JSON Schema. A single native autoregressive request emits the entire object. There is no fieldwise extraction-to-JSON assembler, answer repair, constrained decoder or gold-conditioned filling in the current inference path. Parsing and schema validation happen only after generation; the raw generated string is retained even when incorrect or invalid.
+The main checkpoint directly generates JSON from source text and a supplied JSON Schema. A single native autoregressive request emits the entire object. There is no fieldwise extraction-to-JSON assembler, answer repair, constrained decoder or gold-conditioned filling in the current inference path. Parsing and schema validation happen only after generation; the raw generated string is retained even when incorrect or invalid.
 
-Current artifact: SFT-100/update 469, BF16 `model.safetensors`, 351,242,342 bytes.
-SHA-256: `656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4`.
+Current artifact: **main checkpoint**, BF16 `model.safetensors`, 351,242,342 bytes.
+SHA-256: `655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1`.
 This is a custom native MLX architecture, not a Transformers/MLX-LM auto-loader export.
 
 This report supersedes the earlier fieldwise SFT-093 release. Its historical report is retained as `HISTORICAL_SFT093_REPORT.md`; those adapter-assisted scores are not current native JSON scores. No release-readiness or arbitrary-schema reliability claim is made.
 
 ## 2. Exact inherited lineage
 
-`Stage A/132005 → SFT-065/469 → SFT-068/379 → SFT-093/160 → SFT-100/469`
+`Stage A → grounded QA → requested-field extraction → focused extraction → native JSON foundation → additional extraction SFT`
 
 Only those selected checkpoints are inherited. Other trials and failed RL/JSON experiments are research history, not hidden additional ancestors. The architecture and frozen tokenizer remain unchanged. Each SFT stage resets its local counters and AdamW optimizer while continuing the inherited neural weights.
 
@@ -25,7 +25,8 @@ Only those selected checkpoints are inherited. Other trials and failed RL/JSON e
 | SFT-068 requested-field extraction | 379 | 12,115 | 1,842,593 |
 | SFT-093 focused extraction/replay | 160 | 5,120 | 706,399 |
 | SFT-100 native JSON | 469 | 15,000 | 4,634,126 |
-| Inherited post-training total | 1,477 updates | 47,243 | 10,280,449 |
+| Additional extraction SFT | 64 selected of 96 completed | 2,048 | 600,558 |
+| Inherited post-training total | 1,541 updates | 49,291 | 10,881,007 |
 
 Presentation counts include repeated source views. Serialized positions include masked prompt tokens; they are not supervised-output-token counts. The earlier 150M model weights did not initialize this model; the earlier frozen OpenSML tokenizer was reused.
 
@@ -66,10 +67,10 @@ The model uses the project's frozen 32K byte-level BPE tokenizer at `reference/o
 
 | Tokenizer artifact | SHA-256 |
 | --- | --- |
-| Tokenizer manifest / contract fingerprint | 1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb |
-| tokenizer.json | e095f0413a11fa91fbb58f37d00e4c6bcda59beb89b28f6f680db1436a7e8891 |
-| tokenizer_config.json | 619f500553367eb76f5be00a98625130ec857b9c367561334984096c029ba2a9 |
-| tokenizer corpus.json | e4c47b7b6aba08f948de7c2c7cb94c58dbd09dde2ded6ac185c60856ee686d27 |
+| Tokenizer manifest / contract fingerprint | 1194292 c 6 d 906 ac 19e 6 f 01 c 6 ad 2 b 42825143 fad 426 a 22 aa 8856 d 903776701ecb |
+| tokenizer.json | e 095 f 0413 a 11 fa 91 fbb 58 f 37 d 00e 4 c 6 bcda 59 beb 89 b 28 f 6 f 680 db 1436 a 7e 8891 |
+| tokenizer_config.json | 619 f 500553367eb 76 f 5 be 00 a 98625130ec 857 b 9 c 367561334984096 c 029 ba 2 a 9 |
+| tokenizer corpus.json | e 4 c 47 b 7 b 6 aba 08 f 948 de 7 c 2 c 7 cb 94 c 58 dbd 09 dde 2 ded 6 ac 185 c 60856ee 686 d 27 |
 
 Structural token IDs:
 
@@ -92,11 +93,11 @@ Source weights below are intended processed-token sampling weights, not measured
 
 | Source | Sampling weight (%) | Repository / configuration | Pinned revision | Additional selection |
 | --- | --- | --- | --- | --- |
-| FineWeb-Edu | 50 | HuggingFaceTB/smollm-corpus / fineweb-edu-dedup | 3ba9d605774198c5868892d7a8deda78031a781f | Deduplicated educational subset |
-| DCLM-Edu | 18 | HuggingFaceTB/dclm-edu | dbad8ad71224482740cd9c9d353591adbf62fe04 | edu_int_score≥3 |
-| FineWiki English | 13 | HuggingFaceFW/finewiki / en | 8bd13e72e6a002407649b3e898535f42ceb1aeb9 | English |
-| Cosmopedia v2 | 9 | HuggingFaceTB/smollm-corpus / cosmopedia-v2 | 3ba9d605774198c5868892d7a8deda78031a781f | Format contains textbook/tutorial/blog/educational |
-| Python text mirror | 10 | Avelina/python-edu-cleaned / default | 3fedf55e02e72dd1fd68963f991f5e91adcb0f8d | int_score≥4 |
+| FineWeb-Edu | 50 | HuggingFaceTB/smollm-corpus / fineweb-edu-dedup | 3 ba 9 d 605774198 c 5868892 d 7 a 8 deda 78031 a 781 f | Deduplicated educational subset |
+| DCLM-Edu | 18 | HuggingFaceTB/dclm-edu | dbad 8 ad 71224482740 cd 9 c 9 d 353591 adbf 62 fe 04 | edu_int_score≥3 |
+| FineWiki English | 13 | HuggingFaceFW/finewiki / en | 8 bd 13e 72e 6 a 002407649 b 3e 898535 f 42 ceb 1 aeb 9 | English |
+| Cosmopedia v2 | 9 | HuggingFaceTB/smollm-corpus / cosmopedia-v2 | 3 ba 9 d 605774198 c 5868892 d 7 a 8 deda 78031 a 781 f | Format contains textbook/tutorial/blog/educational |
+| Python text mirror | 10 | Avelina/python-edu-cleaned / default | 3 fedf 55e 02e 72 dd 1 fd 68963 f 991 f 5e 91 adcb 0 f 8 d | int_score≥4 |
 
 Public source cards: [SmolLM corpus](https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/blob/3ba9d605774198c5868892d7a8deda78031a781f/README.md), [DCLM-Edu](https://huggingface.co/datasets/HuggingFaceTB/dclm-edu/blob/dbad8ad71224482740cd9c9d353591adbf62fe04/README.md), [FineWiki](https://huggingface.co/datasets/HuggingFaceFW/finewiki/blob/8bd13e72e6a002407649b3e898535f42ceb1aeb9/README.md). The Python-Edu upstream subset identifies files; this run used the configured text mirror. The mirror's pinned README could not be retrieved during report preparation, so its provenance statement here comes from the local corpus specification, not a newly completed external audit.
 
@@ -108,7 +109,7 @@ Recorded stream settings are a 256-document accepted-document shuffle buffer, bo
 
 ## 6. Pretraining execution, optimization and validation
 
-Pretraining runs on the recorded five-Mac Apple Silicon cluster. Mac1's current local hardware was independently checked during report preparation as an Apple M5 Ultra with 96 GB unified memory. Other worker descriptions below are historical cluster records, not newly queried hardware inventories.
+Pretraining runs on the recorded five-Mac Apple Silicon cluster. Mac 1's current local hardware was independently checked during report preparation as an Apple M5 Ultra with 96 GB unified memory. Other worker descriptions below are historical cluster records, not newly queried hardware inventories.
 
 | Mac | Recorded chip | RAM | Microbatch | MLX cache cap |
 | --- | --- | --- | --- | --- |
@@ -120,9 +121,9 @@ Pretraining runs on the recorded five-Mac Apple Silicon cluster. Mac1's current 
 
 The physical ring is 1→2→3→5→4→1. Four accumulation microsteps and 2,048-token sequences produce `(7+3+2+2+2)×4×2048=131072` positions/update. Unequal-rank gradients are weighted by token counts. Early batch transitions mean the lifetime token count is not simply `132005×131072`.
 
-- First 125 updates: microbatches [4, 4, 2, 2, 2], 114,688 positions/update, 14,336,000 tokens.
-- From 125: microbatches [6, 4, 2, 2, 2], 131,072 positions/update.
-- From 963 / 124,174,336 tokens: [7, 3, 2, 2, 2], same global batch; per-Mac cache caps recorded.
+- First 125 updates: microbatches [4,4,2,2,2], 114,688 positions/update, 14,336,000 tokens.
+- From 125: microbatches [6,4,2,2,2], 131,072 positions/update.
+- From 963 / 124,174,336 tokens: [7,3,2,2,2], same global batch; per-Mac cache caps recorded.
 - Stage A continuation starts from 113313 / 14,850,113,536 tokens, retaining weights, FP32 optimizer state, source cursors, counters and controller history.
 - Selected base: 132005 / 17,300,111,360 tokens.
 
@@ -149,7 +150,7 @@ The nominal 3e-4 schedule is not the effective late-run learning rate: the retai
 
 Validation and qualitative samples occur at 50M-token boundaries. The fixed validation panel has 32 batches/source, batch 2, five sources, context 2,048: nominally 655,360 positions/event. Aggregate loss is source-mixture weighted. Validation fingerprint: `4ddd461c131d4d27d07bb07f5aab3fcb5a00d4b1202066e3d9b6ee6b3129087b`. Selected-base validation loss is **2.5563359551876785**, perplexity **12.8885**. This measures document prediction, not extraction or chat reliability.
 
-Regular saves occur every 100M tokens, plus best-validation and clean-stop saves. Exact checkpoint metadata is authoritative. The initial October 2 technical report's early observations, 20B target and old schedule describe history; they are superseded here for this selected artifact. Contemporary qualitative logs often showed roughly 41k tokens/s, but no reproducible end-to-end cluster performance/energy benchmark is established by this report. The separate 42.7k profiling candidate is not claimed as the configuration that trained this checkpoint.
+Regular saves occur every 100M tokens, plus best-validation and clean-stop saves. Exact checkpoint metadata is authoritative. The initial October 2 technical report's early observations, 20B target and old schedule describe history; they are superseded here for this selected artifact. Contemporary qualitative logs often showed roughly 41 k tokens/s, but no reproducible end-to-end cluster performance/energy benchmark is established by this report. The separate 42.7 k profiling candidate is not claimed as the configuration that trained this checkpoint.
 
 ### Training run
 
@@ -160,152 +161,107 @@ The 175.6M-parameter base was trained from random initialization using next-toke
 *Training loss and held-out validation during pretraining. Left: raw training loss and exponential moving average. Right: held-out validation loss.*
 
 
-## 7. Inherited supervised stages and objective
+## 7. Supervised foundation and additional extraction SFT
 
-SFT-065 starts directly from Stage A/132005. Its prepared 25,000-record grounded-QA corpus contains 12,000 natural SQuAD 2.0/Dolly QA records, 5,000 contrasting questions over shared evidence, 3,000 answerability/missing-information cases, 3,000 multipart questions and 2,000 corrections. Unsupported answers target `Not stated.`. The whole run reached 782 updates; only update 469 and its 15,008 presentations are inherited.
+The four inherited foundation stages remain unchanged: grounded evidence QA (15,008 presentations through its selected checkpoint), requested-field SNIPS extraction (12,115), focused single-field extraction/replay(5,120), then directly supervised native JSON (15,000). Their original source and checkpoint records remain in provenance. Each stage uses full model weights, fresh AdamW, BF16 computation with FP32 master weights/moments/gradient accumulation, and assistant-output-only supervision. No RL, LoRA or added extraction head is in this lineage.
 
-SFT-068 uses 12,115 curated original SNIPS TRAIN requests across seven intent domains. Each supplies requested field names/definitions and source text. Assistant targets are labeled exact source spans, with `NOT_STATED` for absent fields. It completes 379 updates. Original joint-labeled accuracy is a different protocol from native JSON and is not attributed to the current weights.
+The native JSON foundation has 12,115 distinct SNIPS TRAIN requests, with 12,115 canonical string-array schemas, 1,443 renamed-key views and 1,442 nullable-string views. Source text, field definitions and the complete schema are input; complete JSON and stop tokens are the assistant target. Original CC0 SNIPS chunk annotations provide source spans. Metadata fidelity and schema validation do not establish perfect semantic annotation. Frozen tokenizer and architecture are unchanged.
 
-SFT-093 uses 2,560 original SNIPS TRAIN queries (1,920 accepted by a TRAIN-only parent-output verification bank and 640 additional queries). Each contributes a labeled replay view and a focused single-field view, yielding 5,120 presentations. Every batch has 16 replay and 16 focused examples. This stage completes 160 updates. It was not a native JSON target stage; its later software-assisted JSON route is historical.
+### Additional extraction SFT
 
-All four SFT stages update full weights on Mac1 with assistant-output-only, conversation-mean cross entropy. User/schema/source tokens and role headers are masked; assistant content and turn/document stops are supervised. BF16 model computation uses FP32 master AdamW weights/moments and FP32 gradient accumulation. No LoRA, frozen-layer training, RL, added entity head or weight merge is part of this lineage.
+This completed continuation starts from the native JSON foundation. It adds matched zero/one/two/three-value supervision for artists and cities, including zero-primary-value cases where an album or country is explicitly present. It retains original JSON TRAIN replay and adds frozen-parent distribution distillation on replay assistant tokens. Every model batch has 24 replay and 8 new views. Public checkpoint name: **main**; the neural tensor is `model.safetensors`.
 
-| Setting | SFT-065 | SFT-068 | SFT-093 | SFT-100 |
-| --- | --- | --- | --- | --- |
-| Batch / microbatch | 32 / 2 | 32 / 2 | 32 / 2 | 32 / 2 |
-| Planned updates | 782 | 379 | 160 | 469 |
-| Inherited selected update | 469 | 379 | 160 | 469 |
-| Peak / final LR | 1e-5 / 2e-6 | 5e-6 / 1e-6 | 5e-6 / 1e-6 | 5e-6 / 1e-6 |
-| Warmup updates | 20 | 20 | 12 | 20 |
-| Weight decay / clip | 0.01 / 1 | 0.01 / 1 | 0.01 / 1 | 0.01 / 1 |
-| Adam betas / epsilon | (0.9, 0.95) / 1e-8 | Same | Same | Same |
-| LR decay | Cosine | Cosine | Cosine | Cosine |
+| Setting | Value |
+|---|---|
+| Prepared corpus |3,072 presentations: 2,304 original TRAIN replay +768 authored schema views|
+| Distinct authored source requests in prepared corpus |256|
+| Prepared replay variants |1,344 canonical, 480 renamed, 480 nullable|
+| Completed experiment |96 optimizer updates, one pass, 900,453 serialized positions|
+| Inherited selected prefix |2,048 presentations, 600,558 positions, 64 updates|
+| Inherited prefix mixture |1,536 replay views from 1,482 source texts +512 authored views from 250 source texts|
+| Model adaptation |Full weights; Mac 1 only; fresh AdamW|
+| Batch / microbatch |32 /2|
+| Peak / final schedule LR |2e-6 /2e-7 over 96 updates|
+| Warmup |6 updates; cosine afterward|
+| Betas / epsilon |(0.9,0.95) /1e-8|
+| Weight decay / clipping |0.01 /1.0|
+| Seed |20261119|
 
-## 8. SFT-100: source text + schema → JSON targets
+The main checkpoint inherits only the selected prefix; updates after it are not part of these weights. The endpoint's actual learning rate is recorded by the cosine schedule, not the planned final LR. Presentation counts include multiple schemas for the same text and do not mean distinct user queries.
 
-The final one-pass continuation starts from preserved SFT-093/update 160 with a fresh optimizer. Every assistant target is an actual JSON object. No labeled-line replay target is mixed into this stage.
+For every row, CE is averaged over supervised assistant tokens within each sequence, then averaged across sequences. On original TRAIN replay add 1.0×KL(frozen foundation || student), using the full 32,000-token distribution, temperature 1 and teacher-forced ground-truth histories. Only assistant JSON and turn/document-stop positions participate. The reference network is frozen/stop-gradient; new authored rows use CE alone. This regularizer is training-only: no teacher is needed for inference, and it does not guarantee retention or repair parent errors.
 
-| JSON training view | Records |
-| --- | ---: |
-| Canonical string-array schemas | 12,115 |
-| Renamed property keys with field descriptions | 1,443 |
-| Nullable-string schema views | 1,442 |
-| Total presentations | 15,000 |
-| Distinct source requests | 12,115 |
+The new views use literal original SNIPS TRAIN values with split-disjoint authored value pools/phrases, excluding observed evaluation source texts and holding new authored DEV/TEST values out of replay. Source text, exact offsets, schema/gold agreement, masks, token budgets and hashes were checked. Twenty-eight tests, GPU accumulation checks, frozen-reference checks and a temporary optimizer/checkpoint-resume smoke passed. Authored examples are programmatic controlled supervision, not independently collected user traffic. SGD, MIT Movie and other newly researched datasets are **not** in this checkpoint.
 
-The additional views reuse TRAIN-only sources. Original SNIPS annotation chunks at revision `b86ac7f1577868c42158d0dec77db50956046696` provide exact values and offsets. All targets are reconstructed from those annotations, compared with the source text and validated against the supplied schema. This is annotation fidelity, not a claim that every upstream annotation is independently perfect semantic truth.
+## 8. Prompt, schema and native inference
 
-Schemas are closed objects with all properties required. Arrays contain all annotated source spans in source order, or `[]` when absent. Nullable strings are used only when the gold has at most one value, with `null` for absence. Multi-value fields remain arrays. Spelling and case are copied exactly; numbers/dates are not normalized. TRAIN alias keys use `out_`; DEV/TEST use `selected_`. Gold key maps are curation/evaluation metadata only and never enter inference.
+Supply source text and a flat closed JSON Schema with 1–8 required fields. Supported properties are strings, nullable strings and arrays of strings. Every required key is returned; absent arrays target [] and absent nullable strings target null. Copy case/spelling and complete values; preserve source order. Nested schemas, numbers/booleans, enums and advanced constraints are outside the verified runner contract. The supplied runner rejects overlong inputs without truncation.
 
-The seven domains are AddToPlaylist, BookRestaurant, GetWeather, PlayMusic, RateBook, SearchCreativeWork and SearchScreeningEvent; there are 39 trained canonical field definitions. TRAIN/DEV/TEST source-text groups do not overlap within this prepared dataset. The frozen development/test panels had previous research exposure; pretraining decontamination and perfect semantic golds are not claimed.
+The fixed instruction is followed by compact `{"source_text":...,"schema":...}` and native SFT role tokens. It issues exactly one autoregressive whole-object generation with temperature 0, repetition penalty 1 and at most 256 output tokens. No fieldwise assembly, repair, schema-constrained decoder, normalization, reference answer, frozen teacher or secondary model is used at inference. Parsing/schema checks only annotate the raw generated text afterward.
 
-Packed TRAIN has 4,634,126 serialized positions, max prompt length 425 and max target length 75. No record is truncated. Scheduled DEV checks at 0, 100, 200, 300 and 469 use 252 requests: 196 canonical, 28 alias and 28 nullable views of 98 source requests. TEST contains 1,444 requests: 1,388 canonical plus 28 alias and 28 nullable views of 694 distinct sources. Packed arrays are not in the source repository; JSONL records and the preparation/masking code are included. The original data/checkpoint manifests record workspace files (including excluded packed arrays/optimizer binaries); use provenance/SNAPSHOT_MANIFEST.json for the actual distributed file inventory.
+## 9. Evaluation protocol and selection
 
-The local preflight checked target/schema/annotation agreement, evidence offsets, tokenization and assistant masks, split separation and frozen hashes. Eleven adversarial scorer/retention tests passed. GPU forward/backward accumulation was checked without optimizer updates or new checkpoints. Batch 32 uses actual microbatch 2, padding each microbatch to a multiple of 128 with no unused 64-slot fake samples. Training completed 469 updates, 15,000 presentations and 4,634,126 positions.
+The continuation checks 404 fixed development requests plus 54 local playground fixtures at its scheduled checkpoints. DEV contains 252 original native JSON controls, 64 previously observed combined-request controls, 8 earlier single-request probes, 32 earlier authored list controls and 48 new cardinality controls. Metrics include exact requests/fields, precision/recall/F1, present/missing fields, false/missed abstentions, unsupported values, strict parsing, schema validity, stopping/budget failures, paired requests and cardinality-group correctness. These panels have prior research exposure; no new blind/general extraction benchmark claim is made.
 
-## 9. Native inference contract
+The main checkpoint is an owner-selected research tradeoff. Strict automatic retention gates did not pass: some domain/variant unsupported values and nullable false abstentions increased. The run's automatic best pointer remains its starting baseline; the published main is explicitly the selected trained checkpoint, not a claim that the automatic gate accepted it. Larger original TEST comparison was performed after the candidate was nominated from development/playground results. Subsequent owner release choice observed that comparison. The original 1,444 panel also has earlier research exposure.
 
-Input is source text plus the supplied JSON Schema, serialized in a fixed extraction instruction followed by compact `{"source_text": ..., "schema": ...}`. Native role IDs construct a user turn and the assistant-generation header. The entire source/schema prompt reaches the model together. There is no canonical-field compiler that extracts one field at a time.
+### Main checkpoint versus previous native JSON release
 
-The portable runner accepts one to eight required properties in a closed flat object: strings, nullable strings (`["string","null"]`) or arrays with `items: {"type":"string"}`. `$schema`, when present, is draft 2020-12. Nested records, numbers, booleans, enums, references and advanced constraints are outside this verified runner contract. Unknown names/descriptions are passed directly to the neural model, but reliable unfamiliar-domain semantics are not established.
+Identical original 1,444 source/schema requests, tokenizer, native prompt, raw greedy decoding, 256-token budget and scorer were used. Previous release outputs were identity-checked and rescored from their saved cache. The main checkpoint generated every request, with no dropped cases or token limits. Complete correctness requires natural stopping, strict JSON/schema validity and exact field/value/order agreement. Value scores use(field, value) multisets; literal unsupported-value checks do not detect every wrong association.
 
-Default generation is greedy BF16 native MLX, temperature 0, repetition penalty 1, max 256 output tokens. Prompt plus output budget must fit 2,048 tokens; overflow rejects without truncation. Stop IDs are turn-end 3 or document-end 1; unexpected structural tokens or token exhaustion fail complete correctness. JSON object key order is irrelevant; array order and exact source strings matter.
+|Metric|Previous native JSON release|Main checkpoint|
+|---|---:|---:|
+|Entire request correct|82.4792%|83.0332%|
+|Field accuracy|91.3068%|91.3640%|
+|Extracted-value F1|90.4798%|90.3963%|
+|Extracted-value precision|90.5488%|90.5344%|
+|Extracted-value recall|90.4110%|90.2588%|
+|Missing-field accuracy|92.4640%|92.7916%|
+|Schema-valid JSON|99.7922%|99.7922%|
 
-The default CLI writes raw model text. `--json` returns a result record with raw `text`, parsed `value`, schema/stop status and diagnostics. Parsing is strictly post-generation; duplicate keys and nonfinite JSON numbers reject. No generated value is filled, normalized, repaired or reserialized to create the model's raw output. The example reference stays caller-side and is compared only after inference.
+Complete requests increase 1,191→1,199/1,444 (+8).27 previously wrong requests become correct and 19 previously correct become wrong; those 19 schema views cover 18 unique source texts. Paired source correctness increases 501→512/694. Unsupported values 30→27; false abstentions 111→107; missed missing fields 115→110. Strict parsing remains 1,442/1,444 and schema validity 1,441/1,444. These modest aggregate gains coexist with small F1/precision/recall decreases.
 
-```bash
-python inference.py --weights model.safetensors --example 29
-python inference.py --weights model.safetensors --text-file request.txt --schema-file schema.json
-python inference.py --weights model.safetensors --example 29 --json
-```
+|Domain|Previous correct|Main correct|Requests|
+|---|---:|---:|---:|
+|AddToPlaylist|168|165|206|
+|BookRestaurant|156|162|208|
+|GetWeather|168|164|206|
+|PlayMusic|149|153|208|
+|RateBook|188|193|204|
+|SearchCreativeWork|197|197|208|
+|SearchScreeningEvent|165|165|204|
 
-Example 29 source: `Play the track Blue Lantern by Mira Sol.` The actual current native output is `{"track":["Blue Lantern"],"artist":["Mira Sol"],"album":[]}`. The schema names/describes those fields as arrays of strings. The model generates all keys and values in one request.
+Canonical schemas: 1,163/1,388 (83.79%), 100% schema validity. Renamed-key stress 21/28; nullable stress 15/28. Playlist and weather exactness decrease, while restaurants, music and ratings increase. Do not describe this as uniform improvement or guaranteed nonregression. Full per-field counts, NLL and per-domain/variant metrics are in the results JSON.
 
-## 10. Evaluation and checkpoint selection
+### Development and local examples
 
-Selection was frozen from development before TEST generation. Rank prioritizes domain-macro complete correctness, then overall complete correctness, field accuracy, F1, schema validity, paired correctness, unsupported-value count and NLL. Eligibility requires no loss of complete-request or field correctness on any fixed domain/schema panel relative to the same-protocol raw parent at update 0. This is a limited observed-panel gate, not protection against every regression and not a comparison with the parent's old assembler.
+|Panel|Previous|Main|
+|---|---:|---:|
+|Original 252 DEV complete|200/252|206/252|
+|New 48 cardinality DEV complete|15/48|32/48|
+|New two/three-value requests|0/24|14/24|
+|Earlier 8 multi-value probes|0/8|7/8|
+|54 local playground complete|42/54|44/54|
+|54 local playground schema-valid|52/54|54/54|
 
-Complete correctness requires natural completion, strict JSON parsing, schema validity and exact agreement with every gold value. Fences, trailing prose, duplicate keys, nonfinite numbers, missing/extra keys, wrong types or values, wrong array ordering and exhausted budgets fail. Field accuracy is exact per requested field. Value precision/recall/F1 use `(field,value)` multisets. Unsupported values use literal source-substring checks and do not detect every association or boundary error.
+Local field accuracy 124/135(91.85%); value precision 89.53%, recall 91.67%, F190.59%; missing 49/53(92.45%); unsupported values 3; all 54 stop naturally. Local precision declines from 91.03% despite higher recall/correctness. The new 48-pattern panel has only 36/48(75%) schema-valid outputs. All panels remain separate; do not pool them or claim an external leaderboard result.
 
-| Development update | Complete correct / 252 | Field accuracy | Value F1 | Schema-valid rate |
-| --- | --- | --- | --- | --- |
-| 0 | 0 (0%) | 0% | 0% | 0% |
-| 100 | 88 (34.92%) | 59.11% | 63.64% | 97.22% |
-| 200 | 162 (64.29%) | 80.30% | 81.03% | 99.60% |
-| 300 | 177 (70.24%) | 85.76% | 84.71% | 99.21% |
-| 469 selected | 200 (79.37%) | 90.40% | 89.99% | 99.60% |
+## 10. Failure audit and limitations
 
-### Selected candidate held-out results: native generation
+All 19 newly regressed original TEST requests are schema-valid JSON. Manual primary categories: 4 changed/invented values, 3 shortened spans, 8 wrong field assignments, 2 omissions and 2 especially ambiguous source/schema contracts. Examples include Pete Murray becoming Peanut, a complete movie title losing its final phrase, a venue assigned as a movie, and an explicit city becoming null. A bare music title may not specify track versus album; broad entity_name definitions also conflict with exclusive annotation roles. Those ambiguity flags do not change benchmark golds or excuse clearer errors. Full-case evidence is retained in the report archive.
 
-| Metric | All 1,444 requests | Canonical 1,388 requests |
-| --- | ---: | ---: |
-| Entire request correct | 1,191 (82.48%) | 1,156 (83.29%) |
-| Field accuracy | 3,193/3,497 (91.31%) | 3,074/3,347 (91.84%) |
-| Value precision | 90.55% | 90.95% |
-| Value recall | 90.41% | 90.90% |
-| Value F1 | 90.48% | 90.92% |
-| Present-field accuracy | 1,782/1,971 (90.41%) | 1,708/1,879 (90.90%) |
-| Missing-field accuracy | 1,411/1,526 (92.46%) | 1,366/1,468 (93.05%) |
-| False abstentions | 111 | 103 |
-| Missed abstentions | 115 | 102 |
-| Unsupported values | 30 | 24 |
-| Strict JSON parse | 1,442 (99.86%) | 1,388 (100%) |
-| Schema-valid output | 1,441 (99.79%) | 1,388 (100%) |
-| Natural stops / token limits | 1,444 / 0 | 1,388 / 0 |
-| Output NLL | 0.028335 | 0.026668 |
+Multiple-value coverage improves, but errors remain: Bergen and Oslo can generate Bergen, Orange and Lake. Correct JSON structure cannot establish correct extraction. The model is primarily SNIPS-domain research software; unfamiliar fields, long documents, corrections/associations, nested schemas, arbitrary-schema reliability, general chat/coding, multilingual behavior, confidence calibration and prompt-injection robustness remain unestablished. No 95% reliability or universal release-readiness claim is made.
 
-Both canonical requested-field views are correct for 501/694 source pairs (72.19%). Alias stress is 19/28 (67.86%); nullable stress is 16/28 (57.14%). These extra schemas reuse held-out source texts, not additional independent documents.
+## 11. Packaging, verification and reproduction
 
-| Domain, including stress views | Complete-request exact |
-| --- | ---: |
-| AddToPlaylist | 168/206 (81.55%) |
-| BookRestaurant | 156/208 (75.00%) |
-| GetWeather | 168/206 (81.55%) |
-| PlayMusic | 149/208 (71.63%) |
-| RateBook | 188/204 (92.16%) |
-| SearchCreativeWork | 197/208 (94.71%) |
-| SearchScreeningEvent | 165/204 (80.88%) |
+The main package retains BF16 weights, frozen tokenizer and native MLX architecture. Stock-MLX standalone verification compares all 54 raw outputs and stop reasons against the selected saved playground protocol; the receipt specifies achieved coverage/parity and correctness. This is packaging parity, not a fresh blind accuracy estimate or complete 1,444-case cross-runtime parity claim.
 
-The automatic same-protocol raw-parent comparison completes with parent 0/1,444 exact versus candidate 1,191/1,444. The parent had not been trained to generate native JSON from this combined schema/source prompt. Its historical fieldwise-plus-assembler score is a separate protocol: 1,132/1,388 (81.56%), compared with current native canonical 1,156/1,388 (83.29%). Current canonical false abstentions and unsupported values are higher (103 and 24 versus 69 and 5), despite improved complete correctness. Do not claim universal retention or equate these different inference protocols.
+Hugging Face supplies canonical model.safetensors, config, tokenizer, launcher, native_bundle.zip and model/report/results/provenance records. GitHub ships runnable source, curated JSONL records, preparation/training/evaluation code and audit evidence. Optimizer/packed-array binaries, private workspace paths, credentials and host network logs are excluded. Original workspace manifests record excluded files; provenance/SNAPSHOT_MANIFEST.json lists the actual shipped source inventory. Sanitized metadata hashes are separate from original metadata hashes.
 
-### All 54 actual playground examples
+The additional stage has frozen paths to historical baseline receipts and prepared-data inputs. Reproduction requires the specified parent weights, original source dependencies/layout, re-packing omitted arrays and regenerating local preflight receipts; published audit receipts are not ready-to-resume optimizer state. Native inference needs none of those training dependencies. The teacher is only used during training.
 
-The complete live SSE test keeps the displayed schema ordering, instruction, source and settings unchanged. Model outputs are stored and rescored verbatim; reference answers never enter a generation POST.
+See provenance/LINEAGE.json, results/JSONLITE_RESULTS.json, pretraining/native_json_105/, examples/cases.json and reports/model-design/SFT-105_cardinality_distillation_20261014/ inside the source archive. Prior native JSON release hashes/revisions remain in provenance/RELEASE_HISTORY.json; old Git/Hub revisions remain accessible.
 
-| Metric / group | Result |
-| --- | ---: |
-| Whole request exact | 42/54 (77.78%) |
-| Strict parse / schema validity | 52/54 (96.30%) |
-| Field accuracy | 118/135 (87.41%) |
-| Value precision / recall / F1 | 91.03% / 84.52% / 87.65% |
-| Present / missing-field correctness | 70/82 (85.37%) / 48/53 (90.57%) |
-| False / missed abstentions | 3 / 5 |
-| Unsupported values | 2 |
-| Natural stop / token limits | 54 / 0 |
-| Original observed SNIPS views | 25/28 (89.29%) |
-| Previously authored natural diagnostics | 7/12 (58.33%) |
-| Additional schema stress views | 10/14 (71.43%) |
+## 12. Attribution and licensing
 
-These are observed adapted SNIPS and local diagnostic panels, not official SNIPS intent classification or a fresh blind general text-to-JSON benchmark. No Paraloq, SOB, JSONSchemaBench, ARC, IFEval or coding score is attributed to these exact weights. General language quality is not established by JSON schema validity. Playground output NLL was not measured through the API.
-
-## 11. Failure evidence and intended scope
-
-The retained live outputs include Oslo changed to unsupported Odense, two performers combined into one string, a second city omitted, a maximum rating omitted, missing Thai cuisine, restaurant type confused with restaurant name, incomplete spans, a duplicate-key object and malformed nullable-string JSON. The model is a focused small-model extraction research candidate; it is not established as a reliable arbitrary-schema or general web-document extractor.
-
-Schema validity does not verify values. Important gaps remain in exact copying, multiple values, boundaries/associations, correction/current-value reasoning, nullable fields, unfamiliar descriptions, long passages and schema complexity. General dialogue, coding, multilingual transfer, calibrated confidence, prompt-injection robustness and comprehensive safety/privacy behavior are unverified. Release readiness remains false in the research record.
-
-## 12. Runtime, packaging and verification
-
-The current portable inference package is tested independently of the training workspace on Apple Silicon macOS, Python 3.11 with stock MLX 0.32.3, NumPy 2.4.2, Tokenizers 0.22.2 and jsonschema 4.26.0. Greedy raw output text and stop reasons are compared with all 54 live playground outputs. The verification artifact records coverage and measured correctness; this is packaging parity, not a fresh blind accuracy result or full 1,444-case cross-runtime parity claim.
-
-Hugging Face provides canonical `model.safetensors`, config/tokenizer files, a root runner and `native_bundle.zip`; the archive includes the native model implementation, prompt/validator, tokenizer companions, examples and reproducibility records. GitHub contains source/documentation and provenance, with weights hosted separately. Optimizer binaries, packed NumPy arrays, host network logs and private workspace paths are excluded. Original/published metadata hashes are separated in lineage provenance.
-
-## 13. Reproduction and evidence
-
-The frozen source/schema/JSON records, preparation/masking code, manifests, selected training metadata, DEV evaluations, parent/candidate TEST outputs and all 54 local predictions are included. Training uses the original workspace modules and the preserved SFT-093 parent; reproducing training requires reconstructing the corresponding workspace inputs/checkpoint paths and regenerating a local preflight receipt. The downloadable inference package does not require that workspace or optimizer state. Publishing training source is not a claim that all historic pretraining raw data or discarded optimizer checkpoints are included.
-
-See `../provenance/LINEAGE.json`, `../results/JSONLITE_RESULTS.json`, `../reports/model-design/SFT-100_native_json_20261014/`, `../pretraining/native_json_100/`, `../examples/cases.json` and `../inference_native/INFERENCE_VERIFICATION.json` in the source archive. `scripts/verify_snapshot.py` checks the source manifest; the HF root runner checks the source archive and weight identities. Root tokenizer artifacts mirror the archive's frozen tokenizer.
-
-## 14. Attribution and licensing
-
-Source code carries the repository's Apache-2.0 license; upstream data/dependency notices retain their terms. SNIPS original entity annotations are CC0-1.0. SQuAD/Dolly and the pretraining mixture have separate source notices recorded in `THIRD_PARTY_NOTICES.md`. Source licensing does not automatically assign a trained-weight license; the owner has not assigned one in this update. No blanket commercial-use or redistribution determination is claimed.
+Source code retains Apache-2.0; upstream data and dependencies retain their notices. Original SNIPS annotations are CC0; the matched cardinality examples are programmatically authored from TRAIN literals. The earlier SQuAD/Dolly/pretraining source notices remain in THIRD_PARTY_NOTICES.md. Source licensing does not automatically assign a trained-weight license; none is assigned by this update.
