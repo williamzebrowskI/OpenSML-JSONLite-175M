@@ -65,11 +65,13 @@ Supply source text and a flat object JSON Schema with 1–8 required properties 
 
 ## Verified source/schema/output examples
 
-These four observed examples are checked against the selected model and standalone runner. They demonstrate successes within a limited research scope; other requests can fail. The runner supplies this exact instruction:
+These four observed examples are checked against the selected model and standalone runner. They demonstrate successes within a limited research scope; other requests can fail.
 
-```text
-Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.
-```
+### Prompt instruction
+
+The inference runner automatically includes this exact prompt instruction with every request:
+
+> Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.
 
 The user message is the instruction, a blank line, then compact `{"source_text":<query>,"schema":<schema>}`. No expected answer is included.
 
