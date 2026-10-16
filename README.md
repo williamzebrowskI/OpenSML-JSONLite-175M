@@ -29,9 +29,9 @@ datasets:
 
 [Run locally](RUN_GUIDE.md) · [Technical report](docs/TECHNICAL_REPORT.md) · [Results](results/JSONLITE_RESULTS.json) · [Provenance](provenance/LINEAGE.json)
 
-**Main checkpoint: a small language model that generates complete JSON directly from source text and a supplied JSON Schema.** It makes one autoregressive call; parsing/schema validation follows generation. No JSON assembly, output repair, constrained decoder or secondary model is used.
+**A small language model that generates complete JSON directly from source text and a supplied JSON Schema.** It makes one autoregressive call; parsing/schema validation follows generation. No JSON assembly, output repair, constrained decoder or secondary model is used.
 
-This release retains the grounded-QA, exact/focused extraction and native JSON foundation, then adds a joint JSON extraction continuation with original TRAIN replay, multiple-value examples and authored prose. The display name and standard `model.safetensors` filename stay unchanged. The pretrained ancestor is [OpenSML-Base-175M](https://huggingface.co/OpenSML/OpenSML-Base-175M).
+The model was fine-tuned for grounded question answering, exact and focused field extraction, and direct JSON generation. Its final joint JSON extraction stage combines original training replay, multiple-value examples and authored prose. Weights are provided as `model.safetensors`. The pretrained ancestor is [OpenSML-Base-175M](https://huggingface.co/OpenSML/OpenSML-Base-175M).
 
 ## Run locally
 
@@ -327,23 +327,23 @@ The full inherited lineage and earlier SFT data are documented in the technical 
 
 ## Native JSON evaluation
 
-Same original 1,444 SNIPS-derived source/schema requests and raw greedy protocol as the previous release:
+The released model was evaluated on 1,444 SNIPS-derived source-text and JSON Schema requests using raw greedy generation:
 
-| Metric | Main checkpoint | Previous release |
-| --- | ---: | ---: |
-| Entire request correct | **88.02%** | 83.03% |
-| Field accuracy | **94.17%** | 91.36% |
-| Extracted-value F1 | **92.88%** | 90.40% |
-| Extracted-value precision | **92.42%** | 90.53% |
-| Extracted-value recall | **93.35%** | 90.26% |
-| Missing-field accuracy | **95.22%** | 92.79% |
-| Schema-valid JSON | **100.00%** | 99.79% |
+| Metric | Released model |
+| --- | ---: |
+| Entire request correct | **88.02%** |
+| Field accuracy | **94.17%** |
+| Extracted-value F1 | **92.88%** |
+| Extracted-value precision | **92.42%** |
+| Extracted-value recall | **93.35%** |
+| Missing-field accuracy | **95.22%** |
+| Schema-valid JSON | **100.00%** |
 
-Complete correctness is **1,271/1,444**, compared with 1,199/1,444 for the previous release: **96 improved requests and 24 regressions**, a net gain of 72. All seven domain aggregate correctness totals improve. Paired-source correctness rises from 512/694 to **561/694**. False abstentions fall from 107 to **53**, missed missing fields from 110 to **73**, and unsupported predicted values from 27 to **24**. All 1,444 outputs parse, validate and stop naturally; there are no output-budget failures.
+The model answers **1,271/1,444 requests completely correctly**. Paired-source correctness is **561/694**. The evaluation records **53 false abstentions**, **73 missed missing fields**, and **24 unsupported predicted values**. All 1,444 outputs parse, validate and stop naturally; there are no output-budget failures.
 
-The separate observed 60-case playground scores **49/60 (81.67%)**, compared with 45/60. Its original 54-case subset scores 46/54; the six added three/four/five-item probes score 3/6. Three larger-list probes still fail. The compact 240-request development panel scores 178/240 (74.17%). These panels measure different scopes and must not be pooled. They have prior research exposure and are not fresh blind benchmarks or an external leaderboard.
+The separate observed 60-case playground scores **49/60 (81.67%)**. Its original 54-case subset scores 46/54; the six added three/four/five-item probes score 3/6. Three larger-list probes fail. The compact 240-request development panel scores 178/240 (74.17%). These panels measure different scopes and must not be pooled. They have prior research exposure and are not fresh blind benchmarks or an external leaderboard.
 
-The main checkpoint was selected for aggregate improvement despite failing the strict zero-lost-case development gate. Individual regressions remain; improved aggregate scores do not establish universal retention or production reliability.
+These aggregate scores do not establish universal retention or production reliability. Checkpoint-selection checks and remaining failures are documented in the technical report.
 
 ![Complete-request correctness on separate observed panels](model-card/complete-request-exact.svg)
 
@@ -351,10 +351,10 @@ The main checkpoint was selected for aggregate improvement despite failing the s
 
 A focused English extraction research model for documented flat schemas and mostly SNIPS fields. It can shorten, omit, invent or misassign values, confuse roles, miss list members, and fail on corrections or unfamiliar definitions. Valid JSON does not prove correct extraction. Long documents, nested objects, numeric/boolean outputs, multilingual tasks, general chat and prompt-injection robustness are outside the verified scope. `success` means structural validity and natural completion, not semantic correctness.
 
-## Main checkpoint identity and package
+## Released model identity and package
 
 Selected BF16 weight SHA-256:
 
 `781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560`
 
-Includes `model.safetensors`, unchanged tokenizer, native MLX runner, source bundle, 60 source/schema/reference examples, raw evaluation records, checksums and provenance. Standalone verification checks generated strings and stop reasons against the saved 60-case protocol; this is packaging parity, not an independent accuracy benchmark. Previous revisions remain available. Source uses Apache-2.0; upstream terms apply separately; no trained-weight license is assigned by this update.
+Includes `model.safetensors`, tokenizer, native MLX runner, source bundle, 60 source/schema/reference examples, raw evaluation records, checksums and provenance. Standalone verification checks generated strings and stop reasons against the saved 60-case protocol; this is packaging parity, not an independent accuracy benchmark. Source uses Apache-2.0; upstream terms apply separately; no trained-weight license is assigned by this release.
