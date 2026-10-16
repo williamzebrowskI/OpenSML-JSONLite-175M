@@ -3,8 +3,10 @@
   "cases": [
     {
       "id": "FIELD-01",
-      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "34398ea3d03273696d90a49bb63bd5d8aaba553f9c2be9d833d353fd5620fb98",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
       "schema": {
         "type": "object",
@@ -38,7 +40,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "playlist_owner": [
           "my"
@@ -49,12 +50,51 @@
         "entity_name": [
           "Mariem Hassan con Leyoad"
         ]
-      }
+      },
+      "key_mapping": {
+        "playlist_owner": "playlist_owner",
+        "playlist": "playlist",
+        "entity_name": "entity_name"
+      },
+      "spans": [
+        {
+          "field": "playlist_owner",
+          "value": "my",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "field": "playlist",
+          "value": "Rock Gaming",
+          "start": 15,
+          "end": 26
+        },
+        {
+          "field": "entity_name",
+          "value": "Mariem Hassan con Leyoad",
+          "start": 31,
+          "end": 55
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"In my playlist Rock Gaming add Mariem Hassan con Leyoad\",\"schema\":{\"type\":\"object\",\"properties\":{\"playlist_owner\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"person owning the playlist\"},\"playlist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"playlist name\"},\"entity_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"named item to add to a playlist\"}},\"required\":[\"playlist_owner\",\"playlist\",\"entity_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"playlist_owner\":[\"my\"],\"playlist\":[\"Rock Gaming\"],\"entity_name\":[\"Mariem Hassan con Leyoad\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-02",
-      "title": "AddToPlaylist · In my playlist Rock Gaming add Mariem Hassan con Leyoad",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "34398ea3d03273696d90a49bb63bd5d8aaba553f9c2be9d833d353fd5620fb98",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
       "schema": {
         "type": "object",
@@ -80,16 +120,34 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [],
         "music_item": []
-      }
+      },
+      "key_mapping": {
+        "artist": "artist",
+        "music_item": "music_item"
+      },
+      "spans": [],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"In my playlist Rock Gaming add Mariem Hassan con Leyoad\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"music_item\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"word specifying the requested music category, such as artist, track, song, or album\"}},\"required\":[\"artist\",\"music_item\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[],\"music_item\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-03",
-      "title": "AddToPlaylist · Add track to my Digster Future Hits",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "219f6cc772dbe418547650c1d1bb81dbd3ae8940a8c32c1813a2f78a27497051",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Add track to my Digster Future Hits",
       "schema": {
         "type": "object",
@@ -107,17 +165,41 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "playlist_owner": [
           "my"
         ]
-      }
+      },
+      "key_mapping": {
+        "playlist_owner": "playlist_owner"
+      },
+      "spans": [
+        {
+          "field": "playlist_owner",
+          "value": "my",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Add track to my Digster Future Hits\",\"schema\":{\"type\":\"object\",\"properties\":{\"playlist_owner\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"person owning the playlist\"}},\"required\":[\"playlist_owner\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"playlist_owner\":[\"my\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-04",
-      "title": "AddToPlaylist · Add track to my Digster Future Hits",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "219f6cc772dbe418547650c1d1bb81dbd3ae8940a8c32c1813a2f78a27497051",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Add track to my Digster Future Hits",
       "schema": {
         "type": "object",
@@ -151,19 +233,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [],
         "entity_name": [],
         "playlist": [
           "Digster Future Hits"
         ]
-      }
+      },
+      "key_mapping": {
+        "artist": "artist",
+        "entity_name": "entity_name",
+        "playlist": "playlist"
+      },
+      "spans": [
+        {
+          "field": "playlist",
+          "value": "Digster Future Hits",
+          "start": 16,
+          "end": 35
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Add track to my Digster Future Hits\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"entity_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"named item to add to a playlist\"},\"playlist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"playlist name\"}},\"required\":[\"artist\",\"entity_name\",\"playlist\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[],\"entity_name\":[],\"playlist\":[\"Digster Future Hits\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-05",
-      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "94e349a6ab4d877bc47d3b917d215d13f2e54d2f39f49b61e67a21d7abffe8bf",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I would like to book a brasserie for nine in AR",
       "schema": {
         "type": "object",
@@ -197,7 +305,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "restaurant_type": [
           "brasserie"
@@ -208,12 +315,51 @@
         "state": [
           "AR"
         ]
-      }
+      },
+      "key_mapping": {
+        "restaurant_type": "restaurant_type",
+        "party_size_number": "party_size_number",
+        "state": "state"
+      },
+      "spans": [
+        {
+          "field": "restaurant_type",
+          "value": "brasserie",
+          "start": 23,
+          "end": 32
+        },
+        {
+          "field": "party_size_number",
+          "value": "nine",
+          "start": 37,
+          "end": 41
+        },
+        {
+          "field": "state",
+          "value": "AR",
+          "start": 45,
+          "end": 47
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I would like to book a brasserie for nine in AR\",\"schema\":{\"type\":\"object\",\"properties\":{\"restaurant_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"kind of restaurant\"},\"party_size_number\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"explicit party size\"},\"state\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"state or region\"}},\"required\":[\"restaurant_type\",\"party_size_number\",\"state\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"restaurant_type\":[\"brasserie\"],\"party_size_number\":[\"nine\"],\"state\":[\"AR\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-06",
-      "title": "BookRestaurant · I would like to book a brasserie for nine in AR",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "94e349a6ab4d877bc47d3b917d215d13f2e54d2f39f49b61e67a21d7abffe8bf",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I would like to book a brasserie for nine in AR",
       "schema": {
         "type": "object",
@@ -247,19 +393,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "party_size_number": [
           "nine"
         ],
         "timeRange": [],
         "sort": []
-      }
+      },
+      "key_mapping": {
+        "party_size_number": "party_size_number",
+        "timeRange": "timeRange",
+        "sort": "sort"
+      },
+      "spans": [
+        {
+          "field": "party_size_number",
+          "value": "nine",
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I would like to book a brasserie for nine in AR\",\"schema\":{\"type\":\"object\",\"properties\":{\"party_size_number\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"explicit party size\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"sort\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"requested ranking, ordering, or preference\"}},\"required\":[\"party_size_number\",\"timeRange\",\"sort\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"party_size_number\":[\"nine\"],\"timeRange\":[],\"sort\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-07",
-      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "359cea880fa20914a5f6757f235ef28ca67df45c0bb40ab4f50cf085c5861e9c",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Book a best restaurant in Wrigley.",
       "schema": {
         "type": "object",
@@ -285,7 +457,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "sort": [
           "best"
@@ -293,12 +464,44 @@
         "city": [
           "Wrigley"
         ]
-      }
+      },
+      "key_mapping": {
+        "sort": "sort",
+        "city": "city"
+      },
+      "spans": [
+        {
+          "field": "sort",
+          "value": "best",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "field": "city",
+          "value": "Wrigley",
+          "start": 26,
+          "end": 33
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Book a best restaurant in Wrigley.\",\"schema\":{\"type\":\"object\",\"properties\":{\"sort\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"requested ranking, ordering, or preference\"},\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"}},\"required\":[\"sort\",\"city\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"sort\":[\"best\"],\"city\":[\"Wrigley\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-08",
-      "title": "BookRestaurant · Book a best restaurant in Wrigley.",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "359cea880fa20914a5f6757f235ef28ca67df45c0bb40ab4f50cf085c5861e9c",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Book a best restaurant in Wrigley.",
       "schema": {
         "type": "object",
@@ -324,16 +527,34 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "timeRange": [],
         "poi": []
-      }
+      },
+      "key_mapping": {
+        "timeRange": "timeRange",
+        "poi": "poi"
+      },
+      "spans": [],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Book a best restaurant in Wrigley.\",\"schema\":{\"type\":\"object\",\"properties\":{\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"poi\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"named nearby point of interest\"}},\"required\":[\"timeRange\",\"poi\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"timeRange\":[],\"poi\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-09",
-      "title": "GetWeather · Is it going to be colder in Louisiana",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "d1d7cf5b0d78c82f6fa5a6a05e5173d1307b488ac133fa60122c9badccf1e6b9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Is it going to be colder in Louisiana",
       "schema": {
         "type": "object",
@@ -359,7 +580,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "condition_temperature": [
           "colder"
@@ -367,12 +587,44 @@
         "state": [
           "Louisiana"
         ]
-      }
+      },
+      "key_mapping": {
+        "condition_temperature": "condition_temperature",
+        "state": "state"
+      },
+      "spans": [
+        {
+          "field": "condition_temperature",
+          "value": "colder",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "field": "state",
+          "value": "Louisiana",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Is it going to be colder in Louisiana\",\"schema\":{\"type\":\"object\",\"properties\":{\"condition_temperature\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"temperature description\"},\"state\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"state or region\"}},\"required\":[\"condition_temperature\",\"state\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"condition_temperature\":[\"colder\"],\"state\":[\"Louisiana\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-10",
-      "title": "GetWeather · Is it going to be colder in Louisiana",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "d1d7cf5b0d78c82f6fa5a6a05e5173d1307b488ac133fa60122c9badccf1e6b9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Is it going to be colder in Louisiana",
       "schema": {
         "type": "object",
@@ -406,19 +658,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "current_location": [],
         "geographic_poi": [],
         "condition_temperature": [
           "colder"
         ]
-      }
+      },
+      "key_mapping": {
+        "current_location": "current_location",
+        "geographic_poi": "geographic_poi",
+        "condition_temperature": "condition_temperature"
+      },
+      "spans": [
+        {
+          "field": "condition_temperature",
+          "value": "colder",
+          "start": 18,
+          "end": 24
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Is it going to be colder in Louisiana\",\"schema\":{\"type\":\"object\",\"properties\":{\"current_location\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"expression referring to current location\"},\"geographic_poi\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"geographic point of interest\"},\"condition_temperature\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"temperature description\"}},\"required\":[\"current_location\",\"geographic_poi\",\"condition_temperature\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"current_location\":[],\"geographic_poi\":[],\"condition_temperature\":[\"colder\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-11",
-      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "5317e74fa41ee942fa66edf15f072360aa106fcc1a022e635431404255a258b8",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
       "schema": {
         "type": "object",
@@ -452,7 +730,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "timeRange": [
           "last August"
@@ -463,12 +740,51 @@
         "condition_temperature": [
           "colder"
         ]
-      }
+      },
+      "key_mapping": {
+        "timeRange": "timeRange",
+        "geographic_poi": "geographic_poi",
+        "condition_temperature": "condition_temperature"
+      },
+      "spans": [
+        {
+          "field": "timeRange",
+          "value": "last August",
+          "start": 23,
+          "end": 34
+        },
+        {
+          "field": "geographic_poi",
+          "value": "Stunt Ranch Santa Monica Mountains Reserve",
+          "start": 38,
+          "end": 80
+        },
+        {
+          "field": "condition_temperature",
+          "value": "colder",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve\",\"schema\":{\"type\":\"object\",\"properties\":{\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"geographic_poi\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"geographic point of interest\"},\"condition_temperature\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"temperature description\"}},\"required\":[\"timeRange\",\"geographic_poi\",\"condition_temperature\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"timeRange\":[\"last August\"],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"condition_temperature\":[\"colder\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-12",
-      "title": "GetWeather · was the weather colder last August at Stunt Ranch Santa",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "5317e74fa41ee942fa66edf15f072360aa106fcc1a022e635431404255a258b8",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
       "schema": {
         "type": "object",
@@ -502,19 +818,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "current_location": [],
         "geographic_poi": [
           "Stunt Ranch Santa Monica Mountains Reserve"
         ],
         "state": []
-      }
+      },
+      "key_mapping": {
+        "current_location": "current_location",
+        "geographic_poi": "geographic_poi",
+        "state": "state"
+      },
+      "spans": [
+        {
+          "field": "geographic_poi",
+          "value": "Stunt Ranch Santa Monica Mountains Reserve",
+          "start": 38,
+          "end": 80
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve\",\"schema\":{\"type\":\"object\",\"properties\":{\"current_location\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"expression referring to current location\"},\"geographic_poi\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"geographic point of interest\"},\"state\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"state or region\"}},\"required\":[\"current_location\",\"geographic_poi\",\"state\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"current_location\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"state\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-13",
-      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "a71de3be89cc04a04cc0aaa5855689a01df9e5f0a2a0e657a49d6c547243718a",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play the last theme by Behzad Mirkhani.",
       "schema": {
         "type": "object",
@@ -548,7 +890,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [
           "Behzad Mirkhani"
@@ -559,12 +900,51 @@
         "sort": [
           "last"
         ]
-      }
+      },
+      "key_mapping": {
+        "artist": "artist",
+        "music_item": "music_item",
+        "sort": "sort"
+      },
+      "spans": [
+        {
+          "field": "artist",
+          "value": "Behzad Mirkhani",
+          "start": 23,
+          "end": 38
+        },
+        {
+          "field": "music_item",
+          "value": "theme",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "field": "sort",
+          "value": "last",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play the last theme by Behzad Mirkhani.\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"music_item\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"word specifying the requested music category, such as artist, track, song, or album\"},\"sort\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"requested ranking, ordering, or preference\"}},\"required\":[\"artist\",\"music_item\",\"sort\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[\"Behzad Mirkhani\"],\"music_item\":[\"theme\"],\"sort\":[\"last\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-14",
-      "title": "PlayMusic · Play the last theme by Behzad Mirkhani.",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "a71de3be89cc04a04cc0aaa5855689a01df9e5f0a2a0e657a49d6c547243718a",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play the last theme by Behzad Mirkhani.",
       "schema": {
         "type": "object",
@@ -598,19 +978,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "service": [],
         "music_item": [
           "theme"
         ],
         "playlist": []
-      }
+      },
+      "key_mapping": {
+        "service": "service",
+        "music_item": "music_item",
+        "playlist": "playlist"
+      },
+      "spans": [
+        {
+          "field": "music_item",
+          "value": "theme",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play the last theme by Behzad Mirkhani.\",\"schema\":{\"type\":\"object\",\"properties\":{\"service\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"music service\"},\"music_item\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"word specifying the requested music category, such as artist, track, song, or album\"},\"playlist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"playlist name\"}},\"required\":[\"service\",\"music_item\",\"playlist\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"service\":[],\"music_item\":[\"theme\"],\"playlist\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-15",
-      "title": "PlayMusic · Play a track by Yui on Vimeo",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "2782f9f6c178bd329d39c8c5885eb49ea447a45a047ba00c19e412add93d5034",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play a track by Yui on Vimeo",
       "schema": {
         "type": "object",
@@ -644,7 +1050,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [
           "Yui"
@@ -655,12 +1060,51 @@
         "service": [
           "Vimeo"
         ]
-      }
+      },
+      "key_mapping": {
+        "artist": "artist",
+        "music_item": "music_item",
+        "service": "service"
+      },
+      "spans": [
+        {
+          "field": "artist",
+          "value": "Yui",
+          "start": 16,
+          "end": 19
+        },
+        {
+          "field": "music_item",
+          "value": "track",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "field": "service",
+          "value": "Vimeo",
+          "start": 23,
+          "end": 28
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play a track by Yui on Vimeo\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"music_item\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"word specifying the requested music category, such as artist, track, song, or album\"},\"service\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"music service\"}},\"required\":[\"artist\",\"music_item\",\"service\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[\"Yui\"],\"music_item\":[\"track\"],\"service\":[\"Vimeo\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-16",
-      "title": "PlayMusic · Play a track by Yui on Vimeo",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "2782f9f6c178bd329d39c8c5885eb49ea447a45a047ba00c19e412add93d5034",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play a track by Yui on Vimeo",
       "schema": {
         "type": "object",
@@ -686,16 +1130,34 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "playlist": [],
         "sort": []
-      }
+      },
+      "key_mapping": {
+        "playlist": "playlist",
+        "sort": "sort"
+      },
+      "spans": [],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play a track by Yui on Vimeo\",\"schema\":{\"type\":\"object\",\"properties\":{\"playlist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"playlist name\"},\"sort\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"requested ranking, ordering, or preference\"}},\"required\":[\"playlist\",\"sort\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"playlist\":[],\"sort\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-17",
-      "title": "RateBook · I would give Things Fall Apart 3 stars",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "0a74da59a3a276628eedc81c6413aa59df8cee7fff9fa285382c98921c59b608",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I would give Things Fall Apart 3 stars",
       "schema": {
         "type": "object",
@@ -729,7 +1191,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "rating_value": [
           "3"
@@ -740,12 +1201,51 @@
         "object_name": [
           "Things Fall Apart"
         ]
-      }
+      },
+      "key_mapping": {
+        "rating_value": "rating_value",
+        "rating_unit": "rating_unit",
+        "object_name": "object_name"
+      },
+      "spans": [
+        {
+          "field": "rating_value",
+          "value": "3",
+          "start": 31,
+          "end": 32
+        },
+        {
+          "field": "rating_unit",
+          "value": "stars",
+          "start": 33,
+          "end": 38
+        },
+        {
+          "field": "object_name",
+          "value": "Things Fall Apart",
+          "start": 13,
+          "end": 30
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I would give Things Fall Apart 3 stars\",\"schema\":{\"type\":\"object\",\"properties\":{\"rating_value\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"given rating\"},\"rating_unit\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"rating unit\"},\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"rating_value\",\"rating_unit\",\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"rating_value\":[\"3\"],\"rating_unit\":[\"stars\"],\"object_name\":[\"Things Fall Apart\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-18",
-      "title": "RateBook · I would give Things Fall Apart 3 stars",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "0a74da59a3a276628eedc81c6413aa59df8cee7fff9fa285382c98921c59b608",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I would give Things Fall Apart 3 stars",
       "schema": {
         "type": "object",
@@ -779,19 +1279,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Things Fall Apart"
         ],
         "object_select": [],
         "object_type": []
-      }
+      },
+      "key_mapping": {
+        "object_name": "object_name",
+        "object_select": "object_select",
+        "object_type": "object_type"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Things Fall Apart",
+          "start": 13,
+          "end": 30
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I would give Things Fall Apart 3 stars\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"},\"object_select\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"selection expression referring to the work\"},\"object_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"kind of work or object\"}},\"required\":[\"object_name\",\"object_select\",\"object_type\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":[\"Things Fall Apart\"],\"object_select\":[],\"object_type\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-19",
-      "title": "RateBook · I'd rate this book 1 of 6 stars",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "bc40e8736c32a2148fba99655606bea876851b4a20935b3b990d702e491766e9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I'd rate this book 1 of 6 stars",
       "schema": {
         "type": "object",
@@ -817,18 +1343,43 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "rating_value": [
           "1"
         ],
         "object_name": []
-      }
+      },
+      "key_mapping": {
+        "rating_value": "rating_value",
+        "object_name": "object_name"
+      },
+      "spans": [
+        {
+          "field": "rating_value",
+          "value": "1",
+          "start": 19,
+          "end": 20
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I'd rate this book 1 of 6 stars\",\"schema\":{\"type\":\"object\",\"properties\":{\"rating_value\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"given rating\"},\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"rating_value\",\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"rating_value\":[\"1\"],\"object_name\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-20",
-      "title": "RateBook · I'd rate this book 1 of 6 stars",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "bc40e8736c32a2148fba99655606bea876851b4a20935b3b990d702e491766e9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I'd rate this book 1 of 6 stars",
       "schema": {
         "type": "object",
@@ -854,16 +1405,34 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_part_of_series_type": [],
         "object_name": []
-      }
+      },
+      "key_mapping": {
+        "object_part_of_series_type": "object_part_of_series_type",
+        "object_name": "object_name"
+      },
+      "spans": [],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I'd rate this book 1 of 6 stars\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_part_of_series_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"type of book series\"},\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"object_part_of_series_type\",\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_part_of_series_type\":[],\"object_name\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-21",
-      "title": "SearchCreativeWork · Show me Happiness Was Free.",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "25faeb853b4fe2812968e3847909f532b1f34cf9dfe7496811be80c9d5cac0dd",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Show me Happiness Was Free.",
       "schema": {
         "type": "object",
@@ -881,17 +1450,41 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Happiness Was Free"
         ]
-      }
+      },
+      "key_mapping": {
+        "object_name": "object_name"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Happiness Was Free",
+          "start": 8,
+          "end": 26
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Show me Happiness Was Free.\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":[\"Happiness Was Free\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-22",
-      "title": "SearchCreativeWork · Show me Happiness Was Free.",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "25faeb853b4fe2812968e3847909f532b1f34cf9dfe7496811be80c9d5cac0dd",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Show me Happiness Was Free.",
       "schema": {
         "type": "object",
@@ -917,18 +1510,43 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_type": [],
         "object_name": [
           "Happiness Was Free"
         ]
-      }
+      },
+      "key_mapping": {
+        "object_type": "object_type",
+        "object_name": "object_name"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Happiness Was Free",
+          "start": 8,
+          "end": 26
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Show me Happiness Was Free.\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"kind of work or object\"},\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"object_type\",\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_type\":[],\"object_name\":[\"Happiness Was Free\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-23",
-      "title": "SearchCreativeWork · Find me the Martin Morning saga",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "d61d02e16441340d8d7aff03fcd041f575532d2c35fede9fa4340545d24b1537",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Find me the Martin Morning saga",
       "schema": {
         "type": "object",
@@ -954,7 +1572,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Martin Morning"
@@ -962,12 +1579,44 @@
         "object_type": [
           "saga"
         ]
-      }
+      },
+      "key_mapping": {
+        "object_name": "object_name",
+        "object_type": "object_type"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Martin Morning",
+          "start": 12,
+          "end": 26
+        },
+        {
+          "field": "object_type",
+          "value": "saga",
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Find me the Martin Morning saga\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"},\"object_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"kind of work or object\"}},\"required\":[\"object_name\",\"object_type\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":[\"Martin Morning\"],\"object_type\":[\"saga\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-24",
-      "title": "SearchCreativeWork · Find me the Martin Morning saga",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "d61d02e16441340d8d7aff03fcd041f575532d2c35fede9fa4340545d24b1537",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Find me the Martin Morning saga",
       "schema": {
         "type": "object",
@@ -985,17 +1634,41 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Martin Morning"
         ]
-      }
+      },
+      "key_mapping": {
+        "object_name": "object_name"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Martin Morning",
+          "start": 12,
+          "end": 26
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Find me the Martin Morning saga\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":[\"Martin Morning\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-25",
-      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "d769ab5e10bfd703564c656e1a2c0bc03a80748c5275bbaad228a81232e4874a",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "find animated movies in the neighborhood",
       "schema": {
         "type": "object",
@@ -1021,7 +1694,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_type": [
           "animated movies"
@@ -1029,12 +1701,44 @@
         "spatial_relation": [
           "in the neighborhood"
         ]
-      }
+      },
+      "key_mapping": {
+        "movie_type": "movie_type",
+        "spatial_relation": "spatial_relation"
+      },
+      "spans": [
+        {
+          "field": "movie_type",
+          "value": "animated movies",
+          "start": 5,
+          "end": 20
+        },
+        {
+          "field": "spatial_relation",
+          "value": "in the neighborhood",
+          "start": 21,
+          "end": 40
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"find animated movies in the neighborhood\",\"schema\":{\"type\":\"object\",\"properties\":{\"movie_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"kind of movie\"},\"spatial_relation\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"spatial or proximity expression\"}},\"required\":[\"movie_type\",\"spatial_relation\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"movie_type\":[\"animated movies\"],\"spatial_relation\":[\"in the neighborhood\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-26",
-      "title": "SearchScreeningEvent · find animated movies in the neighborhood",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "d769ab5e10bfd703564c656e1a2c0bc03a80748c5275bbaad228a81232e4874a",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "find animated movies in the neighborhood",
       "schema": {
         "type": "object",
@@ -1068,19 +1772,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_type": [
           "animated movies"
         ],
         "timeRange": [],
         "movie_name": []
-      }
+      },
+      "key_mapping": {
+        "movie_type": "movie_type",
+        "timeRange": "timeRange",
+        "movie_name": "movie_name"
+      },
+      "spans": [
+        {
+          "field": "movie_type",
+          "value": "animated movies",
+          "start": 5,
+          "end": 20
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"find animated movies in the neighborhood\",\"schema\":{\"type\":\"object\",\"properties\":{\"movie_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"kind of movie\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"movie_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"movie name\"}},\"required\":[\"movie_type\",\"timeRange\",\"movie_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"movie_type\":[\"animated movies\"],\"timeRange\":[],\"movie_name\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-27",
-      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "6d79795ded9b5fcc04be5a8e5d0d87aa72fdd2673e1b161b1748119d312fb5e1",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "where can I watch Mabel’s Dramatic Career at twenty two o'clock",
       "schema": {
         "type": "object",
@@ -1106,7 +1836,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_name": [
           "Mabel’s Dramatic Career"
@@ -1114,12 +1843,44 @@
         "timeRange": [
           "twenty two o'clock"
         ]
-      }
+      },
+      "key_mapping": {
+        "movie_name": "movie_name",
+        "timeRange": "timeRange"
+      },
+      "spans": [
+        {
+          "field": "movie_name",
+          "value": "Mabel’s Dramatic Career",
+          "start": 18,
+          "end": 41
+        },
+        {
+          "field": "timeRange",
+          "value": "twenty two o'clock",
+          "start": 45,
+          "end": 63
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"where can I watch Mabel’s Dramatic Career at twenty two o'clock\",\"schema\":{\"type\":\"object\",\"properties\":{\"movie_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"movie name\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"}},\"required\":[\"movie_name\",\"timeRange\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"movie_name\":[\"Mabel’s Dramatic Career\"],\"timeRange\":[\"twenty two o'clock\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-28",
-      "title": "SearchScreeningEvent · where can I watch Mabel’s Dramatic Career at twenty two",
-      "origin": "Observed SNIPS development request; original chunk annotations, not a fresh benchmark",
+      "group": "6d79795ded9b5fcc04be5a8e5d0d87aa72fdd2673e1b161b1748119d312fb5e1",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "where can I watch Mabel’s Dramatic Career at twenty two o'clock",
       "schema": {
         "type": "object",
@@ -1153,19 +1914,45 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "timeRange": [
           "twenty two o'clock"
         ],
         "spatial_relation": [],
         "object_location_type": []
-      }
+      },
+      "key_mapping": {
+        "timeRange": "timeRange",
+        "spatial_relation": "spatial_relation",
+        "object_location_type": "object_location_type"
+      },
+      "spans": [
+        {
+          "field": "timeRange",
+          "value": "twenty two o'clock",
+          "start": 45,
+          "end": 63
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"where can I watch Mabel’s Dramatic Career at twenty two o'clock\",\"schema\":{\"type\":\"object\",\"properties\":{\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"spatial_relation\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"spatial or proximity expression\"},\"object_location_type\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"type of screening venue\"}},\"required\":[\"timeRange\",\"spatial_relation\",\"object_location_type\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"timeRange\":[\"twenty two o'clock\"],\"spatial_relation\":[],\"object_location_type\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-29",
-      "title": "Named track and performer",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "9075a49ff6ee7e5629ab44a2f7acc552ba18302c1e21d2e127f715b3746175bb",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play the track Blue Lantern by Mira Sol.",
       "schema": {
         "type": "object",
@@ -1199,7 +1986,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "track": [
           "Blue Lantern"
@@ -1208,12 +1994,45 @@
           "Mira Sol"
         ],
         "album": []
-      }
+      },
+      "key_mapping": {
+        "track": "track",
+        "artist": "artist",
+        "album": "album"
+      },
+      "spans": [
+        {
+          "field": "track",
+          "value": "Blue Lantern",
+          "start": 15,
+          "end": 27
+        },
+        {
+          "field": "artist",
+          "value": "Mira Sol",
+          "start": 31,
+          "end": 39
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play the track Blue Lantern by Mira Sol.\",\"schema\":{\"type\":\"object\",\"properties\":{\"track\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"track name\"},\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"album\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"album name\"}},\"required\":[\"track\",\"artist\",\"album\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"track\":[\"Blue Lantern\"],\"artist\":[\"Mira Sol\"],\"album\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-30",
-      "title": "Restaurant, city, party and time",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "5af85ee63b9c072adcf2f5e06934a30c1d744e4baeffb07026728f631e419efb",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Book River Moon in Denver for four people tomorrow.",
       "schema": {
         "type": "object",
@@ -1255,7 +2074,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "restaurant_name": [
           "River Moon"
@@ -1269,12 +2087,58 @@
         "timeRange": [
           "tomorrow"
         ]
-      }
+      },
+      "key_mapping": {
+        "restaurant_name": "restaurant_name",
+        "city": "city",
+        "party_size_number": "party_size_number",
+        "timeRange": "timeRange"
+      },
+      "spans": [
+        {
+          "field": "restaurant_name",
+          "value": "River Moon",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "field": "city",
+          "value": "Denver",
+          "start": 19,
+          "end": 25
+        },
+        {
+          "field": "party_size_number",
+          "value": "four",
+          "start": 30,
+          "end": 34
+        },
+        {
+          "field": "timeRange",
+          "value": "tomorrow",
+          "start": 42,
+          "end": 50
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Book River Moon in Denver for four people tomorrow.\",\"schema\":{\"type\":\"object\",\"properties\":{\"restaurant_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"restaurant name\"},\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"party_size_number\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"explicit party size\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"}},\"required\":[\"restaurant_name\",\"city\",\"party_size_number\",\"timeRange\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Denver\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-31",
-      "title": "Weather with country missing",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "7629f0e924124f01d5ea68504aa2aa81a77bff2ba48b22e888ead47ccc2fef2b",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "What is the weather in Oslo on Friday?",
       "schema": {
         "type": "object",
@@ -1308,7 +2172,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "city": [
           "Oslo"
@@ -1317,12 +2180,45 @@
           "Friday"
         ],
         "country": []
-      }
+      },
+      "key_mapping": {
+        "city": "city",
+        "timeRange": "timeRange",
+        "country": "country"
+      },
+      "spans": [
+        {
+          "field": "city",
+          "value": "Oslo",
+          "start": 23,
+          "end": 27
+        },
+        {
+          "field": "timeRange",
+          "value": "Friday",
+          "start": 31,
+          "end": 37
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"What is the weather in Oslo on Friday?\",\"schema\":{\"type\":\"object\",\"properties\":{\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"country\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"country\"}},\"required\":[\"city\",\"timeRange\",\"country\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"city\":[\"Oslo\"],\"timeRange\":[\"Friday\"],\"country\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-32",
-      "title": "Rating and scale",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "58fd971f4a06f6de4be91989379057676fe2f5ac870075c756a78b25a3fbfa1b",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Give the book Glass Harbor four out of five stars.",
       "schema": {
         "type": "object",
@@ -1364,7 +2260,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Glass Harbor"
@@ -1378,12 +2273,58 @@
         "rating_unit": [
           "stars"
         ]
-      }
+      },
+      "key_mapping": {
+        "object_name": "object_name",
+        "rating_value": "rating_value",
+        "best_rating": "best_rating",
+        "rating_unit": "rating_unit"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Glass Harbor",
+          "start": 14,
+          "end": 26
+        },
+        {
+          "field": "rating_value",
+          "value": "four",
+          "start": 27,
+          "end": 31
+        },
+        {
+          "field": "best_rating",
+          "value": "five",
+          "start": 39,
+          "end": 43
+        },
+        {
+          "field": "rating_unit",
+          "value": "stars",
+          "start": 44,
+          "end": 49
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Give the book Glass Harbor four out of five stars.\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"},\"rating_value\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"given rating\"},\"best_rating\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"maximum rating scale\"},\"rating_unit\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"rating unit\"}},\"required\":[\"object_name\",\"rating_value\",\"best_rating\",\"rating_unit\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[\"five\"],\"rating_unit\":[\"stars\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-33",
-      "title": "Movie and screening location",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "5a7721ca702cf2e7fa565a9725933b7c4e546f51208231e44e131d92538a9c24",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Find showtimes for Silver Orchard at Maple Cinema.",
       "schema": {
         "type": "object",
@@ -1417,7 +2358,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "movie_name": [
           "Silver Orchard"
@@ -1426,12 +2366,45 @@
           "Maple Cinema"
         ],
         "timeRange": []
-      }
+      },
+      "key_mapping": {
+        "movie_name": "movie_name",
+        "location_name": "location_name",
+        "timeRange": "timeRange"
+      },
+      "spans": [
+        {
+          "field": "movie_name",
+          "value": "Silver Orchard",
+          "start": 19,
+          "end": 33
+        },
+        {
+          "field": "location_name",
+          "value": "Maple Cinema",
+          "start": 37,
+          "end": 49
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Find showtimes for Silver Orchard at Maple Cinema.\",\"schema\":{\"type\":\"object\",\"properties\":{\"movie_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"movie name\"},\"location_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"screening location name\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"}},\"required\":[\"movie_name\",\"location_name\",\"timeRange\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"movie_name\":[\"Silver Orchard\"],\"location_name\":[\"Maple Cinema\"],\"timeRange\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-34",
-      "title": "Track added to a playlist",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "21959d807265cea1f07dc8f10a499d3abddbb98c92dc0fc2c42e5c107646df9e",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Add Night Steps to my playlist Evening Walks.",
       "schema": {
         "type": "object",
@@ -1457,7 +2430,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "entity_name": [
           "Night Steps"
@@ -1465,12 +2437,44 @@
         "playlist": [
           "Evening Walks"
         ]
-      }
+      },
+      "key_mapping": {
+        "entity_name": "entity_name",
+        "playlist": "playlist"
+      },
+      "spans": [
+        {
+          "field": "entity_name",
+          "value": "Night Steps",
+          "start": 4,
+          "end": 15
+        },
+        {
+          "field": "playlist",
+          "value": "Evening Walks",
+          "start": 31,
+          "end": 44
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Add Night Steps to my playlist Evening Walks.\",\"schema\":{\"type\":\"object\",\"properties\":{\"entity_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"named item to add to a playlist\"},\"playlist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"playlist name\"}},\"required\":[\"entity_name\",\"playlist\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"entity_name\":[\"Night Steps\"],\"playlist\":[\"Evening Walks\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-35",
-      "title": "Two performers",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "72a034a961eb23954e74f6f9573e839128861e410f8db7eb314d96b89ed884df",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play songs by Mira Sol and Theo Lane.",
       "schema": {
         "type": "object",
@@ -1496,19 +2500,50 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "artist": [
           "Mira Sol",
           "Theo Lane"
         ],
         "album": []
-      }
+      },
+      "key_mapping": {
+        "artist": "artist",
+        "album": "album"
+      },
+      "spans": [
+        {
+          "field": "artist",
+          "value": "Mira Sol",
+          "start": 14,
+          "end": 22
+        },
+        {
+          "field": "artist",
+          "value": "Theo Lane",
+          "start": 27,
+          "end": 36
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play songs by Mira Sol and Theo Lane.\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"album\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"album name\"}},\"required\":[\"artist\",\"album\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[\"Mira Sol\",\"Theo Lane\"],\"album\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-36",
-      "title": "Two cities mentioned",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "cf95dfc44e9ab92c06c3c74ebf3988744e23e090899fb04952987c9e7617437b",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Give me the weather in Bergen and Oslo.",
       "schema": {
         "type": "object",
@@ -1534,19 +2569,50 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "city": [
           "Bergen",
           "Oslo"
         ],
         "country": []
-      }
+      },
+      "key_mapping": {
+        "city": "city",
+        "country": "country"
+      },
+      "spans": [
+        {
+          "field": "city",
+          "value": "Bergen",
+          "start": 23,
+          "end": 29
+        },
+        {
+          "field": "city",
+          "value": "Oslo",
+          "start": 34,
+          "end": 38
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Give me the weather in Bergen and Oslo.\",\"schema\":{\"type\":\"object\",\"properties\":{\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"country\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"country\"}},\"required\":[\"city\",\"country\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"city\":[\"Bergen\",\"Oslo\"],\"country\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-37",
-      "title": "Cuisine and city",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "2073a5a42b6bfb792d6be93b7ae378376fe20746dd2ed218d90c80ee314989e3",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Find a Thai restaurant in Boston.",
       "schema": {
         "type": "object",
@@ -1580,7 +2646,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "cuisine": [
           "Thai"
@@ -1589,12 +2654,45 @@
           "Boston"
         ],
         "restaurant_name": []
-      }
+      },
+      "key_mapping": {
+        "cuisine": "cuisine",
+        "city": "city",
+        "restaurant_name": "restaurant_name"
+      },
+      "spans": [
+        {
+          "field": "cuisine",
+          "value": "Thai",
+          "start": 7,
+          "end": 11
+        },
+        {
+          "field": "city",
+          "value": "Boston",
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Find a Thai restaurant in Boston.\",\"schema\":{\"type\":\"object\",\"properties\":{\"cuisine\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"cuisine style\"},\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"restaurant_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"restaurant name\"}},\"required\":[\"cuisine\",\"city\",\"restaurant_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"cuisine\":[\"Thai\"],\"city\":[\"Boston\"],\"restaurant_name\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-38",
-      "title": "Album and performer",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "572d0515c09e9954c3ea625eb8ca2473a2abd40955a4f755f5a131d7b2557d77",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play the album Quiet Signals by Mira Sol.",
       "schema": {
         "type": "object",
@@ -1628,7 +2726,6 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "album": [
           "Quiet Signals"
@@ -1637,12 +2734,45 @@
           "Mira Sol"
         ],
         "track": []
-      }
+      },
+      "key_mapping": {
+        "album": "album",
+        "artist": "artist",
+        "track": "track"
+      },
+      "spans": [
+        {
+          "field": "album",
+          "value": "Quiet Signals",
+          "start": 15,
+          "end": 28
+        },
+        {
+          "field": "artist",
+          "value": "Mira Sol",
+          "start": 32,
+          "end": 40
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play the album Quiet Signals by Mira Sol.\",\"schema\":{\"type\":\"object\",\"properties\":{\"album\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"album name\"},\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"track\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"track name\"}},\"required\":[\"album\",\"artist\",\"track\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"album\":[\"Quiet Signals\"],\"artist\":[\"Mira Sol\"],\"track\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-39",
-      "title": "Title with rating absent",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "a0d89406cd2de4d98e42717ec379675778860df14802cef62c14aa68a2a95c24",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "I am looking for the book Paper Bridge.",
       "schema": {
         "type": "object",
@@ -1668,18 +2798,43 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "object_name": [
           "Paper Bridge"
         ],
         "rating_value": []
-      }
+      },
+      "key_mapping": {
+        "object_name": "object_name",
+        "rating_value": "rating_value"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Paper Bridge",
+          "start": 26,
+          "end": 38
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"I am looking for the book Paper Bridge.\",\"schema\":{\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"name of the work being rated or searched for\"},\"rating_value\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"given rating\"}},\"required\":[\"object_name\",\"rating_value\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":[\"Paper Bridge\"],\"rating_value\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "FIELD-40",
-      "title": "Missing country and time",
-      "origin": "New OpenSML-authored diagnostic; not used for training or checkpoint selection",
+      "group": "e08535d5b49ec9af4f2fb51bc0536976bb4cc64a09e16bd7bfd582c082829a2b",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Please play some music.",
       "schema": {
         "type": "object",
@@ -1713,16 +2868,36 @@
         ],
         "additionalProperties": false
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
       "expected": {
         "country": [],
         "timeRange": [],
         "artist": []
-      }
+      },
+      "key_mapping": {
+        "country": "country",
+        "timeRange": "timeRange",
+        "artist": "artist"
+      },
+      "spans": [],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Please play some music.\",\"schema\":{\"type\":\"object\",\"properties\":{\"country\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"country\"},\"timeRange\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"date, time, or time-range expression\"},\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"}},\"required\":[\"country\",\"timeRange\",\"artist\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"country\":[],\"timeRange\":[],\"artist\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
-      "title": "AddToPlaylist · alias schema",
+      "group": "42764406cbdc014aaa185f7d4629788fe04a58103b73b3bea723cf6c7add506d",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "add gn to night vibes",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -1764,12 +2939,38 @@
           "night vibes"
         ]
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_playlist_owner": "selected_playlist_owner",
+        "selected_artist": "selected_artist",
+        "selected_playlist": "selected_playlist"
+      },
+      "spans": [
+        {
+          "field": "selected_playlist",
+          "value": "night vibes",
+          "start": 10,
+          "end": 21
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"add gn to night vibes\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_playlist\":{\"type\":\"array\",\"description\":\"playlist name\",\"items\":{\"type\":\"string\"}},\"selected_artist\":{\"type\":\"array\",\"description\":\"performer or musical artist\",\"items\":{\"type\":\"string\"}},\"selected_playlist_owner\":{\"type\":\"array\",\"description\":\"person owning the playlist\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_playlist\",\"selected_artist\",\"selected_playlist_owner\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_playlist_owner\":[],\"selected_artist\":[],\"selected_playlist\":[\"night vibes\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
-      "title": "AddToPlaylist · nullable schema",
+      "group": "42764406cbdc014aaa185f7d4629788fe04a58103b73b3bea723cf6c7add506d",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "add gn to night vibes",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -1809,12 +3010,38 @@
         "artist": null,
         "playlist": "night vibes"
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "playlist_owner": "playlist_owner",
+        "artist": "artist",
+        "playlist": "playlist"
+      },
+      "spans": [
+        {
+          "field": "playlist",
+          "value": "night vibes",
+          "start": 10,
+          "end": 21
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"add gn to night vibes\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"playlist\":{\"type\":[\"string\",\"null\"],\"description\":\"playlist name\"},\"artist\":{\"type\":[\"string\",\"null\"],\"description\":\"performer or musical artist\"},\"playlist_owner\":{\"type\":[\"string\",\"null\"],\"description\":\"person owning the playlist\"}},\"required\":[\"playlist\",\"artist\",\"playlist_owner\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"playlist_owner\":null,\"artist\":null,\"playlist\":\"night vibes\"}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
-      "title": "BookRestaurant · alias schema",
+      "group": "a5475548ce30d7acc5c16763ad97fa282b9c141586211f57355473f9ce4b2dba",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -1856,12 +3083,38 @@
         ],
         "selected_sort": []
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_restaurant_name": "selected_restaurant_name",
+        "selected_timeRange": "selected_timeRange",
+        "selected_sort": "selected_sort"
+      },
+      "spans": [
+        {
+          "field": "selected_timeRange",
+          "value": "Nov. the 1st",
+          "start": 81,
+          "end": 93
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_restaurant_name\":{\"type\":\"array\",\"description\":\"restaurant name\",\"items\":{\"type\":\"string\"}},\"selected_timeRange\":{\"type\":\"array\",\"description\":\"date, time, or time-range expression\",\"items\":{\"type\":\"string\"}},\"selected_sort\":{\"type\":\"array\",\"description\":\"requested ranking, ordering, or preference\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_restaurant_name\",\"selected_timeRange\",\"selected_sort\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_restaurant_name\":[],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
-      "title": "BookRestaurant · nullable schema",
+      "group": "a5475548ce30d7acc5c16763ad97fa282b9c141586211f57355473f9ce4b2dba",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -1901,12 +3154,38 @@
         "timeRange": "Nov. the 1st",
         "sort": null
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "restaurant_name": "restaurant_name",
+        "timeRange": "timeRange",
+        "sort": "sort"
+      },
+      "spans": [
+        {
+          "field": "timeRange",
+          "value": "Nov. the 1st",
+          "start": 81,
+          "end": 93
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"restaurant_name\":{\"type\":[\"string\",\"null\"],\"description\":\"restaurant name\"},\"timeRange\":{\"type\":[\"string\",\"null\"],\"description\":\"date, time, or time-range expression\"},\"sort\":{\"type\":[\"string\",\"null\"],\"description\":\"requested ranking, ordering, or preference\"}},\"required\":[\"restaurant_name\",\"timeRange\",\"sort\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"restaurant_name\":null,\"timeRange\":\"Nov. the 1st\",\"sort\":null}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:GetWeather:train:109:view0:native:alias",
-      "title": "GetWeather · alias schema",
+      "group": "d1d7cf5b0d78c82f6fa5a6a05e5173d1307b488ac133fa60122c9badccf1e6b9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Is it going to be colder in Louisiana",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -1941,12 +3220,43 @@
           "Louisiana"
         ]
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_condition_temperature": "selected_condition_temperature",
+        "selected_state": "selected_state"
+      },
+      "spans": [
+        {
+          "field": "selected_condition_temperature",
+          "value": "colder",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "field": "selected_state",
+          "value": "Louisiana",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Is it going to be colder in Louisiana\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_condition_temperature\":{\"type\":\"array\",\"description\":\"temperature description\",\"items\":{\"type\":\"string\"}},\"selected_state\":{\"type\":\"array\",\"description\":\"state or region\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_condition_temperature\",\"selected_state\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_condition_temperature\":[\"colder\"],\"selected_state\":[\"Louisiana\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:GetWeather:train:109:view0:native:nullable",
-      "title": "GetWeather · nullable schema",
+      "group": "d1d7cf5b0d78c82f6fa5a6a05e5173d1307b488ac133fa60122c9badccf1e6b9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Is it going to be colder in Louisiana",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -1977,12 +3287,43 @@
         "condition_temperature": "colder",
         "state": "Louisiana"
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "condition_temperature": "condition_temperature",
+        "state": "state"
+      },
+      "spans": [
+        {
+          "field": "condition_temperature",
+          "value": "colder",
+          "start": 18,
+          "end": 24
+        },
+        {
+          "field": "state",
+          "value": "Louisiana",
+          "start": 28,
+          "end": 37
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Is it going to be colder in Louisiana\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"condition_temperature\":{\"type\":[\"string\",\"null\"],\"description\":\"temperature description\"},\"state\":{\"type\":[\"string\",\"null\"],\"description\":\"state or region\"}},\"required\":[\"condition_temperature\",\"state\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"condition_temperature\":\"colder\",\"state\":\"Louisiana\"}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:PlayMusic:train:801:view1:native:alias",
-      "title": "PlayMusic · alias schema",
+      "group": "a71de3be89cc04a04cc0aaa5855689a01df9e5f0a2a0e657a49d6c547243718a",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play the last theme by Behzad Mirkhani.",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2024,12 +3365,38 @@
         ],
         "selected_playlist": []
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_service": "selected_service",
+        "selected_music_item": "selected_music_item",
+        "selected_playlist": "selected_playlist"
+      },
+      "spans": [
+        {
+          "field": "selected_music_item",
+          "value": "theme",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play the last theme by Behzad Mirkhani.\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_service\":{\"type\":\"array\",\"description\":\"music service\",\"items\":{\"type\":\"string\"}},\"selected_music_item\":{\"type\":\"array\",\"description\":\"word specifying the requested music category, such as artist, track, song, or album\",\"items\":{\"type\":\"string\"}},\"selected_playlist\":{\"type\":\"array\",\"description\":\"playlist name\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_service\",\"selected_music_item\",\"selected_playlist\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_service\":[],\"selected_music_item\":[\"theme\"],\"selected_playlist\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:PlayMusic:train:801:view1:native:nullable",
-      "title": "PlayMusic · nullable schema",
+      "group": "a71de3be89cc04a04cc0aaa5855689a01df9e5f0a2a0e657a49d6c547243718a",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Play the last theme by Behzad Mirkhani.",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2069,12 +3436,38 @@
         "music_item": "theme",
         "playlist": null
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "service": "service",
+        "music_item": "music_item",
+        "playlist": "playlist"
+      },
+      "spans": [
+        {
+          "field": "music_item",
+          "value": "theme",
+          "start": 14,
+          "end": 19
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play the last theme by Behzad Mirkhani.\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"service\":{\"type\":[\"string\",\"null\"],\"description\":\"music service\"},\"music_item\":{\"type\":[\"string\",\"null\"],\"description\":\"word specifying the requested music category, such as artist, track, song, or album\"},\"playlist\":{\"type\":[\"string\",\"null\"],\"description\":\"playlist name\"}},\"required\":[\"service\",\"music_item\",\"playlist\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"service\":null,\"music_item\":\"theme\",\"playlist\":null}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:RateBook:train:293:view0:native:alias",
-      "title": "RateBook · alias schema",
+      "group": "884360d2d11e42a2b9f27896b7e01ee531ae3355ac3b26d1b633a120765b5737",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "rate the current essay 2 stars",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2109,12 +3502,43 @@
           "2"
         ]
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_object_select": "selected_object_select",
+        "selected_rating_value": "selected_rating_value"
+      },
+      "spans": [
+        {
+          "field": "selected_object_select",
+          "value": "current",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "field": "selected_rating_value",
+          "value": "2",
+          "start": 23,
+          "end": 24
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"rate the current essay 2 stars\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_rating_value\":{\"type\":\"array\",\"description\":\"given rating\",\"items\":{\"type\":\"string\"}},\"selected_object_select\":{\"type\":\"array\",\"description\":\"selection expression referring to the work\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_rating_value\",\"selected_object_select\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_object_select\":[\"current\"],\"selected_rating_value\":[\"2\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:RateBook:train:293:view0:native:nullable",
-      "title": "RateBook · nullable schema",
+      "group": "884360d2d11e42a2b9f27896b7e01ee531ae3355ac3b26d1b633a120765b5737",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "rate the current essay 2 stars",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2145,12 +3569,43 @@
         "object_select": "current",
         "rating_value": "2"
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "object_select": "object_select",
+        "rating_value": "rating_value"
+      },
+      "spans": [
+        {
+          "field": "object_select",
+          "value": "current",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "field": "rating_value",
+          "value": "2",
+          "start": 23,
+          "end": 24
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"rate the current essay 2 stars\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"rating_value\":{\"type\":[\"string\",\"null\"],\"description\":\"given rating\"},\"object_select\":{\"type\":[\"string\",\"null\"],\"description\":\"selection expression referring to the work\"}},\"required\":[\"rating_value\",\"object_select\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_select\":\"current\",\"rating_value\":\"2\"}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:SearchCreativeWork:train:602:view1:native:alias",
-      "title": "SearchCreativeWork · alias schema",
+      "group": "e43f250155b5b35c780b30f70aa067be8430204b741e4a32b6e44dfd2ad2b444",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Show me the book Playlist: The Very Best of Dolly Parton",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2174,12 +3629,36 @@
           "Playlist: The Very Best of Dolly Parton"
         ]
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_object_name": "selected_object_name"
+      },
+      "spans": [
+        {
+          "field": "selected_object_name",
+          "value": "Playlist: The Very Best of Dolly Parton",
+          "start": 17,
+          "end": 56
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Show me the book Playlist: The Very Best of Dolly Parton\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_object_name\":{\"type\":\"array\",\"description\":\"name of the work being rated or searched for\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_object_name\":[\"Playlist: The Very Best of Dolly Parton\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:SearchCreativeWork:train:602:view1:native:nullable",
-      "title": "SearchCreativeWork · nullable schema",
+      "group": "e43f250155b5b35c780b30f70aa067be8430204b741e4a32b6e44dfd2ad2b444",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "Show me the book Playlist: The Very Best of Dolly Parton",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2201,12 +3680,36 @@
       "expected": {
         "object_name": "Playlist: The Very Best of Dolly Parton"
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "object_name": "object_name"
+      },
+      "spans": [
+        {
+          "field": "object_name",
+          "value": "Playlist: The Very Best of Dolly Parton",
+          "start": 17,
+          "end": 56
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Show me the book Playlist: The Very Best of Dolly Parton\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"object_name\":{\"type\":[\"string\",\"null\"],\"description\":\"name of the work being rated or searched for\"}},\"required\":[\"object_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"object_name\":\"Playlist: The Very Best of Dolly Parton\"}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:SearchScreeningEvent:train:897:view1:native:alias",
-      "title": "SearchScreeningEvent · alias schema",
+      "group": "19a4491ae82be7156c0ba89ccd07734f32aa00a6ba754ea55e4ccfe95ac2cd96",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "find animated movies movie schedule in the neighborhood",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2248,12 +3751,38 @@
           "animated movies"
         ]
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "selected_location_name": "selected_location_name",
+        "selected_movie_name": "selected_movie_name",
+        "selected_movie_type": "selected_movie_type"
+      },
+      "spans": [
+        {
+          "field": "selected_movie_type",
+          "value": "animated movies",
+          "start": 5,
+          "end": 20
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"find animated movies movie schedule in the neighborhood\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"selected_movie_type\":{\"type\":\"array\",\"description\":\"kind of movie\",\"items\":{\"type\":\"string\"}},\"selected_movie_name\":{\"type\":\"array\",\"description\":\"movie name\",\"items\":{\"type\":\"string\"}},\"selected_location_name\":{\"type\":\"array\",\"description\":\"screening location name\",\"items\":{\"type\":\"string\"}}},\"required\":[\"selected_movie_type\",\"selected_movie_name\",\"selected_location_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"selected_location_name\":[],\"selected_movie_name\":[],\"selected_movie_type\":[\"animated movies\"]}"
+        }
+      ],
+      "eval_panel": "playground60"
     },
     {
       "id": "native:snips:SearchScreeningEvent:train:897:view1:native:nullable",
-      "title": "SearchScreeningEvent · nullable schema",
+      "group": "19a4491ae82be7156c0ba89ccd07734f32aa00a6ba754ea55e4ccfe95ac2cd96",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
       "document": "find animated movies movie schedule in the neighborhood",
       "schema": {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -2293,9 +3822,531 @@
         "movie_name": null,
         "movie_type": "animated movies"
       },
-      "instruction": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.",
-      "scope": "Observed development request; native schema stress view."
+      "key_mapping": {
+        "location_name": "location_name",
+        "movie_name": "movie_name",
+        "movie_type": "movie_type"
+      },
+      "spans": [
+        {
+          "field": "movie_type",
+          "value": "animated movies",
+          "start": 5,
+          "end": 20
+        }
+      ],
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"find animated movies movie schedule in the neighborhood\",\"schema\":{\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"type\":\"object\",\"properties\":{\"movie_type\":{\"type\":[\"string\",\"null\"],\"description\":\"kind of movie\"},\"movie_name\":{\"type\":[\"string\",\"null\"],\"description\":\"movie name\"},\"location_name\":{\"type\":[\"string\",\"null\"],\"description\":\"screening location name\"}},\"required\":[\"movie_type\",\"movie_name\",\"location_name\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"location_name\":null,\"movie_name\":null,\"movie_type\":\"animated movies\"}"
+        }
+      ],
+      "eval_panel": "playground60"
+    },
+    {
+      "id": "ARRAY-3-ARTIST",
+      "group": "2eb2db21a6b19ba45aa1b1268742a52cc9886185956e55979afd5a20a751ec91",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
+      "document": "Play songs by Mira Sol, Theo Lane, and Nora Vale.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "album": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "album name"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale"
+        ],
+        "album": []
+      },
+      "spans": [
+        {
+          "field": "artist",
+          "start": 14,
+          "end": 22,
+          "value": "Mira Sol"
+        },
+        {
+          "field": "artist",
+          "start": 24,
+          "end": 33,
+          "value": "Theo Lane"
+        },
+        {
+          "field": "artist",
+          "start": 39,
+          "end": 48,
+          "value": "Nora Vale"
+        }
+      ],
+      "key_mapping": {
+        "artist": "artist",
+        "album": "album"
+      },
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play songs by Mira Sol, Theo Lane, and Nora Vale.\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"album\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"album name\"}},\"required\":[\"artist\",\"album\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\"],\"album\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
+    },
+    {
+      "id": "ARRAY-3-CITY",
+      "group": "dc8dfe9e240aee7d19eb17f041088750ad8a5a4fbbe54e5cdb026c44e76b5cd6",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
+      "document": "Give me the weather in Bergen, Oslo, and Trondheim.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "country": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "country"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo",
+          "Trondheim"
+        ],
+        "country": []
+      },
+      "spans": [
+        {
+          "field": "city",
+          "start": 23,
+          "end": 29,
+          "value": "Bergen"
+        },
+        {
+          "field": "city",
+          "start": 31,
+          "end": 35,
+          "value": "Oslo"
+        },
+        {
+          "field": "city",
+          "start": 41,
+          "end": 50,
+          "value": "Trondheim"
+        }
+      ],
+      "key_mapping": {
+        "city": "city",
+        "country": "country"
+      },
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Give me the weather in Bergen, Oslo, and Trondheim.\",\"schema\":{\"type\":\"object\",\"properties\":{\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"country\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"country\"}},\"required\":[\"city\",\"country\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"city\":[\"Bergen\",\"Oslo\",\"Trondheim\"],\"country\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
+    },
+    {
+      "id": "ARRAY-4-ARTIST",
+      "group": "b31c0cf71146e9cb302a95370275ef4718f9807fae4fe861cd98a95636b7ff14",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
+      "document": "Play songs by Mira Sol, Theo Lane, Nora Vale, and Eli Brooks.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "album": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "album name"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale",
+          "Eli Brooks"
+        ],
+        "album": []
+      },
+      "spans": [
+        {
+          "field": "artist",
+          "start": 14,
+          "end": 22,
+          "value": "Mira Sol"
+        },
+        {
+          "field": "artist",
+          "start": 24,
+          "end": 33,
+          "value": "Theo Lane"
+        },
+        {
+          "field": "artist",
+          "start": 35,
+          "end": 44,
+          "value": "Nora Vale"
+        },
+        {
+          "field": "artist",
+          "start": 50,
+          "end": 60,
+          "value": "Eli Brooks"
+        }
+      ],
+      "key_mapping": {
+        "artist": "artist",
+        "album": "album"
+      },
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play songs by Mira Sol, Theo Lane, Nora Vale, and Eli Brooks.\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"album\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"album name\"}},\"required\":[\"artist\",\"album\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\",\"Eli Brooks\"],\"album\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
+    },
+    {
+      "id": "ARRAY-4-CITY",
+      "group": "ddde8e995ad48608776b3bf7d924f5ed9bb82f965941844c7308888da2f2618c",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
+      "document": "Give me the weather in Bergen, Oslo, Trondheim, and Stavanger.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "country": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "country"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo",
+          "Trondheim",
+          "Stavanger"
+        ],
+        "country": []
+      },
+      "spans": [
+        {
+          "field": "city",
+          "start": 23,
+          "end": 29,
+          "value": "Bergen"
+        },
+        {
+          "field": "city",
+          "start": 31,
+          "end": 35,
+          "value": "Oslo"
+        },
+        {
+          "field": "city",
+          "start": 37,
+          "end": 46,
+          "value": "Trondheim"
+        },
+        {
+          "field": "city",
+          "start": 52,
+          "end": 61,
+          "value": "Stavanger"
+        }
+      ],
+      "key_mapping": {
+        "city": "city",
+        "country": "country"
+      },
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Give me the weather in Bergen, Oslo, Trondheim, and Stavanger.\",\"schema\":{\"type\":\"object\",\"properties\":{\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"country\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"country\"}},\"required\":[\"city\",\"country\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"city\":[\"Bergen\",\"Oslo\",\"Trondheim\",\"Stavanger\"],\"country\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
+    },
+    {
+      "id": "ARRAY-5-ARTIST",
+      "group": "5c6fff1fbaaf5f25ea01af43ff3cb06c6539842aff05a48bf71a8fb86f5bf791",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
+      "document": "Play songs by Mira Sol, Theo Lane, Nora Vale, Eli Brooks, and Iris Reed.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "performer or musical artist"
+          },
+          "album": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "album name"
+          }
+        },
+        "required": [
+          "artist",
+          "album"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale",
+          "Eli Brooks",
+          "Iris Reed"
+        ],
+        "album": []
+      },
+      "spans": [
+        {
+          "field": "artist",
+          "start": 14,
+          "end": 22,
+          "value": "Mira Sol"
+        },
+        {
+          "field": "artist",
+          "start": 24,
+          "end": 33,
+          "value": "Theo Lane"
+        },
+        {
+          "field": "artist",
+          "start": 35,
+          "end": 44,
+          "value": "Nora Vale"
+        },
+        {
+          "field": "artist",
+          "start": 46,
+          "end": 56,
+          "value": "Eli Brooks"
+        },
+        {
+          "field": "artist",
+          "start": 62,
+          "end": 71,
+          "value": "Iris Reed"
+        }
+      ],
+      "key_mapping": {
+        "artist": "artist",
+        "album": "album"
+      },
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Play songs by Mira Sol, Theo Lane, Nora Vale, Eli Brooks, and Iris Reed.\",\"schema\":{\"type\":\"object\",\"properties\":{\"artist\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"performer or musical artist\"},\"album\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"album name\"}},\"required\":[\"artist\",\"album\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\",\"Eli Brooks\",\"Iris Reed\"],\"album\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
+    },
+    {
+      "id": "ARRAY-5-CITY",
+      "group": "e3d7257072defb5003a88f375d97b85d7a35a24d6427931432da1bcb55f05ee9",
+      "source": "playground",
+      "category": "retention",
+      "variant": "canonical",
+      "document": "Give me the weather in Bergen, Oslo, Trondheim, Stavanger, and Tromsø.",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "city or town"
+          },
+          "country": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "country"
+          }
+        },
+        "required": [
+          "city",
+          "country"
+        ],
+        "additionalProperties": false
+      },
+      "expected": {
+        "city": [
+          "Bergen",
+          "Oslo",
+          "Trondheim",
+          "Stavanger",
+          "Tromsø"
+        ],
+        "country": []
+      },
+      "spans": [
+        {
+          "field": "city",
+          "start": 23,
+          "end": 29,
+          "value": "Bergen"
+        },
+        {
+          "field": "city",
+          "start": 31,
+          "end": 35,
+          "value": "Oslo"
+        },
+        {
+          "field": "city",
+          "start": 37,
+          "end": 46,
+          "value": "Trondheim"
+        },
+        {
+          "field": "city",
+          "start": 48,
+          "end": 57,
+          "value": "Stavanger"
+        },
+        {
+          "field": "city",
+          "start": 63,
+          "end": 69,
+          "value": "Tromsø"
+        }
+      ],
+      "key_mapping": {
+        "city": "city",
+        "country": "country"
+      },
+      "pair_id": null,
+      "messages": [
+        {
+          "role": "user",
+          "content": "Extract information from the supplied source_text according to the supplied JSON Schema. Return exactly one JSON object, with no explanation or Markdown. Copy values exactly, preserving case and spelling; do not normalize dates or numbers. Include every required key and no other keys. For string arrays, include all matching source spans in source order, or [] when absent. For nullable strings, use the exact source span or null when absent.\n\n{\"source_text\":\"Give me the weather in Bergen, Oslo, Trondheim, Stavanger, and Tromsø.\",\"schema\":{\"type\":\"object\",\"properties\":{\"city\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"city or town\"},\"country\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"description\":\"country\"}},\"required\":[\"city\",\"country\"],\"additionalProperties\":false}}"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"city\":[\"Bergen\",\"Oslo\",\"Trondheim\",\"Stavanger\",\"Tromsø\"],\"country\":[]}"
+        }
+      ],
+      "eval_panel": "playground60"
     }
   ],
-  "scope": "40 prior playground diagnostics plus 14 observed development schema-stress examples; reference answers never enter generation."
+  "scope": "40 prior playground diagnostics plus 14 observed development schema-stress examples; reference answers never enter generation.",
+  "count": 60
 }

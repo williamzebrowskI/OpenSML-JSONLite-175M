@@ -18,11 +18,9 @@ Pretraining decontamination and perfectly correct semantic golds are not claimed
 Raw pretraining pools, packed arrays, optimizer state, credentials, SSH keys and
 private host/network receipts are excluded. Published metadata replaces private
 workspace paths with [workspace]; original and published hashes are separated.
-54 actual local fixtures, raw predictions and held-out evidence are retained.
+60 actual local fixtures, raw predictions and held-out evidence are retained.
 The canonical held-out 1,388 and schema-stress 56 requests are included as JSONL in
 evaluation/native-json-heldout.jsonl and the prepared native data directory.
 See THIRD_PARTY_NOTICES.md, docs/TECHNICAL_REPORT.md and provenance/LINEAGE.json.
 
-The additional stage uses original SNIPS TRAIN replay plus authored cardinality
-views, with frozen-parent training-only KL. Main inherits 2,048 presentations, not
-the entire 3,072-presentation completed experiment. See the report for exact counts.
+The latest stage jointly replays original SNIPS TRAIN JSON views, controlled cardinality views and authored English prose with original TRAIN values. It adds 19,200 inherited presentations; no teacher KL is used in this stage. Prepared authored prose and targets are included for inspection, with observed evaluation scope and remaining failures in the report.

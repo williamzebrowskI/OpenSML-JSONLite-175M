@@ -1,35 +1,37 @@
 {
   "model": "OpenSML-JSONLite-175M-Instruct",
   "checkpoint": "main",
-  "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
-  "requests": 54,
-  "raw_text_and_stop_matches": 54,
-  "correct_against_reference": 44,
-  "schema_valid": 54,
+  "weight_sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
+  "requests": 60,
+  "raw_text_and_stop_matches": 60,
+  "correct_against_reference": 49,
+  "schema_valid": 60,
   "versions": {
     "mlx": "0.32.3",
     "numpy": "2.4.2",
     "tokenizers": "0.22.2",
     "jsonschema": "4.26.0"
   },
-  "platform": "Apple Silicon macOS, Python3.11",
+  "platform": "Apple Silicon macOS, Python 3.11",
   "outputs": [
     {
-      "text": "{\"playlist_owner\":[],\"playlist\":[\"Rock Gaming\"],\"entity_name\":[\"Mariem Hassan\"]}",
+      "text": "{\"playlist_owner\":[\"my\"],\"playlist\":[\"Rock Gaming\"],\"entity_name\":[\"Mariem Hassan con Leyoad\"]}",
       "value": {
-        "playlist_owner": [],
+        "playlist_owner": [
+          "my"
+        ],
         "playlist": [
           "Rock Gaming"
         ],
         "entity_name": [
-          "Mariem Hassan"
+          "Mariem Hassan con Leyoad"
         ]
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
-      "output_tokens": 37,
-      "seconds": 0.1317074578255415,
+      "output_tokens": 44,
+      "seconds": 0.17647575004957616,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -42,28 +44,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-01",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 3,
-        "tp": 1,
-        "fp": 1,
-        "fn": 2,
-        "present_correct": 1,
-        "present_total": 3,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 1,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"artist\":[\"Mariem Hassan\"],\"music_item\":[]}",
@@ -77,7 +59,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 23,
-      "seconds": 0.09170329081825912,
+      "seconds": 0.09266262501478195,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -90,28 +72,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-02",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 2,
-        "tp": 0,
-        "fp": 1,
-        "fn": 0,
-        "present_correct": 0,
-        "present_total": 0,
-        "absent_correct": 1,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 1,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
       "text": "{\"playlist_owner\":[\"my\"]}",
@@ -124,7 +86,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 13,
-      "seconds": 0.052787666907534,
+      "seconds": 0.05713866697624326,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -137,28 +99,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-03",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 1,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"artist\":[],\"entity_name\":[],\"playlist\":[\"Digster Future Hits\"]}",
@@ -173,7 +115,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 29,
-      "seconds": 0.09026900003664196,
+      "seconds": 0.11768570798449218,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -186,47 +128,27 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-04",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"state\":[\"AR\"],\"party_size_number\":[\"nine\"],\"restaurant_type\":[\"brasserie\"]}",
+      "text": "{\"restaurant_type\":[\"brasserie\"],\"party_size_number\":[\"nine\"],\"state\":[\"AR\"]}",
       "value": {
-        "state": [
-          "AR"
+        "restaurant_type": [
+          "brasserie"
         ],
         "party_size_number": [
           "nine"
         ],
-        "restaurant_type": [
-          "brasserie"
+        "state": [
+          "AR"
         ]
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 36,
-      "seconds": 0.13286249991506338,
+      "seconds": 0.13061708281747997,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -239,28 +161,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-05",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 3,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 3,
-        "present_total": 3,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"party_size_number\":[\"nine\"],\"timeRange\":[],\"sort\":[]}",
@@ -275,7 +177,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 27,
-      "seconds": 0.11090816603973508,
+      "seconds": 0.06810929113999009,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -288,44 +190,24 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-06",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"city\":[\"Wrigley\"],\"sort\":[\"best\"]}",
+      "text": "{\"sort\":[\"best\"],\"city\":[\"Wrigley\"]}",
       "value": {
-        "city": [
-          "Wrigley"
-        ],
         "sort": [
           "best"
+        ],
+        "city": [
+          "Wrigley"
         ]
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 21,
-      "seconds": 0.08733266708441079,
+      "seconds": 0.05377487512305379,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -338,40 +220,20 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-07",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"poi\":[],\"timeRange\":[]}",
+      "text": "{\"timeRange\":[],\"poi\":[]}",
       "value": {
-        "poi": [],
-        "timeRange": []
+        "timeRange": [],
+        "poi": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 15,
-      "seconds": 0.06839366699568927,
+      "seconds": 0.04086962481960654,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -384,28 +246,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-08",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 0,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 0,
-        "present_total": 0,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 0,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"state\":[\"Louisiana\"],\"condition_temperature\":[\"colder\"]}",
@@ -421,7 +263,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 23,
-      "seconds": 0.09773133299313486,
+      "seconds": 0.05825637513771653,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -434,28 +276,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-09",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"current_location\":[],\"geographic_poi\":[],\"condition_temperature\":[\"colder\"]}",
@@ -470,7 +292,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 31,
-      "seconds": 0.12699225009419024,
+      "seconds": 0.11788337491452694,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -483,28 +305,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-10",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"timeRange\":[\"last August\"],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"condition_temperature\":[\"colder\"]}",
@@ -523,7 +325,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 44,
-      "seconds": 0.16674145800061524,
+      "seconds": 0.17240966693498194,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -536,43 +338,23 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-11",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 3,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 3,
-        "present_total": 3,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"state\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"current_location\":[]}",
+      "text": "{\"current_location\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"state\":[]}",
       "value": {
-        "state": [],
+        "current_location": [],
         "geographic_poi": [
           "Stunt Ranch Santa Monica Mountains Reserve"
         ],
-        "current_location": []
+        "state": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 34,
-      "seconds": 0.09643245814368129,
+      "seconds": 0.1316559170372784,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -585,28 +367,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-12",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"artist\":[\"Behzad Mirkhani\"],\"music_item\":[\"theme\"],\"sort\":[\"last\"]}",
@@ -625,7 +387,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 38,
-      "seconds": 0.0911900419741869,
+      "seconds": 0.11877575004473329,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -638,43 +400,23 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-13",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 3,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 3,
-        "present_total": 3,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"playlist\":[],\"music_item\":[\"theme\"],\"service\":[]}",
+      "text": "{\"service\":[],\"music_item\":[\"theme\"],\"playlist\":[]}",
       "value": {
-        "playlist": [],
+        "service": [],
         "music_item": [
           "theme"
         ],
-        "service": []
+        "playlist": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 25,
-      "seconds": 0.07062204205431044,
+      "seconds": 0.06615762482397258,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -687,28 +429,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-14",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"artist\":[\"Yui\"],\"music_item\":[\"track\"],\"service\":[\"Vimeo\"]}",
@@ -727,7 +449,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 33,
-      "seconds": 0.1308659170754254,
+      "seconds": 0.08466579113155603,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -740,28 +462,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-15",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 3,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 3,
-        "present_total": 3,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"playlist\":[],\"sort\":[]}",
@@ -773,7 +475,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 14,
-      "seconds": 0.05398241593502462,
+      "seconds": 0.039065124932676554,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -786,28 +488,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-16",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 0,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 0,
-        "present_total": 0,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 0,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"rating_value\":[\"3\"],\"rating_unit\":[\"stars\"],\"object_name\":[\"Things Fall Apart\"]}",
@@ -826,7 +508,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 35,
-      "seconds": 0.1139006249140948,
+      "seconds": 0.08983045816421509,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -839,28 +521,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-17",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 3,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 3,
-        "present_total": 3,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_name\":[\"Things Fall Apart\"],\"object_select\":[],\"object_type\":[]}",
@@ -875,7 +537,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 29,
-      "seconds": 0.08503687498159707,
+      "seconds": 0.07524858298711479,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -888,28 +550,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-18",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"rating_value\":[\"1\"],\"object_name\":[]}",
@@ -923,7 +565,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 19,
-      "seconds": 0.060387207893654704,
+      "seconds": 0.049742958042770624,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -936,28 +578,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-19",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_part_of_series_type\":[],\"object_name\":[]}",
@@ -969,7 +591,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 23,
-      "seconds": 0.09527637506835163,
+      "seconds": 0.06354975001886487,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -982,28 +604,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-20",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 0,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 0,
-        "present_total": 0,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 0,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_name\":[\"Happiness Was Free\"]}",
@@ -1016,7 +618,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 16,
-      "seconds": 0.05649704090319574,
+      "seconds": 0.060178708052262664,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1029,28 +631,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-21",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 1,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_type\":[],\"object_name\":[\"Happiness Was Free\"]}",
@@ -1064,7 +646,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 23,
-      "seconds": 0.059290583012625575,
+      "seconds": 0.0893012909218669,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1077,28 +659,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-22",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_name\":[\"Martin Morning\"],\"object_type\":[\"saga\"]}",
@@ -1114,7 +676,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 24,
-      "seconds": 0.0722098748665303,
+      "seconds": 0.07322416710667312,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1127,28 +689,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-23",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_name\":[\"Martin Morning\"]}",
@@ -1161,7 +703,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 13,
-      "seconds": 0.056712874909862876,
+      "seconds": 0.040689832996577024,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1174,28 +716,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-24",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 1,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"movie_type\":[\"animated movies\"],\"spatial_relation\":[\"in the neighborhood\"]}",
@@ -1211,7 +733,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 29,
-      "seconds": 0.11536691710352898,
+      "seconds": 0.08523791679181159,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1224,43 +746,23 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-25",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"movie_name\":[],\"timeRange\":[],\"movie_type\":[\"animated movies\"]}",
+      "text": "{\"movie_type\":[\"animated movies\"],\"timeRange\":[],\"movie_name\":[]}",
       "value": {
-        "movie_name": [],
-        "timeRange": [],
         "movie_type": [
           "animated movies"
-        ]
+        ],
+        "timeRange": [],
+        "movie_name": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 32,
-      "seconds": 0.12519749999046326,
+      "seconds": 0.09332416695542634,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1273,44 +775,24 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-26",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"timeRange\":[\"twenty two o'clock\"],\"movie_name\":[\"Mabel’s Dramatic Career\"]}",
+      "text": "{\"movie_name\":[\"Mabel’s Dramatic Career\"],\"timeRange\":[\"twenty two o'clock\"]}",
       "value": {
-        "timeRange": [
-          "twenty two o'clock"
-        ],
         "movie_name": [
           "Mabel’s Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
         ]
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 36,
-      "seconds": 0.1416236248333007,
+      "seconds": 0.1403042080346495,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1323,28 +805,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-27",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"timeRange\":[\"twenty two o'clock\"],\"spatial_relation\":[],\"object_location_type\":[]}",
@@ -1359,7 +821,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 35,
-      "seconds": 0.14057387504726648,
+      "seconds": 0.1383882921654731,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1372,28 +834,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-28",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"track\":[\"Blue Lantern\"],\"artist\":[\"Mira Sol\"],\"album\":[]}",
@@ -1410,7 +852,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 29,
-      "seconds": 0.11759562487713993,
+      "seconds": 0.11747579206712544,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1423,28 +865,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-29",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Denver\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}",
@@ -1466,7 +888,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 49,
-      "seconds": 0.17598291696049273,
+      "seconds": 0.18146875011734664,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1479,28 +901,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-30",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 4,
-        "fields": 4,
-        "tp": 4,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 4,
-        "present_total": 4,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 4,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"city\":[\"Ose\"],\"timeRange\":[\"Friday\"],\"country\":[]}",
@@ -1517,7 +919,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 26,
-      "seconds": 0.0654072081670165,
+      "seconds": 0.10596829210408032,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1530,28 +932,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-31",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 3,
-        "tp": 1,
-        "fp": 1,
-        "fn": 1,
-        "present_correct": 1,
-        "present_total": 2,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 1,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
       "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[],\"rating_unit\":[\"stars\"]}",
@@ -1571,7 +953,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 42,
-      "seconds": 0.11358241690322757,
+      "seconds": 0.16606529196724296,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1584,45 +966,25 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-32",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 4,
-        "tp": 3,
-        "fp": 0,
-        "fn": 1,
-        "present_correct": 3,
-        "present_total": 4,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 1,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
-      "text": "{\"timeRange\":[],\"location_name\":[\"Maple Cinema\"],\"movie_name\":[\"Silver Orchard\"]}",
+      "text": "{\"movie_name\":[\"Silver Orchard\"],\"location_name\":[\"Maple Cinema\"],\"timeRange\":[]}",
       "value": {
-        "timeRange": [],
+        "movie_name": [
+          "Silver Orchard"
+        ],
         "location_name": [
           "Maple Cinema"
         ],
-        "movie_name": [
-          "Silver Orchard"
-        ]
+        "timeRange": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 37,
-      "seconds": 0.10278037493117154,
+      "seconds": 0.09538087481632829,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1635,28 +997,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-33",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"entity_name\":[\"Night Steps\"],\"playlist\":[\"Evening Walks\"]}",
@@ -1672,7 +1014,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 27,
-      "seconds": 0.08685358287766576,
+      "seconds": 0.07212029211223125,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1685,28 +1027,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-34",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\"],\"album\":[]}",
@@ -1721,7 +1043,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 24,
-      "seconds": 0.10270537505857646,
+      "seconds": 0.06363512482494116,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1734,28 +1056,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-35",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"city\":[\"Bergen\",\"Orange\",\"Lake\"],\"country\":[]}",
@@ -1771,7 +1073,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 24,
-      "seconds": 0.09942620806396008,
+      "seconds": 0.06020650011487305,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1784,28 +1086,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-36",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 2,
-        "tp": 1,
-        "fp": 2,
-        "fn": 1,
-        "present_correct": 0,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 2,
-        "predicted_values": 3,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
       "text": "{\"cuisine\":[],\"city\":[\"Boston\"],\"restaurant_name\":[]}",
@@ -1820,7 +1102,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 26,
-      "seconds": 0.1082186670973897,
+      "seconds": 0.09844033396802843,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1833,45 +1115,25 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-37",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 1,
-        "present_correct": 1,
-        "present_total": 2,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 1,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
-      "text": "{\"track\":[],\"artist\":[\"Mira Sol\"],\"album\":[\"Quiet Signals\"]}",
+      "text": "{\"album\":[\"Quiet Signals\"],\"artist\":[\"Mira Sol\"],\"track\":[]}",
       "value": {
-        "track": [],
+        "album": [
+          "Quiet Signals"
+        ],
         "artist": [
           "Mira Sol"
         ],
-        "album": [
-          "Quiet Signals"
-        ]
+        "track": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 30,
-      "seconds": 0.12260229187086225,
+      "seconds": 0.12414183304645121,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1884,28 +1146,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-38",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_name\":[\"Paper Bridge\"],\"rating_value\":[]}",
@@ -1919,7 +1161,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 20,
-      "seconds": 0.0860819579102099,
+      "seconds": 0.08667670795693994,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1932,41 +1174,21 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-39",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 1,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"artist\":[],\"timeRange\":[],\"country\":[]}",
+      "text": "{\"country\":[],\"timeRange\":[],\"artist\":[]}",
       "value": {
-        "artist": [],
+        "country": [],
         "timeRange": [],
-        "country": []
+        "artist": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 20,
-      "seconds": 0.08448487496934831,
+      "seconds": 0.08656954090110958,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -1979,43 +1201,25 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "FIELD-40",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 0,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 0,
-        "present_total": 0,
-        "absent_correct": 3,
-        "absent_total": 3,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 0,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[],\"selected_playlist_owner\":[]}",
+      "text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[\"gn\"],\"selected_playlist_owner\":[]}",
       "value": {
         "selected_playlist": [
           "night vibes"
         ],
-        "selected_artist": [],
+        "selected_artist": [
+          "gn"
+        ],
         "selected_playlist_owner": []
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
-      "output_tokens": 36,
-      "seconds": 0.14466900005936623,
+      "output_tokens": 39,
+      "seconds": 0.1672995421104133,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2028,28 +1232,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
       "text": "{\"playlist_owner\":null,\"artist\":\"gn\",\"playlist\":\"night vibes\"}",
@@ -2062,7 +1246,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 26,
-      "seconds": 0.09343320806510746,
+      "seconds": 0.10970429191365838,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2075,35 +1259,13 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 3,
-        "tp": 1,
-        "fp": 1,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 1,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
-      "text": "{\"selected_restaurant_name\":[\"mughlai restaurant\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}",
+      "text": "{\"selected_restaurant_name\":[],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}",
       "value": {
-        "selected_restaurant_name": [
-          "mughlai restaurant"
-        ],
+        "selected_restaurant_name": [],
         "selected_timeRange": [
           "Nov. the 1st"
         ],
@@ -2112,8 +1274,8 @@
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
-      "output_tokens": 47,
-      "seconds": 0.16156229190528393,
+      "output_tokens": 40,
+      "seconds": 0.15424016606993973,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2126,28 +1288,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 3,
-        "tp": 1,
-        "fp": 1,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 1,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"restaurant_name\":\"mughlai restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}",
@@ -2160,7 +1302,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 34,
-      "seconds": 0.13589041586965322,
+      "seconds": 0.1165991669986397,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2173,44 +1315,24 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 3,
-        "tp": 1,
-        "fp": 1,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 1,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 1,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": false
     },
     {
-      "text": "{\"selected_condition_temperature\":[\"colder\"],\"selected_state\":[\"Louisiana\"]}",
+      "text": "{\"selected_state\":[\"Louisiana\"],\"selected_condition_temperature\":[\"colder\"]}",
       "value": {
-        "selected_condition_temperature": [
-          "colder"
-        ],
         "selected_state": [
           "Louisiana"
+        ],
+        "selected_condition_temperature": [
+          "colder"
         ]
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 29,
-      "seconds": 0.10488454182632267,
+      "seconds": 0.12024129112251103,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2223,28 +1345,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:GetWeather:train:109:view0:native:alias",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"state\":\"Louisiana\",\"condition_temperature\":\"colder\"}",
@@ -2256,7 +1358,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 19,
-      "seconds": 0.08123483415693045,
+      "seconds": 0.06711416691541672,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2269,28 +1371,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:GetWeather:train:109:view0:native:nullable",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"selected_playlist\":[],\"selected_music_item\":[\"theme\"],\"selected_service\":[]}",
@@ -2305,7 +1387,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 34,
-      "seconds": 0.14011824992485344,
+      "seconds": 0.09712295792996883,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2318,28 +1400,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:PlayMusic:train:801:view1:native:alias",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"playlist\":null,\"music_item\":\"theme\",\"service\":null}",
@@ -2352,7 +1414,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 23,
-      "seconds": 0.09768870798870921,
+      "seconds": 0.06972587504424155,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2365,28 +1427,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:PlayMusic:train:801:view1:native:nullable",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"selected_rating_value\":[\"2\"],\"selected_object_select\":[\"current\"]}",
@@ -2402,7 +1444,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 29,
-      "seconds": 0.11820799997076392,
+      "seconds": 0.08707858389243484,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2415,28 +1457,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:RateBook:train:293:view0:native:alias",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_select\":\"current\",\"rating_value\":\"2\"}",
@@ -2448,7 +1470,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 19,
-      "seconds": 0.0810724999755621,
+      "seconds": 0.08294720784761012,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2461,28 +1483,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:RateBook:train:293:view0:native:nullable",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 2,
-        "tp": 2,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 2,
-        "present_total": 2,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 2,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"selected_object_name\":[\"Playlist: The Very Best of Dolly Parton\"]}",
@@ -2495,7 +1497,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 25,
-      "seconds": 0.10242487490177155,
+      "seconds": 0.11037545814178884,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2508,28 +1510,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:SearchCreativeWork:train:602:view1:native:alias",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 1,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"object_name\":\"Playlist: The Very Best of Dolly Parton\"}",
@@ -2540,7 +1522,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 20,
-      "seconds": 0.0858239580411464,
+      "seconds": 0.08364866697229445,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2553,28 +1535,8 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:SearchCreativeWork:train:602:view1:native:nullable",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 1,
-        "fields": 1,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 0,
-        "absent_total": 0,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
       "text": "{\"selected_movie_type\":[\"animated movies\"],\"selected_movie_name\":[],\"selected_location_name\":[]}",
@@ -2589,7 +1551,7 @@
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 42,
-      "seconds": 0.17146354098804295,
+      "seconds": 0.16512083308771253,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2602,41 +1564,21 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:SearchScreeningEvent:train:897:view1:native:alias",
-      "checks": {
-        "exact": 1,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 3,
-        "fields": 3,
-        "tp": 1,
-        "fp": 0,
-        "fn": 0,
-        "present_correct": 1,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
-      },
-      "saved_text_and_stop_match": true
+      "raw_text_and_stop_match": true,
+      "exact": true
     },
     {
-      "text": "{\"movie_name\":null,\"movie_type\":\"movies\",\"location_name\":null}",
+      "text": "{\"movie_type\":\"animated movies\",\"movie_name\":null,\"location_name\":null}",
       "value": {
+        "movie_type": "animated movies",
         "movie_name": null,
-        "movie_type": "movies",
         "location_name": null
       },
       "schema_valid": true,
       "success": true,
       "stop_reason": "turn_end",
       "output_tokens": 31,
-      "seconds": 0.1260323328897357,
+      "seconds": 0.1260217921808362,
       "output_mode": "native-json",
       "model_calls": 1,
       "json_assembly": false,
@@ -2649,34 +1591,198 @@
         "serialization": "native-sft-chat-v1"
       },
       "id": "native:snips:SearchScreeningEvent:train:897:view1:native:nullable",
-      "checks": {
-        "exact": 0,
-        "json_parse_ok": 1,
-        "schema_ok": 1,
-        "field_correct": 2,
-        "fields": 3,
-        "tp": 0,
-        "fp": 1,
-        "fn": 1,
-        "present_correct": 0,
-        "present_total": 1,
-        "absent_correct": 2,
-        "absent_total": 2,
-        "false_abstention": 0,
-        "missed_abstention": 0,
-        "unsupported_values": 0,
-        "predicted_values": 1,
-        "natural_stop": 1,
-        "token_limited": 0,
-        "nonrepetitive_nonempty": 1
+      "raw_text_and_stop_match": true,
+      "exact": true
+    },
+    {
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale"
+        ],
+        "album": []
       },
-      "saved_text_and_stop_match": true
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 30,
+      "seconds": 0.12100991699844599,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "id": "ARRAY-3-ARTIST",
+      "raw_text_and_stop_match": true,
+      "exact": true
+    },
+    {
+      "text": "{\"city\":[\"Bergen\",\"Ilmenau\",\"Trondheim\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen",
+          "Ilmenau",
+          "Trondheim"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 27,
+      "seconds": 0.09397912514396012,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "id": "ARRAY-3-CITY",
+      "raw_text_and_stop_match": true,
+      "exact": false
+    },
+    {
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\",\"Eli Brooks\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale",
+          "Eli Brooks"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 35,
+      "seconds": 0.10037354100495577,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "id": "ARRAY-4-ARTIST",
+      "raw_text_and_stop_match": true,
+      "exact": true
+    },
+    {
+      "text": "{\"city\":[\"Bergen\",\"Ilmenau\",\"Trondheim\",\"Stavanger\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen",
+          "Ilmenau",
+          "Trondheim",
+          "Stavanger"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 32,
+      "seconds": 0.12685562507249415,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "id": "ARRAY-4-CITY",
+      "raw_text_and_stop_match": true,
+      "exact": false
+    },
+    {
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\",\"Eli Brooks\",\"Iris Reed\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale",
+          "Eli Brooks",
+          "Iris Reed"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 40,
+      "seconds": 0.16119341715238988,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "id": "ARRAY-5-ARTIST",
+      "raw_text_and_stop_match": true,
+      "exact": true
+    },
+    {
+      "text": "{\"city\":[\"Bergen\",\"Eden\",\"Tromsø\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen",
+          "Eden",
+          "Tromsø"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 26,
+      "seconds": 0.10789529187604785,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "id": "ARRAY-5-CITY",
+      "raw_text_and_stop_match": true,
+      "exact": false
     }
   ],
   "model_calls_per_request": 1,
   "json_assembly": false,
   "output_repair": false,
   "constrained_decoding": false,
-  "scope": "Stock MLX standalone packaging parity on the observed 54 playground fixtures; not a fresh blind accuracy test or full 1,444-request cross-runtime parity.",
-  "elapsed_seconds": 5.9345723749138415
+  "scope": "Stock-MLX packaging parity on the observed 60 playground fixtures; not a fresh blind benchmark or full 1,444-case cross-runtime parity.",
+  "elapsed_seconds": 6.364110708935186
 }

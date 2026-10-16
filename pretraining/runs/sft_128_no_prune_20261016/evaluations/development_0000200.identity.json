@@ -1,0 +1,9 @@
+{
+  "matches_original_weight_bytes": false,
+  "original_weight_sha256": "66d5595a227272426835395ab98f06ec174e5628462a06ea759916e1ee9775f9",
+  "policy_sha256": "69f2f89dd32135011d038af7bb47992df2d7b28eed0190c2c86b501802527b03",
+  "same_generated_answers": 234,
+  "step": 200,
+  "total": 240,
+  "weight_sha256": "ee07d3dca3a7233be5eeacb9834d54a8250d260686dc6edff952a91036fae835"
+}

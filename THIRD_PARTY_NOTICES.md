@@ -18,3 +18,7 @@ MLX, NumPy, Tokenizers and jsonschema are installed dependencies, not vendored d
 No IFEval, Paraloq, SOB, ARC, PIQA, HellaSwag or other experiment's scores are advertised as evaluation of these weights. Older research helpers present in dependency packages do not change the inherited training lineage.
 
 For actual source-file pins and identity-preserving adaptations, see the technical report and `provenance/`. These declarations are attribution records, not a blanket commercial-use or model-weight redistribution determination. The public weight license remains unassigned.
+
+## Latest joint JSON extraction data
+
+The latest stage reuses SNIPS TRAIN source/schema/JSON views and authored controlled prose with original TRAIN values. Original SNIPS attribution and CC0 terms above continue to apply. Authored wording does not make evaluation independent or establish a new weight license. No SGD/MIT dataset was added to this stage.

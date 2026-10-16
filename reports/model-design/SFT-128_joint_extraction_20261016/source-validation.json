@@ -1,0 +1,16 @@
+{
+  "authored_requests": 0,
+  "original_requests": 15000,
+  "scope": "Original annotation agreement and literal authored spans/roles, not independent production semantic certification.",
+  "source_hashes": {
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__AddToPlaylist__train_AddToPlaylist_full.json": "fee1b4645352e70ed8a40f1f87c3b53fc3bf75f8ebc82252a22b82c107e75b01",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__BookRestaurant__train_BookRestaurant_full.json": "7677e82cd6e9a8191f0a4502568c786278c984900b4796d3628e46f1abf73ef4",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__GetWeather__train_GetWeather_full.json": "86f414b2ad8a993134d85d16e25e5d337beae47cef993c0af2a5f440405c60f6",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__PlayMusic__train_PlayMusic_full.json": "901ddbe9781d1fdb8196e789c543f80df3d29ca6e237da64947905adcc0312e4",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__RateBook__train_RateBook_full.json": "bb43e4b74134300d5766f6b420d0357a63402987a225f6dc92c806c9c040ce04",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__SearchCreativeWork__train_SearchCreativeWork_full.json": "87b3432de48c71c205aa5238b41d9e3f2d70bdfcd0bea2427544fb9e4bd5e5bb",
+    "pretraining/data/snips_sources_20261013/2017-06-custom-intent-engines__SearchScreeningEvent__train_SearchScreeningEvent_full.json": "5447e9440c02e2fb08c3ae16b9f58a4d1332b4bc77fd34691402b02aa4399765"
+  },
+  "source_manifest_sha256": "e8df08618c3e80382b0dede9e92798f116743550a6fa0b20c132a0e11dd0f25e",
+  "status": "passed"
+}

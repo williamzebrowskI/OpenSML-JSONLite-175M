@@ -1,0 +1,10 @@
+{
+  "records": 19200,
+  "serialized_positions": 6153194,
+  "supervised_assistant_positions": 633561,
+  "components": {
+    "original_json": 13640,
+    "new_prose": 4871,
+    "cardinality_replay": 689
+  }
+}

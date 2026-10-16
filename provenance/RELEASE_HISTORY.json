@@ -1,14 +1,22 @@
 {
   "model": "OpenSML-JSONLite-175M-Instruct",
   "previous_release": {
-    "weight_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4",
-    "github_revision": "4d8e12677fcb3dc6d7748132b1c54928571d22be",
-    "personal_huggingface_revision": "e7ab95956ed744a95370fd2e165f794b251bf067",
-    "organization_huggingface_revision": "f9d319ae6931910a715e590d0af0b253ea39684e"
+    "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
+    "github_revision": "f6a3c0a63a067d9c3d795c423f93d560ef1b19ce",
+    "personal_huggingface_revision": "7a4a2b097e40c5d35fb8731bfc1d767e6ca066f6",
+    "organization_huggingface_revision": "49a9c353589b2a67be7dbe01350dec7c749249f7"
   },
   "main_checkpoint": {
-    "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
-    "training": "native JSON foundation followed by cardinality/replay distillation continuation"
+    "weight_sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
+    "training": "Latest joint JSON extraction SFT: original JSON replay, multiple-value views and authored prose",
+    "selected_stage": "sft-128",
+    "selected_update": 300
   },
-  "scope": "Git histories and immutable prior revisions are preserved; public model ID stays unchanged."
+  "scope": "Git histories and immutable prior revisions are preserved; public model ID stays unchanged.",
+  "historical_releases": [
+    {
+      "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
+      "training": "native JSON foundation followed by cardinality/replay distillation continuation"
+    }
+  ]
 }

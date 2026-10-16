@@ -1,0 +1,66 @@
+{
+  "model_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
+  "requests": [
+    {
+      "id": "FIELD-01",
+      "matched": true,
+      "panel": "playground60"
+    },
+    {
+      "id": "FIELD-09",
+      "matched": true,
+      "panel": "playground60"
+    },
+    {
+      "id": "FIELD-21",
+      "matched": true,
+      "panel": "playground60"
+    },
+    {
+      "id": "FIELD-31",
+      "matched": true,
+      "panel": "playground60"
+    },
+    {
+      "id": "native:snips:GetWeather:train:109:view0:native:nullable",
+      "matched": true,
+      "panel": "playground60"
+    },
+    {
+      "id": "ARRAY-5-CITY",
+      "matched": true,
+      "panel": "playground60"
+    },
+    {
+      "id": "snips:PlayMusic:test:94:view0:native:canonical",
+      "matched": true,
+      "panel": "original1444"
+    },
+    {
+      "id": "snips:GetWeather:test:13:view0:native:canonical",
+      "matched": true,
+      "panel": "original1444"
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:29:view1:native:canonical",
+      "matched": true,
+      "panel": "original1444"
+    },
+    {
+      "id": "snips:AddToPlaylist:test:38:view0:native:canonical",
+      "matched": true,
+      "panel": "original1444"
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:43:view1:native:canonical",
+      "matched": true,
+      "panel": "original1444"
+    },
+    {
+      "id": "snips:SearchScreeningEvent:test:6:view1:native:nullable",
+      "matched": true,
+      "panel": "original1444"
+    }
+  ],
+  "status": "passed"
+}

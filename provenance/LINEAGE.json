@@ -57,14 +57,27 @@
       "weight_bytes": 351242342,
       "original_metadata_sha256": "8b8c0049d731f8124eaec78a213d05c24a520bc4f190dc82975d763f43351bbc",
       "published_metadata_sha256": "49d177fb4606673f789fbf06c694643c44504672a9f0c3f75f7eae776cb4590c"
+    },
+    {
+      "stage": "sft-128",
+      "public_stage": "joint JSON extraction SFT",
+      "step": 300,
+      "records": 19200,
+      "serialized_positions": 6153194,
+      "supervised_assistant_positions": 633561,
+      "token_counter": "supervised assistant positions; differs from earlier serialized counters",
+      "weight_sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
+      "weight_bytes": 351242342,
+      "original_metadata_sha256": "663087d32872824f7f2fec425ad4054f308913c43da7c3f83521c7011967fdbe",
+      "published_metadata_sha256": "663087d32872824f7f2fec425ad4054f308913c43da7c3f83521c7011967fdbe"
     }
   ],
   "weights_in_git": false,
   "public_weight_location": "https://huggingface.co/OpenSML/OpenSML-JSONLite-175M",
   "model_weight_license": "not yet assigned",
-  "scope": "Stage A -> grounded QA -> requested-field extraction -> focused extraction -> native JSON foundation -> cardinality/replay distillation continuation. Only the selected prefix of the final continuation is inherited; complete historical update counts are in stages.",
-  "selected_stage": "additional extraction SFT",
-  "selected_update": 64,
+  "scope": "Selected lineage: Stage A -> grounded QA -> requested-field extraction -> focused extraction -> native JSON foundation -> cardinality/replay distillation -> joint JSON extraction SFT. Later updates are not inherited.",
+  "selected_stage": "joint JSON extraction SFT",
+  "selected_update": 300,
   "weight_location": "https://huggingface.co/OpenSML/OpenSML-JSONLite-175M",
   "public_checkpoint_name": "main"
 }

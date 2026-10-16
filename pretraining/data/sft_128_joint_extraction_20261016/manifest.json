@@ -1,0 +1,78 @@
+{
+  "files": {
+    "development.jsonl": "9e195fd1ac5009a648e2b0082e099382e811fa14e986486b97837212347b7bb0",
+    "legacy_full.jsonl": "2a07a0c7049de65945028156819e61e14b85ec39b796b14e891cc127be8dbda9",
+    "original_test.jsonl": "2e19414ba55d96a8ff86e64238dd3fb41f0c2bceef7562aafc77b9e1cf45d11f",
+    "reserved.jsonl": "145bbc2b34bfae5916202f8da0c9c2cf9f2b99350c17481d232b098052f7b018",
+    "train.jsonl": "6b94677c5aa57979220cd5defa7ce82dc91d173f0948ddcc9090b04a669f744e"
+  },
+  "inputs": {
+    "pretraining/data/sft_100_native_json_20261014/test.jsonl": "96860322b45901cb7aec3cf8971da083fd607043a2bd936fb44b0f6d06dab164",
+    "pretraining/data/sft_100_native_json_20261014/train.jsonl": "8a63ff26d9fc6c08bc47c0385e4f18e156d7bd8ba41e036d2e197ccc60dde411",
+    "pretraining/data/sft_105_cardinality_distillation_20261014/train.jsonl": "7e80ab0db50b6f535cc0a3e00a846c9d261cdc2c52f0c2f7670333b4738cae15",
+    "reports/model-design/JSON-AUDIT-127_diagnostics_20261016/retired-experiment/pretraining/data/json_diagnostics_127_20261016/pilot_legacy.jsonl": "d7326808e6fe112aaef35ce63e7d56ac58d4533a3c88105535a6f95e76884982",
+    "reports/model-design/SFT-118_activation_subspace_20261015/parent-development.identity.json": "e975077539f970dd186d9c7adc60ba8ecf5df1d67458e6181bf04b7ce032a55b",
+    "reports/model-design/SFT-118_activation_subspace_20261015/parent-development.json": "0c4acaa5474c630c651b512a917ac80462ccb96487ea548d5c57cf22a4c6c56d",
+    "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/development.jsonl": "acb65deeb9a0270c257eec2f17b59e621bb9eb8f4160a0edb0643e6a1104e9c7",
+    "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/test.jsonl": "1fca08f7106fdebd086d0e206f4af818bca508c46d1801b2dc7d5a11f14e86ee"
+  },
+  "parent_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
+  "plan": {
+    "adaptation": "all_parameters",
+    "batch_size": 64,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "clip": 1.0,
+    "context": 2048,
+    "epochs": 1,
+    "eps": 1e-08,
+    "eval_every": 100,
+    "final_lr": 1e-06,
+    "max_tokens": 256,
+    "microbatch": 2,
+    "objective": "Mean per-request assistant-JSON token cross entropy, including turn EOS. No teacher KL, no inference repair or assembly.",
+    "order": "One deterministic joint shuffle, all prepared records exactly once; no late domain-only phase.",
+    "peak_lr": 5e-06,
+    "precision": "BF16 compute / FP32 master AdamW",
+    "seed": 202610160128,
+    "warmup": 20,
+    "weight_decay": 0.0
+  },
+  "scope": "Complete original 15k and cardinality data plus controlled authored prose. Original TRAIN values are deliberately reused. Wording and normalized source texts are split-disjoint; entity values are not held out. All older controls have been observed. Reserved prose is unpredicted but shares construction families. No promise of perfect annotations or universal no-regression.",
+  "summary": {
+    "cardinality_replay": 768,
+    "components": {
+      "cardinality_replay": 768,
+      "new_prose": 5376,
+      "original_json": 15000
+    },
+    "development": 240,
+    "domains": {
+      "AddToPlaylist": 2900,
+      "BookRestaurant": 2999,
+      "GetWeather": 2932,
+      "PlayMusic": 2967,
+      "RateBook": 2870,
+      "SearchCreativeWork": 2898,
+      "SearchScreeningEvent": 2810,
+      "cardinality": 768
+    },
+    "full_legacy": 624,
+    "legacy_controls": 128,
+    "new_development": 112,
+    "new_prose": 5376,
+    "new_sources": 1753,
+    "original_json": 15000,
+    "original_test": 1444,
+    "records": 21144,
+    "reserved": 112,
+    "steps": 331,
+    "variants": {
+      "alias": 3491,
+      "canonical": 14163,
+      "nullable": 3490
+    }
+  }
+}

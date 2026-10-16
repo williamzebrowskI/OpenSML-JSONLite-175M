@@ -1,0 +1,5331 @@
+{
+  "original1444": {
+    "replay128_200": [
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[\"punk unplugged\"],\"music_item\":[],\"entity_name\":[\"martin barre\"]}",
+        "document": "Add martin barre to my punk unplugged playlist.",
+        "expected": {
+          "entity_name": [],
+          "music_item": [],
+          "playlist": [
+            "punk unplugged"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:84:view1:native:canonical",
+        "parent_text": "{\"playlist\":[\"punk unplugged\"],\"music_item\":[],\"entity_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "music_item",
+            "entity_name"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"entity_name\":[\"Peanut\"]}",
+        "document": "add the artist Pete Murray to my relaxing playlist",
+        "expected": {
+          "entity_name": []
+        },
+        "id": "snips:AddToPlaylist:test:52:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[],\"service\":[\"Last Fm\"],\"track\":[\"The Railway Children\"]}",
+        "document": "Play the top music from The Railway Children off Last Fm.",
+        "expected": {
+          "playlist": [],
+          "service": [
+            "Last Fm"
+          ],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:75:view1:native:canonical",
+        "parent_text": "{\"playlist\":[],\"service\":[\"Last Fm\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "service",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist_owner\":[],\"entity_name\":[\"Vandemataram Srinivas's\"]}",
+        "document": "Put Vandemataram Srinivas's track onto HipHop Hot 50.",
+        "expected": {
+          "entity_name": [],
+          "playlist_owner": []
+        },
+        "id": "snips:AddToPlaylist:test:24:view1:native:canonical",
+        "parent_text": "{\"playlist_owner\":[],\"entity_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist_owner",
+            "entity_name"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 3,
+          "fn": 0,
+          "fp": 2,
+          "json_parse_ok": 1,
+          "missed_abstention": 2,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"party_size_description\":[\"Breadline Cafe\"],\"timeRange\":[\"next friday\"],\"spatial_relation\":[\"next\"]}",
+        "document": "table for Breadline Cafe in Minnesota next friday",
+        "expected": {
+          "party_size_description": [],
+          "spatial_relation": [],
+          "timeRange": [
+            "next friday"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:30:view1:native:canonical",
+        "parent_text": "{\"party_size_description\":[],\"timeRange\":[\"next friday\"],\"spatial_relation\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "party_size_description": {
+              "description": "description of who is attending",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "spatial_relation": {
+              "description": "spatial or proximity expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "party_size_description",
+            "timeRange",
+            "spatial_relation"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"Ted Heath\"],\"playlist\":[\"road trip\"],\"playlist_owner\":[]}",
+        "document": "Add Ted Heath to the road trip playlist.",
+        "expected": {
+          "entity_name": [],
+          "playlist": [
+            "road trip"
+          ],
+          "playlist_owner": []
+        },
+        "id": "snips:AddToPlaylist:test:56:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"playlist\":[\"road trip\"],\"playlist_owner\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "playlist",
+            "playlist_owner"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 3,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"condition_description\":[\"blizzard\"],\"timeRange\":[\"next winter\"],\"city\":[\"Vista\"]}",
+        "document": "Will there be a blizzard next winter in Visalia, Idaho",
+        "expected": {
+          "city": [
+            "Visalia"
+          ],
+          "condition_description": [
+            "blizzard"
+          ],
+          "timeRange": [
+            "next winter"
+          ]
+        },
+        "id": "snips:GetWeather:test:60:view0:native:canonical",
+        "parent_text": "{\"condition_description\":[\"blizzard\"],\"timeRange\":[\"next winter\"],\"city\":[\"Visalia\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "condition_description": {
+              "description": "weather condition",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "condition_description",
+            "timeRange",
+            "city"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist_owner\":[],\"playlist\":[\"Just Smile\"],\"entity_name\":[\"Richard McNamara\"]}",
+        "document": "Add Richard McNamara newest song to the Just Smile playlist",
+        "expected": {
+          "entity_name": [],
+          "playlist": [
+            "Just Smile"
+          ],
+          "playlist_owner": []
+        },
+        "id": "snips:AddToPlaylist:test:62:view1:native:canonical",
+        "parent_text": "{\"playlist_owner\":[],\"playlist\":[\"Just Smile\"],\"entity_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist_owner",
+            "playlist",
+            "entity_name"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"object_name\":[\"Weeks of the West\"]}",
+        "document": "Please search the Woodsmen of the West.",
+        "expected": {
+          "object_name": [
+            "Woodsmen of the West"
+          ]
+        },
+        "id": "snips:SearchCreativeWork:test:90:view0:native:canonical",
+        "parent_text": "{\"object_name\":[\"Woodsmen of the West\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_name"
+          ],
+          "type": "object"
+        },
+        "source": "SearchCreativeWork"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"Rahim Shah\"],\"music_item\":[],\"playlist_owner\":[\"my\"]}",
+        "document": "I need to add to my Infinite Indie Folk list the works of Rahim Shah",
+        "expected": {
+          "entity_name": [],
+          "music_item": [],
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:83:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"music_item\":[],\"playlist_owner\":[\"my\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "music_item",
+            "playlist_owner"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"Too Poetic\"],\"playlist_owner\":[\"my\"]}",
+        "document": "add this song by Too Poetic to my Piano Ballads playlist",
+        "expected": {
+          "entity_name": [],
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:3:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"playlist_owner\":[\"my\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "playlist_owner"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist_owner\":[\"my\"],\"music_item\":[],\"artist\":[\"ireland\"]}",
+        "document": "add ireland in the junior eurovision song contest 2015 to my Jazzy Dinner playlist",
+        "expected": {
+          "artist": [],
+          "music_item": [],
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:30:view1:native:canonical",
+        "parent_text": "{\"playlist_owner\":[\"my\"],\"music_item\":[],\"artist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist_owner",
+            "music_item",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[\"inventive\"],\"genre\":[\"inventive\"]}",
+        "document": "Play my inventive playlist",
+        "expected": {
+          "genre": [],
+          "playlist": [
+            "inventive"
+          ]
+        },
+        "id": "snips:PlayMusic:test:7:view0:native:canonical",
+        "parent_text": "{\"playlist\":[\"inventive\"],\"genre\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "genre": {
+              "description": "music genre",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "genre"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"virales de siempre\"],\"music_item\":[\"song\"]}",
+        "document": "Add the song virales de siempre by the cary brothers to my gym playlist.",
+        "expected": {
+          "entity_name": [],
+          "music_item": [
+            "song"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:14:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"music_item\":[\"song\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "music_item"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"service\":[\"iheart\"],\"artist\":[\"iheart\"]}",
+        "document": "I want to play music from iheart",
+        "expected": {
+          "artist": [],
+          "service": [
+            "iheart"
+          ]
+        },
+        "id": "snips:PlayMusic:test:8:view0:native:canonical",
+        "parent_text": "{\"service\":[\"iheart\"],\"artist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "service",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[\"image\"],\"playlist_owner\":[\"my\"],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "document": "Please add The image of you to my playlist Crate Diggers Anonymous",
+        "expected": {
+          "music_item": [],
+          "playlist": [
+            "Crate Diggers Anonymous"
+          ],
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:74:view0:native:canonical",
+        "parent_text": "{\"music_item\":[],\"playlist_owner\":[\"my\"],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "playlist_owner",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[],\"artist\":[\"The image of you\"],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "document": "Please add The image of you to my playlist Crate Diggers Anonymous",
+        "expected": {
+          "artist": [],
+          "music_item": [],
+          "playlist": [
+            "Crate Diggers Anonymous"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:74:view1:native:canonical",
+        "parent_text": "{\"music_item\":[],\"artist\":[],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "artist",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 2,
+          "fields": 4,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 3,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist_owner\":[\"my\"],\"entity_name\":[\"Roel van Velzen\"],\"artist\":[],\"playlist\":[\"party of the century\"]}",
+        "document": "Add Roel van Velzen to my party of the century playlist.",
+        "expected": {
+          "artist": [
+            "Roel van Velzen"
+          ],
+          "entity_name": [],
+          "playlist": [
+            "party of the century"
+          ],
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:97:view0:native:canonical",
+        "parent_text": "{\"playlist_owner\":[\"my\"],\"entity_name\":[],\"artist\":[\"Roel van Velzen\"],\"playlist\":[\"party of the century\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist_owner",
+            "entity_name",
+            "artist",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 1,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"petar georgiev kalica\"],\"playlist_owner\":[],\"artist\":[]}",
+        "document": "Put petar georgiev kalica onto the Old School Hip Hop playlist.",
+        "expected": {
+          "artist": [
+            "petar georgiev kalica"
+          ],
+          "entity_name": [],
+          "playlist_owner": []
+        },
+        "id": "snips:AddToPlaylist:test:22:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"playlist_owner\":[],\"artist\":[\"petar georgiev kalica\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "playlist_owner",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"current_location\":[\"nearby\"],\"timeRange\":[\"11 weeks from now\"],\"geographic_poi\":[]}",
+        "document": "what is the forecast starting 11 weeks from now nearby the state of Wisconsin",
+        "expected": {
+          "current_location": [],
+          "geographic_poi": [],
+          "timeRange": [
+            "11 weeks from now"
+          ]
+        },
+        "id": "snips:GetWeather:test:14:view1:native:canonical",
+        "parent_text": "{\"current_location\":[],\"timeRange\":[\"11 weeks from now\"],\"geographic_poi\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "current_location": {
+              "description": "expression referring to current location",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "geographic_poi": {
+              "description": "geographic point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "current_location",
+            "timeRange",
+            "geographic_poi"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"sort\":[],\"service\":[\"deezer\"],\"track\":[\"Curtain Call: The Hits\"]}",
+        "document": "Open deezer and play Curtain Call: The Hits by Junichi Okada.",
+        "expected": {
+          "service": [
+            "deezer"
+          ],
+          "sort": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:43:view1:native:canonical",
+        "parent_text": "{\"sort\":[],\"service\":[\"deezer\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "sort": {
+              "description": "requested ranking, ordering, or preference",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "sort",
+            "service",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"country\":[],\"condition_description\":[\"cloud\"],\"city\":[\"Vesta\"]}",
+        "document": "Will there be a cloud in VI in 14 minutes ?",
+        "expected": {
+          "city": [],
+          "condition_description": [
+            "cloud"
+          ],
+          "country": []
+        },
+        "id": "snips:GetWeather:test:92:view1:native:canonical",
+        "parent_text": "{\"city\":[],\"condition_description\":[\"cloud\"],\"country\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "condition_description": {
+              "description": "weather condition",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "country": {
+              "description": "country",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "country",
+            "condition_description",
+            "city"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"spatial_relation\":[\"nearby\"],\"current_location\":[\"nearby\"],\"city\":[\"Nicodemus\"]}",
+        "document": "What is the weather forecast nearby Nicodemus",
+        "expected": {
+          "city": [
+            "Nicodemus"
+          ],
+          "current_location": [],
+          "spatial_relation": [
+            "nearby"
+          ]
+        },
+        "id": "snips:GetWeather:test:39:view0:native:canonical",
+        "parent_text": "{\"spatial_relation\":[\"nearby\"],\"current_location\":[],\"city\":[\"Nicodemus\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "current_location": {
+              "description": "expression referring to current location",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "spatial_relation": {
+              "description": "spatial or proximity expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "spatial_relation",
+            "current_location",
+            "city"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 3,
+          "fn": 0,
+          "fp": 2,
+          "json_parse_ok": 1,
+          "missed_abstention": 2,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"geographic_poi\":[\"Nicodemus\"],\"spatial_relation\":[\"nearby\"],\"current_location\":[\"nearby\"]}",
+        "document": "What is the weather forecast nearby Nicodemus",
+        "expected": {
+          "current_location": [],
+          "geographic_poi": [],
+          "spatial_relation": [
+            "nearby"
+          ]
+        },
+        "id": "snips:GetWeather:test:39:view1:native:canonical",
+        "parent_text": "{\"geographic_poi\":[],\"spatial_relation\":[\"nearby\"],\"current_location\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "current_location": {
+              "description": "expression referring to current location",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "geographic_poi": {
+              "description": "geographic point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "spatial_relation": {
+              "description": "spatial or proximity expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "geographic_poi",
+            "spatial_relation",
+            "current_location"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[\"This Is Tchaikovsky\"],\"entity_name\":[],\"artist\":[\"Tchaikovsky\"]}",
+        "document": "add the current track to my This Is Tchaikovsky playlist",
+        "expected": {
+          "artist": [],
+          "entity_name": [],
+          "playlist": [
+            "This Is Tchaikovsky"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:69:view1:native:canonical",
+        "parent_text": "{\"playlist\":[\"This Is Tchaikovsky\"],\"entity_name\":[],\"artist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "entity_name",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 3,
+          "fields": 4,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 3,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"country\":[\"Russia\"],\"timeRange\":[\"12/26/2018\"],\"city\":[\"Walmden\"],\"geographic_poi\":[]}",
+        "document": "Weather in Walden Russia on 12/26/2018",
+        "expected": {
+          "city": [
+            "Walden"
+          ],
+          "country": [
+            "Russia"
+          ],
+          "geographic_poi": [],
+          "timeRange": [
+            "12/26/2018"
+          ]
+        },
+        "id": "snips:GetWeather:test:74:view0:native:canonical",
+        "parent_text": "{\"country\":[\"Russia\"],\"timeRange\":[\"12/26/2018\"],\"city\":[\"Walden\"],\"geographic_poi\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "country": {
+              "description": "country",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "geographic_poi": {
+              "description": "geographic point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "country",
+            "timeRange",
+            "city",
+            "geographic_poi"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist_owner\":[],\"artist\":[\"Jazzy Dinner\"]}",
+        "document": "Add a track to Jazzy Dinner",
+        "expected": {
+          "artist": [],
+          "playlist_owner": []
+        },
+        "id": "snips:AddToPlaylist:test:75:view1:native:canonical",
+        "parent_text": "{\"playlist_owner\":[],\"artist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist_owner",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"artist\":[\"sean yseult\"],\"sort\":[\"top-50\"],\"music_item\":[\"artist\"]}",
+        "document": "Play music from the artist sean yseult and sort it through top-50",
+        "expected": {
+          "artist": [
+            "sean yseult"
+          ],
+          "music_item": [],
+          "sort": [
+            "top-50"
+          ]
+        },
+        "id": "snips:PlayMusic:test:16:view0:native:canonical",
+        "parent_text": "{\"artist\":[\"sean yseult\"],\"sort\":[\"top-50\"],\"music_item\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "sort": {
+              "description": "requested ranking, ordering, or preference",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "artist",
+            "sort",
+            "music_item"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"country\":[],\"restaurant_name\":[\"their campus\"]}",
+        "document": "book a party at their campus within the same area for churrascaria",
+        "expected": {
+          "country": [],
+          "restaurant_name": []
+        },
+        "id": "snips:BookRestaurant:test:95:view1:native:canonical",
+        "parent_text": "{\"country\":[],\"restaurant_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "country": {
+              "description": "country",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "restaurant_name": {
+              "description": "restaurant name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "country",
+            "restaurant_name"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"geographic_poi\":[\"Port Vue\"],\"spatial_relation\":[],\"timeRange\":[\"Jan. the 3rd\"]}",
+        "document": "I need to know the weather for Jan. the 3rd in Mexico when I go to Port Vue",
+        "expected": {
+          "geographic_poi": [],
+          "spatial_relation": [],
+          "timeRange": [
+            "Jan. the 3rd"
+          ]
+        },
+        "id": "snips:GetWeather:test:27:view1:native:canonical",
+        "parent_text": "{\"geographic_poi\":[],\"spatial_relation\":[],\"timeRange\":[\"Jan. the 3rd\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "geographic_poi": {
+              "description": "geographic point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "spatial_relation": {
+              "description": "spatial or proximity expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "geographic_poi",
+            "spatial_relation",
+            "timeRange"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"object_name\":[],\"object_type\":[\"series\"]}",
+        "document": "Give the current series four of 6 points.",
+        "expected": {
+          "object_name": [],
+          "object_type": []
+        },
+        "id": "snips:RateBook:test:6:view1:native:canonical",
+        "parent_text": "{\"object_name\":[],\"object_type\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "object_type": {
+              "description": "kind of work or object",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_name",
+            "object_type"
+          ],
+          "type": "object"
+        },
+        "source": "RateBook"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"geographic_poi\":[\"Nicodemus\"],\"timeRange\":[]}",
+        "document": "what is the forecast in Nicodemus and nearby",
+        "expected": {
+          "geographic_poi": [],
+          "timeRange": []
+        },
+        "id": "snips:GetWeather:test:55:view1:native:canonical",
+        "parent_text": "{\"geographic_poi\":[],\"timeRange\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "geographic_poi": {
+              "description": "geographic point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "geographic_poi",
+            "timeRange"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"object_name\":[\"Complexity Loves\"]}",
+        "document": "Search for the game Difficult Loves",
+        "expected": {
+          "object_name": [
+            "Difficult Loves"
+          ]
+        },
+        "id": "snips:SearchCreativeWork:test:99:view0:native:canonical",
+        "parent_text": "{\"object_name\":[\"Difficult Loves\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_name"
+          ],
+          "type": "object"
+        },
+        "source": "SearchCreativeWork"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"service\":[],\"genre\":[\"Subconscious Lobotomy\"]}",
+        "document": "Play Subconscious Lobotomy from Jennifer Paull.",
+        "expected": {
+          "genre": [],
+          "service": []
+        },
+        "id": "snips:PlayMusic:test:9:view1:native:canonical",
+        "parent_text": "{\"service\":[],\"genre\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "genre": {
+              "description": "music genre",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "service",
+            "genre"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[\"evening acoustic\"],\"music_item\":[],\"artist\":[\"The Famous Flower of Serving-Men\"]}",
+        "document": "Add The Famous Flower of Serving-Men to my evening acoustic playlist.",
+        "expected": {
+          "artist": [],
+          "music_item": [],
+          "playlist": [
+            "evening acoustic"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:40:view1:native:canonical",
+        "parent_text": "{\"playlist\":[\"evening acoustic\"],\"music_item\":[],\"artist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "music_item",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"track\":[\"Another Passenger\"],\"service\":[]}",
+        "document": "Play Another Passenger from Louis Nelson Delisle.",
+        "expected": {
+          "service": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:74:view1:native:canonical",
+        "parent_text": "{\"track\":[],\"service\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "track",
+            "service"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"genre\":[],\"playlist\":[\"Iheart\"]}",
+        "document": "Start playing something from Iheart",
+        "expected": {
+          "genre": [],
+          "playlist": []
+        },
+        "id": "snips:PlayMusic:test:24:view1:native:canonical",
+        "parent_text": "{\"genre\":[],\"playlist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "genre": {
+              "description": "music genre",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "genre",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"served_dish\":[],\"poi\":[\"Tangier\"]}",
+        "document": "Book a reservation for nine people at the best pub nearby Tangier in six months",
+        "expected": {
+          "poi": [],
+          "served_dish": []
+        },
+        "id": "snips:BookRestaurant:test:98:view1:native:canonical",
+        "parent_text": "{\"served_dish\":[],\"poi\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "poi": {
+              "description": "named nearby point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "served_dish": {
+              "description": "food or dish",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "served_dish",
+            "poi"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"porter wagoner\"],\"music_item\":[],\"playlist\":[\"The Sleep Machine Waterscapes\"]}",
+        "document": "Add porter wagoner to the The Sleep Machine Waterscapes playlist.",
+        "expected": {
+          "entity_name": [],
+          "music_item": [],
+          "playlist": [
+            "The Sleep Machine Waterscapes"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:18:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"music_item\":[],\"playlist\":[\"The Sleep Machine Waterscapes\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "music_item",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[],\"track\":[\"top Zvooq\"],\"service\":[\"Zvooq\"]}",
+        "document": "Can you play top Zvooq by Fink?",
+        "expected": {
+          "music_item": [],
+          "service": [
+            "Zvooq"
+          ],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:70:view1:native:canonical",
+        "parent_text": "{\"music_item\":[],\"track\":[],\"service\":[\"Zvooq\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "track",
+            "service"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 1,
+          "fp": 0,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 1,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"object_type\":[],\"object_name\":[\"Message from God\"]}",
+        "document": "Can you get me the Message from God saga?",
+        "expected": {
+          "object_name": [
+            "Message from God"
+          ],
+          "object_type": [
+            "saga"
+          ]
+        },
+        "id": "snips:SearchCreativeWork:test:62:view0:native:canonical",
+        "parent_text": "{\"object_type\":[\"saga\"],\"object_name\":[\"Message from God\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "object_type": {
+              "description": "kind of work or object",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_type",
+            "object_name"
+          ],
+          "type": "object"
+        },
+        "source": "SearchCreativeWork"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 2,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"city\":[\"North Carolina\"],\"current_location\":[],\"condition_description\":[]}",
+        "document": "what is the forecast in North Carolina for Edgemoor",
+        "expected": {
+          "city": [
+            "Edgemoor"
+          ],
+          "condition_description": [],
+          "current_location": []
+        },
+        "id": "snips:GetWeather:test:71:view1:native:canonical",
+        "parent_text": "{\"city\":[\"Edgemoor\"],\"current_location\":[],\"condition_description\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "condition_description": {
+              "description": "weather condition",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "current_location": {
+              "description": "expression referring to current location",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "city",
+            "current_location",
+            "condition_description"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"Kasey Chambers's tune\"]}",
+        "document": "I'd like for Kasey Chambers's tune to be an addition to my Chips and Salsa playlist.",
+        "expected": {
+          "entity_name": []
+        },
+        "id": "snips:AddToPlaylist:test:9:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"restaurant_type\":[\"restaurant\"],\"facility\":[\"within walking distance\"],\"party_size_description\":[\"my mom and I\"]}",
+        "document": "I would like to book a restaurant in Tanzania that is within walking distance for my mom and I",
+        "expected": {
+          "facility": [],
+          "party_size_description": [
+            "my mom and I"
+          ],
+          "restaurant_type": [
+            "restaurant"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:2:view0:native:canonical",
+        "parent_text": "{\"restaurant_type\":[\"restaurant\"],\"facility\":[],\"party_size_description\":[\"my mom and I\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "facility": {
+              "description": "requested restaurant facility",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "party_size_description": {
+              "description": "description of who is attending",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "restaurant_type": {
+              "description": "kind of restaurant",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "restaurant_type",
+            "facility",
+            "party_size_description"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"sort\":[],\"artist\":[\"Zak Starkey\"],\"track\":[\"ep\"]}",
+        "document": "Play an ep by Zak Starkey.",
+        "expected": {
+          "artist": [
+            "Zak Starkey"
+          ],
+          "sort": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:21:view1:native:canonical",
+        "parent_text": "{\"sort\":[],\"artist\":[\"Zak Starkey\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "sort": {
+              "description": "requested ranking, ordering, or preference",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "sort",
+            "artist",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[],\"entity_name\":[\"abe laboriel\"]}",
+        "document": "Put abe laboriel onto the Escapada playlist.",
+        "expected": {
+          "entity_name": [],
+          "music_item": []
+        },
+        "id": "snips:AddToPlaylist:test:70:view1:native:canonical",
+        "parent_text": "{\"music_item\":[],\"entity_name\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "entity_name"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"entity_name\":[\"jordan rudess\"],\"playlist_owner\":[],\"playlist\":[\"Divertido para ni\u00f1os\"]}",
+        "document": "I'd like to add jordan rudess onto the Divertido para ni\u00f1os playlist.",
+        "expected": {
+          "entity_name": [],
+          "playlist": [
+            "Divertido para ni\u00f1os"
+          ],
+          "playlist_owner": []
+        },
+        "id": "snips:AddToPlaylist:test:47:view1:native:canonical",
+        "parent_text": "{\"entity_name\":[],\"playlist_owner\":[],\"playlist\":[\"Divertido para ni\u00f1os\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "entity_name",
+            "playlist_owner",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 1,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[],\"entity_name\":[\"millie corretjer\"],\"artist\":[]}",
+        "document": "Add millie corretjer to the rhythm playlist",
+        "expected": {
+          "artist": [
+            "millie corretjer"
+          ],
+          "entity_name": [],
+          "music_item": []
+        },
+        "id": "snips:AddToPlaylist:test:25:view1:native:canonical",
+        "parent_text": "{\"music_item\":[],\"entity_name\":[],\"artist\":[\"millie corretjer\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "entity_name": {
+              "description": "named item to add to a playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "entity_name",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 1,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"poi\":[\"Wagstaff AK\"],\"party_size_description\":[],\"state\":[]}",
+        "document": "I want to book a restaurant for six people in Wagstaff AK.",
+        "expected": {
+          "party_size_description": [],
+          "poi": [],
+          "state": [
+            "AK"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:88:view1:native:canonical",
+        "parent_text": "{\"poi\":[],\"party_size_description\":[],\"state\":[\"AK\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "party_size_description": {
+              "description": "description of who is attending",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "poi": {
+              "description": "named nearby point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "poi",
+            "party_size_description",
+            "state"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"track\":[\"catchy\"],\"genre\":[]}",
+        "document": "Please play something catchy on Youtube",
+        "expected": {
+          "genre": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:13:view1:native:canonical",
+        "parent_text": "{\"track\":[],\"genre\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "genre": {
+              "description": "music genre",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "track",
+            "genre"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"artist\":[\"abacab\"],\"music_item\":[]}",
+        "document": "add abacab to beryl's party on fridays playlist",
+        "expected": {
+          "artist": [],
+          "music_item": []
+        },
+        "id": "snips:AddToPlaylist:test:71:view1:native:canonical",
+        "parent_text": "{\"artist\":[],\"music_item\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "artist",
+            "music_item"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"genre\":[\"chant\"],\"album\":[]}",
+        "document": "Play chant's from 1973.",
+        "expected": {
+          "album": [],
+          "genre": []
+        },
+        "id": "snips:PlayMusic:test:36:view1:native:canonical",
+        "parent_text": "{\"genre\":[],\"album\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "album": {
+              "description": "album name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "genre": {
+              "description": "music genre",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "genre",
+            "album"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"album\":[],\"year\":[\"thirties\"],\"track\":[\"anneliese van der pol\"]}",
+        "document": "Play some anneliese van der pol from the thirties on Groove Shark",
+        "expected": {
+          "album": [],
+          "track": [],
+          "year": [
+            "thirties"
+          ]
+        },
+        "id": "snips:PlayMusic:test:32:view1:native:canonical",
+        "parent_text": "{\"album\":[],\"year\":[\"thirties\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "album": {
+              "description": "album name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "year": {
+              "description": "year expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "album",
+            "year",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"facility\":[],\"timeRange\":[\"next year\"],\"state\":[\"Penn\"]}",
+        "document": "I want to book a bougatsa restaurant in next year nearby Penn for three people.",
+        "expected": {
+          "facility": [],
+          "state": [],
+          "timeRange": [
+            "next year"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:97:view1:native:canonical",
+        "parent_text": "{\"facility\":[],\"timeRange\":[\"next year\"],\"state\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "facility": {
+              "description": "requested restaurant facility",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "facility",
+            "timeRange",
+            "state"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 4,
+          "fields": 5,
+          "fn": 1,
+          "fp": 0,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 3,
+          "present_total": 4,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 3,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"selected_cuisine\":[\"american\"],\"selected_timeRange\":[],\"selected_poi\":[],\"selected_state\":[\"MA\"],\"selected_restaurant_type\":[\"pizzeria\"]}",
+        "document": "Book a reservation for velma, ana and rebecca for an american pizzeria at 5 Am in MA",
+        "expected": {
+          "selected_cuisine": [
+            "american"
+          ],
+          "selected_poi": [],
+          "selected_restaurant_type": [
+            "pizzeria"
+          ],
+          "selected_state": [
+            "MA"
+          ],
+          "selected_timeRange": [
+            "5 Am"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:68:view0:native:alias",
+        "parent_text": "{\"selected_cuisine\":[\"american\"],\"selected_timeRange\":[\"5 Am\"],\"selected_poi\":[],\"selected_state\":[\"MA\"],\"selected_restaurant_type\":[\"pizzeria\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "selected_cuisine": {
+              "description": "cuisine style",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_poi": {
+              "description": "named nearby point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_restaurant_type": {
+              "description": "kind of restaurant",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "selected_cuisine",
+            "selected_timeRange",
+            "selected_poi",
+            "selected_state",
+            "selected_restaurant_type"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      }
+    ],
+    "replay128_300": [
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[],\"service\":[\"Last Fm\"],\"track\":[\"The Railway Children\"]}",
+        "document": "Play the top music from The Railway Children off Last Fm.",
+        "expected": {
+          "playlist": [],
+          "service": [
+            "Last Fm"
+          ],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:75:view1:native:canonical",
+        "parent_text": "{\"playlist\":[],\"service\":[\"Last Fm\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "service",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 3,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"condition_description\":[\"blizzard\"],\"timeRange\":[\"next winter\"],\"city\":[\"Vista\"]}",
+        "document": "Will there be a blizzard next winter in Visalia, Idaho",
+        "expected": {
+          "city": [
+            "Visalia"
+          ],
+          "condition_description": [
+            "blizzard"
+          ],
+          "timeRange": [
+            "next winter"
+          ]
+        },
+        "id": "snips:GetWeather:test:60:view0:native:canonical",
+        "parent_text": "{\"condition_description\":[\"blizzard\"],\"timeRange\":[\"next winter\"],\"city\":[\"Visalia\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "condition_description": {
+              "description": "weather condition",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "condition_description",
+            "timeRange",
+            "city"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"object_name\":[\"Weeks of the West\"]}",
+        "document": "Please search the Woodsmen of the West.",
+        "expected": {
+          "object_name": [
+            "Woodsmen of the West"
+          ]
+        },
+        "id": "snips:SearchCreativeWork:test:90:view0:native:canonical",
+        "parent_text": "{\"object_name\":[\"Woodsmen of the West\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_name"
+          ],
+          "type": "object"
+        },
+        "source": "SearchCreativeWork"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"timeRange\":[\"in 1 hour and within the same area\"]}",
+        "document": "what is the forecast for \u014ctone Prefectural Natural Park in 1 hour and within the same area",
+        "expected": {
+          "timeRange": [
+            "in 1 hour"
+          ]
+        },
+        "id": "snips:GetWeather:test:28:view0:native:canonical",
+        "parent_text": "{\"timeRange\":[\"in 1 hour\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "timeRange"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[\"image\"],\"playlist_owner\":[\"my\"],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "document": "Please add The image of you to my playlist Crate Diggers Anonymous",
+        "expected": {
+          "music_item": [],
+          "playlist": [
+            "Crate Diggers Anonymous"
+          ],
+          "playlist_owner": [
+            "my"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:74:view0:native:canonical",
+        "parent_text": "{\"music_item\":[],\"playlist_owner\":[\"my\"],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "playlist_owner",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[\"image\"],\"artist\":[],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "document": "Please add The image of you to my playlist Crate Diggers Anonymous",
+        "expected": {
+          "artist": [],
+          "music_item": [],
+          "playlist": [
+            "Crate Diggers Anonymous"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:74:view1:native:canonical",
+        "parent_text": "{\"music_item\":[],\"artist\":[],\"playlist\":[\"Crate Diggers Anonymous\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "artist",
+            "playlist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"sort\":[],\"service\":[\"deezer\"],\"track\":[\"Curtain Call: The Hits\"]}",
+        "document": "Open deezer and play Curtain Call: The Hits by Junichi Okada.",
+        "expected": {
+          "service": [
+            "deezer"
+          ],
+          "sort": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:43:view1:native:canonical",
+        "parent_text": "{\"sort\":[],\"service\":[\"deezer\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "sort": {
+              "description": "requested ranking, ordering, or preference",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "sort",
+            "service",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"country\":[],\"condition_description\":[\"cloud\"],\"city\":[\"Vesta\"]}",
+        "document": "Will there be a cloud in VI in 14 minutes ?",
+        "expected": {
+          "city": [],
+          "condition_description": [
+            "cloud"
+          ],
+          "country": []
+        },
+        "id": "snips:GetWeather:test:92:view1:native:canonical",
+        "parent_text": "{\"city\":[],\"condition_description\":[\"cloud\"],\"country\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "condition_description": {
+              "description": "weather condition",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "country": {
+              "description": "country",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "country",
+            "condition_description",
+            "city"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 3,
+          "fields": 4,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 4,
+          "present_correct": 3,
+          "present_total": 3,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 3,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"timeRange\":[\"this spring\"],\"restaurant_type\":[\"taverna\"],\"party_size_description\":[\"nine\"],\"party_size_number\":[\"nine\"]}",
+        "document": "I want to book a taverna in Archer City for this spring for nine people.",
+        "expected": {
+          "party_size_description": [],
+          "party_size_number": [
+            "nine"
+          ],
+          "restaurant_type": [
+            "taverna"
+          ],
+          "timeRange": [
+            "this spring"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:27:view0:native:canonical",
+        "parent_text": "{\"timeRange\":[\"this spring\"],\"restaurant_type\":[\"taverna\"],\"party_size_description\":[],\"party_size_number\":[\"nine\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "party_size_description": {
+              "description": "description of who is attending",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "party_size_number": {
+              "description": "explicit party size",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "restaurant_type": {
+              "description": "kind of restaurant",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "timeRange",
+            "restaurant_type",
+            "party_size_description",
+            "party_size_number"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"artist\":[\"sean yseult\"],\"sort\":[\"top-50\"],\"music_item\":[\"artist\"]}",
+        "document": "Play music from the artist sean yseult and sort it through top-50",
+        "expected": {
+          "artist": [
+            "sean yseult"
+          ],
+          "music_item": [],
+          "sort": [
+            "top-50"
+          ]
+        },
+        "id": "snips:PlayMusic:test:16:view0:native:canonical",
+        "parent_text": "{\"artist\":[\"sean yseult\"],\"sort\":[\"top-50\"],\"music_item\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "sort": {
+              "description": "requested ranking, ordering, or preference",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "artist",
+            "sort",
+            "music_item"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"timeRange\":[\"4 years from now\"],\"party_size_number\":[\"4\"]}",
+        "document": "I want to book a restaurant in Frenier 12 years from now for 4 people.",
+        "expected": {
+          "party_size_number": [
+            "4"
+          ],
+          "timeRange": [
+            "12 years from now"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:44:view0:native:canonical",
+        "parent_text": "{\"timeRange\":[\"12 years from now\"],\"party_size_number\":[\"4\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "party_size_number": {
+              "description": "explicit party size",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "timeRange",
+            "party_size_number"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"object_name\":[],\"object_type\":[\"series\"]}",
+        "document": "Give the current series four of 6 points.",
+        "expected": {
+          "object_name": [],
+          "object_type": []
+        },
+        "id": "snips:RateBook:test:6:view1:native:canonical",
+        "parent_text": "{\"object_name\":[],\"object_type\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "object_type": {
+              "description": "kind of work or object",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_name",
+            "object_type"
+          ],
+          "type": "object"
+        },
+        "source": "RateBook"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 0,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 0,
+          "fields": 1,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 1
+        },
+        "candidate_text": "{\"object_name\":[\"Complexity Loves\"]}",
+        "document": "Search for the game Difficult Loves",
+        "expected": {
+          "object_name": [
+            "Difficult Loves"
+          ]
+        },
+        "id": "snips:SearchCreativeWork:test:99:view0:native:canonical",
+        "parent_text": "{\"object_name\":[\"Difficult Loves\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "object_name": {
+              "description": "name of the work being rated or searched for",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "object_name"
+          ],
+          "type": "object"
+        },
+        "source": "SearchCreativeWork"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"playlist\":[\"evening acoustic\"],\"music_item\":[],\"artist\":[\"The Famous Flower of Serving-Men\"]}",
+        "document": "Add The Famous Flower of Serving-Men to my evening acoustic playlist.",
+        "expected": {
+          "artist": [],
+          "music_item": [],
+          "playlist": [
+            "evening acoustic"
+          ]
+        },
+        "id": "snips:AddToPlaylist:test:40:view1:native:canonical",
+        "parent_text": "{\"playlist\":[\"evening acoustic\"],\"music_item\":[],\"artist\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "playlist",
+            "music_item",
+            "artist"
+          ],
+          "type": "object"
+        },
+        "source": "AddToPlaylist"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"track\":[\"Another Passenger\"],\"service\":[]}",
+        "document": "Play Another Passenger from Louis Nelson Delisle.",
+        "expected": {
+          "service": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:74:view1:native:canonical",
+        "parent_text": "{\"track\":[],\"service\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "track",
+            "service"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"served_dish\":[],\"poi\":[\"Tangier\"]}",
+        "document": "Book a reservation for nine people at the best pub nearby Tangier in six months",
+        "expected": {
+          "poi": [],
+          "served_dish": []
+        },
+        "id": "snips:BookRestaurant:test:98:view1:native:canonical",
+        "parent_text": "{\"served_dish\":[],\"poi\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "poi": {
+              "description": "named nearby point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "served_dish": {
+              "description": "food or dish",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "served_dish",
+            "poi"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 3,
+          "fn": 1,
+          "fp": 2,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"music_item\":[],\"track\":[\"top Zvooq\"],\"service\":[\"Fink\"]}",
+        "document": "Can you play top Zvooq by Fink?",
+        "expected": {
+          "music_item": [],
+          "service": [
+            "Zvooq"
+          ],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:70:view1:native:canonical",
+        "parent_text": "{\"music_item\":[],\"track\":[],\"service\":[\"Zvooq\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "music_item": {
+              "description": "word specifying the requested music category, such as artist, track, song, or album",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "service": {
+              "description": "music service",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "music_item",
+            "track",
+            "service"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 2,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"city\":[\"North Carolina\"],\"current_location\":[],\"condition_description\":[]}",
+        "document": "what is the forecast in North Carolina for Edgemoor",
+        "expected": {
+          "city": [
+            "Edgemoor"
+          ],
+          "condition_description": [],
+          "current_location": []
+        },
+        "id": "snips:GetWeather:test:71:view1:native:canonical",
+        "parent_text": "{\"city\":[\"Edgemoor\"],\"current_location\":[],\"condition_description\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "city": {
+              "description": "city or town",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "condition_description": {
+              "description": "weather condition",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "current_location": {
+              "description": "expression referring to current location",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "city",
+            "current_location",
+            "condition_description"
+          ],
+          "type": "object"
+        },
+        "source": "GetWeather"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 0,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 2,
+          "present_total": 2,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 2,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"restaurant_type\":[\"restaurant\"],\"facility\":[\"within walking distance\"],\"party_size_description\":[\"my mom and I\"]}",
+        "document": "I would like to book a restaurant in Tanzania that is within walking distance for my mom and I",
+        "expected": {
+          "facility": [],
+          "party_size_description": [
+            "my mom and I"
+          ],
+          "restaurant_type": [
+            "restaurant"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:2:view0:native:canonical",
+        "parent_text": "{\"restaurant_type\":[\"restaurant\"],\"facility\":[],\"party_size_description\":[\"my mom and I\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "facility": {
+              "description": "requested restaurant facility",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "party_size_description": {
+              "description": "description of who is attending",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "restaurant_type": {
+              "description": "kind of restaurant",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "restaurant_type",
+            "facility",
+            "party_size_description"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"sort\":[],\"artist\":[\"Zak Starkey\"],\"track\":[\"ep\"]}",
+        "document": "Play an ep by Zak Starkey.",
+        "expected": {
+          "artist": [
+            "Zak Starkey"
+          ],
+          "sort": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:21:view1:native:canonical",
+        "parent_text": "{\"sort\":[],\"artist\":[\"Zak Starkey\"],\"track\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "sort": {
+              "description": "requested ranking, ordering, or preference",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "sort",
+            "artist",
+            "track"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"served_dish\":[],\"restaurant_type\":[\"restaurant\"],\"state\":[\"Buckner\"]}",
+        "document": "I want to book a restaurant for my father in law and I in Buckner a year from now.",
+        "expected": {
+          "restaurant_type": [
+            "restaurant"
+          ],
+          "served_dish": [],
+          "state": []
+        },
+        "id": "snips:BookRestaurant:test:39:view1:native:canonical",
+        "parent_text": "{\"served_dish\":[],\"restaurant_type\":[\"restaurant\"],\"state\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "restaurant_type": {
+              "description": "kind of restaurant",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "served_dish": {
+              "description": "food or dish",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "served_dish",
+            "restaurant_type",
+            "state"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 1,
+          "fields": 2,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 0,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"track\":[\"catchy\"],\"genre\":[]}",
+        "document": "Please play something catchy on Youtube",
+        "expected": {
+          "genre": [],
+          "track": []
+        },
+        "id": "snips:PlayMusic:test:13:view1:native:canonical",
+        "parent_text": "{\"track\":[],\"genre\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "genre": {
+              "description": "music genre",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "track": {
+              "description": "track name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "track",
+            "genre"
+          ],
+          "type": "object"
+        },
+        "source": "PlayMusic"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"facility\":[],\"timeRange\":[\"next year\"],\"state\":[\"Penn\"]}",
+        "document": "I want to book a bougatsa restaurant in next year nearby Penn for three people.",
+        "expected": {
+          "facility": [],
+          "state": [],
+          "timeRange": [
+            "next year"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:97:view1:native:canonical",
+        "parent_text": "{\"facility\":[],\"timeRange\":[\"next year\"],\"state\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "facility": {
+              "description": "requested restaurant facility",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "facility",
+            "timeRange",
+            "state"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 1,
+          "exact": 0,
+          "false_abstention": 1,
+          "field_correct": 4,
+          "fields": 5,
+          "fn": 1,
+          "fp": 0,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 3,
+          "present_correct": 3,
+          "present_total": 4,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 3,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"selected_cuisine\":[\"american\"],\"selected_timeRange\":[],\"selected_poi\":[],\"selected_state\":[\"MA\"],\"selected_restaurant_type\":[\"pizzeria\"]}",
+        "document": "Book a reservation for velma, ana and rebecca for an american pizzeria at 5 Am in MA",
+        "expected": {
+          "selected_cuisine": [
+            "american"
+          ],
+          "selected_poi": [],
+          "selected_restaurant_type": [
+            "pizzeria"
+          ],
+          "selected_state": [
+            "MA"
+          ],
+          "selected_timeRange": [
+            "5 Am"
+          ]
+        },
+        "id": "snips:BookRestaurant:test:68:view0:native:alias",
+        "parent_text": "{\"selected_cuisine\":[\"american\"],\"selected_timeRange\":[\"5 Am\"],\"selected_poi\":[],\"selected_state\":[\"MA\"],\"selected_restaurant_type\":[\"pizzeria\"]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "selected_cuisine": {
+              "description": "cuisine style",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_poi": {
+              "description": "named nearby point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_restaurant_type": {
+              "description": "kind of restaurant",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_timeRange": {
+              "description": "date, time, or time-range expression",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "selected_cuisine",
+            "selected_timeRange",
+            "selected_poi",
+            "selected_state",
+            "selected_restaurant_type"
+          ],
+          "type": "object"
+        },
+        "source": "BookRestaurant"
+      }
+    ]
+  },
+  "playground60": {
+    "replay128_200": [
+      {
+        "candidate_checks": {
+          "absent_correct": 2,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 1,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 0,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 1,
+          "present_correct": 0,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 0,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"current_location\":[],\"geographic_poi\":[\"Santa Monica Mountains Reserve\"],\"state\":[]}",
+        "document": "was the weather colder last August at Stunt Ranch Santa Monica Mountains Reserve",
+        "expected": {
+          "current_location": [],
+          "geographic_poi": [
+            "Stunt Ranch Santa Monica Mountains Reserve"
+          ],
+          "state": []
+        },
+        "id": "FIELD-12",
+        "parent_text": "{\"state\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"current_location\":[]}",
+        "schema": {
+          "additionalProperties": false,
+          "properties": {
+            "current_location": {
+              "description": "expression referring to current location",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "geographic_poi": {
+              "description": "geographic point of interest",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "state": {
+              "description": "state or region",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "current_location",
+            "geographic_poi",
+            "state"
+          ],
+          "type": "object"
+        },
+        "source": "playground"
+      },
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[\"gn\"],\"selected_playlist_owner\":[]}",
+        "document": "add gn to night vibes",
+        "expected": {
+          "selected_artist": [],
+          "selected_playlist": [
+            "night vibes"
+          ],
+          "selected_playlist_owner": []
+        },
+        "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
+        "parent_text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[],\"selected_playlist_owner\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "selected_artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "selected_playlist",
+            "selected_artist",
+            "selected_playlist_owner"
+          ],
+          "type": "object"
+        },
+        "source": "playground"
+      }
+    ],
+    "replay128_300": [
+      {
+        "candidate_checks": {
+          "absent_correct": 1,
+          "absent_total": 2,
+          "exact": 0,
+          "false_abstention": 0,
+          "field_correct": 2,
+          "fields": 3,
+          "fn": 0,
+          "fp": 1,
+          "json_parse_ok": 1,
+          "missed_abstention": 1,
+          "natural_stop": 1,
+          "nonrepetitive_nonempty": 1,
+          "predicted_values": 2,
+          "present_correct": 1,
+          "present_total": 1,
+          "schema_ok": 1,
+          "token_limited": 0,
+          "tp": 1,
+          "unsupported_values": 0
+        },
+        "candidate_text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[\"gn\"],\"selected_playlist_owner\":[]}",
+        "document": "add gn to night vibes",
+        "expected": {
+          "selected_artist": [],
+          "selected_playlist": [
+            "night vibes"
+          ],
+          "selected_playlist_owner": []
+        },
+        "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
+        "parent_text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[],\"selected_playlist_owner\":[]}",
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "additionalProperties": false,
+          "properties": {
+            "selected_artist": {
+              "description": "performer or musical artist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_playlist": {
+              "description": "playlist name",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "selected_playlist_owner": {
+              "description": "person owning the playlist",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "selected_playlist",
+            "selected_artist",
+            "selected_playlist_owner"
+          ],
+          "type": "object"
+        },
+        "source": "playground"
+      }
+    ]
+  }
+}

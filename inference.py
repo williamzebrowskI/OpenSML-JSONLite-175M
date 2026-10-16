@@ -15,7 +15,7 @@ def main():
  reference=None
  if a.example is not None:
   cases=json.loads((ROOT/'examples/cases.json').read_text())['cases']
-  if not 1<=a.example<=len(cases):p.error('Example number outside 1..54')
+  if not 1<=a.example<=len(cases):p.error(f'Example number outside 1..{len(cases)}')
   if a.schema_file:p.error('--schema-file is for --text-file mode')
   row=cases[a.example-1];text=row['document'];schema=row['schema'];reference=row['expected']
  else:

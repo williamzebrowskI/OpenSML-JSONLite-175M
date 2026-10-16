@@ -1209,5 +1209,469 @@
     "published_sha256": "e21a616dba7b402aeaea40c204678fdbfc16dda97606d74179c7a213cfb57d78",
     "sanitized": false,
     "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/scoring.py",
+    "published": "pretraining/native_json_128/scoring.py",
+    "original_sha256": "1f4d2c69ebc640f993b77cb09ecf280d2df1dbf3f20d1060f7c8a5ce6780dd97",
+    "published_sha256": "1f4d2c69ebc640f993b77cb09ecf280d2df1dbf3f20d1060f7c8a5ce6780dd97",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/__init__.py",
+    "published": "pretraining/native_json_128/__init__.py",
+    "original_sha256": "fcdbfacd29cfb9f3235160fe00d4c9f4f4c35cb27d469f1e6f3796f137b373b2",
+    "published_sha256": "fcdbfacd29cfb9f3235160fe00d4c9f4f4c35cb27d469f1e6f3796f137b373b2",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/runtime.py",
+    "published": "pretraining/native_json_128/runtime.py",
+    "original_sha256": "5a83f2ba3f900f69390d10c2a67d10cd2d7654a1b22345f059a02488b0239ef8",
+    "published_sha256": "5a83f2ba3f900f69390d10c2a67d10cd2d7654a1b22345f059a02488b0239ef8",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/common.py",
+    "published": "pretraining/native_json_128/common.py",
+    "original_sha256": "354cda3dd100321fa858e64ae22e4ecc27e09d97f2c824811e3b9f53f205be52",
+    "published_sha256": "354cda3dd100321fa858e64ae22e4ecc27e09d97f2c824811e3b9f53f205be52",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/train.py",
+    "published": "pretraining/native_json_128/train.py",
+    "original_sha256": "dded6b80814d12f621eafe0ddcc41481fa80cc98a2182be442fb09c31a5735e7",
+    "published_sha256": "dded6b80814d12f621eafe0ddcc41481fa80cc98a2182be442fb09c31a5735e7",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/evaluate.py",
+    "published": "pretraining/native_json_128/evaluate.py",
+    "original_sha256": "2dc61a8269c7c279ca13814f7e0b07ddbee477308ac5abc87d1461ca75cfedc8",
+    "published_sha256": "2dc61a8269c7c279ca13814f7e0b07ddbee477308ac5abc87d1461ca75cfedc8",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/verify.py",
+    "published": "pretraining/native_json_128/verify.py",
+    "original_sha256": "738c709a8358a0818f6dbd42d81a9db25ea76569cededae345e1a0d474344779",
+    "published_sha256": "738c709a8358a0818f6dbd42d81a9db25ea76569cededae345e1a0d474344779",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/native_json_128/data.py",
+    "published": "pretraining/native_json_128/data.py",
+    "original_sha256": "874ab8eae8281b1967ea7ed22a0bad122e0c830a7ee8391ae9d201e0d6867087",
+    "published_sha256": "874ab8eae8281b1967ea7ed22a0bad122e0c830a7ee8391ae9d201e0d6867087",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/run.py",
+    "published": "pretraining/json_sampling_119/run.py",
+    "original_sha256": "84fe9caab3c196fec5e71c56a1c4ab8e7c63309fe4529811680d72e4a5cec747",
+    "published_sha256": "84fe9caab3c196fec5e71c56a1c4ab8e7c63309fe4529811680d72e4a5cec747",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/scoring.py",
+    "published": "pretraining/json_sampling_119/scoring.py",
+    "original_sha256": "1f4d2c69ebc640f993b77cb09ecf280d2df1dbf3f20d1060f7c8a5ce6780dd97",
+    "published_sha256": "1f4d2c69ebc640f993b77cb09ecf280d2df1dbf3f20d1060f7c8a5ce6780dd97",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/__init__.py",
+    "published": "pretraining/json_sampling_119/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/runtime.py",
+    "published": "pretraining/json_sampling_119/runtime.py",
+    "original_sha256": "94166534449f318d32274b41f287bc21a27c8e005c28ee104014aab26928f2e3",
+    "published_sha256": "94166534449f318d32274b41f287bc21a27c8e005c28ee104014aab26928f2e3",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/common.py",
+    "published": "pretraining/json_sampling_119/common.py",
+    "original_sha256": "b3ef439b09b8ca21d9bb454a9afe377f202ea75bda522e51e7b284399b39d0c0",
+    "published_sha256": "b3ef439b09b8ca21d9bb454a9afe377f202ea75bda522e51e7b284399b39d0c0",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/verify.py",
+    "published": "pretraining/json_sampling_119/verify.py",
+    "original_sha256": "1acd534ea983be8239da572560c4bb142cd445ceca9a582df3113cff4d8779aa",
+    "published_sha256": "1acd534ea983be8239da572560c4bb142cd445ceca9a582df3113cff4d8779aa",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/data.py",
+    "published": "pretraining/json_sampling_119/data.py",
+    "original_sha256": "5e560b14b795a58f2ca2cbe6d7fb19924b8ec633788cdef8875d80449e3734a4",
+    "published_sha256": "5e560b14b795a58f2ca2cbe6d7fb19924b8ec633788cdef8875d80449e3734a4",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/json_sampling_119/reporting.py",
+    "published": "pretraining/json_sampling_119/reporting.py",
+    "original_sha256": "a2b4ab833e9549e5d5d2bf309eb9a2afb4bb05d6b2913dacaed327ab9392bb29",
+    "published_sha256": "a2b4ab833e9549e5d5d2bf309eb9a2afb4bb05d6b2913dacaed327ab9392bb29",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_128_joint_extraction_20261016/train.jsonl",
+    "published": "pretraining/data/sft_128_joint_extraction_20261016/train.jsonl",
+    "original_sha256": "6b94677c5aa57979220cd5defa7ce82dc91d173f0948ddcc9090b04a669f744e",
+    "published_sha256": "6b94677c5aa57979220cd5defa7ce82dc91d173f0948ddcc9090b04a669f744e",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_128_joint_extraction_20261016/legacy_full.jsonl",
+    "published": "pretraining/data/sft_128_joint_extraction_20261016/legacy_full.jsonl",
+    "original_sha256": "2a07a0c7049de65945028156819e61e14b85ec39b796b14e891cc127be8dbda9",
+    "published_sha256": "2a07a0c7049de65945028156819e61e14b85ec39b796b14e891cc127be8dbda9",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_128_joint_extraction_20261016/reserved.jsonl",
+    "published": "pretraining/data/sft_128_joint_extraction_20261016/reserved.jsonl",
+    "original_sha256": "145bbc2b34bfae5916202f8da0c9c2cf9f2b99350c17481d232b098052f7b018",
+    "published_sha256": "145bbc2b34bfae5916202f8da0c9c2cf9f2b99350c17481d232b098052f7b018",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_128_joint_extraction_20261016/manifest.json",
+    "published": "pretraining/data/sft_128_joint_extraction_20261016/manifest.json",
+    "original_sha256": "5172c7702b2c0b6fa9583052007acb69630bed6b23b5fb4d3ce62d3666ca1a00",
+    "published_sha256": "5172c7702b2c0b6fa9583052007acb69630bed6b23b5fb4d3ce62d3666ca1a00",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_128_joint_extraction_20261016/development.jsonl",
+    "published": "pretraining/data/sft_128_joint_extraction_20261016/development.jsonl",
+    "original_sha256": "9e195fd1ac5009a648e2b0082e099382e811fa14e986486b97837212347b7bb0",
+    "published_sha256": "9e195fd1ac5009a648e2b0082e099382e811fa14e986486b97837212347b7bb0",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_128_joint_extraction_20261016/original_test.jsonl",
+    "published": "pretraining/data/sft_128_joint_extraction_20261016/original_test.jsonl",
+    "original_sha256": "2e19414ba55d96a8ff86e64238dd3fb41f0c2bceef7562aafc77b9e1cf45d11f",
+    "published_sha256": "2e19414ba55d96a8ff86e64238dd3fb41f0c2bceef7562aafc77b9e1cf45d11f",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/scripts/run_sft_128_joint_extraction.sh",
+    "published": "pretraining/scripts/run_sft_128_joint_extraction.sh",
+    "original_sha256": "dcf97394bf39afd46c5591bcc19abd8802422d4ab3e5d9fd8845c5e46f493ead",
+    "published_sha256": "dcf97394bf39afd46c5591bcc19abd8802422d4ab3e5d9fd8845c5e46f493ead",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/scripts/run_sft_128_no_prune.py",
+    "published": "pretraining/scripts/run_sft_128_no_prune.py",
+    "original_sha256": "11e96e55278f02f6cc5a534f3fab5b8041890082c4bc157f086b3eff62861776",
+    "published_sha256": "11e96e55278f02f6cc5a534f3fab5b8041890082c4bc157f086b3eff62861776",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/scripts/run_sft_128_no_prune.sh",
+    "published": "pretraining/scripts/run_sft_128_no_prune.sh",
+    "original_sha256": "de5e94484fb3af447eb6d44c0b6f3648720a8fbd5ee92e6afe366a27858cc175",
+    "published_sha256": "de5e94484fb3af447eb6d44c0b6f3648720a8fbd5ee92e6afe366a27858cc175",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/tests/test_native_json_128.py",
+    "published": "pretraining/tests/test_native_json_128.py",
+    "original_sha256": "7547e08bf1f06d87bdcb34197b412ae9555c9e3a503b3d608d21c27e9f423c3c",
+    "published_sha256": "7547e08bf1f06d87bdcb34197b412ae9555c9e3a503b3d608d21c27e9f423c3c",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_100_native_json_20261014/test.jsonl",
+    "published": "pretraining/data/sft_100_native_json_20261014/test.jsonl",
+    "original_sha256": "96860322b45901cb7aec3cf8971da083fd607043a2bd936fb44b0f6d06dab164",
+    "published_sha256": "96860322b45901cb7aec3cf8971da083fd607043a2bd936fb44b0f6d06dab164",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_100_native_json_20261014/train.jsonl",
+    "published": "pretraining/data/sft_100_native_json_20261014/train.jsonl",
+    "original_sha256": "8a63ff26d9fc6c08bc47c0385e4f18e156d7bd8ba41e036d2e197ccc60dde411",
+    "published_sha256": "8a63ff26d9fc6c08bc47c0385e4f18e156d7bd8ba41e036d2e197ccc60dde411",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/data/sft_105_cardinality_distillation_20261014/train.jsonl",
+    "published": "pretraining/data/sft_105_cardinality_distillation_20261014/train.jsonl",
+    "original_sha256": "7e80ab0db50b6f535cc0a3e00a846c9d261cdc2c52f0c2f7670333b4738cae15",
+    "published_sha256": "7e80ab0db50b6f535cc0a3e00a846c9d261cdc2c52f0c2f7670333b4738cae15",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/JSON-AUDIT-127_diagnostics_20261016/retired-experiment/pretraining/data/json_diagnostics_127_20261016/pilot_legacy.jsonl",
+    "published": "reports/model-design/JSON-AUDIT-127_diagnostics_20261016/retired-experiment/pretraining/data/json_diagnostics_127_20261016/pilot_legacy.jsonl",
+    "original_sha256": "d7326808e6fe112aaef35ce63e7d56ac58d4533a3c88105535a6f95e76884982",
+    "published_sha256": "d7326808e6fe112aaef35ce63e7d56ac58d4533a3c88105535a6f95e76884982",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-118_activation_subspace_20261015/parent-development.identity.json",
+    "published": "reports/model-design/SFT-118_activation_subspace_20261015/parent-development.identity.json",
+    "original_sha256": "e975077539f970dd186d9c7adc60ba8ecf5df1d67458e6181bf04b7ce032a55b",
+    "published_sha256": "e975077539f970dd186d9c7adc60ba8ecf5df1d67458e6181bf04b7ce032a55b",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-118_activation_subspace_20261015/parent-development.json",
+    "published": "reports/model-design/SFT-118_activation_subspace_20261015/parent-development.json",
+    "original_sha256": "0c4acaa5474c630c651b512a917ac80462ccb96487ea548d5c57cf22a4c6c56d",
+    "published_sha256": "0c4acaa5474c630c651b512a917ac80462ccb96487ea548d5c57cf22a4c6c56d",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/development.jsonl",
+    "published": "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/development.jsonl",
+    "original_sha256": "acb65deeb9a0270c257eec2f17b59e621bb9eb8f4160a0edb0643e6a1104e9c7",
+    "published_sha256": "acb65deeb9a0270c257eec2f17b59e621bb9eb8f4160a0edb0643e6a1104e9c7",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/test.jsonl",
+    "published": "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/test.jsonl",
+    "original_sha256": "1fca08f7106fdebd086d0e206f4af818bca508c46d1801b2dc7d5a11f14e86ee",
+    "published_sha256": "1fca08f7106fdebd086d0e206f4af818bca508c46d1801b2dc7d5a11f14e86ee",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/session.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/session.json",
+    "original_sha256": "61a452481e443ac496c65ff3a3d5b0456cbac1ac37b98cb4056b56f93ef95c47",
+    "published_sha256": "42fe0683497c05fb0f9bf0110a24ec9867b65ea397350a1153f1d1faac489644",
+    "sanitized": true,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/result.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/result.json",
+    "original_sha256": "3b5377e8648876adbfaf1e47200b87b2472c4f2c31077fe8417f9ea8f2739f78",
+    "published_sha256": "11d6678b1141897f23bb0f8b8f47c31522a66180b94de84f8e01c549816298d0",
+    "sanitized": true,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/parent105_64-playground60.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/parent105_64-playground60.json",
+    "original_sha256": "ed4beb3a4f02059020bafd209de4e522f3e888aa3cb190596f5a4c7e435e7776",
+    "published_sha256": "ed4beb3a4f02059020bafd209de4e522f3e888aa3cb190596f5a4c7e435e7776",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_300-playground60.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_300-playground60.json",
+    "original_sha256": "a61117863ac55a0f8a77a5a712edbea58c16e7f9c9e3487ca50c06a6835fa888",
+    "published_sha256": "a61117863ac55a0f8a77a5a712edbea58c16e7f9c9e3487ca50c06a6835fa888",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_200-playground60.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_200-playground60.json",
+    "original_sha256": "d6845e18d9928b41b029cae848c272452dfd04632a7b526866095bc30736a84c",
+    "published_sha256": "d6845e18d9928b41b029cae848c272452dfd04632a7b526866095bc30736a84c",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/parent105_64-original1444.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/parent105_64-original1444.json",
+    "original_sha256": "f1c5b819d7d45ea65e588ec9adf0dab8c2edc781e611dcd04cd2ba855a9d9aa5",
+    "published_sha256": "f1c5b819d7d45ea65e588ec9adf0dab8c2edc781e611dcd04cd2ba855a9d9aa5",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_200-original1444.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_200-original1444.json",
+    "original_sha256": "05205410fd7a0772b55069856807b32306711b6fcca084eefc3d1db3589f2c03",
+    "published_sha256": "05205410fd7a0772b55069856807b32306711b6fcca084eefc3d1db3589f2c03",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_300-original1444.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/replay128_300-original1444.json",
+    "original_sha256": "e3b2e850714eafa56cdf2e6342d5887d1b3f72cfce8564dbffa90f461e7b9fd4",
+    "published_sha256": "e3b2e850714eafa56cdf2e6342d5887d1b3f72cfce8564dbffa90f461e7b9fd4",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/parent-cache-live-parity.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/parent-cache-live-parity.json",
+    "original_sha256": "0d2f91d6f557dca1d316a99dfea772578086c84a4ff774acf73f0919e7e34531",
+    "published_sha256": "0d2f91d6f557dca1d316a99dfea772578086c84a4ff774acf73f0919e7e34531",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/regressions.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/regressions.json",
+    "original_sha256": "80bd9eaf56fd4314db6f7c4e2132267b71f102bf447058082f896920a544da2a",
+    "published_sha256": "80bd9eaf56fd4314db6f7c4e2132267b71f102bf447058082f896920a544da2a",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/verified-summary.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/verified-summary.json",
+    "original_sha256": "c9b5f72ef12a25341a4a7c598883b2e172e159cfb8d9d639190aa3a91e70ccc2",
+    "published_sha256": "c9b5f72ef12a25341a4a7c598883b2e172e159cfb8d9d639190aa3a91e70ccc2",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/playground60.jsonl",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/playground60.jsonl",
+    "original_sha256": "6331f1933317a3eff17b65753ea2bacd2d9b568cf4eb73cbd28bf52b83c8a43b",
+    "published_sha256": "6331f1933317a3eff17b65753ea2bacd2d9b568cf4eb73cbd28bf52b83c8a43b",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/original1444.jsonl",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/original1444.jsonl",
+    "original_sha256": "083513ab76421287337ec56cb2b293a986894db7f8955be256342602b3307241",
+    "published_sha256": "083513ab76421287337ec56cb2b293a986894db7f8955be256342602b3307241",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/parent-development.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/parent-development.json",
+    "original_sha256": "9e0cf643a3580533ed997b99aa33b0631ab431ed5943492c3aef22b5f1e86eba",
+    "published_sha256": "9e0cf643a3580533ed997b99aa33b0631ab431ed5943492c3aef22b5f1e86eba",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/source-validation.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/source-validation.json",
+    "original_sha256": "b37530d0ef3716a15e977a949a31dcca953bdb5abf32513885e8285b4f810314",
+    "published_sha256": "b37530d0ef3716a15e977a949a31dcca953bdb5abf32513885e8285b4f810314",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "reports/model-design/SFT-128_joint_extraction_20261016/release-main/selected-prefix.json",
+    "published": "reports/model-design/SFT-128_joint_extraction_20261016/release-main/selected-prefix.json",
+    "original_sha256": "deefc175852d4c5e58a7bac2b42b54022e57eb5ba9325db95fe8aee7c79bdc72",
+    "published_sha256": "deefc175852d4c5e58a7bac2b42b54022e57eb5ba9325db95fe8aee7c79bdc72",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000100.identity.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000100.identity.json",
+    "original_sha256": "c1ba1e2d57c371ccfd2b94c81d14458a3acba9e04a128c1a2f989fc04b54031d",
+    "published_sha256": "c1ba1e2d57c371ccfd2b94c81d14458a3acba9e04a128c1a2f989fc04b54031d",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000200.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000200.json",
+    "original_sha256": "a27c42ae5df244b3690a2e0e2735f93ce263ea5b486c12a9288c8a51351a5618",
+    "published_sha256": "a27c42ae5df244b3690a2e0e2735f93ce263ea5b486c12a9288c8a51351a5618",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000331.identity.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000331.identity.json",
+    "original_sha256": "d42312b3eca38c81c09e0eb8162c88c3d1f60ff1059651120522dbcbe15ab9fc",
+    "published_sha256": "d42312b3eca38c81c09e0eb8162c88c3d1f60ff1059651120522dbcbe15ab9fc",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000200.identity.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000200.identity.json",
+    "original_sha256": "b0eae2bcebd9f5f916bd33451a38c5bccea31d060e676ae971dd1d6eccdf86be",
+    "published_sha256": "b0eae2bcebd9f5f916bd33451a38c5bccea31d060e676ae971dd1d6eccdf86be",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000331.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000331.json",
+    "original_sha256": "b3a66630c9c3c461d40518641b7a2b45fca2435d265c4bbbbaf9ad67220ef036",
+    "published_sha256": "b3a66630c9c3c461d40518641b7a2b45fca2435d265c4bbbbaf9ad67220ef036",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000300.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000300.json",
+    "original_sha256": "d28a5a9ff94108bd2ae7f70342f7199fbb662573ef7c6a0bab3df9969872496b",
+    "published_sha256": "d28a5a9ff94108bd2ae7f70342f7199fbb662573ef7c6a0bab3df9969872496b",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000300.identity.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000300.identity.json",
+    "original_sha256": "9e10d0b8f72e245037deca1464276465b10dae72320a950bfe9b89f2651928f6",
+    "published_sha256": "9e10d0b8f72e245037deca1464276465b10dae72320a950bfe9b89f2651928f6",
+    "sanitized": false,
+    "outputs_omitted": false
+  },
+  {
+    "source": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000100.json",
+    "published": "pretraining/runs/sft_128_no_prune_20261016/evaluations/development_0000100.json",
+    "original_sha256": "00a0cbf4f3e8e8d9d187742bbd6caab2a8b1a41617a097bcad927f7ec8b8994b",
+    "published_sha256": "00a0cbf4f3e8e8d9d187742bbd6caab2a8b1a41617a097bcad927f7ec8b8994b",
+    "sanitized": false,
+    "outputs_omitted": false
   }
 ]

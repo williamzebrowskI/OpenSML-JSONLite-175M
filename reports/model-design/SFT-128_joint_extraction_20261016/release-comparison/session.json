@@ -1,0 +1,103 @@
+{
+  "inputs": {
+    "pretraining/data/sft_100_native_json_20261014/test.jsonl": "96860322b45901cb7aec3cf8971da083fd607043a2bd936fb44b0f6d06dab164",
+    "pretraining/playground/json.js": "2ebee0eb8c78f219367a31fe2a0e4d3b828b2c79477e72e69b64d6c1d791962b",
+    "pretraining/playground/native-json-examples.json": "af980e2a391932e5c68294ac3ceef5785e0ba8962123f1a887b825c35d74f508",
+    "reports/model-design/SFT-118_activation_subspace_20261015/retired-experiment/development.jsonl": "acb65deeb9a0270c257eec2f17b59e621bb9eb8f4160a0edb0643e6a1104e9c7",
+    "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/original1444.jsonl": "083513ab76421287337ec56cb2b293a986894db7f8955be256342602b3307241",
+    "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/playground60.jsonl": "6331f1933317a3eff17b65753ea2bacd2d9b568cf4eb73cbd28bf52b83c8a43b"
+  },
+  "models": {
+    "parent105_64": {
+      "sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
+      "weight": "[workspace]/pretraining/runs/sft_105_cardinality_distillation_20261014/step_0000064_cdd8be1e8d5a/model.safetensors"
+    },
+    "replay128_200": {
+      "sha256": "ee07d3dca3a7233be5eeacb9834d54a8250d260686dc6edff952a91036fae835",
+      "weight": "[workspace]/pretraining/runs/sft_128_no_prune_20261016/step_0000200_33c70724beee/model.safetensors"
+    },
+    "replay128_300": {
+      "sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
+      "weight": "[workspace]/pretraining/runs/sft_128_no_prune_20261016/step_0000300_43e2a79d3885/model.safetensors"
+    }
+  },
+  "original_training_contract": {
+    "files": {
+      "pretraining/data/sft_128_joint_extraction_20261016/manifest.json": "5172c7702b2c0b6fa9583052007acb69630bed6b23b5fb4d3ce62d3666ca1a00",
+      "pretraining/json_sampling_119/common.py": "b3ef439b09b8ca21d9bb454a9afe377f202ea75bda522e51e7b284399b39d0c0",
+      "pretraining/json_sampling_119/data.py": "5e560b14b795a58f2ca2cbe6d7fb19924b8ec633788cdef8875d80449e3734a4",
+      "pretraining/json_sampling_119/run.py": "84fe9caab3c196fec5e71c56a1c4ab8e7c63309fe4529811680d72e4a5cec747",
+      "pretraining/native_json_128/__init__.py": "fcdbfacd29cfb9f3235160fe00d4c9f4f4c35cb27d469f1e6f3796f137b373b2",
+      "pretraining/native_json_128/common.py": "354cda3dd100321fa858e64ae22e4ecc27e09d97f2c824811e3b9f53f205be52",
+      "pretraining/native_json_128/data.py": "874ab8eae8281b1967ea7ed22a0bad122e0c830a7ee8391ae9d201e0d6867087",
+      "pretraining/native_json_128/evaluate.py": "2dc61a8269c7c279ca13814f7e0b07ddbee477308ac5abc87d1461ca75cfedc8",
+      "pretraining/native_json_128/runtime.py": "5a83f2ba3f900f69390d10c2a67d10cd2d7654a1b22345f059a02488b0239ef8",
+      "pretraining/native_json_128/scoring.py": "1f4d2c69ebc640f993b77cb09ecf280d2df1dbf3f20d1060f7c8a5ce6780dd97",
+      "pretraining/native_json_128/train.py": "dded6b80814d12f621eafe0ddcc41481fa80cc98a2182be442fb09c31a5735e7",
+      "pretraining/native_json_128/verify.py": "738c709a8358a0818f6dbd42d81a9db25ea76569cededae345e1a0d474344779",
+      "pretraining/runs/sft_105_cardinality_distillation_20261014/step_0000064_cdd8be1e8d5a/model.safetensors.json": "8b8c0049d731f8124eaec78a213d05c24a520bc4f190dc82975d763f43351bbc",
+      "pretraining/scripts/run_sft_128_joint_extraction.sh": "dcf97394bf39afd46c5591bcc19abd8802422d4ab3e5d9fd8845c5e46f493ead",
+      "pretraining/sft/data.py": "70348a9df1473da88330695d5409f17b929b9bc1dc79f77525272f6d87317aa1",
+      "pretraining/sft/evaluate.py": "80624551512112850145ccb57d6435d7a1bae86d0b95f8f52d56b8cb6f102a76",
+      "pretraining/sft/quality.py": "2abf5926a22a33b4f29c699855b24f7e459b6e631aa6ef780876ddc205f17758",
+      "pretraining/sml_v1/checkpoint_bundle.py": "73cbf0c17cf74a44bb7c74a8f9e5bb63671057a1f664a6a4af0e0777b2c8f1a4",
+      "pretraining/sml_v1/common.py": "ec4dda551cbe45cbd30d64c7c82379a8849ce02a3ad1a597a293844b5dc86351",
+      "pretraining/sml_v1/fast_loss.py": "f99edeedb6cb328ef728d05643f65ea20371437f7e5806009ae3ad0885bafbf1",
+      "pretraining/sml_v1/fast_swiglu.py": "59d1adb31400e3c288914b4c0cc8a21681a73ca3dfa7c722ea4e13d21dc38528",
+      "pretraining/sml_v1/model.py": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe",
+      "pretraining/sml_v1/precision.py": "b9f535fca724153703ed57a300eceb5b34a8f8381fc65bf5c4c5a0f7e066303c",
+      "pretraining/sml_v1/tokenization.py": "254e1f5d60cc4498a9f1209955752db28b91839f48d3121d674f3f5ac42e52e5",
+      "pretraining/tests/test_native_json_128.py": "7547e08bf1f06d87bdcb34197b412ae9555c9e3a503b3d608d21c27e9f423c3c",
+      "reference/opensml-150m/tokenizer/bytebpe32k_v1/corpus.json": "e4c47b7b6aba08f948de7c2c7cb94c58dbd09dde2ded6ac185c60856ee686d27",
+      "reference/opensml-150m/tokenizer/bytebpe32k_v1/manifest.json": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+      "reference/opensml-150m/tokenizer/bytebpe32k_v1/report.json": "e871f690eabebf82da173f0e406f38b79a10cd7d2647bb3592c3fc35ae9a2f16",
+      "reference/opensml-150m/tokenizer/bytebpe32k_v1/tokenizer.json": "e095f0413a11fa91fbb58f37d00e4c6bcda59beb89b28f6f680db1436a7e8891",
+      "reference/opensml-150m/tokenizer/bytebpe32k_v1/tokenizer_config.json": "619f500553367eb76f5be00a98625130ec857b9c367561334984096c029ba2a9",
+      "reports/model-design/SFT-105_cardinality_distillation_20261014/original-test-1444-step64.identity.json": "e72aeb0100d8fd145096cc8df88b20c23a4630a3c2e4b3114fa9935f10dbc96b",
+      "reports/model-design/SFT-105_cardinality_distillation_20261014/original-test-1444-step64.json": "2c730e69196aa4177ccc7bf1b09bde7a044597b7f2afde108344c9c4579a0c44",
+      "reports/model-design/SFT-128_joint_extraction_20261016/source-validation.json": "b37530d0ef3716a15e977a949a31dcca953bdb5abf32513885e8285b4f810314"
+    },
+    "parent_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
+    "plan": {
+      "adaptation": "all_parameters",
+      "batch_size": 64,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "clip": 1.0,
+      "context": 2048,
+      "epochs": 1,
+      "eps": 1e-08,
+      "eval_every": 100,
+      "final_lr": 1e-06,
+      "max_tokens": 256,
+      "microbatch": 2,
+      "objective": "Mean per-request assistant-JSON token cross entropy, including turn EOS. No teacher KL, no inference repair or assembly.",
+      "order": "One deterministic joint shuffle, all prepared records exactly once; no late domain-only phase.",
+      "peak_lr": 5e-06,
+      "precision": "BF16 compute / FP32 master AdamW",
+      "seed": 202610160128,
+      "warmup": 20,
+      "weight_decay": 0.0
+    },
+    "versions": {
+      "jsonschema": "4.26.0",
+      "mlx": "0.32.3",
+      "mlx-metal": "0.32.3",
+      "numpy": "2.4.2",
+      "tokenizers": "0.22.2"
+    }
+  },
+  "protocol": {
+    "constrained_decoding": false,
+    "json_assembly": false,
+    "max_tokens": 256,
+    "output_repair": false,
+    "repetition_penalty": 1,
+    "temperature": 0,
+    "whole_object_generation": true
+  },
+  "runner_sha256": "4104db93ace545b8bb082c657433611ea9abcf9a7b8ddda847fd7437a4ed01e3",
+  "scope": "Observed playground and repeatedly observed original-test panels; not blind external benchmarks. Replays are not original deleted checkpoint200. No automatic promotion."
+}

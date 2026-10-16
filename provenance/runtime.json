@@ -7,7 +7,6 @@
   },
   "local_hardware": "Apple M5 Ultra; 96 GB unified memory",
   "python": "3.11+ source baseline; source workspace uses its existing virtual environment",
-  "stock_mlx_clean_install_parity": "40/40 saved fixture values and stop reasons match; 29/40 exact against references; not a full-suite parity claim",
   "code_license": "Apache-2.0",
   "weight_license": "not assigned in this source repository",
   "portable_inference": {
@@ -16,5 +15,6 @@
     "tokenizers": "0.22.2",
     "jsonschema": "4.26.0"
   },
-  "native_json_parity": "54/54 raw strings and stop reasons match the local playground; 44/54 reference correct; not full-heldout runtime parity."
+  "native_json_parity": "60/60 raw strings and stop reasons match saved main-checkpoint generations; 49/60 reference correct; not full-heldout cross-runtime parity.",
+  "historical_labeled_adapter_parity": null
 }
