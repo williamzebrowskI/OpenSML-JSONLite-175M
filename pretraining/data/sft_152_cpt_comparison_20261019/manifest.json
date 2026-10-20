@@ -1,0 +1,74 @@
+{
+  "arms": {
+    "100m": {
+      "added_tokens": 100096883,
+      "parent": "pretraining/runs/cpt_151_structured_20261018/step_0132838_224f03f16825/model.safetensors",
+      "sha256": "57d0933d5d806e7f589a60170b5080ff46895b732be480aa953650701f4e19cc"
+    },
+    "25m": {
+      "added_tokens": 25010797,
+      "parent": "pretraining/runs/cpt_151_structured_20261018/step_0132213_08e411ee0483/model.safetensors",
+      "sha256": "f12e0fa29038726cc50dc31260a49e97fb69c4452fc59182143f7c46e4ea8860"
+    }
+  },
+  "control_receipts": {
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/development_0000100.json": "19f658d59f1d0499f620c982b066b91c2920ed6bcb9404cbd68f471db60bca40",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/development_0000200.json": "eab9bb7e5f1e3929d2604fdfbb25ec957f84b7386d46c013b9adfc12f67430bd",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/development_0000300.json": "fe5da1170c01a73bba65c2d5ac4efe16875b29e154b13d53ee607bb2a867826d",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/development_0000400.json": "796ae3eb99f8751403a78dfadd8f4fc277eed050b4f6f4f813cc0c94b2620ff1",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/development_0000500.json": "8464fd5436b774852e4a9547f4dda43211eeb0b2f5482f49bf052e3750095d74",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/development_0000563.json": "90b8ad3394b07df1af50ecf6de6417bd5393dae442dad9a5974c6af03ad3bfe4",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/fit_probe_0000100.json": "a3ebea8c0116110037dbc59d88469d329fbbaaf476b1ae99599b49ab7c00c64f",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/fit_probe_0000200.json": "95a45c6e4c3d718e21f3c76364eb5a14528637d44c9995c8d5d4137a6d5ad895",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/fit_probe_0000300.json": "ac8805bd00adaf69c005f2c6f88042ffd564eddebeaaf1cf6004ac0cea8a4908",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/fit_probe_0000400.json": "1db01ca614877679d9d3abb329a51c6b06341745d33c303c5984e51b8e9e5adb",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/fit_probe_0000500.json": "ab3b2041a81603dc6958dc9d185287bf12c46bb865f3715d9f4881c302115aee",
+    "reports/model-design/SFT-152_CPT_comparison_20261019/control/fit_probe_0000563.json": "6109000d9faf8436cd22329c338e4fe895801c69273fc4cb3a3e1d1be66e281b"
+  },
+  "files": {
+    "batches.json": "bff71b6a94d13dae8f5c766145f4f1d59074665f92a1ff1916d138af27cd0268",
+    "development.jsonl": "0d193537d5d32526d696f2f93ae0a78979b97b4f56ef6c2529c091c8d2460ad2",
+    "fit_probe.jsonl": "feb721bd4432aa12b95aaad2c76e28891f774ef798e048a02955884181ef18a0",
+    "original-142-manifest.json": "fa4476509fad68ca2b2799d67dffb17c25176c27ba192b6f363f063e633be495",
+    "reserved.jsonl": "157be42dc2e28bcd1e6c60f8fb9eaff87e5c64d9e69ab9779081438165fd25f9",
+    "train.jsonl": "dd69dac2fa72ef5286df8cd513730f751c4d45835947e04173db130f906451a4"
+  },
+  "format": "matched-cpt152-sft142-v1",
+  "original_control_contract_sha256": "7a57f4e8798d9c04a3d264a269cedaf3ddc0c2c48b68e5a9e4e749bd1fe224d5",
+  "plan": {
+    "adaptation": "full weights",
+    "batch_size": 64,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "clip": 1.0,
+    "context": 2048,
+    "epochs": 1,
+    "eps": 1e-08,
+    "eval_every": 100,
+    "eval_steps": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      563
+    ],
+    "final_lr": 3e-06,
+    "max_tokens": 384,
+    "microbatch": 2,
+    "objective": "Per-request assistant JSON and EOS loss; source/schema tokens masked.",
+    "peak_lr": 3e-05,
+    "precision": "BF16 compute / FP32 master AdamW",
+    "presentations": 36000,
+    "retention": "Keep every checkpoint. Matched142 control; no automatic promotion or reserved generation.",
+    "seed": 202610180142,
+    "train_max_sequence": 1536,
+    "updates": 563,
+    "warmup": 25,
+    "weight_decay": 0.0
+  },
+  "source_manifest_sha256": "fa4476509fad68ca2b2799d67dffb17c25176c27ba192b6f363f063e633be495",
+  "treatment": "Starting weight payload only; identical schema/query/JSON training targets, order, seed, optimizer reset and evaluation protocol."
+}

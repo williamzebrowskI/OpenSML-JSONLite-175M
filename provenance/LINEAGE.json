@@ -1,83 +1,29 @@
 {
   "model": "OpenSML-JSONLite-175M",
+  "checkpoint": "main",
+  "selected_stage": "joint foundation JSON SFT",
+  "selected_update": 500,
   "stages": [
     {
-      "stage": "stage-a",
+      "stage": "original-pretraining",
       "step": 132005,
-      "tokens": 17300111360,
-      "weight_sha256": "5151567e266244c9e32fd6e01775192633abe227320269ecdefe28ce43e9ccc3",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "15a0e3b511b97503a611c0da838a7fde1c06ebed34c7103f7cda1782cc6378a4",
-      "published_metadata_sha256": "15a0e3b511b97503a611c0da838a7fde1c06ebed34c7103f7cda1782cc6378a4"
+      "processed_positions": 17300111360,
+      "weight_sha256": "5151567e266244c9e32fd6e01775192633abe227320269ecdefe28ce43e9ccc3"
     },
     {
-      "stage": "sft-065",
-      "step": 469,
-      "tokens": 3097331,
-      "weight_sha256": "0991b805a878c15733c909ef7f4127baa2b8866f8ca7d7db232ad39434f80bc4",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "f245e46ecfbbc499d7727c556ea889a7ac77f619d8d815f65267100ddb38e991",
-      "published_metadata_sha256": "1172eb192546ae0d4d395943be0628c8de0fa2d9a4de1243eec8e73fef2d5f44"
+      "stage": "structured-continued-pretraining",
+      "step": 132838,
+      "additional_tokens": 100096883,
+      "weight_sha256": "57d0933d5d806e7f589a60170b5080ff46895b732be480aa953650701f4e19cc"
     },
     {
-      "stage": "sft-068",
-      "step": 379,
-      "tokens": 1842593,
-      "weight_sha256": "18f0f2b8f57905ac758f392d0eb83e51e508da6a955b9f7991338e690205df86",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "49acc0640e80749fb143e9a4d5024d2ffba7e79385314a792a46cc23f02283ac",
-      "published_metadata_sha256": "192399fe9cbb09ff0a2db1b21d87193968cc766f177dc9ad3975f289e8121989"
-    },
-    {
-      "stage": "sft-093",
-      "step": 160,
-      "tokens": 706399,
-      "weight_sha256": "d552c1380c71c7c0569e9d692ec9c46c5c94bb87a7b024e56df0f0e36df4d798",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "32a380899c455449db066ef317de9dd8e80f6977bfb42a6fe03b67c5f23963f8",
-      "published_metadata_sha256": "32a380899c455449db066ef317de9dd8e80f6977bfb42a6fe03b67c5f23963f8"
-    },
-    {
-      "stage": "sft-100",
-      "step": 469,
-      "tokens": 4634126,
-      "records": 15000,
-      "weight_sha256": "656f45015aab548465d93bed0b57e687497163741885da7364872851fa17e9a4",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "3864a0eaa43015d286e4da9327b0d3cea4fa4f5b80f336baabe2a549379e2e36",
-      "published_metadata_sha256": "5ecf9a8850aef6cc75add6bacda880648e72de1b38089d585e237bbce828c2c3"
-    },
-    {
-      "stage": "sft-105",
-      "public_stage": "additional extraction SFT",
-      "step": 64,
-      "tokens": 600558,
-      "records": 2048,
-      "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "8b8c0049d731f8124eaec78a213d05c24a520bc4f190dc82975d763f43351bbc",
-      "published_metadata_sha256": "49d177fb4606673f789fbf06c694643c44504672a9f0c3f75f7eae776cb4590c"
-    },
-    {
-      "stage": "sft-128",
-      "public_stage": "joint JSON extraction SFT",
-      "step": 300,
-      "records": 19200,
-      "serialized_positions": 6153194,
-      "supervised_assistant_positions": 633561,
-      "token_counter": "supervised assistant positions; differs from earlier serialized counters",
-      "weight_sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
-      "weight_bytes": 351242342,
-      "original_metadata_sha256": "663087d32872824f7f2fec425ad4054f308913c43da7c3f83521c7011967fdbe",
-      "published_metadata_sha256": "663087d32872824f7f2fec425ad4054f308913c43da7c3f83521c7011967fdbe"
+      "stage": "joint-foundation-sft",
+      "step": 500,
+      "presentations": 32000,
+      "supervised_assistant_positions": 1027385,
+      "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725"
     }
   ],
-  "weights_in_git": false,
-  "public_weight_location": "https://huggingface.co/OpenSML/OpenSML-JSONLite-175M",
-  "model_weight_license": "not yet assigned",
-  "scope": "Selected lineage: Stage A -> grounded QA -> requested-field extraction -> focused extraction -> native JSON foundation -> cardinality/replay distillation -> joint JSON extraction SFT. Later updates are not inherited.",
-  "selected_stage": "joint JSON extraction SFT",
-  "selected_update": 300,
-  "weight_location": "https://huggingface.co/OpenSML/OpenSML-JSONLite-175M",
-  "public_checkpoint_name": "main"
+  "sft_stages": 1,
+  "teachers_at_inference": false
 }

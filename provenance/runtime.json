@@ -1,20 +1,11 @@
 {
-  "training": {
-    "jsonschema": "4.26.0",
-    "mlx": "0.32.3.dev20260920+7241f12",
-    "numpy": "2.4.2",
-    "tokenizers": "0.22.2"
-  },
-  "local_hardware": "Apple M5 Ultra; 96 GB unified memory",
-  "python": "3.11+ source baseline; source workspace uses its existing virtual environment",
-  "code_license": "Apache-2.0",
-  "weight_license": "not assigned in this source repository",
-  "portable_inference": {
-    "mlx": "0.32.3",
-    "numpy": "2.4.2",
-    "tokenizers": "0.22.2",
-    "jsonschema": "4.26.0"
-  },
-  "native_json_parity": "60/60 raw strings and stop reasons match saved main-checkpoint generations; 49/60 reference correct; not full-heldout cross-runtime parity.",
-  "historical_labeled_adapter_parity": null
+  "model_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725",
+  "runtime": "stock MLX 0.32.3",
+  "context": 2048,
+  "max_output_tokens": 256,
+  "serialization": "native-sft-chat-v1",
+  "model_calls": 1,
+  "assembly": false,
+  "repair": false,
+  "constraints": false
 }

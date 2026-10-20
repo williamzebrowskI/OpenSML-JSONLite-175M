@@ -1,0 +1,28 @@
+{
+  "assembly": false,
+  "context": 2048,
+  "input_files": {
+    "reports/model-design/SFT-128_joint_extraction_20261016/release-comparison/original1444.jsonl": "083513ab76421287337ec56cb2b293a986894db7f8955be256342602b3307241"
+  },
+  "max_output_tokens": 256,
+  "mlx": "0.32.3",
+  "model": "153/500",
+  "model_calls_per_request": 1,
+  "raw_greedy": true,
+  "references_in_input": false,
+  "repair": false,
+  "repetition_penalty": 1,
+  "requests_sha256": "083513ab76421287337ec56cb2b293a986894db7f8955be256342602b3307241",
+  "runner_sha256": "843fc245da9134d1252ab4ca9182742c66a5ec20abfe15dfdef4bff5cc5cab0e",
+  "scorer_sha256": "1f4d2c69ebc640f993b77cb09ecf280d2df1dbf3f20d1060f7c8a5ce6780dd97",
+  "selected_by_development": true,
+  "serialization": "native-sft-chat-v1",
+  "shared_decoder_sha256": "5a3826b2124f1eea2832a4d753a227c7f5f6c62bf882ffdb800cd6e20aeb6ce2",
+  "step": 500,
+  "structural_scorer_sha256": "334544f6a42d7b2c65840bb90d488e87c15d185900e8ceec41e24e24a3984505",
+  "teachers_at_inference": false,
+  "temperature": 0,
+  "tokenizer_sha256": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+  "truncation": false,
+  "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725"
+}

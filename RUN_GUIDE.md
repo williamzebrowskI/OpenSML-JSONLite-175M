@@ -14,7 +14,7 @@ This is a research model for **extracting information that is explicitly stated 
 
 **Outside the verified scope:** nested objects, arrays of objects, numeric or Boolean outputs, optional-property logic, enums, references and advanced schema constraints. General chat, multilingual input and long-document extraction are also unverified. This describes the released runner's tested contract, not a claim that the weights can never produce these formats.
 
-**Check both structure and meaning.** Parse the output, validate it against the schema, and check the values against the source. The reported 100% schema validity applies to the observed 1,444-request evaluation; complete correctness there was 88.02%. It is not a promise for new inputs. The instruction, source, schema and generated answer must share the 2,048-token context; the supplied runner allows up to 256 output tokens.
+**Check both structure and meaning.** Parse the output, validate it against the schema, and check the values against the source. The reported 99.93% schema validity applies to the observed 1,444-request evaluation; complete correctness there was 89.54%. It is not a promise for new inputs. The instruction, source, schema and generated answer must share the 2,048-token context; the supplied runner allows up to 256 output tokens.
 
 ```bash
 python3 -m venv .venv
@@ -70,11 +70,11 @@ python native_bundle/inference.py --weights "$PWD/model.safetensors" --example 2
 ```
 
 Selected weights:
-`781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560`.
+`25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725`.
 The current source module is inference_native/native_json.py. The old labeled
 adapter, if present in the historical source archive, is not used by this
 entry point. Optimizer state and the original training workspace are not needed
 for inference. See the technical report for lineage, metrics and limitations.
 
 
-The main checkpoint adds joint source/schema/JSON SFT with replay, cardinality and authored prose. No teacher is needed at inference. Exact lineage and settings are in checkpoint_provenance.json.
+The main checkpoint uses structured continued pretraining followed by one joint extraction/JSON SFT. The public flat-schema runner contract remains as described above. Training broader schemas does not establish reliable broader-schema inference. See the technical report for exact provenance and separate diagnostics.

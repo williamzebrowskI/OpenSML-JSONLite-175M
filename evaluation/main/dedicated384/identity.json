@@ -1,0 +1,29 @@
+{
+  "assembly": false,
+  "context": 2048,
+  "input_files": {
+    "pretraining/data/jsonlite_eval_v1/references.jsonl": "e034d717d5c15fbf1cc714a1ff66bbf5fb759b0081527d5120bd6ba034a3d406",
+    "pretraining/data/jsonlite_eval_v1/requests.jsonl": "4e68add1a3fd4f5920c659e0519ccdc2b143df08b5f553063c9b006b30bb4790"
+  },
+  "max_output_tokens": 256,
+  "mlx": "0.32.3",
+  "model": "153/500",
+  "model_calls_per_request": 1,
+  "raw_greedy": true,
+  "references_in_input": false,
+  "repair": false,
+  "repetition_penalty": 1,
+  "requests_sha256": "4e68add1a3fd4f5920c659e0519ccdc2b143df08b5f553063c9b006b30bb4790",
+  "runner_sha256": "843fc245da9134d1252ab4ca9182742c66a5ec20abfe15dfdef4bff5cc5cab0e",
+  "scorer_sha256": "334544f6a42d7b2c65840bb90d488e87c15d185900e8ceec41e24e24a3984505",
+  "selected_by_development": true,
+  "serialization": "native-sft-chat-v1",
+  "shared_decoder_sha256": "5a3826b2124f1eea2832a4d753a227c7f5f6c62bf882ffdb800cd6e20aeb6ce2",
+  "step": 500,
+  "structural_scorer_sha256": "334544f6a42d7b2c65840bb90d488e87c15d185900e8ceec41e24e24a3984505",
+  "teachers_at_inference": false,
+  "temperature": 0,
+  "tokenizer_sha256": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+  "truncation": false,
+  "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725"
+}

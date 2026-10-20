@@ -1,0 +1,19 @@
+{
+  "update": 500,
+  "presentations": 32000,
+  "distinct_source_texts": 21392,
+  "source_groups": 19589,
+  "components": {
+    "atomic": 2844,
+    "composite": 5689,
+    "grounded_qa": 2667,
+    "massive": 2667,
+    "prior_authored": 2133,
+    "schema_variation": 2667,
+    "snips": 13333
+  },
+  "supervised_positions_metadata": 1027385,
+  "counter_scope": "Checkpoint metadata tokens counts supervised assistant/EOS positions, not serialized source/schema positions.",
+  "train_sha256": "dd69dac2fa72ef5286df8cd513730f751c4d45835947e04173db130f906451a4",
+  "batches_sha256": "bff71b6a94d13dae8f5c766145f4f1d59074665f92a1ff1916d138af27cd0268"
+}

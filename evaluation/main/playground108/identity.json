@@ -1,0 +1,29 @@
+{
+  "assembly": false,
+  "context": 2048,
+  "input_files": {
+    "reports/model-design/SFT-145_paired_foundation_20261018/full-eval-500/playground108-v2/references.jsonl": "a79abf4275ed465f1fefdb793e7ed5c4cb6fcbb3e42844d49fc8ab52f58f1ba3",
+    "reports/model-design/SFT-145_paired_foundation_20261018/full-eval-500/playground108-v2/requests.jsonl": "b3a674665ac7e71aff6e6dc662670679a4859a20141130b6aad59f3854fcbf0b"
+  },
+  "max_output_tokens": 256,
+  "mlx": "0.32.3",
+  "model": "153/500",
+  "model_calls_per_request": 1,
+  "raw_greedy": true,
+  "references_in_input": false,
+  "repair": false,
+  "repetition_penalty": 1,
+  "requests_sha256": "b3a674665ac7e71aff6e6dc662670679a4859a20141130b6aad59f3854fcbf0b",
+  "runner_sha256": "843fc245da9134d1252ab4ca9182742c66a5ec20abfe15dfdef4bff5cc5cab0e",
+  "scorer_sha256": "a8b6dff1b9f7e2cc7d526fa3614ab261cb4c43438dcf7436a1a579f403d46503",
+  "selected_by_development": true,
+  "serialization": "native-sft-chat-v1",
+  "shared_decoder_sha256": "5a3826b2124f1eea2832a4d753a227c7f5f6c62bf882ffdb800cd6e20aeb6ce2",
+  "step": 500,
+  "structural_scorer_sha256": "334544f6a42d7b2c65840bb90d488e87c15d185900e8ceec41e24e24a3984505",
+  "teachers_at_inference": false,
+  "temperature": 0,
+  "tokenizer_sha256": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+  "truncation": false,
+  "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725"
+}

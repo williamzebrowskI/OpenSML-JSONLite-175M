@@ -1,0 +1,28 @@
+{
+  "model": "OpenSML-JSONLite-175M-Instruct",
+  "checkpoint": "main",
+  "date": "2026-10-20",
+  "playground60": {
+    "requests": 60,
+    "raw_text_token_stop_matches": 60,
+    "mismatches": [],
+    "complete_correct": 49,
+    "schema_valid": 60
+  },
+  "original1444": {
+    "requests": 1444,
+    "raw_text_token_stop_matches": 1444,
+    "mismatches": [],
+    "complete_correct": 1293,
+    "schema_valid": 1443
+  },
+  "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725",
+  "status": "passed",
+  "versions": {
+    "python": "3.11.13",
+    "mlx": "0.32.3",
+    "jsonschema": "4.26.0",
+    "tokenizers": "0.22.2"
+  },
+  "scope": "Live native packaged-source generation; text, output-token count and stop reason match saved selected-checkpoint generations for every tested request. No repair, assembly or constrained decoding."
+}

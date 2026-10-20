@@ -1,26 +1,3 @@
-# Source and data notice
+# Source and artifact scope
 
-Current inherited weights: Stage A/132005 → SFT-065/469 → SFT-068/379 →
-SFT-093/160 → SFT-100/469 → additional extraction SFT (main checkpoint). The final stage directly supervises native JSON.
-Other research trials and unused helper code are not weight ancestors.
-Author-controlled source uses Apache-2.0. Upstream datasets/dependencies retain
-their notices; no trained-weight license is assigned by this source update.
-GitHub excludes weight and optimizer binaries; the HF companion has the weights.
-
-Pretraining uses the pinned educational web/wiki/Cosmopedia/Python mixture.
-Grounded QA uses selected SQuAD2/Dolly and checked authored fictional facts.
-SNIPS original CC0 chunk annotations supply exact extraction and native JSON
-labels. The 15,000 curated JSON records are source/schema/target views of 12,115
-TRAIN requests, not 15,000 distinct documents. Development/test are source-disjoint
-from TRAIN within this curated dataset, but have previous research exposure.
-Pretraining decontamination and perfectly correct semantic golds are not claimed.
-
-Raw pretraining pools, packed arrays, optimizer state, credentials, SSH keys and
-private host/network receipts are excluded. Published metadata replaces private
-workspace paths with [workspace]; original and published hashes are separated.
-60 actual local fixtures, raw predictions and held-out evidence are retained.
-The canonical held-out 1,388 and schema-stress 56 requests are included as JSONL in
-evaluation/native-json-heldout.jsonl and the prepared native data directory.
-See THIRD_PARTY_NOTICES.md, docs/TECHNICAL_REPORT.md and provenance/LINEAGE.json.
-
-The latest stage jointly replays original SNIPS TRAIN JSON views, controlled cardinality views and authored English prose with original TRAIN values. It adds 19,200 inherited presentations; no teacher KL is used in this stage. Prepared authored prose and targets are included for inspection, with observed evaluation scope and remaining failures in the report.
+The native inference package contains the model architecture, tokenizer, fixed prompt, raw decoder, validation and 60 source/schema/reference fixtures. Frozen training recipes, prepared SFT data/order, selected checkpoint metadata and evaluation records are included for inspection. No optimizer binaries, parent weights or packed pretraining pools are distributed. Training code is archival and uses the original workspace conventions; create local configuration and readiness checks before attempting reproduction. The public runner is a native MLX implementation.

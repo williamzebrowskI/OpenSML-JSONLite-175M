@@ -19,6 +19,8 @@ No IFEval, Paraloq, SOB, ARC, PIQA, HellaSwag or other experiment's scores are a
 
 For actual source-file pins and identity-preserving adaptations, see the technical report and `provenance/`. These declarations are attribution records, not a blanket commercial-use or model-weight redistribution determination. The public weight license remains unassigned.
 
-## Latest joint JSON extraction data
+## Joint SFT and structured continuation
 
-The latest stage reuses SNIPS TRAIN source/schema/JSON views and authored controlled prose with original TRAIN values. Original SNIPS attribution and CC0 terms above continue to apply. Authored wording does not make evaluation independent or establish a new weight license. No SGD/MIT dataset was added to this stage.
+The SFT uses official SNIPS TRAIN and MASSIVE en-US TRAIN annotations plus authored/schema-transformed tasks and inherited grounded-QA-derived text rows. MASSIVE: Amazon Science MASSIVE contributors, CC-BY-4.0; https://huggingface.co/datasets/AmazonScience/massive . The included prepared rows and their provenance identify original sources and transformations. SQuAD and Dolly declarations above apply to their derived prepared rows where present; prepared derived text is distributed here with its recorded upstream attribution. TEST annotations are used only for evaluation. Authored facts and schema frames are correlated synthetic research material.
+
+Structured continuation adds authored JSON records, schema/instance documents, prose/schema/JSON documents and Python/JSON code alongside the original corpus mixture. It is next-token training, not benchmark-answer supervision. Dataset use does not assign a blanket trained-weight license.

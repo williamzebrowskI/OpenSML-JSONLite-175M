@@ -1,22 +1,32 @@
 {
-  "model": "OpenSML-JSONLite-175M-Instruct",
-  "previous_release": {
-    "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
-    "github_revision": "f6a3c0a63a067d9c3d795c423f93d560ef1b19ce",
-    "personal_huggingface_revision": "7a4a2b097e40c5d35fb8731bfc1d767e6ca066f6",
-    "organization_huggingface_revision": "49a9c353589b2a67be7dbe01350dec7c749249f7"
-  },
   "main_checkpoint": {
-    "weight_sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
-    "training": "Latest joint JSON extraction SFT: original JSON replay, multiple-value views and authored prose",
-    "selected_stage": "sft-128",
-    "selected_update": 300
+    "model": "OpenSML-JSONLite-175M",
+    "checkpoint": "main",
+    "selected_stage": "joint foundation JSON SFT",
+    "selected_update": 500,
+    "stages": [
+      {
+        "stage": "original-pretraining",
+        "step": 132005,
+        "processed_positions": 17300111360,
+        "weight_sha256": "5151567e266244c9e32fd6e01775192633abe227320269ecdefe28ce43e9ccc3"
+      },
+      {
+        "stage": "structured-continued-pretraining",
+        "step": 132838,
+        "additional_tokens": 100096883,
+        "weight_sha256": "57d0933d5d806e7f589a60170b5080ff46895b732be480aa953650701f4e19cc"
+      },
+      {
+        "stage": "joint-foundation-sft",
+        "step": 500,
+        "presentations": 32000,
+        "supervised_assistant_positions": 1027385,
+        "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725"
+      }
+    ],
+    "sft_stages": 1,
+    "teachers_at_inference": false
   },
-  "scope": "Git histories and immutable prior revisions are preserved; public model ID stays unchanged.",
-  "historical_releases": [
-    {
-      "weight_sha256": "655fb5cfba009163cd8a7f7fe7b170b998bb452c217b1b473cfe10b33de0ccd1",
-      "training": "native JSON foundation followed by cardinality/replay distillation continuation"
-    }
-  ]
+  "scope": "Exact selected weight lineage; repository commit history preserves earlier research snapshots."
 }

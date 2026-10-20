@@ -1,0 +1,1767 @@
+{
+  "status": "complete",
+  "outputs": [
+    {
+      "id": "FIELD-01",
+      "text": "{\"playlist_owner\":[\"my\"],\"playlist\":[\"Rock Gaming\"],\"entity_name\":[\"Mariem Hassan con Leyoad\"]}",
+      "value": {
+        "playlist_owner": [
+          "my"
+        ],
+        "playlist": [
+          "Rock Gaming"
+        ],
+        "entity_name": [
+          "Mariem Hassan con Leyoad"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 44,
+      "seconds": 0.14847866701893508,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-02",
+      "text": "{\"artist\":[\"Mariem Hassan\"],\"music_item\":[]}",
+      "value": {
+        "artist": [
+          "Mariem Hassan"
+        ],
+        "music_item": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 23,
+      "seconds": 0.07344233291223645,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-03",
+      "text": "{\"playlist_owner\":[\"my\"]}",
+      "value": {
+        "playlist_owner": [
+          "my"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 13,
+      "seconds": 0.041013000067323446,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-04",
+      "text": "{\"artist\":[],\"entity_name\":[],\"playlist\":[\"Digster Future Hits\"]}",
+      "value": {
+        "artist": [],
+        "entity_name": [],
+        "playlist": [
+          "Digster Future Hits"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 29,
+      "seconds": 0.07061137491837144,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-05",
+      "text": "{\"restaurant_type\":[\"brasserie\"],\"party_size_number\":[\"nine\"],\"state\":[\"AR\"]}",
+      "value": {
+        "restaurant_type": [
+          "brasserie"
+        ],
+        "party_size_number": [
+          "nine"
+        ],
+        "state": [
+          "AR"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 36,
+      "seconds": 0.08827762515284121,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-06",
+      "text": "{\"party_size_number\":[\"nine\"],\"timeRange\":[],\"sort\":[]}",
+      "value": {
+        "party_size_number": [
+          "nine"
+        ],
+        "timeRange": [],
+        "sort": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 27,
+      "seconds": 0.0660438749473542,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-07",
+      "text": "{\"sort\":[\"best\"],\"city\":[\"Wrigley\"]}",
+      "value": {
+        "sort": [
+          "best"
+        ],
+        "city": [
+          "Wrigley"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 21,
+      "seconds": 0.05287162493914366,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-08",
+      "text": "{\"timeRange\":[],\"poi\":[]}",
+      "value": {
+        "timeRange": [],
+        "poi": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 15,
+      "seconds": 0.0397129999473691,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-09",
+      "text": "{\"condition_temperature\":[\"colder\"],\"state\":[\"Louisiana\"]}",
+      "value": {
+        "condition_temperature": [
+          "colder"
+        ],
+        "state": [
+          "Louisiana"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 23,
+      "seconds": 0.06777954217977822,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-10",
+      "text": "{\"current_location\":[],\"geographic_poi\":[],\"condition_temperature\":[\"colder\"]}",
+      "value": {
+        "current_location": [],
+        "geographic_poi": [],
+        "condition_temperature": [
+          "colder"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 31,
+      "seconds": 0.0801916669588536,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-11",
+      "text": "{\"timeRange\":[\"last August\"],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"condition_temperature\":[\"colder\"]}",
+      "value": {
+        "timeRange": [
+          "last August"
+        ],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "condition_temperature": [
+          "colder"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 44,
+      "seconds": 0.10797608410939574,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-12",
+      "text": "{\"current_location\":[],\"geographic_poi\":[\"Stunt Ranch Santa Monica Mountains Reserve\"],\"state\":[]}",
+      "value": {
+        "current_location": [],
+        "geographic_poi": [
+          "Stunt Ranch Santa Monica Mountains Reserve"
+        ],
+        "state": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 34,
+      "seconds": 0.09490133309736848,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-13",
+      "text": "{\"artist\":[\"Behzad Mirkhani\"],\"music_item\":[\"theme\"],\"sort\":[\"last\"]}",
+      "value": {
+        "artist": [
+          "Behzad Mirkhani"
+        ],
+        "music_item": [
+          "theme"
+        ],
+        "sort": [
+          "last"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 38,
+      "seconds": 0.08953937492333353,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-14",
+      "text": "{\"service\":[],\"music_item\":[\"theme\"],\"playlist\":[]}",
+      "value": {
+        "service": [],
+        "music_item": [
+          "theme"
+        ],
+        "playlist": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 25,
+      "seconds": 0.06439466611482203,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-15",
+      "text": "{\"artist\":[\"Yui\"],\"music_item\":[\"track\"],\"service\":[\"Vimeo\"]}",
+      "value": {
+        "artist": [
+          "Yui"
+        ],
+        "music_item": [
+          "track"
+        ],
+        "service": [
+          "Vimeo"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 33,
+      "seconds": 0.08835299988277256,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-16",
+      "text": "{\"playlist\":[],\"sort\":[]}",
+      "value": {
+        "playlist": [],
+        "sort": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 14,
+      "seconds": 0.03698787512257695,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-17",
+      "text": "{\"rating_value\":[\"3\"],\"rating_unit\":[\"stars\"],\"object_name\":[\"Things Fall Apart\"]}",
+      "value": {
+        "rating_value": [
+          "3"
+        ],
+        "rating_unit": [
+          "stars"
+        ],
+        "object_name": [
+          "Things Fall Apart"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 35,
+      "seconds": 0.08423699997365475,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-18",
+      "text": "{\"object_name\":[\"Things Fall Apart\"],\"object_select\":[],\"object_type\":[]}",
+      "value": {
+        "object_name": [
+          "Things Fall Apart"
+        ],
+        "object_select": [],
+        "object_type": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 29,
+      "seconds": 0.07164320885203779,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-19",
+      "text": "{\"rating_value\":[\"1\"],\"object_name\":[]}",
+      "value": {
+        "rating_value": [
+          "1"
+        ],
+        "object_name": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 19,
+      "seconds": 0.0506907079834491,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-20",
+      "text": "{\"object_part_of_series_type\":[],\"object_name\":[]}",
+      "value": {
+        "object_part_of_series_type": [],
+        "object_name": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 23,
+      "seconds": 0.06169724999926984,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-21",
+      "text": "{\"object_name\":[\"Happiness Was Free\"]}",
+      "value": {
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 16,
+      "seconds": 0.04094108403660357,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-22",
+      "text": "{\"object_type\":[],\"object_name\":[\"Happiness Was Free\"]}",
+      "value": {
+        "object_type": [],
+        "object_name": [
+          "Happiness Was Free"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 23,
+      "seconds": 0.060618167044594884,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-23",
+      "text": "{\"object_name\":[\"Martin Morning\"],\"object_type\":[\"saga\"]}",
+      "value": {
+        "object_name": [
+          "Martin Morning"
+        ],
+        "object_type": [
+          "saga"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 24,
+      "seconds": 0.06710883299820125,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-24",
+      "text": "{\"object_name\":[\"Martin Morning\"]}",
+      "value": {
+        "object_name": [
+          "Martin Morning"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 13,
+      "seconds": 0.04392445785924792,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-25",
+      "text": "{\"movie_type\":[\"animated movies\"],\"spatial_relation\":[\"in the neighborhood\"]}",
+      "value": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "spatial_relation": [
+          "in the neighborhood"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 29,
+      "seconds": 0.09247012482956052,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-26",
+      "text": "{\"movie_type\":[\"animated movies\"],\"timeRange\":[],\"movie_name\":[]}",
+      "value": {
+        "movie_type": [
+          "animated movies"
+        ],
+        "timeRange": [],
+        "movie_name": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 32,
+      "seconds": 0.10654999990947545,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-27",
+      "text": "{\"movie_name\":[\"Mabel\u2019s Dramatic Career\"],\"timeRange\":[\"twenty two o'clock\"]}",
+      "value": {
+        "movie_name": [
+          "Mabel\u2019s Dramatic Career"
+        ],
+        "timeRange": [
+          "twenty two o'clock"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 36,
+      "seconds": 0.1050426249857992,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-28",
+      "text": "{\"timeRange\":[\"twenty two o'clock\"],\"spatial_relation\":[],\"object_location_type\":[]}",
+      "value": {
+        "timeRange": [
+          "twenty two o'clock"
+        ],
+        "spatial_relation": [],
+        "object_location_type": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 35,
+      "seconds": 0.09230958297848701,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-29",
+      "text": "{\"track\":[\"Blue Lantern\"],\"artist\":[\"Mira Sol\"],\"album\":[]}",
+      "value": {
+        "track": [
+          "Blue Lantern"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 29,
+      "seconds": 0.08424975001253188,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-30",
+      "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Dallas\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}",
+      "value": {
+        "restaurant_name": [
+          "River Moon"
+        ],
+        "city": [
+          "Dallas"
+        ],
+        "party_size_number": [
+          "four"
+        ],
+        "timeRange": [
+          "tomorrow"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 49,
+      "seconds": 0.14647858403623104,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-31",
+      "text": "{\"city\":[\"Ottal\"],\"timeRange\":[\"Friday\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Ottal"
+        ],
+        "timeRange": [
+          "Friday"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 27,
+      "seconds": 0.0729612079448998,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-32",
+      "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[],\"rating_unit\":[\"stars\"]}",
+      "value": {
+        "object_name": [
+          "Glass Harbor"
+        ],
+        "rating_value": [
+          "four"
+        ],
+        "best_rating": [],
+        "rating_unit": [
+          "stars"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 42,
+      "seconds": 0.1557947921101004,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-33",
+      "text": "{\"movie_name\":[\"Silver Orchard\"],\"location_name\":[\"Maple Cinema\"],\"timeRange\":[]}",
+      "value": {
+        "movie_name": [
+          "Silver Orchard"
+        ],
+        "location_name": [
+          "Maple Cinema"
+        ],
+        "timeRange": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 37,
+      "seconds": 0.1392143329139799,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-34",
+      "text": "{\"entity_name\":[\"Night Steps\"],\"playlist\":[\"Evening Walks\"]}",
+      "value": {
+        "entity_name": [
+          "Night Steps"
+        ],
+        "playlist": [
+          "Evening Walks"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 27,
+      "seconds": 0.07275095791555941,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-35",
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 24,
+      "seconds": 0.06262804102152586,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-36",
+      "text": "{\"city\":[\"Bergen\",\"Orange\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen",
+          "Orange"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 20,
+      "seconds": 0.05047566699795425,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-37",
+      "text": "{\"cuisine\":[\"Thai\"],\"city\":[\"Boston\"],\"restaurant_name\":[]}",
+      "value": {
+        "cuisine": [
+          "Thai"
+        ],
+        "city": [
+          "Boston"
+        ],
+        "restaurant_name": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 30,
+      "seconds": 0.07788495882414281,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-38",
+      "text": "{\"album\":[\"Quiet Signals\"],\"artist\":[\"Mira Sol\"],\"track\":[]}",
+      "value": {
+        "album": [
+          "Quiet Signals"
+        ],
+        "artist": [
+          "Mira Sol"
+        ],
+        "track": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 30,
+      "seconds": 0.08640408399514854,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-39",
+      "text": "{\"object_name\":[\"Paper Bridge\"],\"rating_value\":[]}",
+      "value": {
+        "object_name": [
+          "Paper Bridge"
+        ],
+        "rating_value": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 20,
+      "seconds": 0.055107375141233206,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "FIELD-40",
+      "text": "{\"country\":[],\"timeRange\":[],\"artist\":[]}",
+      "value": {
+        "country": [],
+        "timeRange": [],
+        "artist": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 20,
+      "seconds": 0.05678145890124142,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:alias",
+      "text": "{\"selected_playlist\":[\"night vibes\"],\"selected_artist\":[],\"selected_playlist_owner\":[]}",
+      "value": {
+        "selected_playlist": [
+          "night vibes"
+        ],
+        "selected_artist": [],
+        "selected_playlist_owner": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 36,
+      "seconds": 0.0985441671218723,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
+      "text": "{\"playlist_owner\":null,\"artist\":\"gn\",\"playlist\":\"night vibes\"}",
+      "value": {
+        "playlist_owner": null,
+        "artist": "gn",
+        "playlist": "night vibes"
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 26,
+      "seconds": 0.07356970803812146,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
+      "text": "{\"selected_restaurant_name\":[\"dine at a mughlai restaurant\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}",
+      "value": {
+        "selected_restaurant_name": [
+          "dine at a mughlai restaurant"
+        ],
+        "selected_timeRange": [
+          "Nov. the 1st"
+        ],
+        "selected_sort": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 51,
+      "seconds": 0.12460670806467533,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
+      "text": "{\"restaurant_name\":\"mughlai restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}",
+      "value": {
+        "restaurant_name": "mughlai restaurant",
+        "timeRange": "Nov. the 1st",
+        "sort": null
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 34,
+      "seconds": 0.09888862515799701,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:GetWeather:train:109:view0:native:alias",
+      "text": "{\"selected_condition_temperature\":[\"colder\"],\"selected_state\":[\"Louisiana\"]}",
+      "value": {
+        "selected_condition_temperature": [
+          "colder"
+        ],
+        "selected_state": [
+          "Louisiana"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 29,
+      "seconds": 0.10152683313935995,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:GetWeather:train:109:view0:native:nullable",
+      "text": "{\"condition_temperature\":\"colder\",\"state\":\"Louisiana\"}",
+      "value": {
+        "condition_temperature": "colder",
+        "state": "Louisiana"
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 19,
+      "seconds": 0.051365291932597756,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:PlayMusic:train:801:view1:native:alias",
+      "text": "{\"selected_service\":[],\"selected_music_item\":[\"theme\"],\"selected_playlist\":[]}",
+      "value": {
+        "selected_service": [],
+        "selected_music_item": [
+          "theme"
+        ],
+        "selected_playlist": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 34,
+      "seconds": 0.09211395820602775,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:PlayMusic:train:801:view1:native:nullable",
+      "text": "{\"playlist\":null,\"music_item\":\"theme\",\"service\":null}",
+      "value": {
+        "playlist": null,
+        "music_item": "theme",
+        "service": null
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 23,
+      "seconds": 0.05872966698370874,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:RateBook:train:293:view0:native:alias",
+      "text": "{\"selected_rating_value\":[\"2\"],\"selected_object_select\":[\"current\"]}",
+      "value": {
+        "selected_rating_value": [
+          "2"
+        ],
+        "selected_object_select": [
+          "current"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 29,
+      "seconds": 0.06982904090546072,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:RateBook:train:293:view0:native:nullable",
+      "text": "{\"object_select\":\"current\",\"rating_value\":\"2\"}",
+      "value": {
+        "object_select": "current",
+        "rating_value": "2"
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 19,
+      "seconds": 0.04830370796844363,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:alias",
+      "text": "{\"selected_object_name\":[\"Playlist: The Very Best of Dolly Parton\"]}",
+      "value": {
+        "selected_object_name": [
+          "Playlist: The Very Best of Dolly Parton"
+        ]
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 25,
+      "seconds": 0.06115558301098645,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:SearchCreativeWork:train:602:view1:native:nullable",
+      "text": "{\"object_name\":\"Playlist: The Very Best of Dolly Parton\"}",
+      "value": {
+        "object_name": "Playlist: The Very Best of Dolly Parton"
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 20,
+      "seconds": 0.05224795802496374,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:alias",
+      "text": "{\"selected_movie_type\":[\"animated movies\"],\"selected_movie_name\":[],\"selected_location_name\":[]}",
+      "value": {
+        "selected_movie_type": [
+          "animated movies"
+        ],
+        "selected_movie_name": [],
+        "selected_location_name": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 42,
+      "seconds": 0.10370462504215539,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "native:snips:SearchScreeningEvent:train:897:view1:native:nullable",
+      "text": "{\"movie_type\":\"animated movies\",\"movie_name\":null,\"location_name\":null}",
+      "value": {
+        "movie_type": "animated movies",
+        "movie_name": null,
+        "location_name": null
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 31,
+      "seconds": 0.07643179199658334,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "ARRAY-3-ARTIST",
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 30,
+      "seconds": 0.07166512496769428,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "ARRAY-3-CITY",
+      "text": "{\"city\":[\"Bergen\",\"Ilmenstorf\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen",
+          "Ilmenstorf"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 23,
+      "seconds": 0.05720941605977714,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "ARRAY-4-ARTIST",
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\",\"Eli Brooks\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale",
+          "Eli Brooks"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 35,
+      "seconds": 0.08498112508095801,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "ARRAY-4-CITY",
+      "text": "{\"city\":[\"Bergen\",\"Trorang\",\"Stavanger\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen",
+          "Trorang",
+          "Stavanger"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 26,
+      "seconds": 0.06332562514580786,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    },
+    {
+      "id": "ARRAY-5-ARTIST",
+      "text": "{\"artist\":[\"Mira Sol\",\"Theo Lane\",\"Nora Vale\",\"Eli Brooks\",\"Iris Reed\"],\"album\":[]}",
+      "value": {
+        "artist": [
+          "Mira Sol",
+          "Theo Lane",
+          "Nora Vale",
+          "Eli Brooks",
+          "Iris Reed"
+        ],
+        "album": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 40,
+      "seconds": 0.093793333042413,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": true,
+      "saved_generation_match": true
+    },
+    {
+      "id": "ARRAY-5-CITY",
+      "text": "{\"city\":[\"Bergen\"],\"country\":[]}",
+      "value": {
+        "city": [
+          "Bergen"
+        ],
+        "country": []
+      },
+      "schema_valid": true,
+      "success": true,
+      "stop_reason": "turn_end",
+      "output_tokens": 16,
+      "seconds": 0.04156570788472891,
+      "output_mode": "native-json",
+      "model_calls": 1,
+      "json_assembly": false,
+      "output_repair": false,
+      "constrained": false,
+      "protocol": {
+        "temperature": 0,
+        "repetition_penalty": 1,
+        "max_tokens": 256,
+        "serialization": "native-sft-chat-v1"
+      },
+      "exact": false,
+      "saved_generation_match": true
+    }
+  ],
+  "mismatches": []
+}

@@ -1,0 +1,1728 @@
+[
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"artist\":[\"Mariem Hassan\"],\"music_item\":[]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"artist\":[\"Mariem Hassan\"],\"music_item\":[]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"artist\":[\"Mariem Hassan\"],\"music_item\":[]}"
+      }
+    },
+    "candidate_text": "{\"artist\":[\"Mariem Hassan\"],\"music_item\":[]}",
+    "expected": {
+      "artist": [],
+      "music_item": []
+    },
+    "family": "Original extraction",
+    "id": "FIELD-02",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "artist": {
+          "description": "performer or musical artist",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "music_item": {
+          "description": "word specifying the requested music category, such as artist, track, song, or album",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "artist",
+        "music_item"
+      ],
+      "type": "object"
+    },
+    "source_text": "In my playlist Rock Gaming add Mariem Hassan con Leyoad",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": true,
+        "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Denver\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Colorado\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Colorado\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}"
+      }
+    },
+    "candidate_text": "{\"restaurant_name\":[\"River Moon\"],\"city\":[\"Dallas\"],\"party_size_number\":[\"four\"],\"timeRange\":[\"tomorrow\"]}",
+    "expected": {
+      "city": [
+        "Denver"
+      ],
+      "party_size_number": [
+        "four"
+      ],
+      "restaurant_name": [
+        "River Moon"
+      ],
+      "timeRange": [
+        "tomorrow"
+      ]
+    },
+    "family": "Original extraction",
+    "id": "FIELD-30",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "city": {
+          "description": "city or town",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "party_size_number": {
+          "description": "explicit party size",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "restaurant_name": {
+          "description": "restaurant name",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "timeRange": {
+          "description": "date, time, or time-range expression",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "restaurant_name",
+        "city",
+        "party_size_number",
+        "timeRange"
+      ],
+      "type": "object"
+    },
+    "source_text": "Book River Moon in Denver for four people tomorrow.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Olm\"],\"timeRange\":[\"Friday\"],\"country\":[]}"
+      },
+      "145/500": {
+        "correct": true,
+        "text": "{\"city\":[\"Oslo\"],\"timeRange\":[\"Friday\"],\"country\":[]}"
+      },
+      "150/563": {
+        "correct": true,
+        "text": "{\"city\":[\"Oslo\"],\"timeRange\":[\"Friday\"],\"country\":[]}"
+      }
+    },
+    "candidate_text": "{\"city\":[\"Ottal\"],\"timeRange\":[\"Friday\"],\"country\":[]}",
+    "expected": {
+      "city": [
+        "Oslo"
+      ],
+      "country": [],
+      "timeRange": [
+        "Friday"
+      ]
+    },
+    "family": "Original extraction",
+    "id": "FIELD-31",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "city": {
+          "description": "city or town",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "country": {
+          "description": "country",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "timeRange": {
+          "description": "date, time, or time-range expression",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "city",
+        "timeRange",
+        "country"
+      ],
+      "type": "object"
+    },
+    "source_text": "What is the weather in Oslo on Friday?",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[],\"rating_unit\":[\"stars\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[\"5\"],\"rating_unit\":[\"stars\"]}"
+      },
+      "150/563": {
+        "correct": true,
+        "text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[\"five\"],\"rating_unit\":[\"stars\"]}"
+      }
+    },
+    "candidate_text": "{\"object_name\":[\"Glass Harbor\"],\"rating_value\":[\"four\"],\"best_rating\":[],\"rating_unit\":[\"stars\"]}",
+    "expected": {
+      "best_rating": [
+        "five"
+      ],
+      "object_name": [
+        "Glass Harbor"
+      ],
+      "rating_unit": [
+        "stars"
+      ],
+      "rating_value": [
+        "four"
+      ]
+    },
+    "family": "Original extraction",
+    "id": "FIELD-32",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "best_rating": {
+          "description": "maximum rating scale",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "object_name": {
+          "description": "name of the work being rated or searched for",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "rating_unit": {
+          "description": "rating unit",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "rating_value": {
+          "description": "given rating",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "object_name",
+        "rating_value",
+        "best_rating",
+        "rating_unit"
+      ],
+      "type": "object"
+    },
+    "source_text": "Give the book Glass Harbor four out of five stars.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\"],\"country\":[\"Norway\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Norway\"],\"country\":[]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Orange\"],\"country\":[]}"
+      }
+    },
+    "candidate_text": "{\"city\":[\"Bergen\",\"Orange\"],\"country\":[]}",
+    "expected": {
+      "city": [
+        "Bergen",
+        "Oslo"
+      ],
+      "country": []
+    },
+    "family": "Original extraction",
+    "id": "FIELD-36",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "city": {
+          "description": "city or town",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "country": {
+          "description": "country",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "city",
+        "country"
+      ],
+      "type": "object"
+    },
+    "source_text": "Give me the weather in Bergen and Oslo.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"playlist\":\"night vibes\",\"artist\":\"gn\",\"playlist_owner\":null}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"playlist\":\"night vibes\",\"artist\":\"gn\",\"playlist_owner\":null}"
+      },
+      "150/563": {
+        "correct": true,
+        "text": "{\"playlist\":\"night vibes\",\"artist\":null,\"playlist_owner\":null}"
+      }
+    },
+    "candidate_text": "{\"playlist_owner\":null,\"artist\":\"gn\",\"playlist\":\"night vibes\"}",
+    "expected": {
+      "artist": null,
+      "playlist": "night vibes",
+      "playlist_owner": null
+    },
+    "family": "Original extraction",
+    "id": "native:snips:AddToPlaylist:train:80:view1:native:nullable",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "artist": {
+          "description": "performer or musical artist",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "playlist": {
+          "description": "playlist name",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "playlist_owner": {
+          "description": "person owning the playlist",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "playlist",
+        "artist",
+        "playlist_owner"
+      ],
+      "type": "object"
+    },
+    "source_text": "add gn to night vibes",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"selected_restaurant_name\":[\"mughlai restaurant\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"selected_restaurant_name\":[\"mughlai\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}"
+      },
+      "150/563": {
+        "correct": true,
+        "text": "{\"selected_restaurant_name\":[],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}"
+      }
+    },
+    "candidate_text": "{\"selected_restaurant_name\":[\"dine at a mughlai restaurant\"],\"selected_timeRange\":[\"Nov. the 1st\"],\"selected_sort\":[]}",
+    "expected": {
+      "selected_restaurant_name": [],
+      "selected_sort": [],
+      "selected_timeRange": [
+        "Nov. the 1st"
+      ]
+    },
+    "family": "Original extraction",
+    "id": "native:snips:BookRestaurant:train:684:view1:native:alias",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "selected_restaurant_name": {
+          "description": "restaurant name",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "selected_sort": {
+          "description": "requested ranking, ordering, or preference",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "selected_timeRange": {
+          "description": "date, time, or time-range expression",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "selected_restaurant_name",
+        "selected_timeRange",
+        "selected_sort"
+      ],
+      "type": "object"
+    },
+    "source_text": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"restaurant_name\":\"mughlai restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"restaurant_name\":\"mughlai restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"restaurant_name\":\"mughlai restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}"
+      }
+    },
+    "candidate_text": "{\"restaurant_name\":\"mughlai restaurant\",\"timeRange\":\"Nov. the 1st\",\"sort\":null}",
+    "expected": {
+      "restaurant_name": null,
+      "sort": null,
+      "timeRange": "Nov. the 1st"
+    },
+    "family": "Original extraction",
+    "id": "native:snips:BookRestaurant:train:684:view1:native:nullable",
+    "schema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "additionalProperties": false,
+      "properties": {
+        "restaurant_name": {
+          "description": "restaurant name",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sort": {
+          "description": "requested ranking, ordering, or preference",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timeRange": {
+          "description": "date, time, or time-range expression",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "restaurant_name",
+        "timeRange",
+        "sort"
+      ],
+      "type": "object"
+    },
+    "source_text": "sofia phillips and winifred walker want to dine at a mughlai restaurant in LA on Nov. the 1st",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\"],\"country\":[]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Lund\",\"Trondheim\"],\"country\":[]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Lund\",\"Trondheim\"],\"country\":[]}"
+      }
+    },
+    "candidate_text": "{\"city\":[\"Bergen\",\"Ilmenstorf\"],\"country\":[]}",
+    "expected": {
+      "city": [
+        "Bergen",
+        "Oslo",
+        "Trondheim"
+      ],
+      "country": []
+    },
+    "family": "Original extraction",
+    "id": "ARRAY-3-CITY",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "city": {
+          "description": "city or town",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "country": {
+          "description": "country",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "city",
+        "country"
+      ],
+      "type": "object"
+    },
+    "source_text": "Give me the weather in Bergen, Oslo, and Trondheim.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\"],\"country\":[]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Los Angeles\",\"Tondheim\",\"Stavanger\"],\"country\":[]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Los Angeles\",\"Travaux\",\"Stavanger\"],\"country\":[]}"
+      }
+    },
+    "candidate_text": "{\"city\":[\"Bergen\",\"Trorang\",\"Stavanger\"],\"country\":[]}",
+    "expected": {
+      "city": [
+        "Bergen",
+        "Oslo",
+        "Trondheim",
+        "Stavanger"
+      ],
+      "country": []
+    },
+    "family": "Original extraction",
+    "id": "ARRAY-4-CITY",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "city": {
+          "description": "city or town",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "country": {
+          "description": "country",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "city",
+        "country"
+      ],
+      "type": "object"
+    },
+    "source_text": "Give me the weather in Bergen, Oslo, Trondheim, and Stavanger.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\"],\"country\":[]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Los Angeles\",\"Tromsø\"],\"country\":[]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"city\":[\"Bergen\",\"Los\",\"Tromsø\"],\"country\":[]}"
+      }
+    },
+    "candidate_text": "{\"city\":[\"Bergen\"],\"country\":[]}",
+    "expected": {
+      "city": [
+        "Bergen",
+        "Oslo",
+        "Trondheim",
+        "Stavanger",
+        "Tromsø"
+      ],
+      "country": []
+    },
+    "family": "Original extraction",
+    "id": "ARRAY-5-CITY",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "city": {
+          "description": "city or town",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "country": {
+          "description": "country",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "city",
+        "country"
+      ],
+      "type": "object"
+    },
+    "source_text": "Give me the weather in Bergen, Oslo, Trondheim, Stavanger, and Tromsø.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"temperature\":\"12.5 degrees\",\"samples\":4}"
+      },
+      "145/500": {
+        "correct": true,
+        "text": "{\"temperature\":-12.5,\"samples\":4}"
+      },
+      "150/563": {
+        "correct": true,
+        "text": "{\"temperature\":-12.5,\"samples\":4}"
+      }
+    },
+    "candidate_text": "{\"temperature\":\"-12.5\",\"samples\":4}",
+    "expected": {
+      "samples": 4,
+      "temperature": -12.5
+    },
+    "family": "02 · Integers and decimals",
+    "id": "JSON-04",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "samples": {
+          "description": "Sample count",
+          "type": "integer"
+        },
+        "temperature": {
+          "description": "Temperature in degrees",
+          "type": "number"
+        }
+      },
+      "required": [
+        "temperature",
+        "samples"
+      ],
+      "type": "object"
+    },
+    "source_text": "The freezer measured -12.5 degrees during 4 samples.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"titles\":[\"Queue Winter at Dawn, Paper Wings, The Quiet Bridge, Silver Window, and After the Rain\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"titles\":[\"Queue Winter at Dawn, Paper Wings, The Quiet Bridge, Silver Window, and After the Rain\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"titles\":[\"Queue Winter at Dawn, Paper Wings, The Quiet Bridge, Silver Window, and After the Rain\"]}"
+      }
+    },
+    "candidate_text": "{\"titles\":[\"Queue Winter at Dawn, Paper Wings, The Quiet Bridge, Silver Window, and After the Rain\"]}",
+    "expected": {
+      "titles": [
+        "Winter at Dawn",
+        "Paper Wings",
+        "The Quiet Bridge",
+        "Silver Window",
+        "After the Rain"
+      ]
+    },
+    "family": "05 · String arrays",
+    "id": "JSON-10",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "titles": {
+          "description": "Complete queued titles, one item per title",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "titles"
+      ],
+      "type": "object"
+    },
+    "source_text": "Queue Winter at Dawn, Paper Wings, The Quiet Bridge, Silver Window, and After the Rain.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"readings\":[\"2.5, -1.75, and 8\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"readings\":[\"2.5,-1.75, and 8\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"readings\":[\"2.5, -1.75, and 8\"]}"
+      }
+    },
+    "candidate_text": "{\"readings\":[\"2.5, -1.75, and 8\"]}",
+    "expected": {
+      "readings": [
+        2.5,
+        -1.75,
+        8
+      ]
+    },
+    "family": "06 · Numeric and boolean arrays",
+    "id": "JSON-11",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "readings": {
+          "description": "Sensor readings in source order",
+          "items": {
+            "type": "number"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "readings"
+      ],
+      "type": "object"
+    },
+    "source_text": "The sensor readings were 2.5, -1.75, and 8.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"event\":{\"venue\":\"Lantern Hall\",\"date\":\"2027-03-12\"}}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"event\":{\"title\":\"River Lights\",\"date\":\"2027-03-12\"}}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"event\":{\"title\":\"River Lights\",\"date\":\"2027-03-12\"}}"
+      }
+    },
+    "candidate_text": "{\"event\":{\"venue\":\"Lantern Hall\",\"date\":\"2027-03-12\"}}",
+    "expected": {
+      "event": {
+        "details": {
+          "date": "2027-03-12",
+          "venue": "Lantern Hall"
+        },
+        "title": "River Lights"
+      }
+    },
+    "family": "07 · Nested objects",
+    "id": "JSON-14",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "event": {
+          "additionalProperties": false,
+          "properties": {
+            "details": {
+              "additionalProperties": false,
+              "properties": {
+                "date": {
+                  "description": "Date exactly as written",
+                  "type": "string"
+                },
+                "venue": {
+                  "description": "Event venue",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "venue",
+                "date"
+              ],
+              "type": "object"
+            },
+            "title": {
+              "description": "Event title",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "details"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "event"
+      ],
+      "type": "object"
+    },
+    "source_text": "The event is called River Lights. It is at Lantern Hall on 2027-03-12.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"organization\":{\"name\":\"Orion Labs\",\"contact\":{\"name\":\"Nia Cole\"}}}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"organization\":{\"name\":\"Orion Labs\",\"team\":\"Nia Cole\"}}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"organization\":{\"name\":\"At Orion Labs\",\"team\":{\"name\":\"Nia Cole\"},\"contact\":{\"name\":\"Nia Cole\"}}}"
+      }
+    },
+    "candidate_text": "{\"organization\":{\"name\":\"Nia Cole\",\"contact\":{\"name\":\"Orion Labs\"}}}",
+    "expected": {
+      "organization": {
+        "name": "Orion Labs",
+        "team": {
+          "contact": {
+            "name": "Nia Cole"
+          },
+          "name": "optics"
+        }
+      }
+    },
+    "family": "08 · Deeper nesting",
+    "id": "JSON-15",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "organization": {
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "description": "Organization name",
+              "type": "string"
+            },
+            "team": {
+              "additionalProperties": false,
+              "properties": {
+                "contact": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "description": "Contact full name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "type": "object"
+                },
+                "name": {
+                  "description": "Team name without team",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "contact"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "name",
+            "team"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "organization"
+      ],
+      "type": "object"
+    },
+    "source_text": "At Orion Labs, the optics team contact is Nia Cole.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"shipment\":{\"code\":\"ZX-42\",\"destination\":\"Kyoto\"}}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"shipment\":{\"code\":\"ZX-42\",\"destination\":\"Kyoto\"}}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"shipment\":{\"code\":\"ZX-42\",\"destination\":\"Kyoto\"}}"
+      }
+    },
+    "candidate_text": "{\"shipment\":{\"code\":\"ZX-42\",\"destination\":\"Kyoto\"}}",
+    "expected": {
+      "shipment": {
+        "code": "ZX-42",
+        "destination": {
+          "address": {
+            "city": "Kyoto",
+            "country": "Japan"
+          }
+        }
+      }
+    },
+    "family": "08 · Deeper nesting",
+    "id": "JSON-16",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "shipment": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "description": "Shipment code",
+              "type": "string"
+            },
+            "destination": {
+              "additionalProperties": false,
+              "properties": {
+                "address": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "city": {
+                      "description": "Destination city",
+                      "type": "string"
+                    },
+                    "country": {
+                      "description": "Destination country",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "city",
+                    "country"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "address"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "code",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "shipment"
+      ],
+      "type": "object"
+    },
+    "source_text": "Shipment ZX-42 goes to a destination city of Kyoto in Japan.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"items\":[{\"name\":\"bolts quantity 12\",\"quantity\":12},{\"name\":\"washers quantity 30\",\"quantity\":30},{\"name\":\"bolts quantity 4\",\"quantity\":4}]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"items\":[{\"name\":\"bolts quantity 12\",\"quantity\":12},{\"name\":\"bolts quantity 30\",\"quantity\":4}]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"items\":[{\"name\":\"bolts quantity 12\",\"quantity\":12},{\"name\":\"bolts quantity 30\",\"quantity\":4}]}"
+      }
+    },
+    "candidate_text": "{\"items\":[\"bolts\",\"washers\",\"cages\"]}",
+    "expected": {
+      "items": [
+        {
+          "name": "bolts",
+          "quantity": 12
+        },
+        {
+          "name": "washers",
+          "quantity": 30
+        },
+        {
+          "name": "brackets",
+          "quantity": 4
+        }
+      ]
+    },
+    "family": "09 · Arrays of objects",
+    "id": "JSON-18",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "description": "Inventory records in source order",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "description": "Item name",
+                "type": "string"
+              },
+              "quantity": {
+                "description": "Quantity for this item",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "name",
+              "quantity"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "type": "object"
+    },
+    "source_text": "Inventory: bolts quantity 12; washers quantity 30; brackets quantity 4.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"lead\":{\"name\":\"Sana Wu\"},\"tools\":[\"drill and saw\"],\"materials\":[\"owning\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"lead\":{\"tools\":[\"drill and saw\"],\"materials\":[\"oregan\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"lead\":{\"name\":\"Sana Wu\"},\"tools\":[\"drill and saw\"],\"materials\":[\"oregan\"]}"
+      }
+    },
+    "candidate_text": "{\"lead\":{\"name\":\"Sana Wu\"},\"tools\":[\"drill and saw\"],\"materials\":[\"owning oak\"]}",
+    "expected": {
+      "lead": {
+        "name": "Sana Wu"
+      },
+      "materials": [
+        "oak",
+        "steel"
+      ],
+      "tools": [
+        "drill",
+        "saw"
+      ]
+    },
+    "family": "10 · Multiple arrays and objects",
+    "id": "JSON-19",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "lead": {
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "description": "Workshop lead full name",
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "materials": {
+          "description": "Materials only",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tools": {
+          "description": "Tools only",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "lead",
+        "tools",
+        "materials"
+      ],
+      "type": "object"
+    },
+    "source_text": "Workshop lead: Sana Wu. Tools: drill and saw. Materials: oak and steel.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": true,
+        "text": "{\"design\":{\"members\":[\"Ava Finch\",\"Omar Vale\"]},\"build\":{\"members\":[\"Zoe Lin\",\"Leo Moss\"]}}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"design\":{\"members\":[\"Zoe Lin\",\"Leo Moss\"]},\"build\":{\"members\":[\"Ava Finch\",\"Omar Vale\"]}}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"design\":{\"members\":[\"Zoe Lin\",\"Leo Moss\"]},\"build\":{\"members\":[\"Ava Finch\",\"Omar Vale\"]}}"
+      }
+    },
+    "candidate_text": "{\"design\":{\"members\":[\"Ava Finch\",\"Omar Vale\"]},\"build\":{\"members\":[\"Zoe Lin\",\"Leo Moss\"]}",
+    "expected": {
+      "build": {
+        "members": [
+          "Zoe Lin",
+          "Leo Moss"
+        ]
+      },
+      "design": {
+        "members": [
+          "Ava Finch",
+          "Omar Vale"
+        ]
+      }
+    },
+    "family": "10 · Multiple arrays and objects",
+    "id": "JSON-20",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "build": {
+          "additionalProperties": false,
+          "properties": {
+            "members": {
+              "description": "Build team members",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "members"
+          ],
+          "type": "object"
+        },
+        "design": {
+          "additionalProperties": false,
+          "properties": {
+            "members": {
+              "description": "Design team members",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "members"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "design",
+        "build"
+      ],
+      "type": "object"
+    },
+    "source_text": "Design team: Ava Finch and Omar Vale. Build team: Zoe Lin and Leo Moss.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"groups\":[\"group one\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"groups\":[\"copper\",\"gold\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"groups\":[\"group one\",\"group two\"]}"
+      }
+    },
+    "candidate_text": "{\"groups\":[{\"groups\":[\"two\"]}]}",
+    "expected": {
+      "groups": [
+        [
+          "copper",
+          "zinc"
+        ],
+        [
+          "silver",
+          "gold"
+        ]
+      ]
+    },
+    "family": "11 · Arrays of arrays",
+    "id": "JSON-22",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "groups": {
+          "description": "Keep group boundaries",
+          "items": {
+            "description": "Values within one group",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "groups"
+      ],
+      "type": "object"
+    },
+    "source_text": "Group one contains copper and zinc. Group two contains silver and gold.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"record\":[\"Tuple fields in order: label delta, count 6, enabled true\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"record\":[\"tup\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"record\":[\"Delta\",\"count 6,\"true\"]}"
+      }
+    },
+    "candidate_text": "{\"record\":[\"Tuple fields in order: label delta, count 6, enabled true\"]}",
+    "expected": {
+      "record": [
+        "delta",
+        6,
+        true
+      ]
+    },
+    "family": "12 · Mixed arrays and tuples",
+    "id": "JSON-23",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "record": {
+          "description": "Label, count and enabled flag, in that order",
+          "items": false,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "boolean"
+            }
+          ],
+          "type": "array"
+        }
+      },
+      "required": [
+        "record"
+      ],
+      "type": "object"
+    },
+    "source_text": "Tuple fields in order: label delta, count 6, enabled true.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"values\":[\"word amber\",\"number 9,\"boolean false\",\"null\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"values\":[\"alternative\",\"false\",\"null\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"values\":[\"almost 9\",\"the number 9\",\"false\",\"null\"]}"
+      }
+    },
+    "candidate_text": "{\"values\":[\"word amber\",\"9,\"false\",\"null\"]}",
+    "expected": {
+      "values": [
+        "amber",
+        9,
+        false,
+        null
+      ]
+    },
+    "family": "12 · Mixed arrays and tuples",
+    "id": "JSON-24",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "values": {
+          "description": "The four stated values with their stated types",
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "values"
+      ],
+      "type": "object"
+    },
+    "source_text": "The values in order are the word amber, the number 9, the boolean false, and null.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"mode\":\"train\",\"destination\":\"Ghent\",\"version\":\"train\"}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"mode\":\"train\",\"destination\":\"Ghent\",\"value\":\"Ghent\"}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"mode\":\"train\",\"destination\":\"Ghent\",\"value\":\"Ghent\"}"
+      }
+    },
+    "candidate_text": "{\"version\":\"train\",\"destination\":\"Ghent\",\"mode\":\"transport\"}",
+    "expected": {
+      "destination": "Ghent",
+      "mode": "train",
+      "version": 1
+    },
+    "family": "13 · Enum and const",
+    "id": "JSON-26",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "destination": {
+          "description": "Trip destination",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "bus",
+            "train",
+            "ferry"
+          ],
+          "type": "string"
+        },
+        "version": {
+          "const": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "version",
+        "destination",
+        "mode"
+      ],
+      "type": "object"
+    },
+    "source_text": "The trip destination is Ghent and the mode is train.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"name\":\"Dario Ames\"}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"name\":\"Rio\"}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"name\":\"Rio\"}"
+      }
+    },
+    "candidate_text": "{\"name\":\"Rio\"}",
+    "expected": {
+      "name": "Dario Ames",
+      "nickname": "Rio"
+    },
+    "family": "14 · Optional properties",
+    "id": "JSON-28",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "description": "Full registered name",
+          "type": "string"
+        },
+        "nickname": {
+          "description": "Nickname, include only if stated",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "source_text": "Register Dario Ames with nickname Rio.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"primary\":{\"name\":\"Inez Park\",\"email\":\"emil@example.org\"}}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"primary\":{\"name\":\"Inez Park\",\"email\":\"emil@example.org\"},\"backup\":{\"name\":\"Emil Frost\",\"email\":\"emil@example.org\"}}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"primary\":{\"name\":\"Inez Park\",\"email\":\"emil@example.org\"},\"backup\":{\"name\":\"Emil Frost\",\"email\":\"inez@example.org\"}}"
+      }
+    },
+    "candidate_text": "{\"primary\":{\"name\":\"Inez Park\",\"email\":\"emil@example.org\"},\"backup\":{\"name\":\"Emil Frost\",\"email\":\"emil@example.org\"}}",
+    "expected": {
+      "backup": {
+        "email": "emil@example.org",
+        "name": "Emil Frost"
+      },
+      "primary": {
+        "email": "inez@example.org",
+        "name": "Inez Park"
+      }
+    },
+    "family": "15 · Local schema references",
+    "id": "JSON-30",
+    "schema": {
+      "$defs": {
+        "contact": {
+          "additionalProperties": false,
+          "properties": {
+            "email": {
+              "description": "Stated email address",
+              "type": "string"
+            },
+            "name": {
+              "description": "Contact full name",
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "email"
+          ],
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "backup": {
+          "$ref": "#/$defs/contact"
+        },
+        "primary": {
+          "$ref": "#/$defs/contact"
+        }
+      },
+      "required": [
+        "primary",
+        "backup"
+      ],
+      "type": "object"
+    },
+    "source_text": "Primary contact: Inez Park, inez@example.org. Backup contact: Emil Frost, emil@example.org.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"materials\":[\"linen, felt, and cork\"]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"materials\":[\"linen, felt, and cork\"]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"materials\":[\"linen, felt, and cork\"]}"
+      }
+    },
+    "candidate_text": "{\"materials\":[\"linen, felt, and cork\"]}",
+    "expected": {
+      "materials": [
+        "linen",
+        "felt",
+        "cork"
+      ]
+    },
+    "family": "21 · Arrays inside objects",
+    "id": "JSON-41",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "materials": {
+          "description": "Material names as separate strings",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "materials"
+      ],
+      "type": "object"
+    },
+    "source_text": "The requested materials are linen, felt, and cork.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"schema\":\"counts\"}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"type\":\"list\",\"description\":\"Map each stated item name to its integer count\"}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"schema\":\"inventory\"}"
+      }
+    },
+    "candidate_text": "{\"schema\":\"{\"type\":\"{\"name\":\"pencils 14\",\"count\":14,\"integer count\":9}}",
+    "expected": {
+      "erasers": 9,
+      "pencils": 14
+    },
+    "family": "23 · Dynamic object keys",
+    "id": "JSON-45",
+    "schema": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "description": "Map each stated inventory item name to its integer count",
+      "type": "object"
+    },
+    "source_text": "Inventory counts: pencils 14; erasers 9.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"type\":\"usher\"}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"mae\":\"Ivo\",\"mae\":\"Mae\"}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"mae\":\"Ivo\",\"mae\":\"Mae\"}"
+      }
+    },
+    "candidate_text": "{\"schema\":\"{\"type\":\"{\"name\":\"Ivo\",\"usher\":\"Mae\"}\"}",
+    "expected": {
+      "Ivo": "host",
+      "Mae": "usher"
+    },
+    "family": "23 · Dynamic object keys",
+    "id": "JSON-46",
+    "schema": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Map each stated person name to that person’s role",
+      "type": "object"
+    },
+    "source_text": "Ivo is the host. Mae is the usher.",
+    "stop_reason": "turn_end"
+  },
+  {
+    "baselines": {
+      "142/563": {
+        "correct": false,
+        "text": "{\"settings\":[],\"tasks\":[]}"
+      },
+      "145/500": {
+        "correct": false,
+        "text": "{\"settings\":[],\"tasks\":[]}"
+      },
+      "150/563": {
+        "correct": false,
+        "text": "{\"settings\":[],\"tasks\":[]}"
+      }
+    },
+    "candidate_text": "{\"settings\":null,\"tasks\":[]}",
+    "expected": {
+      "settings": {},
+      "tasks": []
+    },
+    "family": "24 · Empty containers",
+    "id": "JSON-48",
+    "schema": {
+      "additionalProperties": false,
+      "properties": {
+        "settings": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Stated setting name-value pairs",
+          "type": "object"
+        },
+        "tasks": {
+          "description": "Stated tasks",
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "description": "Task title",
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "settings",
+        "tasks"
+      ],
+      "type": "object"
+    },
+    "source_text": "No settings or tasks were provided.",
+    "stop_reason": "turn_end"
+  }
+]

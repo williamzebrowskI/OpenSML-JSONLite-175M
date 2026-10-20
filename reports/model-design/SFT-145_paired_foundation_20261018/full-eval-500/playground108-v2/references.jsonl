@@ -1,0 +1,108 @@
+{"id":"FIELD-01","expected":{"playlist_owner":["my"],"playlist":["Rock Gaming"],"entity_name":["Mariem Hassan con Leyoad"]}}
+{"id":"FIELD-02","expected":{"artist":[],"music_item":[]}}
+{"id":"FIELD-03","expected":{"playlist_owner":["my"]}}
+{"id":"FIELD-04","expected":{"artist":[],"entity_name":[],"playlist":["Digster Future Hits"]}}
+{"id":"FIELD-05","expected":{"restaurant_type":["brasserie"],"party_size_number":["nine"],"state":["AR"]}}
+{"id":"FIELD-06","expected":{"party_size_number":["nine"],"timeRange":[],"sort":[]}}
+{"id":"FIELD-07","expected":{"sort":["best"],"city":["Wrigley"]}}
+{"id":"FIELD-08","expected":{"timeRange":[],"poi":[]}}
+{"id":"FIELD-09","expected":{"condition_temperature":["colder"],"state":["Louisiana"]}}
+{"id":"FIELD-10","expected":{"current_location":[],"geographic_poi":[],"condition_temperature":["colder"]}}
+{"id":"FIELD-11","expected":{"timeRange":["last August"],"geographic_poi":["Stunt Ranch Santa Monica Mountains Reserve"],"condition_temperature":["colder"]}}
+{"id":"FIELD-12","expected":{"current_location":[],"geographic_poi":["Stunt Ranch Santa Monica Mountains Reserve"],"state":[]}}
+{"id":"FIELD-13","expected":{"artist":["Behzad Mirkhani"],"music_item":["theme"],"sort":["last"]}}
+{"id":"FIELD-14","expected":{"service":[],"music_item":["theme"],"playlist":[]}}
+{"id":"FIELD-15","expected":{"artist":["Yui"],"music_item":["track"],"service":["Vimeo"]}}
+{"id":"FIELD-16","expected":{"playlist":[],"sort":[]}}
+{"id":"FIELD-17","expected":{"rating_value":["3"],"rating_unit":["stars"],"object_name":["Things Fall Apart"]}}
+{"id":"FIELD-18","expected":{"object_name":["Things Fall Apart"],"object_select":[],"object_type":[]}}
+{"id":"FIELD-19","expected":{"rating_value":["1"],"object_name":[]}}
+{"id":"FIELD-20","expected":{"object_part_of_series_type":[],"object_name":[]}}
+{"id":"FIELD-21","expected":{"object_name":["Happiness Was Free"]}}
+{"id":"FIELD-22","expected":{"object_type":[],"object_name":["Happiness Was Free"]}}
+{"id":"FIELD-23","expected":{"object_name":["Martin Morning"],"object_type":["saga"]}}
+{"id":"FIELD-24","expected":{"object_name":["Martin Morning"]}}
+{"id":"FIELD-25","expected":{"movie_type":["animated movies"],"spatial_relation":["in the neighborhood"]}}
+{"id":"FIELD-26","expected":{"movie_type":["animated movies"],"timeRange":[],"movie_name":[]}}
+{"id":"FIELD-27","expected":{"movie_name":["Mabel’s Dramatic Career"],"timeRange":["twenty two o'clock"]}}
+{"id":"FIELD-28","expected":{"timeRange":["twenty two o'clock"],"spatial_relation":[],"object_location_type":[]}}
+{"id":"FIELD-29","expected":{"track":["Blue Lantern"],"artist":["Mira Sol"],"album":[]}}
+{"id":"FIELD-30","expected":{"restaurant_name":["River Moon"],"city":["Denver"],"party_size_number":["four"],"timeRange":["tomorrow"]}}
+{"id":"FIELD-31","expected":{"city":["Oslo"],"timeRange":["Friday"],"country":[]}}
+{"id":"FIELD-32","expected":{"object_name":["Glass Harbor"],"rating_value":["four"],"best_rating":["five"],"rating_unit":["stars"]}}
+{"id":"FIELD-33","expected":{"movie_name":["Silver Orchard"],"location_name":["Maple Cinema"],"timeRange":[]}}
+{"id":"FIELD-34","expected":{"entity_name":["Night Steps"],"playlist":["Evening Walks"]}}
+{"id":"FIELD-35","expected":{"artist":["Mira Sol","Theo Lane"],"album":[]}}
+{"id":"FIELD-36","expected":{"city":["Bergen","Oslo"],"country":[]}}
+{"id":"FIELD-37","expected":{"cuisine":["Thai"],"city":["Boston"],"restaurant_name":[]}}
+{"id":"FIELD-38","expected":{"album":["Quiet Signals"],"artist":["Mira Sol"],"track":[]}}
+{"id":"FIELD-39","expected":{"object_name":["Paper Bridge"],"rating_value":[]}}
+{"id":"FIELD-40","expected":{"country":[],"timeRange":[],"artist":[]}}
+{"id":"native:snips:AddToPlaylist:train:80:view1:native:alias","expected":{"selected_playlist_owner":[],"selected_artist":[],"selected_playlist":["night vibes"]}}
+{"id":"native:snips:AddToPlaylist:train:80:view1:native:nullable","expected":{"playlist_owner":null,"artist":null,"playlist":"night vibes"}}
+{"id":"native:snips:BookRestaurant:train:684:view1:native:alias","expected":{"selected_restaurant_name":[],"selected_timeRange":["Nov. the 1st"],"selected_sort":[]}}
+{"id":"native:snips:BookRestaurant:train:684:view1:native:nullable","expected":{"restaurant_name":null,"timeRange":"Nov. the 1st","sort":null}}
+{"id":"native:snips:GetWeather:train:109:view0:native:alias","expected":{"selected_condition_temperature":["colder"],"selected_state":["Louisiana"]}}
+{"id":"native:snips:GetWeather:train:109:view0:native:nullable","expected":{"condition_temperature":"colder","state":"Louisiana"}}
+{"id":"native:snips:PlayMusic:train:801:view1:native:alias","expected":{"selected_service":[],"selected_music_item":["theme"],"selected_playlist":[]}}
+{"id":"native:snips:PlayMusic:train:801:view1:native:nullable","expected":{"service":null,"music_item":"theme","playlist":null}}
+{"id":"native:snips:RateBook:train:293:view0:native:alias","expected":{"selected_object_select":["current"],"selected_rating_value":["2"]}}
+{"id":"native:snips:RateBook:train:293:view0:native:nullable","expected":{"object_select":"current","rating_value":"2"}}
+{"id":"native:snips:SearchCreativeWork:train:602:view1:native:alias","expected":{"selected_object_name":["Playlist: The Very Best of Dolly Parton"]}}
+{"id":"native:snips:SearchCreativeWork:train:602:view1:native:nullable","expected":{"object_name":"Playlist: The Very Best of Dolly Parton"}}
+{"id":"native:snips:SearchScreeningEvent:train:897:view1:native:alias","expected":{"selected_location_name":[],"selected_movie_name":[],"selected_movie_type":["animated movies"]}}
+{"id":"native:snips:SearchScreeningEvent:train:897:view1:native:nullable","expected":{"location_name":null,"movie_name":null,"movie_type":"animated movies"}}
+{"id":"ARRAY-3-ARTIST","expected":{"artist":["Mira Sol","Theo Lane","Nora Vale"],"album":[]}}
+{"id":"ARRAY-3-CITY","expected":{"city":["Bergen","Oslo","Trondheim"],"country":[]}}
+{"id":"ARRAY-4-ARTIST","expected":{"artist":["Mira Sol","Theo Lane","Nora Vale","Eli Brooks"],"album":[]}}
+{"id":"ARRAY-4-CITY","expected":{"city":["Bergen","Oslo","Trondheim","Stavanger"],"country":[]}}
+{"id":"ARRAY-5-ARTIST","expected":{"artist":["Mira Sol","Theo Lane","Nora Vale","Eli Brooks","Iris Reed"],"album":[]}}
+{"id":"ARRAY-5-CITY","expected":{"city":["Bergen","Oslo","Trondheim","Stavanger","Tromsø"],"country":[]}}
+{"id":"JSON-01","expected":{"name":"Lena Ortiz","department":"astronomy"}}
+{"id":"JSON-02","expected":{"recipient":"Jun Park","destination":"Cedar House"}}
+{"id":"JSON-03","expected":{"quantity":7,"unit_price":3.25}}
+{"id":"JSON-04","expected":{"temperature":-12.5,"samples":4}}
+{"id":"JSON-05","expected":{"wifi_enabled":true,"bluetooth_enabled":false}}
+{"id":"JSON-06","expected":{"archived":false,"notifications":true}}
+{"id":"JSON-07","expected":{"name":"Tessa Reed","phone":null}}
+{"id":"JSON-08","expected":{"code":"QX-19","weight":null}}
+{"id":"JSON-09","expected":{"colors":["amber","violet","teal"]}}
+{"id":"JSON-10","expected":{"titles":["Winter at Dawn","Paper Wings","The Quiet Bridge","Silver Window","After the Rain"]}}
+{"id":"JSON-11","expected":{"readings":[2.5,-1.75,8]}}
+{"id":"JSON-12","expected":{"states":[true,false,true]}}
+{"id":"JSON-13","expected":{"delivery":{"recipient":"Elin Shaw","address":{"city":"Delft","country":"Netherlands"}}}}
+{"id":"JSON-14","expected":{"event":{"title":"River Lights","details":{"venue":"Lantern Hall","date":"2027-03-12"}}}}
+{"id":"JSON-15","expected":{"organization":{"name":"Orion Labs","team":{"name":"optics","contact":{"name":"Nia Cole"}}}}}
+{"id":"JSON-16","expected":{"shipment":{"code":"ZX-42","destination":{"address":{"city":"Kyoto","country":"Japan"}}}}}
+{"id":"JSON-17","expected":{"people":[{"name":"Asha Nouri","role":"editor"},{"name":"Milo Chen","role":"illustrator"}]}}
+{"id":"JSON-18","expected":{"items":[{"name":"bolts","quantity":12},{"name":"washers","quantity":30},{"name":"brackets","quantity":4}]}}
+{"id":"JSON-19","expected":{"lead":{"name":"Sana Wu"},"tools":["drill","saw"],"materials":["oak","steel"]}}
+{"id":"JSON-20","expected":{"design":{"members":["Ava Finch","Omar Vale"]},"build":{"members":["Zoe Lin","Leo Moss"]}}}
+{"id":"JSON-21","expected":{"matrix":[[1,2],[3,4]]}}
+{"id":"JSON-22","expected":{"groups":[["copper","zinc"],["silver","gold"]]}}
+{"id":"JSON-23","expected":{"record":["delta",6,true]}}
+{"id":"JSON-24","expected":{"values":["amber",9,false,null]}}
+{"id":"JSON-25","expected":{"kind":"ticket","title":"Broken hinge","priority":"high"}}
+{"id":"JSON-26","expected":{"version":1,"destination":"Ghent","mode":"train"}}
+{"id":"JSON-27","expected":{"name":"Kira Bell"}}
+{"id":"JSON-28","expected":{"name":"Dario Ames","nickname":"Rio"}}
+{"id":"JSON-29","expected":{"address":{"city":"Riga","country":"Latvia"}}}
+{"id":"JSON-30","expected":{"primary":{"name":"Inez Park","email":"inez@example.org"},"backup":{"name":"Emil Frost","email":"emil@example.org"}}}
+{"id":"JSON-31","expected":{"kind":"email","address":"mira@example.org"}}
+{"id":"JSON-32","expected":{"case_id":"AB-17","owner":null}}
+{"id":"JSON-33","expected":{"mode":"pickup","location":"North Depot"}}
+{"id":"JSON-34","expected":{"mode":"delivery","address":"18 Willow Road"}}
+{"id":"JSON-35","expected":{"code":"QL-407","label":"Prism"}}
+{"id":"JSON-36","expected":{"count":8,"ratio":0.75}}
+{"id":"JSON-37","expected":{"title":"He said \"hello\"","folder":"C:\\notes"}}
+{"id":"JSON-38","expected":{"name":"Zoë Álvarez","city":"東京"}}
+{"id":"JSON-39","expected":{"code":"RX-82"}}
+{"id":"JSON-40","expected":{"quantity":15}}
+{"id":"JSON-41","expected":{"materials":["linen","felt","cork"]}}
+{"id":"JSON-42","expected":{"packages":[{"package":"A","count":2},{"package":"B","count":5}]}}
+{"id":"JSON-43","expected":{"label":"Blue Lantern"}}
+{"id":"JSON-44","expected":{"available_seats":23}}
+{"id":"JSON-45","expected":{"pencils":14,"erasers":9}}
+{"id":"JSON-46","expected":{"Ivo":"host","Mae":"usher"}}
+{"id":"JSON-47","expected":{"guests":[],"equipment":[],"venue":null}}
+{"id":"JSON-48","expected":{"settings":{},"tasks":[]}}

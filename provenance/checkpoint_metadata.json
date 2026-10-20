@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "model": {
+      "attention_impl": "fast",
+      "bias": false,
+      "ce_impl": "metal",
+      "d_model": 768,
+      "ffn_impl": "packed-metal",
+      "loss_dtype": "float32",
+      "max_seq_len": 2048,
+      "mlp_multiple_of": 256,
+      "mlp_ratio": 4.0,
+      "n_heads": 12,
+      "n_kv_heads": 4,
+      "n_layers": 24,
+      "qk_norm": true,
+      "rope_base": 10000.0,
+      "vocab_size": 32000
+    }
+  },
+  "restart130": {
+    "contract": {
+      "arm": "100m",
+      "files": {
+        "pretraining/data/sft_152_cpt_comparison_20261019/manifest.json": "ea818a53da76ab187f211c4ded3c97c1d7a59c2d5775d2043bda67753d2d5539",
+        "pretraining/json_cpt_compare_152/__init__.py": "1d3ce2fd36e9fcbef1d5d578b9f7842cb672309966a317c89e8ac01a23b00636",
+        "pretraining/json_cpt_compare_152/common.py": "4b347223dd9b6e83d67c5d2f8ec48ad6e82f2dff97c3e59427e8f6864bf84e22",
+        "pretraining/json_cpt_compare_152/preflight.py": "8703ac7786bf5b7518a5ec15d333adeb6bfa41c84ae5c1406b1661dac8783dd9",
+        "pretraining/json_cpt_compare_152/prepare.py": "678fa106aaafb7e344a917d4f4e85101d8cf11234e6ff8b933f0449443ab5807",
+        "pretraining/json_cpt_compare_152/run.py": "80de9d542992ef52313fe4bb02d43dc6b8d98f16204a039f04161ac0a3b5c06d",
+        "pretraining/json_foundation_142/common.py": "6f6727d92f879bfc5eb6f060e87c3423a4cf7a1b22f1249c31f5c937ba8ab34d",
+        "pretraining/json_foundation_142/run.py": "23027ddf8e0f16a0d3e2aaaae0c3324c2efad7190cbe492fe9818f7dcdb310f5",
+        "pretraining/json_foundation_142/runtime.py": "f562c4d159853ce1291949de92b179a2cb08e6fbd781476e6732e1f0b4a842a9",
+        "pretraining/json_foundation_142/scoring.py": "a3136e24be36bcc3ef0fe886d4a02000bb63c2ccafab157b566353533259056b",
+        "pretraining/json_restart_130/common.py": "748737c19bb9a6d087528f46270c63cbd1c0c4193023b18be92ca43857f7fe6e",
+        "pretraining/json_restart_130/runtime.py": "5a3826b2124f1eea2832a4d753a227c7f5f6c62bf882ffdb800cd6e20aeb6ce2",
+        "pretraining/json_restart_130/train.py": "5d9b7a163dad5557a016eb59fc739d91e2ec342e26bab81e894e90a75336f7ea",
+        "pretraining/jsonlite_eval/common.py": "f4514b8ff0e6861d051c5e24d20358912e9800f91957fead70f53ee34cfb078c",
+        "pretraining/runs/cpt_151_structured_20261018/step_0132838_224f03f16825/model.safetensors.json": "05cb4f0bdbabf4398afae42930eac11efd8e765360e0f5ed04cc3d2fbf78c0dd",
+        "pretraining/scripts/run_sft_152_cpt_comparison.sh": "0301fbca595fb546069a580d447a6fb4e60bbbf8a3801eaf6893a483e1d3716c",
+        "pretraining/sft/data.py": "70348a9df1473da88330695d5409f17b929b9bc1dc79f77525272f6d87317aa1",
+        "pretraining/sml_v1/checkpoint_bundle.py": "73cbf0c17cf74a44bb7c74a8f9e5bb63671057a1f664a6a4af0e0777b2c8f1a4",
+        "pretraining/sml_v1/common.py": "ec4dda551cbe45cbd30d64c7c82379a8849ce02a3ad1a597a293844b5dc86351",
+        "pretraining/sml_v1/fast_loss.py": "f99edeedb6cb328ef728d05643f65ea20371437f7e5806009ae3ad0885bafbf1",
+        "pretraining/sml_v1/fast_swiglu.py": "59d1adb31400e3c288914b4c0cc8a21681a73ca3dfa7c722ea4e13d21dc38528",
+        "pretraining/sml_v1/model.py": "1eee6f8afe78767ff6b9c604ccf2328c98b24bc94dbad6291a0ad699dd7345fe",
+        "pretraining/sml_v1/precision.py": "b9f535fca724153703ed57a300eceb5b34a8f8381fc65bf5c4c5a0f7e066303c",
+        "pretraining/sml_v1/tokenization.py": "254e1f5d60cc4498a9f1209955752db28b91839f48d3121d674f3f5ac42e52e5",
+        "reference/opensml-150m/tokenizer/bytebpe32k_v1/corpus.json": "e4c47b7b6aba08f948de7c2c7cb94c58dbd09dde2ded6ac185c60856ee686d27",
+        "reference/opensml-150m/tokenizer/bytebpe32k_v1/manifest.json": "1194292c6d906ac19e6f01c6ad2b42825143fad426a22aa8856d903776701ecb",
+        "reference/opensml-150m/tokenizer/bytebpe32k_v1/report.json": "e871f690eabebf82da173f0e406f38b79a10cd7d2647bb3592c3fc35ae9a2f16",
+        "reference/opensml-150m/tokenizer/bytebpe32k_v1/tokenizer.json": "e095f0413a11fa91fbb58f37d00e4c6bcda59beb89b28f6f680db1436a7e8891",
+        "reference/opensml-150m/tokenizer/bytebpe32k_v1/tokenizer_config.json": "619f500553367eb76f5be00a98625130ec857b9c367561334984096c029ba2a9"
+      },
+      "format": "sft152-matched-cpt-v1",
+      "parent_sha256": "57d0933d5d806e7f589a60170b5080ff46895b732be480aa953650701f4e19cc",
+      "plan": {
+        "adaptation": "full weights",
+        "batch_size": 64,
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "clip": 1.0,
+        "context": 2048,
+        "epochs": 1,
+        "eps": 1e-08,
+        "eval_every": 100,
+        "eval_steps": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          563
+        ],
+        "final_lr": 3e-06,
+        "max_tokens": 384,
+        "microbatch": 2,
+        "objective": "Per-request assistant JSON and EOS loss; source/schema tokens masked.",
+        "peak_lr": 3e-05,
+        "precision": "BF16 compute / FP32 master AdamW",
+        "presentations": 36000,
+        "retention": "Keep every checkpoint. Matched142 control; no automatic promotion or reserved generation.",
+        "seed": 202610180142,
+        "train_max_sequence": 1536,
+        "updates": 563,
+        "warmup": 25,
+        "weight_decay": 0.0
+      },
+      "python": "3.11.13",
+      "versions": {
+        "jsonschema": "4.26.0",
+        "mlx": "0.32.3",
+        "numpy": "2.4.2",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "order_hash": "e1c4dbbac134d870765f878ea3d767e6a8201325b2bcaf79fb5725fa318714f9",
+    "records": 32000,
+    "refine": false,
+    "total": 563
+  },
+  "step": 500,
+  "tokens": 1027385
+}

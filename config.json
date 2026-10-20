@@ -18,7 +18,7 @@
     "rope_base": 10000.0,
     "vocab_size": 32000
   },
-  "weight_sha256": "781597baeb9b51d535fc27cd6f941dbc202e01d62c8d963587a3f3d565128560",
+  "weight_sha256": "25b406a7b86e3e8ac4dd0b7f32e27590d9d11349a0148a7815c32304150ac725",
   "serialization": "native-sft-chat-v1",
   "output_mode": "native-json",
   "context_limit": 2048,
@@ -29,8 +29,8 @@
   "json_assembly": false,
   "output_repair": false,
   "constrained_decoding": false,
-  "selected_stage": "joint JSON extraction SFT",
-  "selected_update": 300,
+  "selected_stage": "joint foundation JSON SFT",
+  "selected_update": 500,
   "checkpoint_name": "main",
   "inference_teacher_required": false
 }
