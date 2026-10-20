@@ -12,6 +12,16 @@ This is a custom native MLX architecture, not a Transformers/MLX-LM auto-loader 
 
 This report supersedes the earlier fieldwise SFT-093 release. Its historical report is retained as `HISTORICAL_SFT093_REPORT.md`; those adapter-assisted scores are not current native JSON scores. No release-readiness or arbitrary-schema reliability claim is made.
 
+### Intended use in plain language
+
+This is a research model for **extracting information that is explicitly stated in short English text** and placing it into one flat JSON object. Supply a schema with clear field descriptions. The verified runner accepts 1–8 required fields containing strings, nullable strings or arrays of strings. Dates and numbers are copied as text rather than normalized or converted.
+
+**Expect extraction mistakes.** The model can shorten a name or title, miss or merge list items, confuse who or what a value belongs to, or supply a value when the right answer is empty. Unfamiliar field names and domains need their own testing. There is no established number of entities it will always extract correctly; only 3 of the 6 observed three/four/five-item probes were completely correct.
+
+**Outside the verified scope:** nested objects, arrays of objects, numeric or Boolean outputs, optional-property logic, enums, references and advanced schema constraints. General chat, multilingual input and long-document extraction are also unverified. This describes the released runner's tested contract, not a claim that the weights can never produce these formats.
+
+**Check both structure and meaning.** Parse the output, validate it against the schema, and check the values against the source. The reported 100% schema validity applies to the observed 1,444-request evaluation; complete correctness there was 88.02%. It is not a promise for new inputs. The instruction, source, schema and generated answer must share the 2,048-token context; the supplied runner allows up to 256 output tokens.
+
 ## 2. Exact inherited lineage
 
 `Stage A → grounded QA → requested-field extraction → focused extraction → native JSON foundation → cardinality/replay extraction → joint JSON extraction SFT`
@@ -203,7 +213,7 @@ The run uses full-weight BF16 compute with FP32-master AdamW, batch 64, microbat
 
 ## 8. Prompt, schema and native inference
 
-Supply source text and a flat closed JSON Schema with 1–8 required fields. Supported properties are strings, nullable strings and arrays of strings. Every required key is returned; absent arrays target [] and absent nullable strings target null. Copy case/spelling and complete values; preserve source order. Nested schemas, numbers/booleans, enums and advanced constraints are outside the verified runner contract. The supplied runner rejects overlong inputs without truncation.
+Supply source text and a flat closed JSON Schema with 1–8 required fields. Supported properties are strings, nullable strings and arrays of strings. The requested behavior is to return every required key, with [] for absent arrays and null for absent nullable strings; generated answers can still be incorrect. Copy case/spelling and complete values; preserve source order. Nested schemas, numbers/booleans, enums and advanced constraints are outside the verified runner contract. The supplied runner rejects overlong inputs without truncation.
 
 The fixed instruction is followed by compact `{"source_text":...,"schema":...}` and native SFT role tokens. It issues exactly one autoregressive whole-object generation with temperature 0, repetition penalty 1 and at most 256 output tokens. No fieldwise assembly, repair, schema-constrained decoder, normalization, reference answer, frozen teacher or secondary model is used at inference. Parsing/schema checks only annotate the raw generated text afterward.
 
@@ -254,6 +264,29 @@ Greedy temperature 0, repetition penalty 1, maximum 256 output tokens and the un
 The 1,444 requests comprise the original canonical and schema-stress views; some views reuse the same source. Previously observed tests and playground examples informed research and owner selection. They are not a fresh blind holdout. Synthetic prose shares construction families and training entities, so gains do not establish open-domain generalization. The selected checkpoint is a preserved no-pruning replay artifact identified by its exact hash; metrics are recomputed from that artifact's saved generations, not borrowed from an earlier artifact. No claim of bitwise training replay identity is made.
 
 ## 10. Failure audit and limitations
+
+### What the released model is intended to do
+
+The intended task is short English text extraction into a supplied, flat object schema: copy stated values into the requested fields, keep separate entities as separate string-array items, and use empty arrays or nullable strings for absent information where the schema allows it. Clear field descriptions matter. The runner accepts 1–8 required fields with strings, nullable strings or arrays of strings; dates and numeric expressions remain strings. Those input limits describe the runner contract and do not guarantee that every accepted request will be answered correctly.
+
+### What can still go wrong
+
+The model can shorten names or titles, omit or merge list members, confuse roles or field meanings, and fill a missing field with an unsupported value. Corrections, unfamiliar field names, new domains and complex associations require application-specific evaluation. No tested field count or entity count establishes a reliable extraction maximum. Optional-property logic, nesting, arrays of records, numeric/Boolean outputs, enums, references and advanced constraints are outside the released runner's verified contract. Root-level arrays or primitives, general chat, multilingual use and long-document extraction are not supported claims of this release. Unverified does not mean impossible for the weights; it means the supplied runner and release evidence do not establish dependable support.
+
+| Evidence for this released checkpoint | What it establishes | What it does not establish |
+| --- | --- | --- |
+| 1,271/1,444 complete requests correct (88.02%) | Exact whole-answer performance on the documented, previously observed SNIPS-derived panel | Equivalent accuracy on arbitrary schemas or new domains |
+| 1,444/1,444 schema-valid outputs | All outputs met the tested flat schemas in that evaluation | Correct extracted values, or universal schema compliance |
+| 49/60 complete playground requests correct (81.67%) | Performance on a separate observed diagnostic panel | A fresh blind benchmark or a general production reliability rate |
+| 3/6 complete three/four/five-item probes correct | Larger lists remain inconsistent | A guaranteed maximum number of extractable entities |
+
+These measurements use the released checkpoint identified in section 1. Local research checkpoints are separate artifacts; their broader-schema or per-family scores are not measurements of this release. The panels have prior research exposure and must not be pooled into one accuracy number.
+
+### Checks required in an application
+
+Parse the raw output, validate it against the supplied schema, then check that extracted values are supported by the source and assigned to the right fields. A valid string can still name the wrong person, omit an item or invent a value; schema validation cannot detect all such errors. The runner's `success` flag means structural validity and natural completion, not semantic correctness. The full instruction, source, schema and answer share a 2,048-token context, and the released runner allows up to 256 generated tokens. Overlong inputs are rejected rather than truncated. Validate the complete workflow on representative application data before relying on its outputs.
+
+### Additional failure-audit observations
 
 There are 173 entirely incorrect original-test requests and 24 previously correct requests become incorrect. Errors include incomplete copying, wrong roles, missing or extra values and unsupported values. All seven domain totals improve, but per-request retention is not perfect. On the six longer-list probes only three are correct. Flat schema validity is 100% on this test, not a guarantee for arbitrary prompts, schema types or novel domains. No general chat, reasoning, code, multilingual, long-document or safety readiness claim is made. The authored development panel is small and repeatedly observed.
 

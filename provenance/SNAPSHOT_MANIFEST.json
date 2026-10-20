@@ -22,12 +22,12 @@
       "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     "README.md": {
-      "bytes": 15254,
-      "sha256": "73115eba5a88c541a7f9d5138ed44957e4001ab93a9ce4215eb25de9029a52ab"
+      "bytes": 16867,
+      "sha256": "96477a86f847fb6252eafbc0a97c788a89dec54407323f73ff096000ca848201"
     },
     "RUN_GUIDE.md": {
-      "bytes": 3615,
-      "sha256": "5ee8f11f0e87becf1a29c44e2b0f3dacc2c779712b635558be57dd7ef44455d3"
+      "bytes": 5228,
+      "sha256": "e54ba0ed507dd5da8a6fe54cd420f91f0db1bed31e75fc8ff5934fe883f638bc"
     },
     "SOURCE_NOTICE.md": {
       "bytes": 2017,
@@ -54,8 +54,8 @@
       "sha256": "1cdb27d01ef3d044f229fc4a46f07e06d0ad0bbbb21bf215b5651e4ab257f888"
     },
     "docs/TECHNICAL_REPORT.md": {
-      "bytes": 26051,
-      "sha256": "91802c4d79c3ab4f1f0869f98fcd6c2b949f0f36b6920ce29196d67c6a80f5a9"
+      "bytes": 31029,
+      "sha256": "9739058223abefd2ec4083b2806821b0f36a6832cd79bd1c94e1e562c1935658"
     },
     "docs/figures/complete-request-exact.svg": {
       "bytes": 1408,
@@ -102,8 +102,8 @@
       "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
     },
     "model-card/README.md": {
-      "bytes": 482,
-      "sha256": "51daf160fe2a376d77215900dd37e975ae06d8cbfdab06544c87b8ecc6144846"
+      "bytes": 2095,
+      "sha256": "dbf3b69c6df0d52730508d3fb518b0200154cc6084673ae5e762ddc8ffd75af1"
     },
     "model-card/complete-request-exact.svg": {
       "bytes": 1404,
